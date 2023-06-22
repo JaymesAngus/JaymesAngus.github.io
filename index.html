@@ -14,7 +14,26 @@
         text-align:justify;
         display: flex; 
         justify-content: space-between;
+        font-size:18px;
+        color: #6F1A07;
+        align-items: center;
       }
+      @media all and (max-width:800px)
+        {
+          a {
+            color: #6F1A07;
+            text-decoration: none;
+            display: block;
+            text-align:center;
+            margin-bottom: 20px;
+          }
+            .navigation
+            {
+                display: block; 
+                float: none; 
+                width: 100%;
+            }
+        }
     </style>
   </head>
   <body>
@@ -25,9 +44,9 @@
       <hr>
       <br>
       <div class="navigation">
-        <a href="projects" style="font-size:18px; color: #6F1A07;">[ projects ]</a>
-        <a href="about" style="font-size:18px; color: #6F1A07;">[ about ]</a>
-        <a href="digitalgarden" style="font-size:18px; color: #6F1A07;">[ digital garden ]</a>
+        <a href="projects">[ projects ]</a>
+        <a href="about">[ about ]</a>
+        <a href="digitalgarden">[ digital garden ]</a>
       </div>
       <br>
       <img src="OrbitSimImages/QuinaryTransparent.gif" class="contentimage" alt="Short simulation gif of four small stars orbiting a solar-mass star in a square formation">

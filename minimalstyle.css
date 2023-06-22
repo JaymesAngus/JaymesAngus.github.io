@@ -31,6 +31,13 @@ body{
     color:#6F1A07;
 }
 
+.navigation {
+  display: table-cell;
+  font-size:18px; 
+  color: #6F1A07;
+  align-items: center;
+}
+
  a.textlink:link,  a.textlink:visited {
     color:#6F1A07;
 }
