@@ -1,9 +1,10 @@
 body{
-  
+  /*
   background-image: url('nnnoise.svg');
   background-repeat: repeat;
   background-size: cover;
-  
+  */
+  background-color: antiquewhite;
 }
 
 .content {
