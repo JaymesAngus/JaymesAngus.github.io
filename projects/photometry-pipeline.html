@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photometry Pipeline</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      @media(max-width:1000px){
+        .trace {
+          font-size: 20px;
+          padding-bottom: 30px;
+          width: 80vw;
+          height: 20px;  
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+    <div class="trace"><a href="/">home</a> / <a href="/projects">projects</a> /</div>
+      <hr>
+      <h1>photometry pipeline</h1>
+      <hr>
+      I am currently working in collaboration with Juan Santisteban of the University of St Andrews on a photometry pipeline which will produce lightcurves
+      from a series of astronomical images.<br><br> The goal is to produce a python script that
+      will load a series of fits images, perform aperture photometry on sources detected in those images, and then automate a differential photometry 
+      process with a user-specified selection of stars. 
+      <hr><br>
+    <h3>current status</h3>
+    The pipeline can now load all fits images from a specified directory, identify sources within those images, and perform photometry on them
+    automatically. Most importantly, it can assign IDs to each star so that they can be tracked across each image. This was achieved
+    using the AstroAlign library and by storing sequences of coordinates corresponding to the positions of each star across the different images.
+    As of now AstroAlign itself is used to detect sources, but the issue we're currently facing is that if it fails to detect the transform between
+    two images then we cannot assign the correct ID to stars in subsequent images. <br>It seems to be that if the list of coordinates passed
+    into the find_transform function is too short, AA exhausts the possible configurations in which those sources could be matched to
+    those in the subsequent image before finding the correct transform.<br><br>
+    This is the first successful lightcurve output from a series of one thousand images.
+
+    <img src="/MiscImages/lightcurve.png" class="contentimage">
+
+    <h3>next steps</h3>
+    We now know that errors returned by AstroAlign from the find_transform function are not due to issues with the fits images themselves,
+    but with the list of source coordinates passsed into that function. Once a method has been found to correct this fault, the next step 
+    will be to implement a function which determines the optimum aperture size for photometry. This will require a curve of growth to be
+    created for all stars, but should only be required to run on the first image of the dataset.
+    </div>
+  </body>
+</html>

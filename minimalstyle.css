@@ -1,7 +1,10 @@
 body{
+  background-color: #fffce8;
+  /* 
   background-image: url('nnnoise.svg');
   background-repeat: repeat;
   background-size: cover;
+  */
 }
 
 .content {
@@ -29,13 +32,6 @@ body{
 
 .trace a:link, .trace a:visited {
     color:#6F1A07;
-}
-
-.navigation {
-  display: table-cell;
-  font-size:18px; 
-  color: #6F1A07;
-  align-items: center;
 }
 
  a.textlink:link,  a.textlink:visited {
