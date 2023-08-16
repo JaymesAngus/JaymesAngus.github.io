@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <link href="minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <link
+      href="minimalstyle.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
     <style>
-      @media(max-width:1000px){
+      @media (max-width: 1000px) {
         .trace {
           font-size: 20px;
           padding-bottom: 30px;
           width: 80vw;
-          height: 20px;  
+          height: 20px;
         }
         table {
           width: 80vw;
@@ -26,16 +31,33 @@
   </head>
   <body>
     <div class="content">
-    <div class="trace"><a href="/">home</a> /</div>
+      <div class="trace"><a href="/">home</a> /</div>
       <h1>projects</h1>
-      <hr>
-        A collection of projects in various stages of completion. 
-      <hr>
-      <br>
-      <a href="projects/photometry-pipeline">&#x2022; [photometry pipeline]</a><br />
-      <a href="projects/orbitsim">&#x2022; [orbital simulation]</a><br />
-      <a href="projects/orbitsim">&#x2022; [orbital simulation]</a><br />
-
+      <hr />
+      A collection of projects in various stages of completion.
+      <hr />
+      <br />
+      <h3>
+        <a href="projects/photometry-pipeline"
+          >&#x2022; [ automated .fits lightcurve generator ]</a
+        ><br />
+      </h3>
+      An astropy-based Python pipeline for identifying stars within astronomical
+      images and generating lightcurves. Designed for characterisation of camera
+      systems and identification of variable stars.
+      <br />
+      <h3>
+        <a href="projects/orbitsim">&#x2022; [ orbital simulation ]</a><br />
+      </h3>
+      A joint Python-Fortran project to accurately simulate and animate N-body
+      gravitational interactions using Newtonian mechanics.
+      <h3>
+        <a href="projects/collisionsim">&#x2022; [ collision simulation ]</a
+        ><br />
+      </h3>
+      An early-stage experimental project in collision simulation with Fortran.
+      Built around simple Newtonian interactions between a massive particle and
+      a rigid surface.
     </div>
   </body>
 </html>
