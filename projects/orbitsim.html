@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orbital simulations</title>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
-    <link href="/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <link
+      href="/minimalstyle.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
     <style>
-      @media(max-width:1000px){
-      .trace {
-        font-size: 20px;
-        padding-bottom: 30px;
-        width: 80vw;
-        height: 20px;  
+      @media (max-width: 1000px) {
+        .trace {
+          font-size: 20px;
+          padding-bottom: 30px;
+          width: 80vw;
+          height: 20px;
+        }
       }
-    }
     </style>
   </head>
   <body>
     <div class="content">
-    <div class="trace"><a href="/">home</a> / <a href="/projects">projects</a> /</div>
-      <hr>
+      <div class="trace">
+        <a href="/">home</a> / <a href="/projects">projects</a> /
+      </div>
       <h1>simulating gravitational orbits with fortran</h1>
-      <hr>
-      <br>
-      <h3>Overview</h3>
-      The orbital simulation project began as the final assignment for the Computational Astrophysics module offered at the University of St Andrews. The aim was to utilise the <a href="#fortran" class="textlink">[fortran]</a> programming language to perform simple Newtonian dynamics calculations regarding the gravitational attraction of two or more bodies. The results of these calculations would then be written to a file so that the orbital paths could be visualised in Python using the Matplotlib library. The results were highly satisfactory, both for their visualisation and their physical accuracy.<br><br>
-      The following images show the results of a six-body simulation in both a spherical (left) and asymmetrical (right) mean galactic potential.<br><br>
-      <img src="/OrbitSimImages/Galaxies.png" class="contentimage">
-      <h3 id="fortran">Why fortran</h3>
+      <hr />
+      <br />
+      <h3>overview</h3>
+      The orbital simulation project began as the final assignment for the
+      Computational Astrophysics module offered at the University of St Andrews.
+      The aim was to utilise the
+      <a href="#fortran" class="textlink">[fortran]</a> programming language to
+      perform simple Newtonian dynamics calculations regarding the gravitational
+      attraction of two or more bodies. The results of these calculations would
+      then be written to a file so that the orbital paths could be visualised in
+      Python using the Matplotlib library. The results were highly satisfactory,
+      both for their visualisation and their physical accuracy.<br /><br />
+
+      The following images show the results of a six-body simulation in both a
+      spherical (upper) and asymmetrical (lower) mean galactic potential.<br /><br />
+      <img src="/OrbitSimImages/GalaxyMany.png" class="contentimage" />
+      <img src="/OrbitSimImages/GalaxyManySquished.png" class="contentimage" />
+      <h3 id="fortran">why fortran</h3>
+      Fortran has maintained a steady usage in the computational sciences for
+      its speed and optimisation. It is a language designed for high-speed
+      numerical operations. This made it ideal for a basic orbital simulator,
+      where the main requirement was the rapid solving of a second order
+      differential equation - a relatively simple mathematical process. Learning
+      to work with a compiled language took a degree of patience for me, having
+      only ever used Python before, but I know that had I attempted this project
+      in Python I would have become swamped in unnecessary for-loops and list
+      appendages - something Fortran simply does not allow you to do.
     </div>
   </body>
 </html>
-

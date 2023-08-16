@@ -59,7 +59,7 @@ td {
 
 @media(max-width:1000px){
   .content {
-    width: 80vw;
+    width: 90vw;
     margin: auto;
     margin-top: 50px;
     text-align: left;
@@ -68,7 +68,7 @@ td {
   }
   
   .contentimage {
-    width: 80vw;
+    width: 90vw;
   }
   
   .trace {
