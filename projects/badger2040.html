@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>badger2040</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link
+      href="../minimalstyle.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <style>
+      @media (max-width: 1000px) {
+        .trace {
+          font-size: 20px;
+          padding-bottom: 30px;
+          width: 80vw;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="trace">
+        <a href="/">home</a> / <a href="/projects">projects</a> /
+      </div>
+      <h1>badger2040</h1>
+      <hr />
+      <br />
+      The Badger2040 is a pocket-sized e-ink display programmable via micropython. It has three buttons and a neat built-in library
+      of example programs like a to-do list and an ebook reader! Ability to accept limited user input and a way to display text? Sounds
+      like the makings of a choose your own adventure game!<br /><br />
+      The aim is to create a .py program that will take a folder of .txt story files and run a text-based game in which the player
+      uses the three onboard buttons to navigate their way through a D&D style dungeon. Each txt story file will contain between one 
+      and three progress options, which will be selected by pressing the corresponding button which will load the next txt story file.<br>
+      Initially it will be a one-off story designed to take no more
+      than five minutes, but eventually I want to expand it to be able to track player progress via txt save files.
+
+      <h3>player selection</h3>
+      The game is currently set up so that each txt file has the names of the linked story txt files on the first line. The first line
+      is read in, and each individual word is used as the input for the function which will load the next story segment.
+      I can instruct the bagder to ignore that first line when displaying the contents of the file, but if the player scrolls down and then
+      scrolls back up it will appear with the rest of the text. To solve this issue, I'll either have to find a way to make that first line
+      permanently invisible or change the way in which the story files are written. One idea would be to create a python class which stores the
+      story and linked file names separately, accessing them as required.
+    </div>
+  </body>
+</html>

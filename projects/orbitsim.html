@@ -8,7 +8,7 @@
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
     <link
-      href="/minimalstyle.css"
+      href="../minimalstyle.css"
       rel="stylesheet"
       type="text/css"
       media="all"
@@ -33,30 +33,47 @@
       <hr />
       <br />
       <h3>overview</h3>
-      The orbital simulation project began as the final assignment for the
+      The orbital simulation project began as the final assignment for a
       Computational Astrophysics module offered at the University of St Andrews.
-      The aim was to utilise the
-      <a href="#fortran" class="textlink">[fortran]</a> programming language to
-      perform simple Newtonian dynamics calculations regarding the gravitational
-      attraction of two or more bodies. The results of these calculations would
-      then be written to a file so that the orbital paths could be visualised in
-      Python using the Matplotlib library. The results were highly satisfactory,
-      both for their visualisation and their physical accuracy.<br /><br />
-
-      The following images show the results of a six-body simulation in both a
-      spherical (upper) and asymmetrical (lower) mean galactic potential.<br /><br />
-      <img src="/OrbitSimImages/GalaxyMany.png" class="contentimage" />
-      <img src="/OrbitSimImages/GalaxyManySquished.png" class="contentimage" />
-      <h3 id="fortran">why fortran</h3>
+      The aim was to create a program using
+      <a href="#fortran" class="textlink">[fortran]</a> that would solve for the
+      motion of N bodies under their mutual gravitational interaction. Over a series of
+      time steps the positions and velocities of each body were stored in an array,
+      which was then written to an external file so that the
+      orbital paths could be visualised using the Matplotlib Python library.
+      <br></br>
+      Physical accuracy of the simulation was tested using three parameters: conservation of
+      momentum, conservation of energy, and conservation of position after one closed orbit.
+      <br /><br />
+      <img src="../OrbitSimImages/GalaxyMany.png" class="contentimage" />
+      <p>Six-body simulation in a spherically symmetric mean galactic potential</p>
+      <img src="../OrbitSimImages/GalaxyManySquished.png" class="contentimage" />
+      <p>The same simulation in an asymmetric mean galactic potential</p>
+    
+      <h3 id="fortran">why fortran?</h3>
       Fortran has maintained a steady usage in the computational sciences for
       its speed and optimisation. It is a language designed for high-speed
-      numerical operations. This made it ideal for a basic orbital simulator,
-      where the main requirement was the rapid solving of a second order
-      differential equation - a relatively simple mathematical process. Learning
+      numerical operations, making it ideal for a basic orbital simulator
+      where the main computational component was the solving of a second order
+      differential equation. Learning
       to work with a compiled language took a degree of patience for me, having
       only ever used Python before, but I know that had I attempted this project
       in Python I would have become swamped in unnecessary for-loops and list
       appendages - something Fortran simply does not allow you to do.
+
+      <h3 id="visualisation">visualisation with matplotlib</h3>
+      Plotting static orbit paths from the resulting data files was as easy as loading
+      them into a Python file and generating a matplotlib graph, which is exactly what I
+      did for the two images above.
+      <br>
+      The advantage to animated visualisation of the data was that erratic behaviour was easier
+      to diagnose. 
+      However, when it came to animating the orbits a tradeoff had to be made. The variable
+      timestep that I had implemented meant that the orbits seemed to slow down whenever
+      two or more massive bodies approached each other. This was due to the animation process
+      assuming that each position vector was recorded at an equal timestep.
+      <br>
+      
     </div>
   </body>
 </html>
