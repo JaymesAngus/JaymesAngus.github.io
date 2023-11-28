@@ -1,5 +1,0 @@
-# make create-your-own-website.html - page explaining how to make a basic site
-
-Add this to digital-garden.html when finished
-      <br><h3 id="web-revival">web revival</h3>
-        <a href="/web-revival/create-your-own-website">[ how to make your own website ]</a>
