@@ -31,13 +31,18 @@
       </div>
       <h1>photometry pipeline</h1>
       <hr />
-      I am currently working in collaboration with Juan Santisteban of the
-      University of St Andrews on a photometry pipeline which will produce
-      lightcurves from a series of astronomical images.<br /><br />
-      The goal is to produce a python script that will load a series of fits
-      images, perform aperture photometry on sources detected in those images,
-      and then automate a differential photometry process with a user-specified
-      selection of stars.
+      During the summer of 2023 I worked alongside Juan Santisteban of the
+      University of St Andrews to develop a source identification and photometry
+      pipeline. The goal was to feed this pipeline a folder of astronomical
+      .fits images, have it identify all astronomical sources, then produce a
+      series of light curves from selected targets.<br>
+      The most significant
+      challenges in this project stemmed from target tracking and ensuring
+      that the code would be able to reliably identify the same source
+      regardless of image transformation or rotation.<br>
+      This pipeline will be used
+      to characterise the OPTICAM imaging system, then produce and analyse
+      photometric data from selected cataclysmic binary systems.
       <hr />
       <br />
       <h3>current status</h3>
