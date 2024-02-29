@@ -1,16 +1,21 @@
+@font-face {
+  font-family: Gorton-Normal-120-Jay;
+  src: url("Fonts/Gorton-Normal-120-7.otf") format("opentype");
+}
+
 body{
   padding-bottom: 50px;
-  background-color: #fff9f1;
+  background-color: #030303;
 }
 
 .content {
-  width: 40vw;
+  width: 50vw;
   margin: auto;
   margin-top: 100px;
   text-align: left;
-  font-family: verdana;
+  font-family: monospace;
   font-size: 16px;
-  color: #191919;
+  color: #ffffff;
 }
 
 .contentimage {
@@ -23,19 +28,19 @@ body{
   padding-bottom: 20px;
   width: 40vw;
   height: 20px;
-  color: black;
+  color:rgb(34, 170, 40);
 }
 
 .trace a:link, .trace a:visited {
-    color:#6F1A07;
+    color:rgb(34, 170, 40);
 }
 
  a.textlink:link,  a.textlink:visited {
-    color:#6F1A07;
+    color:rgb(34, 170, 40);
 }
 
 a {
-  color: #6F1A07;
+  color: rgb(34, 170, 40);
   text-decoration: none;
 }
 
@@ -53,14 +58,51 @@ td {
   overflow: hidden;
 }
 
+
+.pquote {
+  float: right;
+  width: 20vw;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  line-height: 0.9;
+  font-style: italic;
+  padding: 2vw;
+}
+
+blockquote {
+  margin: 0;
+}
+
+.pquote p:first-letter {
+  font-size: 39px;
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: Gorton-Normal-120;
+  src: url("Fonts/Gorton-Normal-120.otf") format("opentype");
+}
+@font-face {
+  font-family: Gorton-Normal-180;
+  src: url("Fonts/Gorton-Normal-180.otf") format("opentype");
+}
+@font-face {
+  font-family: Zerlina;
+  src: url("Fonts/Zerlina.otf") format("opentype");
+}
+@font-face {
+  font-family: Gorton-Condensed;
+  src: url("Fonts/Gorton-Condensed.otf") format("opentype");
+}
+
 @media(max-width:1000px){
   .content {
     width: 90vw;
     margin: auto;
     margin-top: 50px;
     text-align: left;
-    font-family: verdana;
-    font-size: 18px;
+    font-family: monospace
   }
   
   .contentimage {
@@ -73,5 +115,16 @@ td {
     width: 80vw;
     height: 20px;  
   }
+
+  .pquote {
+    float: right;
+    width: 40vw;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    line-height: 0.9;
+    font-style: italic;
+    padding: 2vw;
+  }
+
 }
 

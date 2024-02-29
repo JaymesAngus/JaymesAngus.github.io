@@ -18,6 +18,9 @@
         color: #6F1A07;
         align-items: center;
       }
+      .content {
+        text-align: center;
+      }
       @media all and (max-width:800px)
         {
           a {
@@ -34,25 +37,36 @@
                 width: 100%;
                 font-size: 24px;
             }
+            .content {
+              width: 90vw;
+              margin: auto;
+              margin-top: 50px;
+              text-align: center;
+              font-family: monospace
+            }
+            
+            .contentimage {
+              width: 90vw;
+            }
         }
     </style>
   </head>
   <body>
     <div class="content">
-    <div class="trace">/</div>
-      <hr>
-      <h1>Hi, I'm Jay. <br> I'm an MPhys astrophysics student with far too many interests.</h1>
-      <hr>
-      <br>
-      <div class="navigation">
+    <div class="trace" style="text-align: left;">/</div>
+      <div class="navigation" style="font-family: Gorton-Normal-120-Jay;">
         <a href="about.html">[ about ]</a>
         <a href="projects.html">[ projects ]</a>
         <a href="digital-garden.html">[ digital garden ]</a>
       </div>
       <br>
+      <h1 style="color:#618543; opacity:0.3; position:relative; margin-right:10vw;">╔ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ╗ <br>E X O G R A P H I A<br>╚ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ╝</h1>
+      <h1 style="color:#ffffff; position:relative; top:-50px; margin-right:0vw;">╭ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ╮ <br>E X O G R A P H I A<br>╰ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ╯</h1>
+      <h1 style="color:#618543; opacity:0.3; position:relative; top:-100px; margin-right:-10vw;">+ - - - - - - - - - - +<br>| E X O G R A P H I A |<br>+ - - - - - - - - - - +</h1>
+      <br>
       
-      <img src="/Images/OrbitSimImages/QuinaryTransparentCrop.gif" class="contentimage" alt="Short simulation gif of four small stars orbiting a solar-mass star in a square formation">
-      <p>Check out my <a href="projects/orbitsim.html" style="display:inline;">[ orbital simulator ]</a> page to find out how I made this animation!</p>
+      <img src="/Images/OrbitSimImages/MulensFinal3.gif" style='position:relative; top:-150px'class="contentimage" alt="Short simulation gif of four small stars orbiting a solar-mass star in a square formation">
+      <p>For a description of this animation, see my <a href="projects/mphys-dissertation.html">[ MPhys dissertation ]</a> page</p>
     </div>
   </body>
 </html>
