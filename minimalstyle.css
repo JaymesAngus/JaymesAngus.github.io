@@ -9,7 +9,7 @@ body{
 }
 
 .content {
-  width: 50vw;
+  width: 52vw;
   margin: auto;
   margin-top: 100px;
   text-align: left;
@@ -19,6 +19,9 @@ body{
 }
 
 .contentimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 40vw;
   padding: 5px;
 }
@@ -26,7 +29,7 @@ body{
 .trace {
   font-size: 18px;
   padding-bottom: 20px;
-  width: 40vw;
+  width: inherit;
   height: 20px;
   color:rgb(34, 170, 40);
 }
@@ -78,6 +81,38 @@ blockquote {
   font-weight: bold;
 }
 
+.sidenote_right {
+  position: absolute;
+  right: 2vw;
+  width: 20vw;
+  outline-style: solid;
+  outline-width:1px;
+  outline-color: white;
+  outline-offset:4px;
+}
+
+.sidenote_left {
+  position: absolute;
+  left:2vw;
+  width: 18vw;
+  outline-style: solid;
+  outline-width:1px;
+  outline-color: white;
+  outline-offset:4px;
+}
+
+.term {
+  color:rgb(34, 170, 40);
+}
+
+.desktop-term {
+  color:rgb(34, 170, 40);
+}
+
+.term-mobile-link {
+  display: none;
+}
+
 
 @font-face {
   font-family: Gorton-Normal-120;
@@ -99,6 +134,7 @@ blockquote {
 @media(max-width:1000px){
   .content {
     width: 90vw;
+    position: relative;
     margin: auto;
     margin-top: 50px;
     text-align: left;
@@ -110,6 +146,7 @@ blockquote {
   }
   
   .trace {
+    float: left;
     font-size: 20px;
     padding-bottom: 20px;
     width: 80vw;
@@ -126,5 +163,21 @@ blockquote {
     padding: 2vw;
   }
 
+  .desktop-term {
+    display: none;
+  }
+
+  .term-mobile-link {
+    display: inline;
+    color:rgb(34, 170, 40);
+  }
+
+  .sidenote_right {
+    display: none;
+  }
+  
+  .sidenote_left {
+    display: none;
+  }
 }
 
