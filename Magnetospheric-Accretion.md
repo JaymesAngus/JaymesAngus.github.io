@@ -1,6 +1,5 @@
 ---
-tags:
-  - circumstellar_discs
+title: Document Center
 ---
 The dipolar stellar magnetic field, aligned with the rotation axis of the star, truncates the [[Protostellar Discs|stellar disc]] up to the truncation/disruption radius, where the gas [[ram pressure]] is equal to the [[Magnetic Pressure]].
 $$\frac{B^2(r)}{2\mu} = \rho u^2$$
