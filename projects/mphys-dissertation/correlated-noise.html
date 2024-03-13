@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulating correlated noise</title>
+    <link
+      href="/minimalstyle.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <style>
+      @media (max-width: 1000px) {
+        .trace {
+          font-size: 20px;
+          padding-bottom: 30px;
+          width: 80vw;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="trace">
+        <a href="/">home</a> / <a href="/projects.html">projects</a> / <a href="/projects/mphys-dissertation.html">mphys dissertation</a> /
+      </div>
+      <h1>Simulating correlated noise</h1>
+      <hr />
+      <h3><a href="/projects/mphys-dissertation/microlensing-glossary.html">glossary of terms</a></h3>
+      <br>
+      <h2>What is correlated noise?</h2>
+      <p>
+        Correlated noise refers to any non-random interference in an astronomical observation. The causes can be immensely varied, ranging
+        from cloud cover to instrumental temperature variation to stellar rotation. Not taking correlated noise into account can have severely
+        detrimental effects on data analysis and results - skewing best fit curves and leading to spurious signal detections. That last effect
+        is even more significant for data features with a low signal to noise (S/N) ratio, such as planet detections.
+      </p>
+      <h2>How do we simulate it?</h2>
+      <p>
+        There are several methods for simulating the effects of correlated noise, and statistical frameworks accounting for it in best-fit
+        analysis, but short answer for how I chose to simulate it in my dissertation is: I didn't.<br><br>
+        Simulating correlated noise from scratch would have required me to consider dozens of potential sources and hundreds of extra parameters.
+        Even then, I would have no guarantee that my simulation would actually be representative of a real observation. Instead, I opted to take
+        existing light curve data, isolate the non-microlensing segment, and inject my simulated light curve into it. This way I can be entirely
+        confident that the noise present for the detection routine is realistic. 
+      </p>
+    </div>
+  </body>
+</html>
