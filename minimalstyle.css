@@ -4,12 +4,12 @@ body{
 }
 
 .content {
-  width: 40vw;
+  width: 60%;
   margin: auto;
   margin-top: 100px;
   text-align: left;
-  font-family: verdana;
-  font-size: 16px;
+  font-family: monospace;
+  font-size: 20px;
   color: #191919;
 }
 
@@ -19,7 +19,7 @@ body{
 }
 
 .trace {
-  font-size: 18px;
+  font-size: 22px;
   padding-bottom: 20px;
   width: 40vw;
   height: 20px;
@@ -51,6 +51,15 @@ th,
 td {
   width: 100px;
   overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li:before {
+  content: '-';
+  position: absolute;
+  margin-left: -20px;
 }
 
 @media(max-width:1000px){
