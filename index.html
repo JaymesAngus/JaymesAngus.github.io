@@ -7,75 +7,79 @@
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
-    <link href="minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <link href="test_style.css" rel="stylesheet" type="text/css" media="all">
     <style>
-      /* body{
-        padding-bottom: 50px;
-        background-color: #030303;
-        font-family: monospace;
-      }
 
-      a {
-        color: rgb(34, 170, 40);
-        text-decoration: none;
+      body {
+        background-image: url("/Images/MiscImages/smallvineline.png");
+        background-repeat: repeat-x;
+        background-size: 400px;
+        background-position: -30px -10px;
       }
-
-      .trace {
-        font-size: 18px;
-        padding-bottom: 20px;
-        width: inherit;
-        height: 20px;
-        color:rgb(34, 170, 40);
-      }
-
-      .trace a:link, .trace a:visited {
-          color:rgb(34, 170, 40);
-      } */
-
-      .navigation {
-        width: inherit;
-        text-align:justify;
-        display: flex; 
-        justify-content: space-between;
-        font-size:18px;
-        color: #6F1A07;
-        align-items: center;
-      }
-      @media all and (max-width:800px)
+      @media all and (max-width:1200px)
         {
-          a {
-            color: #6F1A07;
-            text-decoration: none;
-            display: block;
-            text-align:center;
-            margin-bottom: 20px;
-          }
-            .navigation
-            {
-                display: block; 
-                float: none; 
-                width: 100%;
-                font-size: 24px;
+            body {
+              background-image: none;
             }
         }
     </style>
   </head>
   <body>
-    <div class="content">
-    <div class="trace">/</div>
-      <hr>
-      <h1>Hi, I'm Jay. <br> I'm an MPhys astrophysics student with far too many interests.</h1>
-      <hr>
-      <br>
-      <div class="navigation">
-        <a href="about.html">[ about ]</a>
-        <a href="projects.html">[ projects ]</a>
-        <a href="digital-garden.html">[ digital garden ]</a>
-      </div>
-      <br>
+    <!-- <div class="header">
+        <h1>astro.scot</h1>
+    </div> -->
+    <div class="container">
+        <!-- <div class="vl"></div> -->
+        <div class="sidebar-container">
+        <div class="sidebar">
+            <div class="title"><h1>astro.scot</h1></div>
+            <a href="/projects/mphys-dissertation.html">[ MPhys dissertation ]</a><br>
+            <a href="/projects.html">[ projects ]</a><br>
+            <a href="/academic-notes.html">[ academic notes ]</a><br>
+            <a href="/topics.html">[ topics ]</a><br>
+            <a  href="/projects/orbitsim.html"><img class='sidebar-image' src="/Images/OrbitSimImages/QuinaryTransparentCrop.gif"></a>
+        </div>
+        </div>
+        <div class="main-content">
+
+            <h1>digital garden</h1>
+            <hr />
+            A digital garden is an ever-changing and interlinked series of notes that
+            acts a little like a secondary brain for its creator. Here I collect
+            articles and webpages that I intend to read, my own thoughts on various
+            things, and useful resources for my academic and personal interests. I
+            wrote about my perspective on digital gardens in the
+            <a href="topics/gardenguide.html" class="textlink">[ gardener's guide ]</a>.
+            <hr />
       
-      <img src="/Images/OrbitSimImages/QuinaryTransparentCrop.gif" class="contentimage" alt="Short simulation gif of four small stars orbiting a solar-mass star in a square formation">
-      <p>Check out my <a href="projects/orbitsim.html" style="display:inline;">[ orbital simulator ]</a> page to find out how I made this animation!</p>
+            <h3 id="highlights">highlights</h3>
+            <a href="resource-hub/terminal.html">[ physics and maths resource megathread ]</a>
+            <a href="reading-list.html">[ reading list ]</a>
+            <a href="https://musiclab.chromeexperiments.com/spectrogram/">[ musical spectrogram ]</a>
+            <br /><br />
+      
+            <h3 id="topics">notes on selected topics</h3>
+            <a href="/topics/urability.html"> [ urability ]</a>
+            <a href="/topics/final-parsec-problem.html">[ the final parsec problem ]</a>
+            <a href="/topics/keyboards.html">[ alternative keyboards ]</a>
+            <a href="/topics/clouds-on-m-dwarf-habitable-zones.html">[ effect of cloud cover on habitable zones around M-dwarfs ]</a>
+            <a href="/topics/subsurface-habitability-zones.html">[ subsurface-habitability zones ]</a>
+            <a href="/topics/magnetospheric-accretion.html">[ magnetospheric accretion ]</a>
+            <!--<a href="\topics\planetarymedicine">[ planetary medicine ]</a>-->
+            <br /><br />
+      
+            <h3 id="guides">guides</h3>
+            <a href="guides/lightcurve-qpos.html"> [ identifying QPOs in lightcurves ]</a>
+            <a href="guides/monte-carlo-playbook.html"> [ monte carlo simulation playbook ]</a>
+            <br /><br />
+      
+            <h3 id="academic-resources">academic resources</h3>
+            <a href="st-andrews-datasheet.pdf">[ mathematical and data sheets ]</a>
+            <a href="https://farside.ph.utexas.edu/teaching/"
+              >[ University of Texas physics class notes ]</a
+            >
+            <a href="https://arxiv.org/list/astro-ph/new">[ New Arxiv Astrophysics Submissions ]</a>
+        </div>
     </div>
   </body>
 </html>
