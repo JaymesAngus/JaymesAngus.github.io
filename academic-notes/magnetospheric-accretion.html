@@ -21,15 +21,28 @@
     <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
+
   <body>
     <div class="content">
-    <div class="trace"><a href="/">home</a> / <a href="/digital-garden.html">digital garden</a> / <a href="/topics.html">selected topics</a> /</div>
+      <div class="trace"><a href="/">home</a> / <a href="/digital-garden.html">digital garden</a> / <a href="/academic-notes.html">academic notes</a> /</div>
       <h1>Magnetospheric Accretion</h1>
-      <hr>
-      <br>
-        The dipolar stellar magnetic field, aligned with the rotation axis of the star, carves an inner cavity out of the protostellar disc
-        up to the truncation radius. This is the point at which the gas ram pressure is equal to the magnetic pressure, and at which the magnetic
+
+      <!-- <div style="float: left;">
+        <img src="/Images/ImagesForNotes/MagnetosphericAccretion.png" class="inline-image"/>
+      </div> -->
+      <div class="contentimage">
+        <img src="/Images/ImagesForNotes/MagnetosphericAccretion-transparent.png" class="block-image"/>
+        <div class="caption">Interaction of magnetosphere and protostellar disc for a T Tauri star reproduced from Camenzind 1990 </div>
+      </div>
+      
+      <p>
+        The magnetic field of a young protostar plays a pivotal role in how matter is accreted from the surrounding protostellar disc. Here we consider
+        a dipolar stellar magnetic field aligned with the rotation axis of the star, which carves an inner cavity out of the protostellar disc
+        up to the truncation radius. 
+        This is the point at which the gas ram pressure is equal to the magnetic pressure, and at which the magnetic
         field lines couple to the disc.
+      </p>
+
       \[\frac{B^2(R_{trunc})}{2\mu} = \rho u^2\]
       \[\frac{R_{trunc}}{R_*} = 2m_s^{2/7} \left ( \frac{B_*}{140G}\right )^{4/7}\left ( \frac{\dot M}{10^{-8}M_\odot yr^{-1}}\right )^{-\frac{2}{7}} \left ( \frac{M_*}{0.8M_\odot}\right )^{-1/7} \left ( \frac{R_*}{2R_\odot}\right )^{5/7}\]
       
@@ -39,8 +52,10 @@
         <p>
             Whether accretion occurs depends on the relation between the truncation and corotation radii.
         </p>
-      <h3>Accretion regime</h3>
-      Stellar field lines which couple to the disc at a radius less than the corotation radius \(r < r_{cor}\) will act to spin the star up. The disc material will be locked to the field lines and will move at the same angular velocity as the star. This is how accretion columns are formed.
+      <b>Accretion regime</b>
+      <p style="margin-left: 1em;">Stellar field lines which couple to the disc at a radius less than the corotation radius \(r < r_{cor}\) will act to spin the star up. 
+        The disc material will be locked to the field lines and will move at the same angular velocity as the star. This is how accretion columns are formed.
+      </p>
             
       <h3>Dippers</h3>
       In the case that \(r_{trunc} \sim r_{cor}\), field lines couple to the disc at the corotation radius and result in "disk locking". Accretion columns will form, but there will be no net spin-up or spin-down of the star. 
@@ -63,9 +78,9 @@
       Instability in accretion can occur at small values of \(Q\) and high accretion rates. 
       Stable accretion is characterised by a mostly-periodic light curve and accretion via two funnel streams. Unstable accretion may result in stochastic light curves and rapidly changing hotspots.
       
-      
-      
-      
+      <h2>References</h2>
+      Camenzind, M. (1990). Magnetized Disk-Winds and the Origin of Bipolar Outflows. Accretion and Winds. Reviews in Modern Astronomy, vol 3. https://doi.org/10.1007/978-3-642-76238-3_17
     </div>
+  </div>
   </body>
 </html>
