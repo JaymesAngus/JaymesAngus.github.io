@@ -120,7 +120,7 @@ a:hover {
         color: #191919;
         position: absolute; 
         page-break-before: always;
-        top: 100vh;
+        top: 90vh;
     }
     a {
         white-space: wrap;
