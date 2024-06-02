@@ -84,6 +84,7 @@ a:hover {
         max-width: 100%;
         left: 0px;
         background-color: black;
+        bottom: 0px;
     }
     .sidebar {
         width: 100%;
@@ -117,9 +118,9 @@ a:hover {
         text-align: left;
         font-size: 20px;
         color: #191919;
-        position: relative; 
+        position: absolute; 
         page-break-before: always;
-        margin-top:100vh;
+        top: 100vh;
     }
     a {
         white-space: wrap;
