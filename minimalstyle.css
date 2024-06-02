@@ -20,7 +20,7 @@ body{
 }
 
 .contentimage {
-  width: 60%;
+  width: 100%;
   padding: 5px;
   display: block;
   margin-left: auto;
@@ -81,8 +81,18 @@ ul li:before {
   margin-left: -20px;
 }
 
+
 @media(max-width:1000px){
   .content {
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+    text-align: left;
+    font-family: verdana;
+    font-size: 18px;
+  }
+
+  .main-content {
     width: 90vw;
     margin: auto;
     margin-top: 50px;

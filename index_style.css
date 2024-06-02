@@ -110,12 +110,15 @@ a:hover {
     }
 
     .main-content {
-        width: 80%;
+        width: 80%; 
         margin-left: 4vw;
         margin-right: 4vw;
         text-align: left;
         font-size: 20px;
         color: #191919;
-        position: relative;
+        position: relative; 
+    }
+    a {
+        white-space: wrap;
     }
 }

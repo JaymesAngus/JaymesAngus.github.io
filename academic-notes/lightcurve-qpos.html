@@ -39,8 +39,7 @@
     <div class="content">
       <div class="trace">
         <a href="/">home</a> /
-        <a href="/digital-garden.html">digital garden</a> /
-        <a href="/guides.html">guides</a> /
+        <a href="/academic-notes.html">academic notes</a> /
       </div>
       <h1>identifying QPOs in lightcurve data</h1>
       <hr />
@@ -68,7 +67,9 @@
       Where i is the column number for whatever parameter you're loading.
       <br />
       Now you're going to want to plot the lightcurve to get an understanding of
-      the overall shape. I reccomend using the Matplotlib Pyplot function.
+      the overall shape. The Matplotlib library is a standard in the sciences, but
+      any plotting library will work fine.  
+      <img class="contentimage" src="/Images/ImagesForNotes/QPO/RawData.png">
       <br />
       <br />
       <h3>smoothing the lightcurve</h3>
@@ -80,6 +81,8 @@
       short-scale variations. The two best strategies are to use a spline
       function or a running optimal average (ROA) with a Gaussian memory
       function.
+      <img class="contentimage" src="/Images/ImagesForNotes/QPO/MemoryFunction.png" style="width:80%;">
+
       <br />
       <br />
       For a spline function, use the SciPy splrep and BSpline functions as
@@ -105,6 +108,8 @@
       smooth line from your astronomical data will give you a residuals array.
       This is the data that you're going to analyse your QPOs from.
 
+      <br />
+      <br />
       <h3>fitting to a function</h3>
       The next step is to try to fit your data to a function. Your best bet is
       to use something of the form: $$F(t) = B + C\cos (f\;t_i) + S \sin
