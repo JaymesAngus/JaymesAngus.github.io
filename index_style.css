@@ -85,7 +85,7 @@ a:hover {
     color: #191919;
     width: 100%;
   }
-  
+
 @media(max-width:1200px){
     .sidebar-container {
         max-width: 100%;
@@ -111,7 +111,7 @@ a:hover {
     }
 
     .sidebar a {
-        font-size: calc(1.5vw + 1.5vh);
+        font-size: calc(1.8vw + 1.8vh);
     }
     .title {
         font-size:calc(2vw + 2vh);
@@ -119,7 +119,7 @@ a:hover {
     }
 
     .main-content {
-        width: 80%; 
+        width: 90%; 
         margin-left: 4vw;
         margin-right: 4vw;
         text-align: left;
