@@ -104,7 +104,7 @@ a:hover {
     }
 
     .sidebar a {
-        font-size: calc(1.3vw + 1.3vh);
+        font-size: calc(1.5vw + 1.5vh);
     }
     .title {
         font-size:calc(2vw + 2vh);
