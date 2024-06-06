@@ -38,7 +38,7 @@
       in fortran
       <hr />
       <br />
-      <h3>basic overview</h3>
+      <h3>Basic overview</h3>
       Step one: emit a particle from a location \((x, y, z\)) in a direction
       $$\begin{align} \textbf{n} &= \begin{bmatrix} \sin\theta \cos\phi \\
       \sin\theta \sin\phi \\ \cos\theta \end{bmatrix} \end{align}$$ Step two:
@@ -67,7 +67,7 @@
       Step three: repeat this for as many particles as you want to simulate,
       collect and absorb data according to your needs.
       <br /><br />
-      <h3>monte carlo packets</h3>
+      <h3>Monte Carlo packets</h3>
       The most common particle in MC simulation is the Monte Carlo luminosity
       packet. For a total luminosity of \(L\), each packet carries an energy
       \(E_i = L \Delta t/N\); where \(N\) is the total number of packets and
@@ -81,7 +81,7 @@
       <br /><br />
       For neutronics simulation, one MC packet represents one neutron.
       <br /><br />
-      <h3>sampling a random optical depth</h3>
+      <h3>Sampling a random optical depth</h3>
       If you don't know how to sample a random variable from an underlying
       distribution function, check out this quick primer on
       <a href="sampling-from-pdfs.html">[ random sampling from PDFs ]</a
@@ -96,7 +96,7 @@
       n\sigma ds$$ which is easy to solve in the case of a uniform density
       medium: $$L = \tau ( s_{max}/\tau_{max} )$$
       <br /><br />
-      <h3>sampling a random direction</h3>
+      <h3>Sampling a random direction</h3>
       Given that directions in a sphere are determined by two angles \(\theta\)
       and \(\phi\), it's easy to imagine that you could sample a random solid
       angle by sampling those two angles from a uniform distribution. However,
@@ -106,7 +106,7 @@
       1/2 \sin\theta$$ $$p(\phi) = 1/2\pi$$ Using the sampling process as
       described earlier, we arrive at $$\theta = \cos^{-1}(2\xi - 1)$$ $$\phi =
       2\pi \xi$$
-      <h3>improvements and next steps</h3>
+      <h3>Improvements and next steps</h3>
       See the page on <a href="monte-carlo-variance-reduction.html">[ variance reduction techniques ]</a> for
       instruction on how to improve the signal-to-noise ratio for your monte carlo simulation. These will be particularly
       useful when considering a specific spatial "region of interest" in your simulation and are relatively uninterested in other regions.

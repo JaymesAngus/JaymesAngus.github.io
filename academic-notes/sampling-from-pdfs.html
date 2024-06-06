@@ -38,7 +38,7 @@
       How to sample random variables from an underlying probability density function. Analytical and numerical
       approaches.
       <hr />
-      <h3>analytical method</h3>
+      <h3>Analytical method</h3>
       To select a random variable, \(X\) from a probability density function, \(p(x)\), we
       must first normalise it over all possible values that our
       variable could take. We'll call this range \([a, b]\). Next we integrate \(p(x)\) over the
@@ -51,7 +51,7 @@
       from a PDF \(p(x)\), where \(X\) can take any value from \(a\) to \(b\): $$p(x) =
       p(x) / \int_a^b p(x)dx$$ $$F(x) = \int_a^X p(x)$$ $$X = F^{-1}(\xi)$$
       <br><br>
-      <h3>numerical (rejection) method</h3>
+      <h3>Numerical (rejection) method</h3>
       When the CDF cannot be inverted as described
       above, we use the rejection method to sample from a PDF. First, pick a
       random \(x\) value in the range \([a, b]\) using \(x_1 = a + \xi (b-a)\), then
