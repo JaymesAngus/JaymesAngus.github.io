@@ -110,6 +110,10 @@ a:hover {
         margin-top:50px; 
     }
 
+    .caption {
+        display: none;
+    }
+
     .sidebar a {
         font-size: calc(1.8vw + 1.8vh);
     }
@@ -122,14 +126,15 @@ a:hover {
         width: 90%; 
         margin-left: 4vw;
         margin-right: 4vw;
+        margin-top: 0px;
         text-align: left;
         font-size: 20px;
         color: #191919;
-        position: absolute; 
-        page-break-before: always;
-        top: 90vh;
     }
     a {
         white-space: nowrap;
+    }
+    .intro-title {
+        display: none;
     }
 }
