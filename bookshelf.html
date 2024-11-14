@@ -8,6 +8,55 @@
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
     <link href="minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      // Show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current control button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
     <style>
       @media(max-width:1000px){
         .trace {
@@ -16,6 +65,69 @@
           width: 80vw;
           height: 20px;  
         }
+      }
+      .container {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 2rem;
+        padding: 1rem;
+      }
+
+      .filterDiv {
+        position: relative;
+        float: left;
+        color: #ffffff;
+        width: 100%;
+        aspect-ratio: 2/3;
+        line-height: 100px;
+        text-align: center;
+        margin: 2px;
+        display: none; /* Hidden by default */
+      }
+
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
+
+      /* Style the buttons */
+      .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+      }
+
+      /* Add a light grey background on mouse-over */
+      .btn:hover {
+        background-color: #ddd;
+      }
+
+      /* Add a dark background to the active button */
+      .btn.active {
+        background-color: #f1f1f1;
+      }
+      .book-info {
+        position: absolute;
+        bottom: -30px;
+        /* left: 0; */
+        width: 100%;
+        line-height:30px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-size: 0.9rem;
+        background: rgba(255, 255, 255, 0.95);
+        color: black;
+        padding: 0.5rem;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .filterDiv:hover .book-info{
+        display: block;
+        opacity: 1;
       }
     </style>
   </head>
@@ -28,17 +140,37 @@
       I like keeping track of the books I've read, but I've never quite been able to get into the habit of using apps like Goodreads. 
       This isn't a review or recommendation page, just a record of my reading habits.
       <hr><br>
-      <h3>Currently reading</h3>
+
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> All</button>
+        <button class="btn" onclick="filterSelection('current')"> Currently reading</button>
+        <button class="btn" onclick="filterSelection('finished')"> Finished</button>
+        <button class="btn" onclick="filterSelection('toread')"> Reading list</button>
+      </div>
       
-      <ul>
-        <li>Brian Catling, <i>The Vorrh</i><br></li><br>
-        <li>Expect Resistance</li><br>
-        <li> James Lovelock, <i>Gaia - The Practical Science of Planetary Medicine</i></li><br>
-      </ul>
-      <h3>2023</h3>
-      <ul>
-        <li> Michelle Paver, <i>Wakenhyrst</i><br></li><br>
-      </ul>
+      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+      <div class="container">
+        <div class="filterDiv finished"><img src="Images/BookCovers/TheVorrh.jpg">
+          <div class="book-info">2023</div>
+        </div>
+
+        <div class="filterDiv finished"><img src="Images/BookCovers/OneHundredYearsOfSolitude.jpg">
+          <div class="book-info">24/06/24-21/10/24</div>
+        </div>
+        <div class="filterDiv finished"><img src="Images/BookCovers/GaiaANewLookAtLifeOnEarth.png"></div>
+        <div class="filterDiv current"><img src="Images/BookCovers/TheEmpusium.jpg"></div>
+        <div class="filterDiv finished"><img src="Images/BookCovers/Calypso.jpg"></div>
+        <div class="filterDiv finished"><img src="Images/BookCovers/ExpectResistance.jpg"></div>
+        <div class="filterDiv finished"><img src="Images/BookCovers/OryxAndCrake.jpg"></div>
+        <div class="filterDiv finished"><img src="Images/BookCovers/ThinkingLikeAMountain.jpg"></div>
+        <div class="filterDiv finished"><img src="Images/BookCovers/TenPlanets.jpg"></div>
+        <div class="filterDiv finished"><img src="Images/BookCovers/VenomousLumpsucker.jpg"></div>
+        <div class="filterDiv finished"><img src="Images/BookCovers/WakenHyrst.jpg"></div>
+
+
+
+      </div>
+
     </div>
   </body>
 </html>
