@@ -55,6 +55,9 @@ body{
     opacity: 0.4;
   }
   
+  #spacer{
+    left: 0px; right: 0px; height: 100px; margin-right: 0px
+  }
   
   
   @media(max-width:1000px){
