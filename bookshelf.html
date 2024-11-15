@@ -8,55 +8,6 @@
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
     <link href="minimalstyle.css" rel="stylesheet" type="text/css" media="all">
-    <script>
-      filterSelection("all")
-      function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("filterDiv");
-        if (c == "all") c = "";
-        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-        for (i = 0; i < x.length; i++) {
-          w3RemoveClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-      }
-
-      // Show filtered elements
-      function w3AddClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-          }
-        }
-      }
-
-      // Hide elements that are not selected
-      function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-          }
-        }
-        element.className = arr1.join(" ");
-      }
-
-      // Add active class to the current control button (highlight it)
-      var btnContainer = document.getElementById("myBtnContainer");
-      var btns = btnContainer.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-    </script>
     <style>
       @media(max-width:1000px){
         .trace {
@@ -66,111 +17,459 @@
           height: 20px;  
         }
       }
-      .container {
-        overflow: hidden;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-        gap: 2rem;
-        padding: 1rem;
-      }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
 
-      .filterDiv {
-        position: relative;
-        float: left;
-        color: #ffffff;
-        width: 100%;
-        aspect-ratio: 2/3;
-        line-height: 100px;
-        text-align: center;
-        margin: 2px;
-        display: none; /* Hidden by default */
-      }
+        /* Filter Section */
+        .filter-section {
+            margin: 2rem 0;
+            padding: 1rem;
+            /* background: #fff;
+            border: 1px solid #000; */
+        }
 
-      /* The "show" class is added to the filtered elements */
-      .show {
-        display: block;
-      }
+        .filter-controls {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-      /* Style the buttons */
-      .btn {
-        border: none;
-        outline: none;
-        padding: 12px 16px;
-        background-color: #f1f1f1;
-        cursor: pointer;
-      }
+        .filter-button {
+            padding: 0.75rem 1.5rem;
+            border: 1px solid #000;
+            background: transparent;
+            transition: all 0.3s ease;
+            min-width: 120px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
 
-      /* Add a light grey background on mouse-over */
-      .btn:hover {
-        background-color: #ddd;
-      }
+        .filter-button:hover,
+        .filter-button.active {
+            background: #000;
+            color: #fff;
+        }
 
-      /* Add a dark background to the active button */
-      .btn.active {
-        background-color: #f1f1f1;
-      }
-      .book-info {
-        position: absolute;
-        bottom: -30px;
-        /* left: 0; */
-        width: 100%;
-        line-height:30px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        font-size: 0.9rem;
-        background: rgba(255, 255, 255, 0.95);
-        color: black;
-        padding: 0.5rem;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      }
-      .filterDiv:hover .book-info{
-        display: block;
-        opacity: 1;
-      }
+        /* Bookshelf Grid */
+        .bookshelf {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .book {
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            aspect-ratio: 2/3;
+            width: 100%;
+            margin-bottom: 60px; /* Add space for info below */
+        }
+
+        .book-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid #000;
+        }
+
+
+        .book-info {
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 0.9rem;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0.5rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Handle hover states differently for touch/non-touch devices */
+        @media (hover: hover) {
+            .book:hover {
+                transform: scale(1.05);
+                z-index: 1;
+            }
+
+            .book:hover .progress-container,
+            .book:hover .book-info {
+                opacity: 1;
+            }
+        }
+
+        @media (hover: none) {
+            .book:active {
+                transform: scale(1.02);
+            }
+
+            .book.active .progress-container,
+            .book.active .book-info {
+                opacity: 1;
+                background: rgba(255, 255, 255, 0.98);
+            }
+        }
+
+
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            .bookshelf {
+                gap: 1.5rem;
+                padding: 0.5rem;
+            }
+
+            .filter-section {
+                margin: 1rem 0;
+                padding: 0.5rem;
+            }
+
+            .filter-controls {
+                gap: 0.5rem;
+            }
+
+            .filter-button {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+                min-width: 110px;
+                width: calc(50% - 0.5rem);
+                margin: 0.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bookshelf {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                gap: 1rem;
+            }
+
+            .book {
+                margin-bottom: 40px; /* Reduced margin for mobile */
+            }
+
+            .book-info {
+                font-size: 0.8rem;
+                bottom: -40px; /* Reduced bottom spacing for mobile */
+                padding: 0.25rem; /* Reduced padding for mobile */
+            }
+
+            .star-rating {
+                font-size: 0.9rem;
+                gap: 1px;
+            }
+
+            .filter-button {
+                width: 100%;
+                margin: 0.25rem 0;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <div class="content">
-    <div class="trace"><a href="/">home</a> /</div>
-      <hr>
-      <h1>bookshelf</h1>
-      <hr>
-      I like keeping track of the books I've read, but I've never quite been able to get into the habit of using apps like Goodreads. 
-      This isn't a review or recommendation page, just a record of my reading habits.
-      <hr><br>
+</head>
+<body>
+  <div class="content">
+  <div class="trace"><a href="/">home</a> /</div>
+    <hr>
+    <h1>Bookshelf</h1>
+    <hr>
 
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> All</button>
-        <button class="btn" onclick="filterSelection('current')"> Currently reading</button>
-        <button class="btn" onclick="filterSelection('finished')"> Finished</button>
-        <button class="btn" onclick="filterSelection('toread')"> Reading list</button>
-      </div>
-      
-      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-      <div class="container">
-        <div class="filterDiv finished"><img src="Images/BookCovers/TheVorrh.jpg">
-          <div class="book-info">2023</div>
+    <div class="filter-section">
+        <div class="filter-controls">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="reading">Currently Reading</button>
+            <button class="filter-button" data-filter="finished">Finished</button>
+            <button class="filter-button" data-filter="toread">Reading List</button>
         </div>
-
-        <div class="filterDiv finished"><img src="Images/BookCovers/OneHundredYearsOfSolitude.jpg">
-          <div class="book-info">24/06/24-21/10/24</div>
-        </div>
-        <div class="filterDiv finished"><img src="Images/BookCovers/GaiaANewLookAtLifeOnEarth.png"></div>
-        <div class="filterDiv current"><img src="Images/BookCovers/TheEmpusium.jpg"></div>
-        <div class="filterDiv finished"><img src="Images/BookCovers/Calypso.jpg"></div>
-        <div class="filterDiv finished"><img src="Images/BookCovers/ExpectResistance.jpg"></div>
-        <div class="filterDiv finished"><img src="Images/BookCovers/OryxAndCrake.jpg"></div>
-        <div class="filterDiv finished"><img src="Images/BookCovers/ThinkingLikeAMountain.jpg"></div>
-        <div class="filterDiv finished"><img src="Images/BookCovers/TenPlanets.jpg"></div>
-        <div class="filterDiv finished"><img src="Images/BookCovers/VenomousLumpsucker.jpg"></div>
-        <div class="filterDiv finished"><img src="Images/BookCovers/WakenHyrst.jpg"></div>
-
-
-
-      </div>
-
     </div>
-  </body>
+
+    <div class="bookshelf">
+        <!-- Example book entry -->
+        <!-- 
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers" class="book-cover">
+          <div class="book-info">
+            <span></span>
+          </div>
+        </div>
+       -->
+       <div class="book" data-status="reading">
+          <img src="Images/BookCovers/TheEmpusium.jpg" class="book-cover">
+          <div class="book-info">
+            <span>06/11/24 - </span>
+          </div>
+        </div>
+
+        <div class="book" data-status="reading">
+          <img src="Images/BookCovers/HowLifeWorks.jpg" class="book-cover">
+          <div class="book-info">
+            <span>06/06/24 - </span>
+          </div>
+        </div>
+
+        <div class="book" data-status="toread">
+          <img src="Images/BookCovers/Sozaboy.jpg" class="book-cover">
+          <!-- <div class="book-info">
+            <span></span>
+          </div> -->
+        </div>
+
+        <div class="book" data-status="toread">
+          <img src="Images/BookCovers/TheConcubine.jpg" class="book-cover">
+          <!-- <div class="book-info">
+            <span></span>
+          </div> -->
+        </div>
+
+        <div class="book" data-status="toread">
+          <img src="Images/BookCovers/DarkEcology.jpg" class="book-cover">
+          <!-- <div class="book-info">
+            <span></span>
+          </div> -->
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/VenomousLumpsucker.jpg" class="book-cover">
+          <div class="book-info">
+            <span>25/10/24 - 06/11/24</span>
+          </div>
+        </div>
+      
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/Calypso.jpg" class="book-cover">
+          <div class="book-info">
+            <span>21/10/24 - 05/11/24</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/OneHundredYearsOfSolitude.jpg" class="book-cover">
+          <div class="book-info">
+            <span>24/06/24 - 21/10/24</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+            <img src="Images/BookCovers/GaiaANewLookAtLifeOnEarth.jpg" class="book-cover">
+            <div class="book-info">
+              <span>10/08/24 - 26/08/24</span>
+            </div>
+        </div>
+
+        <div class="book" data-status="completed">
+          <img src="Images/BookCovers/ThinkingLikeAMountain.jpg" class="book-cover">
+          <div class="book-info">
+            <span>19/07/24 - 24/07/24</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+            <img src="Images/BookCovers/ExpectResistance.jpg" class="book-cover">
+            <div class="book-info">
+              <span>2023 - 04/02/24</span>
+            </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/OryxAndCrake.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2023 - 18/12/23</span>
+          </div>
+      </div>
+
+        <div class="book" data-status="finished">
+            <img src="Images/BookCovers/TheVorrh.jpg" class="book-cover">
+            <div class="book-info">
+              <span>2023 - 20/11/23</span>
+            </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/AFuriousOyster.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2022 - 24/05/22</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/Annihilation.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2020</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/NoLongerHuman.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2022 - 07/12/22</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/ASilentFury.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2021 - 21/07/21</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/Piranesi.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2021</span>
+          </div>
+        </div>
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/PrimevalAndOtherTimes.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2021 - 06/11/21</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/TenderIsTheFlesh.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2022 - 03/11/22</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/TheDolls.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2022 - 07/02/22</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/TheFuturologicalCongress.jpg" class="book-cover">
+          <div class="book-info">
+            <span>26/12/21 - 08/01/22</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/TheSacredBookOfTheWerewolf.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2021 - 14/07/21</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/TheStrangeBird.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2022 - 26/05/22</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/ToBeAMachine.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2018</span>
+          </div>
+        </div>
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/TopographiaHibernica.jpg" class="book-cover">
+          <div class="book-info">
+            <span>25/12/23 - 19/01/24</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/Wakenhyrst.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2023 - 09/02/23</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/YouveLostALotOfBlood.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2022 - 5/06/22</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/ZenInTheArtOfArchery.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2022 - 20/01/22</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/Dubliners.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2018</span>
+          </div>
+        </div>
+
+        <div class="book" data-status="finished">
+          <img src="Images/BookCovers/HeartOfADog.jpg" class="book-cover">
+          <div class="book-info">
+            <span>2018</span>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filter = button.dataset.filter;
+                
+                document.querySelectorAll('.book').forEach(book => {
+                    if (filter === 'all' || book.dataset.status === filter) {
+                        book.style.display = 'block';
+                    } else {
+                        book.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Mobile touch handling
+        if (window.matchMedia('(hover: none)').matches) {
+            document.querySelectorAll('.book').forEach(book => {
+                book.addEventListener('click', function(e) {
+                    // Remove active class from all other books
+                    document.querySelectorAll('.book').forEach(b => {
+                        if (b !== this) b.classList.remove('active');
+                    });
+                    // Toggle active class on clicked book
+                    this.classList.toggle('active');
+                });
+            });
+
+            // Close book info when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.book')) {
+                    document.querySelectorAll('.book').forEach(book => {
+                        book.classList.remove('active');
+                    });
+                }
+            });
+        }
+    </script>
+</body>
 </html>
