@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viscous torque in protostellar discs</title>
+
+    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      @media(max-width:1000px){
+      .trace {
+        font-size: 20px;
+        padding-bottom: 30px;
+        width: 80vw;
+        height: 20px;  
+      }
+    }
+    </style>
+    <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  </head>
+  <body>
+    <div class="content">
+    <div class="trace"><a href="/">home</a> / <a href="/docs/academic-notes/index.html">academic notes</a> /</div>
+      <h1>Viscous torque in protostellar discs</h1>
+      <hr>
+      <br>
+      Protostellar discs are sticky. Each ring exerts a viscous torque on its adjacent rings which acts to:
+      <ul>
+        <li>transfer angular momentum along velocity gradients via random particle motion</li>
+        <li>allow mass transfer inwards</li>
+        <li>heat the gas through dissipation, converting gravitational energy into heat and reradiating it</li>
+      </ul>
+      <h2>Derivation</h2>
+      Consider two adjacent annuli of width \(\lambda\). The sheer velocity at a point \(r\) with respect to a point \(R\) is given by:
+      \[u(r) = r(\Omega(r) - \Omega(R))\]
+      Now lets consider the sheer velocities with respect to a point P at two points A and B  represented by \(+\) and \(-\) in the following equation.
+      \[u(R \pm \frac{\lambda}{2}) = (R \pm \frac{\lambda}{2})[\Omega(R \pm \frac{\lambda}{2}) - \Omega(R)]\]
+      \[= \pm \frac{\lambda}{2}(R\pm \frac{\lambda}{2})\frac{d\Omega}{dr}\]
+      <img class="contentimage" src="/static/images/ImagesForNotes/DiscAnnuli.png">
+      Chaotic motions carry particles across adjacent annuli. These motions have a length scale \(\lambda\), which could either be the mean free path 
+      or the size of the largest eddies; and a mean velocity \(\tilde u\), which could either be the sound speed or the turnover speed of the largest eddies.
+      
+      Mass crosses the boundary at an equal rate in and out, so the mass flow per unit arc length is \(H\rho \tilde u\) (kg/m/s).
+      
+      The surface density, \(\Sigma = H \rho\), is commonly used which gives a mass flow per unit arc length of \(H \tilde u\)
+      
+      The net angular momentum flux is therefore:
+      \[\Sigma \tilde u [(ru_\phi)_B - (ru_\phi)_A]\]
+      Which is also a torque per unit arc length which we can expand out such that torque per unit arc length exerted on the *outer ring by the inner ring* is
+      \[\frac{\delta Q(R)}{\delta l} = \Sigma \tilde u [(R - \frac{\lambda}{2})(-\frac{\lambda}{2})(R -\frac{\lambda}{2})\Omega' - (R + \frac{\lambda}{2})(+\frac{\lambda}{2})(R +\frac{\lambda}{2})\Omega']\]
+      \[\approx -\Sigma \tilde u \lambda R^2 \Omega'\]
+      Therefore the total torque exerted on the *inner ring by the outer ring* is
+      \[2\pi R \nu \Sigma R^2 \Omega'\]
+      Where \(\nu = \lambda \tilde u\)
+    </div>
+  </body>
+</html>

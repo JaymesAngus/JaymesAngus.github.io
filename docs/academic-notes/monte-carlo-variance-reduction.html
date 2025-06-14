@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monte Carlo Variance Reduction</title>
+
+    <link
+      href="/static/minimalstyle.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <style>
+      @media (max-width: 1000px) {
+        .trace {
+          font-size: 20px;
+          padding-bottom: 30px;
+          width: 80vw;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="trace">
+        <a href="/">home</a> /
+        <a href="/docs/academic-notes/index.html">academic notes</a> /
+      </div>
+      <h1>Monte Carlo variance reduction algorithms</h1>
+      <hr />
+      Methods to improve the signal-to-noise ratio of your <a href="monte-carlo-playbook.html">[ monte carlo ]</a> radiative transfer simulation
+      <hr />
+      <br />
+      <h3>Roulette</h3>
+      <p>Due to the random nature of photon paths in monte carlo simulation, you may end up in a situation where
+      excessive computation time is spent tracking a single packet.<p>
+      <p>Every MC packet is given an initial weight, \(W _o = L/N_{\text{packets}}\), where \(L\) is the source luminosity.
+      At each scattering event, the packet weight is multiplied by the albedo, or the probability that the packet would have been 
+      absorbed at that interaction, \(W = aW\)<br>
+      After \(N\) interactions the packet weight will be equal to \(W_o \; A^N\)</p>
+      <p>If the packet falls below a certain weight defined by \(f\;W_o\), give it a survival probability \(p\) to decide whether 
+        to terminate or continue tracking. Pick a random number between zero and one. If it is less than \(p\), then reweight the packet
+        according to \(W = W/p\) and continue with the simulation. Otherwise, terminate the packet.
+
+      </p>
+
+    </div>
+  </body>
+</html>

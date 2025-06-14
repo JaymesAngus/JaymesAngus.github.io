@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dungeon Crawler</title>
+
+    <link
+      href="/static/dungeonstyle.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <style>
+
+      body {
+        background-color: black;
+        color: white;
+        font-family: AGoblinAppears;
+      }
+      #title {
+        position: absolute; 
+        left:0px; 
+        right: 0px; 
+        text-align: center; 
+        font-family: AGoblinAppears; 
+        font-size:96px;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+      }
+      @media (max-width: 1000px) {
+        .trace {
+          font-size: 20px;
+          padding-bottom: 30px;
+          width: 80vw;
+          height: 20px;
+        }
+        #title {
+          font-size:40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content" style="color: white; font-family: NineteenNinetySeven;">
+      <div class="trace"><a href="/">exit</a>&nbsp &nbsp<a href='/docs/dungeon-crawler/index.html'>back</a></div>
+      <hr />
+      The mass of cobwebs spun across the entrance to the tomb provide little resistance as you make your way inside. Taking a torch from your pack, your strike steel against flint and ignite the fat-soaked cloth to cast an uncertain glow over the barren chamber. Rotten cloth and the tangled remains of what may once have been a tent tell of those who took refuge here before. Whether they left unscathed or met their end deep within the labyrinths below cannot be known.
+      <br><br>
+      The relative seclusion of this area may afford you a chance to examine your equipment, but your torch is of poor quality and time is therefore precious.
+      <hr />
+      <br>
+      <div id="spacer"></div>
+
+      <br />
+      <div style="display: block">
+        <a href="/docs/dungeon-crawler/inventory.html">[ Rest a moment and look over your inventory ]</a><br><br>
+        <a href="/docs/dungeon-crawler/hallway.html">[ Waste not a moment, forge onwards ]</a>
+      </div>
+  </body>
+</html>
