@@ -17,9 +17,7 @@
    justify-content: space-between;
    align-content: flex-start;
    align-items: stretch;
-   /* for demo: */
    width: 100%;
-   /* border: 1px solid #ccc; */
    margin: 10px auto;
    resize: both;
   }
@@ -38,14 +36,7 @@
    margin: 10px;
    text-decoration: none;
    background-color: rgba(0,0,0, 0.50);
-   box-shadow: 0px 0px 0px 0px rgba(0,0,0, 0.0);
-   transition: box-shadow 300ms, transform 400ms, z-index 400ms, background-position 400ms;
    z-index: 1;
-  }
-  .thumb:hover {
-   box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.7);
-   transform: scale(1.2, 1.2);
-   z-index: 100;
   }
   
   .thumb-img > img,
@@ -55,6 +46,7 @@
   }
   
   .thumb-img {
+    border-radius:10px;
    background-size: cover;
    background-position: 50% 50%;
    background-repeat: no-repeat;
@@ -93,13 +85,9 @@
    white-space: nowrap;
    background-color: rgba(0,0,0, 0.30);
    opacity: 1;
-   transition: opacity 300ms;
   }
   .thumb-img > div > span {
    font-size: 0.8em;
-  }
-  .thumb-img:hover > div {
-   opacity: 1;
   }
   
   .thumb-txt > div {
@@ -107,6 +95,21 @@
    width: auto;
    height: 100%;
   }
+
+  @media all and (max-width:800px) {
+    .thumb {
+        height: auto;
+        margin: 10px 0px 10px 0px;
+    }
+    .thumbs:after {
+        content: none;
+    }
+    .thumb-img > img {
+        width: 80vw;
+        max-height:100vw;
+        }
+  }
+
 
  </style>
  <title>Gallery</title>
