@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Bookshelf statistics (client)</title>
+    <title>Bookshelf statistics</title>
     <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
     <style>
       /* Inline layout CSS copied from generator to keep visual parity */
@@ -39,7 +39,21 @@
       }
       table.stats { width:100%; border-collapse: collapse; }
       table.stats th, table.stats td { padding: 0.4rem 0.6rem; border-bottom: 1px solid #eee; text-align:left; }
-      .books-chart { display:flex; gap:0.6rem; padding:1rem 0; align-items:flex-end; }
+      /* .books-chart { display:flex; gap:0.6rem; padding:1rem 0; align-items:flex-end; } */
+.books-chart-wrapper {
+  overflow-x: auto;          /* enable horizontal scroll */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  padding-bottom: 1rem;      /* space for scrollbars if they appear */
+}
+
+.books-chart {
+  display: flex;
+  gap: 0.6rem;
+  padding: 1rem 0;
+  align-items: flex-end;
+  flex-wrap: nowrap;          /* keep bars in one row */
+  min-width: max-content;     /* ensure bars don’t wrap */
+}
       /* Make each column flexible so the chart fills the container width */
       .books-chart .col { display:flex; flex-direction:column; align-items:center; flex:1 1 2rem; min-width:2rem; }
       .books-chart .bar-wrap { height:220px; display:flex; align-items:flex-end; width:100%; }
@@ -197,9 +211,16 @@ circle {
 
 
 
-    @media (max-width:420px) { 
-      .books-chart .col{ min-width:2rem } .books-chart .label{font-size:0.7rem} 
-    }
+      @media (max-width:420px) { 
+        .books-chart .col{ min-width:2rem } .books-chart .label{font-size:0.7rem} 
+      }
+      @media (max-width: 600px) {
+        /* hide the 4th column (Favourite Book) */
+        #per-year-table th:nth-child(4),
+        #per-year-table td:nth-child(4) {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -228,7 +249,7 @@ circle {
         </div>
 
         <h2>Yearly stats</h2>
-        <table class="stats">
+        <table class="stats" id="per-year-table">
           <thead><tr><th>Year</th><th>Books finished</th><th>Pages read</th><th>Favourite book</th></tr></thead>
           <tbody id="per-year-body">
             <!-- populated by JS -->
@@ -364,16 +385,33 @@ circle {
 
         // build chart
         const chartContainer = document.getElementById('chart-container');
-        chartContainer.innerHTML = '';
-        if(years.length){
-          const maxCount = Math.max(...years.map(y=>perYearBooks[y]||0));
+        chartContainer.innerHTML = ''; // clear previous chart
+
+        if (years.length) {
+          const maxCount = Math.max(...years.map(y => perYearBooks[y] || 0));
           const chartHeight = 220;
-          const cols = years.map(y=>{
-            const c = perYearBooks[y]||0;
-            const h = Math.max(10, Math.round((c/maxCount)*chartHeight));
-            return `<div class="col"><div class="bar-wrap"><div class="bar" style="height:${h}px"><span class="count">${c}</span></div></div><div class="label">${y}</div></div>`;
+
+          const cols = years.map(y => {
+            const c = perYearBooks[y] || 0;
+            const h = Math.max(10, Math.round((c / maxCount) * chartHeight));
+            return `<div class="col">
+                      <div class="bar-wrap">
+                        <div class="bar" style="height:${h}px">
+                          <span class="count">${c}</span>
+                        </div>
+                      </div>
+                      <div class="label">${y}</div>
+                    </div>`;
           }).join('');
-          chartContainer.innerHTML = `<div class="books-chart" role="img" aria-label="Books finished per year">${cols}</div>`;
+
+          // Use backticks for multi-line template literal
+          chartContainer.innerHTML = `
+            <div class="books-chart-wrapper">
+              <div class="books-chart" role="img" aria-label="Books finished per year">
+                ${cols}
+              </div>
+            </div>
+          `;
         } else {
           chartContainer.textContent = 'No per-year data available for chart.';
         }
