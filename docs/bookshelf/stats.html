@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bookshelf statistics (client)</title>
+    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+    /* Inline layout CSS copied from generator to keep visual parity */
+    .stats-container { margin: 0 auto; padding: 1rem; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 1rem; padding-bottom: 2%;}
+     .stat-card { border:1px solid #ddd; padding:1rem; background:#fff; }
+     /* Circular stat cards */
+     .stat-card {
+       border-radius:9999px;
+       border: 0; /* remove hard line */
+       box-shadow: 0 6px 18px rgba(16,24,40,0.04), inset 0 1px 0 rgba(255,255,255,0.03);
+       display:flex;
+       flex-direction:column;
+       align-items:center;
+       justify-content:center;
+       aspect-ratio:1 / 1;
+       width:100%;
+       max-width:220px;
+       margin:0 auto;
+       padding:0.75rem;
+       box-sizing:border-box;
+     }
+    .stat-card h3{ margin:0; font-size:0.95rem; text-align:center; color:#222; font-weight:600; }
+    .stat-card p{ margin:0.35rem 0 0 0; text-align:center; }
+    .stat-card p strong{ font-size:1.4rem; display:block; color:#111; font-weight:700; }
+
+    /* Ensure good contrast on cards with dark backgrounds (targeted by inline style values) */
+    .stat-card[style*="#88726c"], .stat-card[style*="#407527"] {
+      color: #fff;
+    }
+    .stat-card[style*="#88726c"] h3,
+    .stat-card[style*="#407527"] h3,
+    .stat-card[style*="#88726c"] p strong,
+    .stat-card[style*="#407527"] p strong {
+      color: #fff;
+    }
+    table.stats { width:100%; border-collapse: collapse; }
+    table.stats th, table.stats td { padding: 0.4rem 0.6rem; border-bottom: 1px solid #eee; text-align:left; }
+    .books-chart { display:flex; gap:0.6rem; padding:1rem 0; align-items:flex-end; }
+  /* Make each column flexible so the chart fills the container width */
+  .books-chart .col { display:flex; flex-direction:column; align-items:center; flex:1 1 2rem; min-width:2rem; }
+  .books-chart .bar-wrap { height:220px; display:flex; align-items:flex-end; width:100%; }
+  /* Larger bars and labels for readability */
+  .books-chart .bar { width:100%; background:linear-gradient(180deg,#407527, #094400); border-radius:6px 6px 0 0; display:flex; align-items:flex-end; justify-content:center; color:#fff; font-size:0.95rem; box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset; }
+  .books-chart .label { margin-top:0.5rem; font-size:0.85rem; color:#333; }
+  .books-chart .count { padding:0.25rem 0.35rem; font-size:0.95rem; opacity:0.98; font-weight:700; }
+
+
+:root {
+  --progress-bar-width: 200px;
+  --progress-bar-height: 200px;
+  --font-size: 2rem;
+}
+
+.circular-progress {
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.percentage {
+  position: relative;
+  font-size: var(--font-size);
+  color: rgb(0, 0, 0, 0.8);
+}
+
+  @media (max-width:420px) { .books-chart .col{ min-width:2rem } .books-chart .label{font-size:0.7rem} }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="trace"><a href="/">Home</a> / <a href="/docs/bookshelf/index.html">Bookshelf</a></div>
+      <div class="stats-container">
+        <h1>Bookshelf statistics</h1>
+        <hr>
+        <p>Work in progress!</p>
+        
+
+        <div class="stat-grid">
+          <div class="stat-card" style="background-color: #bea69f;">
+            <h3>Total finished books</h3>
+            <p><strong id="total-finished">—</strong></p>
+          </div>
+          <div class="stat-card" style="background-color: #88726c;">
+            <h3>Total pages recorded</h3>
+            <p><strong id="total-pages">—</strong></p>
+          </div>
+          <div class="stat-card" style="background-color: #407527;">
+            <h3>Average book length</h3>
+            <p><strong id="avg-pages">—</strong></p>
+            <h3>pages</h3>
+          </div>
+          <!-- removed unknown-year stat as requested -->
+        </div>
+        
+        <div class="stat-grid">
+          <div class="stat-card" style="background-color: #407527;">
+            <h3>Books finished 2025</h3>
+            <p><strong id="year-finished">—</strong></p>
+          </div>
+          <div class="stat-card" style="background-color: #bea69f;">
+            <h3>Pages recorded 2025</h3>
+            <p><strong id="year-pages">—</strong></p>
+          </div>
+          <div class="stat-card" style="background-color: #88726c;">
+            <h3>Average book length 2025</h3>
+            <p><strong id="year-avg-pages">—</strong></p>
+            <h3>pages</h3>
+          </div>
+          <!-- removed unknown-year stat as requested -->
+        </div>  
+
+        <h2>Yearly stats</h2>
+        <table class="stats">
+          <thead><tr><th>Year</th><th>Books finished</th><th>Pages recorded</th><th>Favourite book</th></tr></thead>
+          <tbody id="per-year-body">
+            <!-- populated by JS -->
+          </tbody>
+        </table>
+
+        <div id="chart-root">
+          <div id="chart-container"></div>
+        </div>
+
+        <h2>Top 15 longest books</h2>
+        <table class="stats">
+          <thead><tr><th>#</th><th>Title</th><th>Date finished</th><th>Pages</th></tr></thead>
+          <tbody id="top-rows">
+            <!-- populated by JS -->
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+
+    <script>
+    // Minimal parsing heuristics mirroring the Python logic
+    function parseYear(s){
+      if(!s) return null;
+      s = String(s).trim();
+        let m = s.match(/\b20\d{2}\b/);
+      if(m) return parseInt(m[0],10);
+        m = s.match(/\b\d{1,2}\/\d{1,2}\/(\d{2,4})\b/);
+      if(m){ let y = m[1]; return y.length===2 ? 2000+parseInt(y,10) : parseInt(y,10); }
+      m = s.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*[\s,-]+(\d{4})\b/i);
+      if(m) return parseInt(m[1],10);
+      return null;
+    }
+
+    function numberOrNull(v){
+      if(v===null || v===undefined || v==='') return null;
+      let n = Number(v);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    async function render(){
+      const resp = await fetch('./books.json');
+      const books = await resp.json();
+
+      const finished = books.filter(b => (b.status||'').toLowerCase()==='finished');
+      document.getElementById('total-finished').textContent = finished.length;
+
+      const pagesPresent = finished.filter(b => numberOrNull(b.pages) !== null);
+      const totalPages = pagesPresent.reduce((s,b)=> s + Number(b.pages), 0);
+      const avgPages = pagesPresent.length ? Math.round(totalPages / pagesPresent.length) : 0;
+      document.getElementById('total-pages').textContent = totalPages;
+      document.getElementById('avg-pages').textContent = avgPages;
+
+      const year_finished = books.filter(b => 
+        (b.status || '').toLowerCase() === 'finished' &&
+        (b['date_finished'] || '').endsWith('25')
+      );
+      document.getElementById('year-finished').textContent = year_finished.length;
+
+      const year_pagesPresent = year_finished.filter(b => numberOrNull(b.pages) !== null);
+      const year_totalPages = year_pagesPresent.reduce((s,b)=> s + Number(b.pages), 0);
+      const year_avgPages = year_pagesPresent.length ? Math.round(year_totalPages / year_pagesPresent.length) : 0;
+      document.getElementById('year-pages').textContent = year_totalPages;
+      document.getElementById('year-avg-pages').textContent = year_avgPages;
+
+      // per-year aggregation
+      const perYearBooks = {};
+      const perYearPages = {};
+      const perYearFav = {
+        2016: "Feral",
+        2017: "Cloud Atlas",
+        2018: "Heart of a Dog",
+        2019: "Black Leopard, Red Wolf",
+        2020: "Drive Your Plow Over the Bones of the Dead",
+        2021: "Piranesi",
+        2022: "The Dolls",
+        2023: "The Vorrh",
+        2024: "One Hundred Years of Solitude",
+        2025: "TBD"
+      };
+      for(const b of finished){
+        const df = b.date_finished || b.dates_raw || '';
+        const y = parseYear(df);
+        if(y){
+          perYearBooks[y] = (perYearBooks[y]||0) + 1;
+          const p = numberOrNull(b.pages);
+          if(p !== null) perYearPages[y] = (perYearPages[y]||0) + p;
+        }
+      }
+
+      // write per-year table sorted by year
+      const years = Object.keys(perYearBooks).map(Number).sort((a,b)=>a-b);
+      const tbody = document.getElementById('per-year-body');
+      tbody.innerHTML = years.map(y => `<tr><td>${y}</td><td>${perYearBooks[y]||0}</td><td>${perYearPages[y]||0}</td><td>${perYearFav[y]}</td></tr>`).join('\n');
+
+      // build chart
+      const chartContainer = document.getElementById('chart-container');
+      chartContainer.innerHTML = '';
+      if(years.length){
+        const maxCount = Math.max(...years.map(y=>perYearBooks[y]||0));
+        const chartHeight = 220;
+        const cols = years.map(y=>{
+          const c = perYearBooks[y]||0;
+          const h = Math.max(10, Math.round((c/maxCount)*chartHeight));
+          return `<div class="col"><div class="bar-wrap"><div class="bar" style="height:${h}px"><span class="count">${c}</span></div></div><div class="label">${y}</div></div>`;
+        }).join('');
+        chartContainer.innerHTML = `<div class="books-chart" role="img" aria-label="Books finished per year">${cols}</div>`;
+      } else {
+        chartContainer.textContent = 'No per-year data available for chart.';
+      }
+
+      // top 15 longest
+      const top = finished.filter(b=>numberOrNull(b.pages)!==null).sort((a,b)=>Number(b.pages)-Number(a.pages)).slice(0,15);
+      const topBody = document.getElementById('top-rows');
+      topBody.innerHTML = top.map((b,i)=>`<tr><td>${i+1}</td><td>${escapeHtml(b.title||'')}</td><td>${escapeHtml(b.date_finished||b.dates_raw||'')}</td><td>${b.pages||''}</td></tr>`).join('\n');
+    }
+
+    // small html-escape helper
+    function escapeHtml(s){ return String(s).replace(/[&<>\"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]); }
+
+    // run on page load
+    render().catch(err=>{
+      console.error(err); document.getElementById('chart-container').textContent = 'Failed to load data';
+    });
+    </script>
+  </body>
+</html>
