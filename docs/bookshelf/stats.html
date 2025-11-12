@@ -6,7 +6,6 @@
     <title>Bookshelf statistics</title>
     <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
     <style>
-      /* Inline layout CSS copied from generator to keep visual parity */
       .stats-container { margin: 0 auto; padding: 1rem; }
       .quick-stats-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 1rem; padding-bottom: 2%;}
       .stat-card { border:1px solid #ddd; padding:1rem; background:#fff; }
@@ -54,10 +53,8 @@
   flex-wrap: nowrap;          /* keep bars in one row */
   min-width: max-content;     /* ensure bars don’t wrap */
 }
-      /* Make each column flexible so the chart fills the container width */
       .books-chart .col { display:flex; flex-direction:column; align-items:center; flex:1 1 2rem; min-width:2rem; }
       .books-chart .bar-wrap { height:220px; display:flex; align-items:flex-end; width:100%; }
-      /* Larger bars and labels for readability */
       .books-chart .bar { width:100%; background:linear-gradient(180deg,#407527, #094400); border-radius:6px 6px 0 0; display:flex; align-items:flex-end; justify-content:center; color:#fff; font-size:0.95rem; box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset; }
       .books-chart .label { margin-top:0.5rem; font-size:0.85rem; color:#333; }
       .books-chart .count { padding:0.25rem 0.35rem; font-size:0.95rem; opacity:0.98; font-weight:700; }
@@ -94,8 +91,9 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   width: 160px;
   text-align: center;
-  cursor: pointer;                /* 👈 makes the entire tracker clickable */
+  cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  padding:16px;
 }
 
 .progress-container:hover {
@@ -262,7 +260,7 @@ circle {
 
         <h2>Longest reads</h2>
         <table class="stats">
-          <thead><tr><th>#</th><th>Title</th><th>Date finished</th><th>Pages</th></tr></thead>
+          <thead><tr><th>Title</th><th>Date finished</th><th>Pages</th></tr></thead>
           <tbody id="top-rows">
             <!-- populated by JS -->
           </tbody>
@@ -270,10 +268,12 @@ circle {
 
         <h2>Reading challenges</h2>
         <div class="progress-grid">
-          <!-- Example tracker -->
           <div class="progress-container"
+            style="background-color: #fdcd01"
             data-challenge="SFMasterworks_list"
-            data-description="Read all the books in the SF Masterworks series published by Gollancz">
+            data-description="Read all the books in the SF Masterworks series published by Gollancz"
+            data-colour=""
+            data-text-colour="#111">
             <div class="progress-wrapper">
               <svg class="progress-circle" width="120" height="120">
                 <circle class="bg" cx="60" cy="60" r="50" stroke-width="10"/>
@@ -285,18 +285,21 @@ circle {
           </div>
 
           <div class="progress-container"
-          data-challenge="JamesLovelock"
-          data-description="Read all books written by the late scientist James E. Lovelock">
+              style="background-color:#407527;"
+              data-challenge="JamesLovelock"
+              data-description="Read all books written by the late scientist James E. Lovelock"
+              data-colour="#0096c4"
+              data-text_colour="#ffffff">
             <div class="progress-wrapper">
               <svg class="progress-circle" width="120" height="120">
-                <circle class="bg" cx="60" cy="60" r="50" stroke-width="10"/>
-                <circle class="progress" cx="60" cy="60" r="50" stroke-width="10"/>
+                <circle class="bg" cx="60" cy="60" r="50" stroke="#eee" stroke-width="10"/>
+                <circle class="progress" cx="60" cy="60" r="50" stroke-width="10">
               </svg>
               <div class="progress-text">0%</div>
             </div>
             <div class="progress-title">James E. Lovelock Challenge</div>
           </div>
-        </div>
+      </div>
 
         <!-- Popup Modal -->
         <div id="checklist-modal" class="modal hidden">
@@ -419,7 +422,7 @@ circle {
         // top 15 longest
         const top = finished.filter(b=>numberOrNull(b.pages)!==null).sort((a,b)=>Number(b.pages)-Number(a.pages)).slice(0,15);
         const topBody = document.getElementById('top-rows');
-        topBody.innerHTML = top.map((b,i)=>`<tr><td>${i+1}</td><td>${escapeHtml(b.title||'')}</td><td>${escapeHtml(b.date_finished||b.dates_raw||'')}</td><td>${b.pages||''}</td></tr>`).join('\n');
+        topBody.innerHTML = top.map((b,i)=>`<tr><td>${escapeHtml(b.title||'')}</td><td>${escapeHtml(b.date_finished||b.dates_raw||'')}</td><td>${b.pages||''}</td></tr>`).join('\n');
       }
 
       // small html-escape helper
@@ -430,29 +433,42 @@ circle {
         console.error(err); document.getElementById('chart-container').textContent = 'Failed to load data';
       });
 
-async function loadProgressForTracker(container, listFile, progressFile) {
-  const readingList = await fetch(listFile).then(res => res.json());
-  const userProgress = await fetch(progressFile).then(res => res.json());
+      async function loadProgressForTracker(container, listFile, progressFile) {
+        const readingList = await fetch(listFile).then(res => res.json());
+        const userProgress = await fetch(progressFile).then(res => res.json());
 
-  const finishedBooks = userProgress
-    .filter(item => item.status === "finished")
-    .map(item => item.title);
+        const finishedBooks = userProgress
+          .filter(item => item.status === "finished")
+          .map(item => item.title);
 
-  const completedBooks = readingList.filter(item => finishedBooks.includes(item.title));
+        const completedBooks = readingList.filter(item => finishedBooks.includes(item.title));
 
-  const progressPercent = Math.round((completedBooks.length / readingList.length) * 100);
-  const circle = container.querySelector('.progress');
-  const text = container.querySelector('.progress-text');
+        const progressPercent = Math.round((completedBooks.length / readingList.length) * 100);
 
-  const radius = circle.r.baseVal.value;
-  const circumference = 2 * Math.PI * radius;
-  circle.style.strokeDasharray = circumference;
-  circle.style.strokeDashoffset = circumference * (1 - progressPercent / 100);
-  text.textContent = `${progressPercent}%`;
+        const circle = container.querySelector('.progress');
+        const text = container.querySelector('.progress-text');
+        const title = container.querySelector('.progress-title');
 
-  // 👇 open checklist on click anywhere in the container
-  container.addEventListener('click', () => openChecklistModal(container, readingList, finishedBooks));
-}
+        // Circle stroke setup
+        const radius = circle.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+        circle.style.strokeDasharray = circumference;
+        circle.style.strokeDashoffset = circumference * (1 - progressPercent / 100);
+
+        // Apply colors from data attributes or fallback
+        const circleColor = container.dataset.colour || '#407527';
+        const textColor = container.dataset.text_colour || '#000000';
+        circle.style.stroke = circleColor;
+        text.style.color = textColor;
+        title.style.color = textColor;
+
+        // Update progress text
+        text.textContent = `${progressPercent}%`;
+
+        // Open checklist on click
+        container.addEventListener('click', () => openChecklistModal(container, readingList, finishedBooks));
+      }
+
 
 function openChecklistModal(container, readingList, finishedBooks) {
   const modal = document.getElementById('checklist-modal');
