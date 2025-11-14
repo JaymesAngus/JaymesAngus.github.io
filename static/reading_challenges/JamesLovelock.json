@@ -1,44 +1,47 @@
-[
-  {
-    "title": "Gaia: A New Look At Life On Earth"
-  },
-  {
-    "title": "The Great Extinction"
-  },
-  {
-    "title": "The Greening of Mars"
-  },
-  {
-    "title": "The Ages of Gaia: A Biography of Our Living Earth"
-  },
-  {
-    "title": "Gaia: The Practical Science of Planetary Medicine"
-  },
-  {
-    "title": "Scientists on Gaia"
-  },
-  {
-    "title": "Homage to Gaia: The Life of an Independent Scientist"
-  },
-  {
-    "title": "Gaia: Medicine for an Ailing Planet"
-  },
-  {
-    "title": "The Revenge of Gaia: Why the Earth Is Fighting Back – and How We Can Still Save Humanity"
-  },
-  {
-    "title": "The Vanishing Face of Gaia: A Final Warning: Enjoy It While You Can"
-  },
-  {
-    "title": "A Rough Ride to the Future"
-  },
-  {
-    "title": "The Earth and I"
-  },
-  {
-    "title": "Novacene: The Coming Age of Hyperintelligence"
-  },
-  {
-    "title": "Ever Gaia"
-  }
-]
+{
+  "type": "book_list",
+  "items": [
+    {
+      "title": "Gaia: A New Look At Life On Earth"
+    },
+    {
+      "title": "The Great Extinction"
+    },
+    {
+      "title": "The Greening of Mars"
+    },
+    {
+      "title": "The Ages of Gaia: A Biography of Our Living Earth"
+    },
+    {
+      "title": "Gaia: The Practical Science of Planetary Medicine"
+    },
+    {
+      "title": "Scientists on Gaia"
+    },
+    {
+      "title": "Homage to Gaia: The Life of an Independent Scientist"
+    },
+    {
+      "title": "Gaia: Medicine for an Ailing Planet"
+    },
+    {
+      "title": "The Revenge of Gaia: Why the Earth Is Fighting Back – and How We Can Still Save Humanity"
+    },
+    {
+      "title": "The Vanishing Face of Gaia: A Final Warning: Enjoy It While You Can"
+    },
+    {
+      "title": "A Rough Ride to the Future"
+    },
+    {
+      "title": "The Earth and I"
+    },
+    {
+      "title": "Novacene: The Coming Age of Hyperintelligence"
+    },
+    {
+      "title": "Ever Gaia"
+    }
+  ]
+}

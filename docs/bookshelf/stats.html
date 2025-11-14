@@ -38,7 +38,6 @@
       }
       table.stats { width:100%; border-collapse: collapse; }
       table.stats th, table.stats td { padding: 0.4rem 0.6rem; border-bottom: 1px solid #eee; text-align:left; }
-      /* .books-chart { display:flex; gap:0.6rem; padding:1rem 0; align-items:flex-end; } */
 .books-chart-wrapper {
   overflow-x: auto;          /* enable horizontal scroll */
   -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
@@ -203,7 +202,7 @@ circle {
 
 .check-item input {
   accent-color: #4caf50;
-  pointer-events: none;  /* Can't click */
+  pointer-events: none;
   cursor: default;
 }
 
@@ -213,7 +212,7 @@ circle {
         .books-chart .col{ min-width:2rem } .books-chart .label{font-size:0.7rem} 
       }
       @media (max-width: 600px) {
-        /* hide the 4th column (Favourite Book) */
+        /* hide the 4th column (Favourite Book) on mobile*/
         #per-year-table th:nth-child(4),
         #per-year-table td:nth-child(4) {
           display: none;
@@ -285,10 +284,10 @@ circle {
           </div>
 
           <div class="progress-container"
-              style="background-color:#407527;"
+              style="background-color:#0390c8;"
               data-challenge="JamesLovelock"
               data-description="Read all books written by the late scientist James E. Lovelock"
-              data-colour="#0096c4"
+              data-colour="#e99b27"
               data-text_colour="#ffffff">
             <div class="progress-wrapper">
               <svg class="progress-circle" width="120" height="120">
@@ -298,6 +297,22 @@ circle {
               <div class="progress-text">0%</div>
             </div>
             <div class="progress-title">James E. Lovelock Challenge</div>
+          </div>
+
+          <div class="progress-container"
+              style="background-color:#407527;"
+              data-challenge="WorldLiterature"
+              data-description="Read a book from every country in the world"
+              data-colour="#0096c4"
+              data-text_colour="#ffffff">
+            <div class="progress-wrapper">
+              <svg class="progress-circle" width="120" height="120">
+                <circle class="bg" cx="60" cy="60" r="50" stroke="#eee" stroke-width="10"/>
+                <circle class="progress" cx="60" cy="60" r="50" stroke-width="10">
+              </svg>
+              <div class="progress-text">0%</div>
+            </div>
+            <div class="progress-title">World Literature Challenge</div>
           </div>
       </div>
 
@@ -315,7 +330,6 @@ circle {
     </div>
 
     <script>
-      // Minimal parsing heuristics mirroring the Python logic
       function parseYear(s){
         if(!s) return null;
         s = String(s).trim();
@@ -407,7 +421,6 @@ circle {
                     </div>`;
           }).join('');
 
-          // Use backticks for multi-line template literal
           chartContainer.innerHTML = `
             <div class="books-chart-wrapper">
               <div class="books-chart" role="img" aria-label="Books finished per year">
@@ -428,110 +441,128 @@ circle {
       // small html-escape helper
       function escapeHtml(s){ return String(s).replace(/[&<>\"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]); }
 
-      // run on page load
       render().catch(err=>{
         console.error(err); document.getElementById('chart-container').textContent = 'Failed to load data';
       });
 
       async function loadProgressForTracker(container, listFile, progressFile) {
-        const readingList = await fetch(listFile).then(res => res.json());
+        const challenge = await fetch(listFile).then(res => res.json());
         const userProgress = await fetch(progressFile).then(res => res.json());
 
-        const finishedBooks = userProgress
-          .filter(item => item.status === "finished")
-          .map(item => item.title);
+        let progressPercent = 0;
 
-        const completedBooks = readingList.filter(item => finishedBooks.includes(item.title));
+        if (challenge.type === "book_list") {
+          const finishedTitles = userProgress
+            .filter(b => b.status === "finished")
+            .map(b => b.title);
 
-        const progressPercent = Math.round((completedBooks.length / readingList.length) * 100);
+          const itemsWithDone = challenge.items.map(item => ({
+            ...item,
+            done: finishedTitles.includes(item.title)
+          }));
+
+          const completedCount = itemsWithDone.filter(item => item.done).length;
+          progressPercent = Math.round((completedCount / itemsWithDone.length) * 100);
+
+          container._modalData = {
+            type: "book_list",
+            items: itemsWithDone
+          };
+
+        } else if (challenge.type === "generic_list") {
+
+          const updatedItems = challenge.items.map(item => {
+            const match = userProgress.find(up => up.title === item.title);
+            return match ? { ...item, done: !!match.done } : item;
+          });
+
+          const completedCount = updatedItems.filter(item => item.done).length;
+          progressPercent = Math.round((completedCount / updatedItems.length) * 100);
+
+          container._modalData = {
+            type: "generic_list",
+            items: updatedItems
+          };
+        }
 
         const circle = container.querySelector('.progress');
         const text = container.querySelector('.progress-text');
         const title = container.querySelector('.progress-title');
 
-        // Circle stroke setup
         const radius = circle.r.baseVal.value;
         const circumference = 2 * Math.PI * radius;
+
         circle.style.strokeDasharray = circumference;
         circle.style.strokeDashoffset = circumference * (1 - progressPercent / 100);
 
-        // Apply colors from data attributes or fallback
+        text.textContent = `${progressPercent}%`;
+
         const circleColor = container.dataset.colour || '#407527';
         const textColor = container.dataset.text_colour || '#000000';
         circle.style.stroke = circleColor;
         text.style.color = textColor;
         title.style.color = textColor;
 
-        // Update progress text
-        text.textContent = `${progressPercent}%`;
-
-        // Open checklist on click
-        container.addEventListener('click', () => openChecklistModal(container, readingList, finishedBooks));
+        container.addEventListener('click', () => openChecklistModal(container));
       }
 
+      function openChecklistModal(container) {
+        const modal = document.getElementById('checklist-modal');
+        const title = document.getElementById('modal-title');
+        const description = document.getElementById('modal-description');
+        const listContainer = document.getElementById('modal-list');
 
-function openChecklistModal(container, readingList, finishedBooks) {
-  const modal = document.getElementById('checklist-modal');
-  const title = document.getElementById('modal-title');
-  const description = document.getElementById('modal-description');
-  const listContainer = document.getElementById('modal-list');
+        const data = container._modalData;
 
-  // ✅ Pull description from data attribute
-  title.textContent = container.querySelector('.progress-title').textContent;
-  description.textContent = container.dataset.description || ""; // fallback empty
-  listContainer.innerHTML = '';
+        title.textContent = container.querySelector('.progress-title').textContent;
+        description.textContent = container.dataset.description || "";
+        listContainer.innerHTML = '';
 
-  readingList.forEach(book => {
-    const item = document.createElement('div');
-    item.classList.add('check-item');
+        data.items.forEach(item => {
+          const checkItem = document.createElement('div');
+          checkItem.classList.add('check-item');
 
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.checked = finishedBooks.includes(book.title);
-    checkbox.style.accentColor = "#4caf50";
-    checkbox.style.pointerEvents = "none";
-    checkbox.style.cursor = "default";
+          const checkbox = document.createElement('input');
+          checkbox.type = 'checkbox';
+          checkbox.checked = !!item.done;
+          checkbox.readOnly = true;
+          checkbox.style.accentColor = "#4caf50";
 
-    const label = document.createElement('label');
-    label.textContent = book.title;
+          const label = document.createElement('label');
+          label.textContent = item.title;
 
-    item.appendChild(checkbox);
-    item.appendChild(label);
-    listContainer.appendChild(item);
-  });
+          checkItem.appendChild(checkbox);
+          checkItem.appendChild(label);
+          listContainer.appendChild(checkItem);
+        });
 
-  modal.classList.remove('hidden');
-}
+        modal.classList.remove('hidden');
+      }
 
-function setupModalClose() {
-  const modal = document.getElementById('checklist-modal');
-  const closeBtn = document.querySelector('.close-btn');
+      function setupModalClose() {
+        const modal = document.getElementById('checklist-modal');
+        const closeBtn = modal.querySelector('.close-btn');
 
-  closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) modal.classList.add('hidden');
-  });
-}
+        closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) modal.classList.add('hidden');
+        });
+      }
 
-async function initAllTrackers() {
-  const trackers = document.querySelectorAll('.progress-container');
+      async function initAllTrackers() {
+        const trackers = document.querySelectorAll('.progress-container');
 
-  for (const tracker of trackers) {
-    const challenge = tracker.dataset.challenge;
+        for (const tracker of trackers) {
+          const challengeFile = `/static/reading_challenges/${tracker.dataset.challenge}.json`;
+          const progressFile = `/docs/bookshelf/books.json`;
 
-    await loadProgressForTracker(
-      tracker,
-      `/static/reading_challenges/${challenge}.json`,
-      `/docs/bookshelf/books.json`
-    );
-  }
+          await loadProgressForTracker(tracker, challengeFile, progressFile);
+        }
 
-  setupModalClose();
-}
+        setupModalClose();
+      }
 
-initAllTrackers();
-
-
+      initAllTrackers();
 
     </script>
   </body>

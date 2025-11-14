@@ -1,774 +1,777 @@
-[
-  {
-    "title": "The Forever War",
-    "author": "Joe Haldeman"
-  },
-  {
-    "title": "I Am Legend",
-    "author": "Richard Matheson"
-  },
-  {
-    "title": "Cities In Flight",
-    "author": "James Blish"
-  },
-  {
-    "title": "Do Androids Dream Of Electric Sheep?",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "The Stars My Destination",
-    "author": "Alfred Bester"
-  },
-  {
-    "title": "Babel-17",
-    "author": "Samuel R. Delany"
-  },
-  {
-    "title": "Lord Of Light",
-    "author": "Roger Zelazny"
-  },
-  {
-    "title": "The Fifth Head Of Cerberus",
-    "author": "Gene Wolfe"
-  },
-  {
-    "title": "Gateway",
-    "author": "Frederik Pohl"
-  },
-  {
-    "title": "The Rediscovery Of Man",
-    "author": "Cordwainer Smith"
-  },
-  {
-    "title": "Last And First Men",
-    "author": "Olaf Stapledon"
-  },
-  {
-    "title": "Earth Abides",
-    "author": "George R. Stewart"
-  },
-  {
-    "title": "Martian Time-Slip",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "The Demolished Man",
-    "author": "Alfred Bester"
-  },
-  {
-    "title": "Stand On Zanzibar",
-    "author": "John Brunner"
-  },
-  {
-    "title": "The Dispossessed",
-    "author": "Ursula K. Le Guin"
-  },
-  {
-    "title": "The Drowned World",
-    "author": "J. G. Ballard"
-  },
-  {
-    "title": "The Sirens Of Titan",
-    "author": "Kurt Vonnegut, Jr."
-  },
-  {
-    "title": "Emphyrio",
-    "author": "Jack Vance"
-  },
-  {
-    "title": "A Scanner Darkly",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "Star Maker",
-    "author": "Olaf Stapledon"
-  },
-  {
-    "title": "Behold The Man",
-    "author": "Michael Moorcock"
-  },
-  {
-    "title": "The Book Of Skulls",
-    "author": "Robert Silverberg"
-  },
-  {
-    "title": "The Time Machine And The War Of The Worlds",
-    "author": "H. G. Wells"
-  },
-  {
-    "title": "Flowers For Algernon",
-    "author": "Daniel Keyes"
-  },
-  {
-    "title": "Ubik",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "Timescape",
-    "author": "Gregory Benford"
-  },
-  {
-    "title": "More Than Human",
-    "author": "Theodore Sturgeon"
-  },
-  {
-    "title": "Man Plus",
-    "author": "Frederik Pohl"
-  },
-  {
-    "title": "A Case Of Conscience",
-    "author": "James Blish"
-  },
-  {
-    "title": "The Centauri Device",
-    "author": "M. John Harrison"
-  },
-  {
-    "title": "Dr. Bloodmoney",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "Non-Stop",
-    "author": "Brian W. Aldiss"
-  },
-  {
-    "title": "The Fountains Of Paradise",
-    "author": "Arthur C. Clarke"
-  },
-  {
-    "title": "Pavane",
-    "author": "Keith Roberts"
-  },
-  {
-    "title": "Now Wait For Last Year",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "Nova",
-    "author": "Samuel R. Delany"
-  },
-  {
-    "title": "The First Men In The Moon",
-    "author": "H. G. Wells"
-  },
-  {
-    "title": "The City And The Stars",
-    "author": "Arthur C. Clarke"
-  },
-  {
-    "title": "Blood Music",
-    "author": "Greg Bear"
-  },
-  {
-    "title": "Jem",
-    "author": "Frederik Pohl"
-  },
-  {
-    "title": "Bring The Jubilee",
-    "author": "Ward Moore"
-  },
-  {
-    "title": "Valis",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "The Lathe Of Heaven",
-    "author": "Ursula K. Le Guin"
-  },
-  {
-    "title": "The Complete Roderick",
-    "author": "John Sladek"
-  },
-  {
-    "title": "Flow My Tears, The Policeman Said",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "The Invisible Man",
-    "author": "H. G. Wells"
-  },
-  {
-    "title": "Grass",
-    "author": "Sheri S. Tepper"
-  },
-  {
-    "title": "A Fall Of Moondust",
-    "author": "Arthur C. Clarke"
-  },
-  {
-    "title": "Eon",
-    "author": "Greg Bear"
-  },
-  {
-    "title": "The Shrinking Man",
-    "author": "Richard Matheson"
-  },
-  {
-    "title": "The Three Stigmata Of Palmer Eldritch",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "The Dancers At The End Of Time",
-    "author": "Michael Moorcock"
-  },
-  {
-    "title": "The Space Merchants",
-    "author": "Frederik Pohlc. M. Kornbluth"
-  },
-  {
-    "title": "Time Out Of Joint",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "Downward To The Earth",
-    "author": "Robert Silverberg"
-  },
-  {
-    "title": "The Simulacra",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "The Penultimate Truth",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "Dying Inside",
-    "author": "Robert Silverberg"
-  },
-  {
-    "title": "Ringworld",
-    "author": "Larry Niven"
-  },
-  {
-    "title": "The Child Garden",
-    "author": "Geoff Ryman"
-  },
-  {
-    "title": "Mission Of Gravity",
-    "author": "Hal Clement"
-  },
-  {
-    "title": "Maze Of Death",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "Tau Zero",
-    "author": "Poul Anderson"
-  },
-  {
-    "title": "Rendezvous With Rama",
-    "author": "Arthur C. Clarke"
-  },
-  {
-    "title": "Life During Wartime",
-    "author": "Lucius Shepard"
-  },
-  {
-    "title": "Where Late The Sweet Birds Sang",
-    "author": "Kate Wilhelm"
-  },
-  {
-    "title": "Roadside Picnic",
-    "author": "Arkady Strugatskyboris Strugatsky"
-  },
-  {
-    "title": "Dark Benediction",
-    "author": "Walter M. Miller, Jr."
-  },
-  {
-    "title": "Mockingbird",
-    "author": "Walter Tevis"
-  },
-  {
-    "title": "Dune",
-    "author": "Frank Herbert"
-  },
-  {
-    "title": "The Moon Is A Harsh Mistress",
-    "author": "Robert A. Heinlein"
-  },
-  {
-    "title": "The Man In The High Castle",
-    "author": "Philip K. Dick"
-  },
-  {
-    "title": "The Left Hand Of Darkness",
-    "author": "Ursula K. Le Guin"
-  },
-  {
-    "title": "A Canticle For Leibowitz",
-    "author": "Walter M. Miller, Jr."
-  },
-  {
-    "title": "Childhood'S End",
-    "author": "Arthur C. Clarke"
-  },
-  {
-    "title": "The Day Of The Triffids",
-    "author": "John Wyndham"
-  },
-  {
-    "title": "The Inverted World",
-    "author": "Christopher Priest"
-  },
-  {
-    "title": "Cat's Cradle",
-    "author": "Kurt Vonnegut, Jr."
-  },
-  {
-    "title": "The Island Of Dr. Moreau",
-    "author": "H. G. Wells"
-  },
-  {
-    "title": "Dhalgren",
-    "author": "Samuel R. Delany"
-  },
-  {
-    "title": "The Time Machine",
-    "author": "H. G. Wells"
-  },
-  {
-    "title": "Helliconia",
-    "author": "Brian W. Aldiss"
-  },
-  {
-    "title": "The Food Of The Gods",
-    "author": "H. G. Wells"
-  },
-  {
-    "title": "The Body Snatchers",
-    "author": "Jack Finney"
-  },
-  {
-    "title": "The Female Man",
-    "author": "Joanna Russ"
-  },
-  {
-    "title": "Arslan",
-    "author": "M. J. Engh"
-  },
-  {
-    "title": "The Difference Engine",
-    "author": "William Gibsonbruce Sterling"
-  },
-  {
-    "title": "The Prestige",
-    "author": "Christopher Priest"
-  },
-  {
-    "title": "Greybeard",
-    "author": "Brian W. Aldiss"
-  },
-  {
-    "title": "Sirius",
-    "author": "Olaf Stapledon"
-  },
-  {
-    "title": "Hyperion",
-    "author": "Dan Simmons"
-  },
-  {
-    "title": "City",
-    "author": "Clifford D. Simak"
-  },
-  {
-    "title": "Hellstrom'S Hive",
-    "author": "Frank Herbert"
-  },
-  {
-    "title": "Of Men And Monsters",
-    "author": "William Tenn"
-  },
-  {
-    "title": "Rur & War With The Newts",
-    "author": "Karel Capek"
-  },
-  {
-    "title": "The Affirmation",
-    "author": "Christopher Priest"
-  },
-  {
-    "title": "Floating Worlds",
-    "author": "Cecelia Holland"
-  },
-  {
-    "title": "Rogue Moon",
-    "author": "Algis Budrys"
-  },
-  {
-    "title": "Dangerous Visions",
-    "author": "Harlan Ellison"
-  },
-  {
-    "title": "Odd John",
-    "author": "Olaf Stapledon"
-  },
-  {
-    "title": "The Fall Of Hyperion",
-    "author": "Dan Simmons"
-  },
-  {
-    "title": "The Hitchhiker'S Guide To The Galaxy",
-    "author": "Douglas Adams"
-  },
-  {
-    "title": "The War Of The Worlds",
-    "author": "H. G. Wells"
-  },
-  {
-    "title": "Synners",
-    "author": "Pat Cadigan"
-  },
-  {
-    "title": "Sarah Canary",
-    "author": "Karen Joy Fowler"
-  },
-  {
-    "title": "Ammonite",
-    "author": "Nicola Griffith"
-  },
-  {
-    "title": "The Continuous Katherine Mortenhoe",
-    "author": "D. G. Compton"
-  },
-  {
-    "title": "Frankenstein",
-    "author": "Mary Shelley"
-  },
-  {
-    "title": "Riddley Walker",
-    "author": "Russell Hoban"
-  },
-  {
-    "title": "Doomsday Book",
-    "author": "Connie Willis"
-  },
-  {
-    "title": "Unquenchable Fire",
-    "author": "Rachel Pollack"
-  },
-  {
-    "title": "The Caltraps Of Time",
-    "author": "David I. Masson"
-  },
-  {
-    "title": "Engine Summer",
-    "author": "John Crowley"
-  },
-  {
-    "title": "Take Back Plenty",
-    "author": "Colin Greenland"
-  },
-  {
-    "title": "Slow River",
-    "author": "Nicola Griffith"
-  },
-  {
-    "title": "The Gate To Women'S Country",
-    "author": "Sheri S. Tepper"
-  },
-  {
-    "title": "The Sea And Summer",
-    "author": "George Turner"
-  },
-  {
-    "title": "Wasp",
-    "author": "Eric Frank Russell"
-  },
-  {
-    "title": "To Say Nothing Of The Dog",
-    "author": "Connie Willis"
-  },
-  {
-    "title": "The Gods Themselves",
-    "author": "Isaac Asimov"
-  },
-  {
-    "title": "This Is The Way The World Ends",
-    "author": "James Morrow"
-  },
-  {
-    "title": "The Deep",
-    "author": "John Crowley"
-  },
-  {
-    "title": "Time Is The Fire: The Best Of Connie Willis",
-    "author": "Connie Willis"
-  },
-  {
-    "title": "No Enemy But Time",
-    "author": "Michael Bishop"
-  },
-  {
-    "title": "Double Star",
-    "author": "Robert A. Heinlein"
-  },
-  {
-    "title": "Revelation Space",
-    "author": "Alastair Reynolds"
-  },
-  {
-    "title": "Random Acts Of Senseless Violence",
-    "author": "Jack Womack"
-  },
-  {
-    "title": "Transfigurations",
-    "author": "Michael Bishop"
-  },
-  {
-    "title": "The Restaurant At The End Of The Universe",
-    "author": "Douglas Adams"
-  },
-  {
-    "title": "The Door Into Summer",
-    "author": "Robert A. Heinlein"
-  },
-  {
-    "title": "Life, The Universe And Everything",
-    "author": "Douglas Adams"
-  },
-  {
-    "title": "Half Past Human",
-    "author": "T. J. Bass"
-  },
-  {
-    "title": "The Long Tomorrow",
-    "author": "Leigh Brackett"
-  },
-  {
-    "title": "The Godwhale",
-    "author": "T. J. Bass"
-  },
-  {
-    "title": "Her Smoke Rose Up Forever",
-    "author": "James Tiptree, Jr."
-  },
-  {
-    "title": "The Word For World Is Forest",
-    "author": "Ursula K. Le Guin"
-  },
-  {
-    "title": "Hard To Be A God",
-    "author": "Arkady Strugatskyboris Strugatsky"
-  },
-  {
-    "title": "Night Lamp",
-    "author": "Jack Vance"
-  },
-  {
-    "title": "Monday Begins On Saturday",
-    "author": "Arkady Strugatskyboris Strugatsky"
-  },
-  {
-    "title": "The Wind'S Twelve Quarters & The Compass Rose",
-    "author": "Ursula K. Le Guin"
-  },
-  {
-    "title": "Dying Of The Light",
-    "author": "George R. R. Martin"
-  },
-  {
-    "title": "A Fire Upon The Deep",
-    "author": "Vernor Vinge"
-  },
-  {
-    "title": "Norstrilia",
-    "author": "Cordwainer Smith"
-  },
-  {
-    "title": "Limbo",
-    "author": "Bernard Wolfe"
-  },
-  {
-    "title": "The Man Who Fell To Earth",
-    "author": "Walter Tevis"
-  },
-  {
-    "title": "Fairyland",
-    "author": "Paul J. Mcauley"
-  },
-  {
-    "title": "The Chrysalids",
-    "author": "John Wyndham"
-  },
-  {
-    "title": "Always Coming Home",
-    "author": "Ursula K. Le Guin"
-  },
-  {
-    "title": "Feersum Endjinn",
-    "author": "Iain M. Banks"
-  },
-  {
-    "title": "A Deepness In The Sky",
-    "author": "Vernor Vinge"
-  },
-  {
-    "title": "Swastika Night",
-    "author": "Murray Constantine"
-  },
-  {
-    "title": "The Midwich Cuckoos",
-    "author": "John Wyndham"
-  },
-  {
-    "title": "China Mountain Zhang",
-    "author": "Maureen F. Mchugh"
-  },
-  {
-    "title": "Starship Troopers",
-    "author": "Robert A. Heinlein"
-  },
-  {
-    "title": "Neuromancer",
-    "author": "William Gibson"
-  },
-  {
-    "title": "The Book Of The New Sun, Volume 1",
-    "author": "Gene Wolfe"
-  },
-  {
-    "title": "The Book Of The New Sun, Volume 2",
-    "author": "Gene Wolfe"
-  },
-  {
-    "title": "The Shape Of Things To Come",
-    "author": "H. G. Wells"
-  },
-  {
-    "title": "The Doomed City",
-    "author": "Arkady Strugatskyboris Strugatsky"
-  },
-  {
-    "title": "Raising The Stones",
-    "author": "Sheri S. Tepper"
-  },
-  {
-    "title": "The Embedding",
-    "author": "Ian Watson"
-  },
-  {
-    "title": "Cryptozoic!",
-    "author": "Brian W. Aldiss"
-  },
-  {
-    "title": "Land Under England",
-    "author": "Joseph O'Neill"
-  },
-  {
-    "title": "Raft",
-    "author": "Stephen Baxter"
-  },
-  {
-    "title": "Dreaming In Smoke",
-    "author": "Tricia Sullivan"
-  },
-  {
-    "title": "Fools",
-    "author": "Pat Cadigan"
-  },
-  {
-    "title": "The Best Of R. A. Lafferty",
-    "author": "R. A. Lafferty"
-  },
-  {
-    "title": "Light",
-    "author": "M. John Harrison"
-  },
-  {
-    "title": "Native Tongue",
-    "author": "Suzette Haden Elgin"
-  },
-  {
-    "title": "The Snail On The Slope",
-    "author": "Arkady Strugatskyboris Strugatsky"
-  },
-  {
-    "title": "The Shockwave Rider",
-    "author": "John Brunner"
-  },
-  {
-    "title": "Lord Valentine'S Castle",
-    "author": "Robert Silverberg"
-  },
-  {
-    "title": "River Of Gods",
-    "author": "Ian Mcdonald"
-  },
-  {
-    "title": "A Time Of Changes",
-    "author": "Robert Silverberg"
-  },
-  {
-    "title": "The Andromeda Anthology",
-    "author": "Fred Hoylejohn Elliot"
-  },
-  {
-    "title": "Worlds Of Exile And Illusion",
-    "author": "Ursula K. Le Guin"
-  },
-  {
-    "title": "Bold As Love",
-    "author": "Gwyneth Jones"
-  },
-  {
-    "title": "Desolation Road",
-    "author": "Ian Mcdonald"
-  },
-  {
-    "title": "Castles Made Of Sand",
-    "author": "Gwyneth Jones"
-  },
-  {
-    "title": "The Best Of Greg Egan",
-    "author": "Greg Egan"
-  },
-  {
-    "title": "The Inhabited Island",
-    "author": "Arkady Strugatskyboris Strugatsky"
-  },
-  {
-    "title": "The Separation",
-    "author": "Christopher Priest"
-  },
-  {
-    "title": "Needle In A Timestack",
-    "author": "Robert Silverberg"
-  },
-  {
-    "title": "White Queen",
-    "author": "Gwyneth Jones"
-  },
-  {
-    "title": "Growing Up Weightless",
-    "author": "John M. Ford"
-  },
-  {
-    "title": "Kairos",
-    "author": "Gwyneth Jones"
-  },
-  {
-    "title": "Nineteen Eighty-Four",
-    "author": "George Orwell"
-  },
-  {
-    "title": "Life",
-    "author": "Gwyneth Jones"
-  },
-  {
-    "title": "The Chronicles Of Amber",
-    "author": "Roger Zelazny"
-  },
-  {
-    "title": "The Second Chronicles Of Amber",
-    "author": "Roger Zelazny"
-  },
-  {
-    "title": "The Secret Of Life",
-    "author": "Paul J. Mcauley"
-  },
-  {
-    "title": "Roadmarks",
-    "author": "Roger Zelazny"
-  }
-]
+{
+  "type": "book_list",
+  "items": [
+    {
+      "title": "The Forever War",
+      "author": "Joe Haldeman"
+    },
+    {
+      "title": "I Am Legend",
+      "author": "Richard Matheson"
+    },
+    {
+      "title": "Cities In Flight",
+      "author": "James Blish"
+    },
+    {
+      "title": "Do Androids Dream Of Electric Sheep?",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "The Stars My Destination",
+      "author": "Alfred Bester"
+    },
+    {
+      "title": "Babel-17",
+      "author": "Samuel R. Delany"
+    },
+    {
+      "title": "Lord Of Light",
+      "author": "Roger Zelazny"
+    },
+    {
+      "title": "The Fifth Head Of Cerberus",
+      "author": "Gene Wolfe"
+    },
+    {
+      "title": "Gateway",
+      "author": "Frederik Pohl"
+    },
+    {
+      "title": "The Rediscovery Of Man",
+      "author": "Cordwainer Smith"
+    },
+    {
+      "title": "Last And First Men",
+      "author": "Olaf Stapledon"
+    },
+    {
+      "title": "Earth Abides",
+      "author": "George R. Stewart"
+    },
+    {
+      "title": "Martian Time-Slip",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "The Demolished Man",
+      "author": "Alfred Bester"
+    },
+    {
+      "title": "Stand On Zanzibar",
+      "author": "John Brunner"
+    },
+    {
+      "title": "The Dispossessed",
+      "author": "Ursula K. Le Guin"
+    },
+    {
+      "title": "The Drowned World",
+      "author": "J. G. Ballard"
+    },
+    {
+      "title": "The Sirens Of Titan",
+      "author": "Kurt Vonnegut, Jr."
+    },
+    {
+      "title": "Emphyrio",
+      "author": "Jack Vance"
+    },
+    {
+      "title": "A Scanner Darkly",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "Star Maker",
+      "author": "Olaf Stapledon"
+    },
+    {
+      "title": "Behold The Man",
+      "author": "Michael Moorcock"
+    },
+    {
+      "title": "The Book Of Skulls",
+      "author": "Robert Silverberg"
+    },
+    {
+      "title": "The Time Machine And The War Of The Worlds",
+      "author": "H. G. Wells"
+    },
+    {
+      "title": "Flowers For Algernon",
+      "author": "Daniel Keyes"
+    },
+    {
+      "title": "Ubik",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "Timescape",
+      "author": "Gregory Benford"
+    },
+    {
+      "title": "More Than Human",
+      "author": "Theodore Sturgeon"
+    },
+    {
+      "title": "Man Plus",
+      "author": "Frederik Pohl"
+    },
+    {
+      "title": "A Case Of Conscience",
+      "author": "James Blish"
+    },
+    {
+      "title": "The Centauri Device",
+      "author": "M. John Harrison"
+    },
+    {
+      "title": "Dr. Bloodmoney",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "Non-Stop",
+      "author": "Brian W. Aldiss"
+    },
+    {
+      "title": "The Fountains Of Paradise",
+      "author": "Arthur C. Clarke"
+    },
+    {
+      "title": "Pavane",
+      "author": "Keith Roberts"
+    },
+    {
+      "title": "Now Wait For Last Year",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "Nova",
+      "author": "Samuel R. Delany"
+    },
+    {
+      "title": "The First Men In The Moon",
+      "author": "H. G. Wells"
+    },
+    {
+      "title": "The City And The Stars",
+      "author": "Arthur C. Clarke"
+    },
+    {
+      "title": "Blood Music",
+      "author": "Greg Bear"
+    },
+    {
+      "title": "Jem",
+      "author": "Frederik Pohl"
+    },
+    {
+      "title": "Bring The Jubilee",
+      "author": "Ward Moore"
+    },
+    {
+      "title": "Valis",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "The Lathe Of Heaven",
+      "author": "Ursula K. Le Guin"
+    },
+    {
+      "title": "The Complete Roderick",
+      "author": "John Sladek"
+    },
+    {
+      "title": "Flow My Tears, The Policeman Said",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "The Invisible Man",
+      "author": "H. G. Wells"
+    },
+    {
+      "title": "Grass",
+      "author": "Sheri S. Tepper"
+    },
+    {
+      "title": "A Fall Of Moondust",
+      "author": "Arthur C. Clarke"
+    },
+    {
+      "title": "Eon",
+      "author": "Greg Bear"
+    },
+    {
+      "title": "The Shrinking Man",
+      "author": "Richard Matheson"
+    },
+    {
+      "title": "The Three Stigmata Of Palmer Eldritch",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "The Dancers At The End Of Time",
+      "author": "Michael Moorcock"
+    },
+    {
+      "title": "The Space Merchants",
+      "author": "Frederik Pohlc. M. Kornbluth"
+    },
+    {
+      "title": "Time Out Of Joint",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "Downward To The Earth",
+      "author": "Robert Silverberg"
+    },
+    {
+      "title": "The Simulacra",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "The Penultimate Truth",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "Dying Inside",
+      "author": "Robert Silverberg"
+    },
+    {
+      "title": "Ringworld",
+      "author": "Larry Niven"
+    },
+    {
+      "title": "The Child Garden",
+      "author": "Geoff Ryman"
+    },
+    {
+      "title": "Mission Of Gravity",
+      "author": "Hal Clement"
+    },
+    {
+      "title": "Maze Of Death",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "Tau Zero",
+      "author": "Poul Anderson"
+    },
+    {
+      "title": "Rendezvous With Rama",
+      "author": "Arthur C. Clarke"
+    },
+    {
+      "title": "Life During Wartime",
+      "author": "Lucius Shepard"
+    },
+    {
+      "title": "Where Late The Sweet Birds Sang",
+      "author": "Kate Wilhelm"
+    },
+    {
+      "title": "Roadside Picnic",
+      "author": "Arkady Strugatskyboris Strugatsky"
+    },
+    {
+      "title": "Dark Benediction",
+      "author": "Walter M. Miller, Jr."
+    },
+    {
+      "title": "Mockingbird",
+      "author": "Walter Tevis"
+    },
+    {
+      "title": "Dune",
+      "author": "Frank Herbert"
+    },
+    {
+      "title": "The Moon Is A Harsh Mistress",
+      "author": "Robert A. Heinlein"
+    },
+    {
+      "title": "The Man In The High Castle",
+      "author": "Philip K. Dick"
+    },
+    {
+      "title": "The Left Hand Of Darkness",
+      "author": "Ursula K. Le Guin"
+    },
+    {
+      "title": "A Canticle For Leibowitz",
+      "author": "Walter M. Miller, Jr."
+    },
+    {
+      "title": "Childhood'S End",
+      "author": "Arthur C. Clarke"
+    },
+    {
+      "title": "The Day Of The Triffids",
+      "author": "John Wyndham"
+    },
+    {
+      "title": "The Inverted World",
+      "author": "Christopher Priest"
+    },
+    {
+      "title": "Cat's Cradle",
+      "author": "Kurt Vonnegut, Jr."
+    },
+    {
+      "title": "The Island Of Dr. Moreau",
+      "author": "H. G. Wells"
+    },
+    {
+      "title": "Dhalgren",
+      "author": "Samuel R. Delany"
+    },
+    {
+      "title": "The Time Machine",
+      "author": "H. G. Wells"
+    },
+    {
+      "title": "Helliconia",
+      "author": "Brian W. Aldiss"
+    },
+    {
+      "title": "The Food Of The Gods",
+      "author": "H. G. Wells"
+    },
+    {
+      "title": "The Body Snatchers",
+      "author": "Jack Finney"
+    },
+    {
+      "title": "The Female Man",
+      "author": "Joanna Russ"
+    },
+    {
+      "title": "Arslan",
+      "author": "M. J. Engh"
+    },
+    {
+      "title": "The Difference Engine",
+      "author": "William Gibsonbruce Sterling"
+    },
+    {
+      "title": "The Prestige",
+      "author": "Christopher Priest"
+    },
+    {
+      "title": "Greybeard",
+      "author": "Brian W. Aldiss"
+    },
+    {
+      "title": "Sirius",
+      "author": "Olaf Stapledon"
+    },
+    {
+      "title": "Hyperion",
+      "author": "Dan Simmons"
+    },
+    {
+      "title": "City",
+      "author": "Clifford D. Simak"
+    },
+    {
+      "title": "Hellstrom'S Hive",
+      "author": "Frank Herbert"
+    },
+    {
+      "title": "Of Men And Monsters",
+      "author": "William Tenn"
+    },
+    {
+      "title": "Rur & War With The Newts",
+      "author": "Karel Capek"
+    },
+    {
+      "title": "The Affirmation",
+      "author": "Christopher Priest"
+    },
+    {
+      "title": "Floating Worlds",
+      "author": "Cecelia Holland"
+    },
+    {
+      "title": "Rogue Moon",
+      "author": "Algis Budrys"
+    },
+    {
+      "title": "Dangerous Visions",
+      "author": "Harlan Ellison"
+    },
+    {
+      "title": "Odd John",
+      "author": "Olaf Stapledon"
+    },
+    {
+      "title": "The Fall Of Hyperion",
+      "author": "Dan Simmons"
+    },
+    {
+      "title": "The Hitchhiker'S Guide To The Galaxy",
+      "author": "Douglas Adams"
+    },
+    {
+      "title": "The War Of The Worlds",
+      "author": "H. G. Wells"
+    },
+    {
+      "title": "Synners",
+      "author": "Pat Cadigan"
+    },
+    {
+      "title": "Sarah Canary",
+      "author": "Karen Joy Fowler"
+    },
+    {
+      "title": "Ammonite",
+      "author": "Nicola Griffith"
+    },
+    {
+      "title": "The Continuous Katherine Mortenhoe",
+      "author": "D. G. Compton"
+    },
+    {
+      "title": "Frankenstein",
+      "author": "Mary Shelley"
+    },
+    {
+      "title": "Riddley Walker",
+      "author": "Russell Hoban"
+    },
+    {
+      "title": "Doomsday Book",
+      "author": "Connie Willis"
+    },
+    {
+      "title": "Unquenchable Fire",
+      "author": "Rachel Pollack"
+    },
+    {
+      "title": "The Caltraps Of Time",
+      "author": "David I. Masson"
+    },
+    {
+      "title": "Engine Summer",
+      "author": "John Crowley"
+    },
+    {
+      "title": "Take Back Plenty",
+      "author": "Colin Greenland"
+    },
+    {
+      "title": "Slow River",
+      "author": "Nicola Griffith"
+    },
+    {
+      "title": "The Gate To Women'S Country",
+      "author": "Sheri S. Tepper"
+    },
+    {
+      "title": "The Sea And Summer",
+      "author": "George Turner"
+    },
+    {
+      "title": "Wasp",
+      "author": "Eric Frank Russell"
+    },
+    {
+      "title": "To Say Nothing Of The Dog",
+      "author": "Connie Willis"
+    },
+    {
+      "title": "The Gods Themselves",
+      "author": "Isaac Asimov"
+    },
+    {
+      "title": "This Is The Way The World Ends",
+      "author": "James Morrow"
+    },
+    {
+      "title": "The Deep",
+      "author": "John Crowley"
+    },
+    {
+      "title": "Time Is The Fire: The Best Of Connie Willis",
+      "author": "Connie Willis"
+    },
+    {
+      "title": "No Enemy But Time",
+      "author": "Michael Bishop"
+    },
+    {
+      "title": "Double Star",
+      "author": "Robert A. Heinlein"
+    },
+    {
+      "title": "Revelation Space",
+      "author": "Alastair Reynolds"
+    },
+    {
+      "title": "Random Acts Of Senseless Violence",
+      "author": "Jack Womack"
+    },
+    {
+      "title": "Transfigurations",
+      "author": "Michael Bishop"
+    },
+    {
+      "title": "The Restaurant At The End Of The Universe",
+      "author": "Douglas Adams"
+    },
+    {
+      "title": "The Door Into Summer",
+      "author": "Robert A. Heinlein"
+    },
+    {
+      "title": "Life, The Universe And Everything",
+      "author": "Douglas Adams"
+    },
+    {
+      "title": "Half Past Human",
+      "author": "T. J. Bass"
+    },
+    {
+      "title": "The Long Tomorrow",
+      "author": "Leigh Brackett"
+    },
+    {
+      "title": "The Godwhale",
+      "author": "T. J. Bass"
+    },
+    {
+      "title": "Her Smoke Rose Up Forever",
+      "author": "James Tiptree, Jr."
+    },
+    {
+      "title": "The Word For World Is Forest",
+      "author": "Ursula K. Le Guin"
+    },
+    {
+      "title": "Hard To Be A God",
+      "author": "Arkady Strugatskyboris Strugatsky"
+    },
+    {
+      "title": "Night Lamp",
+      "author": "Jack Vance"
+    },
+    {
+      "title": "Monday Begins On Saturday",
+      "author": "Arkady Strugatskyboris Strugatsky"
+    },
+    {
+      "title": "The Wind'S Twelve Quarters & The Compass Rose",
+      "author": "Ursula K. Le Guin"
+    },
+    {
+      "title": "Dying Of The Light",
+      "author": "George R. R. Martin"
+    },
+    {
+      "title": "A Fire Upon The Deep",
+      "author": "Vernor Vinge"
+    },
+    {
+      "title": "Norstrilia",
+      "author": "Cordwainer Smith"
+    },
+    {
+      "title": "Limbo",
+      "author": "Bernard Wolfe"
+    },
+    {
+      "title": "The Man Who Fell To Earth",
+      "author": "Walter Tevis"
+    },
+    {
+      "title": "Fairyland",
+      "author": "Paul J. Mcauley"
+    },
+    {
+      "title": "The Chrysalids",
+      "author": "John Wyndham"
+    },
+    {
+      "title": "Always Coming Home",
+      "author": "Ursula K. Le Guin"
+    },
+    {
+      "title": "Feersum Endjinn",
+      "author": "Iain M. Banks"
+    },
+    {
+      "title": "A Deepness In The Sky",
+      "author": "Vernor Vinge"
+    },
+    {
+      "title": "Swastika Night",
+      "author": "Murray Constantine"
+    },
+    {
+      "title": "The Midwich Cuckoos",
+      "author": "John Wyndham"
+    },
+    {
+      "title": "China Mountain Zhang",
+      "author": "Maureen F. Mchugh"
+    },
+    {
+      "title": "Starship Troopers",
+      "author": "Robert A. Heinlein"
+    },
+    {
+      "title": "Neuromancer",
+      "author": "William Gibson"
+    },
+    {
+      "title": "The Book Of The New Sun, Volume 1",
+      "author": "Gene Wolfe"
+    },
+    {
+      "title": "The Book Of The New Sun, Volume 2",
+      "author": "Gene Wolfe"
+    },
+    {
+      "title": "The Shape Of Things To Come",
+      "author": "H. G. Wells"
+    },
+    {
+      "title": "The Doomed City",
+      "author": "Arkady Strugatskyboris Strugatsky"
+    },
+    {
+      "title": "Raising The Stones",
+      "author": "Sheri S. Tepper"
+    },
+    {
+      "title": "The Embedding",
+      "author": "Ian Watson"
+    },
+    {
+      "title": "Cryptozoic!",
+      "author": "Brian W. Aldiss"
+    },
+    {
+      "title": "Land Under England",
+      "author": "Joseph O'Neill"
+    },
+    {
+      "title": "Raft",
+      "author": "Stephen Baxter"
+    },
+    {
+      "title": "Dreaming In Smoke",
+      "author": "Tricia Sullivan"
+    },
+    {
+      "title": "Fools",
+      "author": "Pat Cadigan"
+    },
+    {
+      "title": "The Best Of R. A. Lafferty",
+      "author": "R. A. Lafferty"
+    },
+    {
+      "title": "Light",
+      "author": "M. John Harrison"
+    },
+    {
+      "title": "Native Tongue",
+      "author": "Suzette Haden Elgin"
+    },
+    {
+      "title": "The Snail On The Slope",
+      "author": "Arkady Strugatskyboris Strugatsky"
+    },
+    {
+      "title": "The Shockwave Rider",
+      "author": "John Brunner"
+    },
+    {
+      "title": "Lord Valentine'S Castle",
+      "author": "Robert Silverberg"
+    },
+    {
+      "title": "River Of Gods",
+      "author": "Ian Mcdonald"
+    },
+    {
+      "title": "A Time Of Changes",
+      "author": "Robert Silverberg"
+    },
+    {
+      "title": "The Andromeda Anthology",
+      "author": "Fred Hoylejohn Elliot"
+    },
+    {
+      "title": "Worlds Of Exile And Illusion",
+      "author": "Ursula K. Le Guin"
+    },
+    {
+      "title": "Bold As Love",
+      "author": "Gwyneth Jones"
+    },
+    {
+      "title": "Desolation Road",
+      "author": "Ian Mcdonald"
+    },
+    {
+      "title": "Castles Made Of Sand",
+      "author": "Gwyneth Jones"
+    },
+    {
+      "title": "The Best Of Greg Egan",
+      "author": "Greg Egan"
+    },
+    {
+      "title": "The Inhabited Island",
+      "author": "Arkady Strugatskyboris Strugatsky"
+    },
+    {
+      "title": "The Separation",
+      "author": "Christopher Priest"
+    },
+    {
+      "title": "Needle In A Timestack",
+      "author": "Robert Silverberg"
+    },
+    {
+      "title": "White Queen",
+      "author": "Gwyneth Jones"
+    },
+    {
+      "title": "Growing Up Weightless",
+      "author": "John M. Ford"
+    },
+    {
+      "title": "Kairos",
+      "author": "Gwyneth Jones"
+    },
+    {
+      "title": "Nineteen Eighty-Four",
+      "author": "George Orwell"
+    },
+    {
+      "title": "Life",
+      "author": "Gwyneth Jones"
+    },
+    {
+      "title": "The Chronicles Of Amber",
+      "author": "Roger Zelazny"
+    },
+    {
+      "title": "The Second Chronicles Of Amber",
+      "author": "Roger Zelazny"
+    },
+    {
+      "title": "The Secret Of Life",
+      "author": "Paul J. Mcauley"
+    },
+    {
+      "title": "Roadmarks",
+      "author": "Roger Zelazny"
+    }
+  ]
+}
