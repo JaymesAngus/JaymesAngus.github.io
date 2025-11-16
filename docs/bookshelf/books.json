@@ -1,17 +1,5 @@
 [
   {
-    "id": "walkingpractice",
-    "title": "Walking Practice",
-    "authors": ["Dolki Min"],
-    "genre": ["Fiction", "Horror", "Science Fiction", "Korean Literature"],
-    "status": "reading",
-    "dates_raw": "14/11/25 -",
-    "cover": "WalkingPractice.jpg",
-    "date_started": "14/11/25",
-    "date_finished":  "",
-    "pages": 158
-  },
-  {
     "id": "exocapitalism",
     "title": "Exocapitalism: Economies with absolutely no limits",
     "authors": ["Marek Poliks", "Roberto Alonso Trillo"],
@@ -46,6 +34,18 @@
     "date_started": "06/06/24",
     "date_finished": "",
     "pages": 460
+  },
+  {
+    "id": "walkingpractice",
+    "title": "Walking Practice",
+    "authors": ["Dolki Min"],
+    "genre": ["Fiction", "Horror", "Science Fiction", "Korean Literature"],
+    "status": "finished",
+    "dates_raw": "14/11/25 - 16/11/25",
+    "cover": "WalkingPractice.jpg",
+    "date_started": "14/11/25",
+    "date_finished":  "16/11/25",
+    "pages": 164
   },
   {
     "id": "thelefthandofdarkness",
@@ -2743,12 +2743,96 @@
     "id": "tripticks",
     "title": "Tripticks",
     "authors": ["Ann Quin"],
-    "genre": [],
+    "genre": ["Fiction", "Experimental Fiction"],
     "status": "toread",
     "dates_raw": "",
     "cover": "Tripticks.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": 186
+  },
+  {
+    "id": "thedominantanimal",
+    "title": "The Dominant Animal",
+    "authors": ["Kathryn Scanlan"],
+    "genre": ["Fiction", "Short Stories", "Horror"],
+    "status": "toread",
+    "dates_raw": "",
+    "cover": "TheDominantAnimal.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 118
+  },
+  {
+    "id": "deepwheelorcadia",
+    "title": "Deep Wheel Orcadia",
+    "authors": ["Harry Josephine Giles"],
+    "genre": ["Fiction", "Poetry", "Science Fiction", "Orcadian Literature"],
+    "status": "toread",
+    "dates_raw": "",
+    "cover": "DeepWheelOrcadia.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 163
+  },
+  {
+    "id": "thegardenagainsttime",
+    "title": "The Garden Against Time: In Search of a Common Paradise",
+    "authors": ["Olivia Laing"],
+    "genre": ["Non-Fiction", "Nature", "Memoir"],
+    "status": "toread",
+    "dates_raw": "",
+    "cover": "TheGardenAgainstTime.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 317
+  },
+  {
+    "id": "huntfortheshadowwolf",
+    "title": "Hunt for the Shadow Wolf: The lost history of wolves in Britain and the myths and stories that surround them",
+    "authors": ["Derek Gow"],
+    "genre": ["Non-Fiction", "Nature", "History"],
+    "status": "toread",
+    "dates_raw": "",
+    "cover": "HuntForTheShadowWolf.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 211
+  },
+  {
+    "id": "emergent",
+    "title": "Emergent: Rewilding Nature, Regenerating Food and Healing the World by Restoring the Connection Between People and the Wild",
+    "authors": ["Miriam Kate McDonald"],
+    "genre": ["Non-Fiction", "Nature", "Environment"],
+    "status": "toread",
+    "dates_raw": "",
+    "cover": "Emergent.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 189
+  },
+  {
+    "id": "theanatomyofdisgust",
+    "title": "The Anatomy of Disgust",
+    "authors": ["William Ian Miller"],
+    "genre": ["Non-Fiction", "Philosophy", "Psychology"],
+    "status": "toread",
+    "dates_raw": "",
+    "cover": "TheAnatomyOfDisgust.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 262
+  },
+  {
+    "id": "onedimensionalman",
+    "title": "One-Dimensional Man",
+    "authors": ["Herbert Marcuse"],
+    "genre": ["Non-Fiction", "Philosophy", "Politics", "Sociology"],
+    "status": "toread",
+    "dates_raw": "",
+    "cover": "OneDimensionalMan.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 275
   }
 ]
