@@ -1,5 +1,17 @@
 [
   {
+    "id": "thedominantanimal",
+    "title": "The Dominant Animal",
+    "authors": ["Kathryn Scanlan"],
+    "genre": ["Fiction", "Short Stories", "Horror"],
+    "status": "reading",
+    "dates_raw": "17/11/25 - ",
+    "cover": "TheDominantAnimal.jpg",
+    "date_started": "17/11/25",
+    "date_finished": "",
+    "pages": 118
+  },
+  {
     "id": "exocapitalism",
     "title": "Exocapitalism: Economies with absolutely no limits",
     "authors": ["Marek Poliks", "Roberto Alonso Trillo"],
@@ -16,24 +28,12 @@
     "title": "The King In Yellow",
     "authors": ["Robert W. Chambers"],
     "genre": ["Fiction", "Horror", "Weird Fiction", "Short Stories"],
-    "status": "reading",
-    "dates_raw": "28/01/25 -",
+    "status": "finished",
+    "dates_raw": "28/01/25 - 17/11/25",
     "cover": "TheKingInYellow.jpg",
     "date_started": "28/01/25",
-    "date_finished": "",
+    "date_finished": "17/11/25",
     "pages": 177
-  },
-  {
-    "id": "howlifeworks",
-    "title": "How Life Works: A User's Guide to the New Biology",
-    "authors": ["Philip Ball"],
-    "genre": ["Non-Fiction", "Science", "Biology"],
-    "status": "reading",
-    "dates_raw": "06/06/24 -",
-    "cover": "HowLifeWorks.jpg",
-    "date_started": "06/06/24",
-    "date_finished": "",
-    "pages": 460
   },
   {
     "id": "walkingpractice",
@@ -2032,6 +2032,18 @@
     "pages": 290
   },
   {
+    "id": "howlifeworks",
+    "title": "How Life Works: A User's Guide to the New Biology",
+    "authors": ["Philip Ball"],
+    "genre": ["Non-Fiction", "Science", "Biology"],
+    "status": "toread",
+    "dates_raw": "",
+    "cover": "HowLifeWorks.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 460
+  },
+  {
     "id": "eightbears",
     "title": "Eight Bears",
     "authors": [],
@@ -2750,18 +2762,6 @@
     "date_started": "",
     "date_finished": "",
     "pages": 186
-  },
-  {
-    "id": "thedominantanimal",
-    "title": "The Dominant Animal",
-    "authors": ["Kathryn Scanlan"],
-    "genre": ["Fiction", "Short Stories", "Horror"],
-    "status": "toread",
-    "dates_raw": "",
-    "cover": "TheDominantAnimal.jpg",
-    "date_started": "",
-    "date_finished": "",
-    "pages": 118
   },
   {
     "id": "deepwheelorcadia",
