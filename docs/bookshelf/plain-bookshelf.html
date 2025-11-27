@@ -141,7 +141,7 @@
             const rows = books.filter(b => b.status === status).map(b => {
               const authors = (b.authors || []).join(', ');
               const genre = (b.genre || []).join(', ');
-              const dates = b.dates_raw || '';
+              const dates = b.date_started + ' - ' + b.date_finished || '';
               return `<tr><td>${esc(b.title)}</td><td>${esc(authors)}</td><td>${esc(genre)}</td><td>${esc(dates)}</td></tr>`;
             }).join('\n');
             table.innerHTML = header + '\n' + rows + '\n';

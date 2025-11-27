@@ -386,7 +386,7 @@ circle {
           2025: "TBD"
         };
         for(const b of finished){
-          const df = b.date_finished || b.dates_raw || '';
+          const df = b.date_finished || '';
           const y = parseYear(df);
           if(y){
             perYearBooks[y] = (perYearBooks[y]||0) + 1;
@@ -435,7 +435,7 @@ circle {
         // top 15 longest
         const top = finished.filter(b=>numberOrNull(b.pages)!==null).sort((a,b)=>Number(b.pages)-Number(a.pages)).slice(0,15);
         const topBody = document.getElementById('top-rows');
-        topBody.innerHTML = top.map((b,i)=>`<tr><td>${escapeHtml(b.title||'')}</td><td>${escapeHtml(b.date_finished||b.dates_raw||'')}</td><td>${b.pages||''}</td></tr>`).join('\n');
+        topBody.innerHTML = top.map((b,i)=>`<tr><td>${escapeHtml(b.title||'')}</td><td>${escapeHtml(b.date_finished||'')}</td><td>${b.pages||''}</td></tr>`).join('\n');
       }
 
       // small html-escape helper

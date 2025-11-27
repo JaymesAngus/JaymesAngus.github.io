@@ -197,37 +197,54 @@
       (function(){
         const booksUrl = './books.json';
         let books = [];
+        const bookElements = [];
 
-        function renderBooks(filter='reading'){
+        function renderBooks(filter = 'reading') {
           const container = document.querySelector('.bookshelf');
-          if(!container) return;
-          container.innerHTML = '';
-          const list = (filter === 'all') ? books : books.filter(b => b.status === filter);
-          if(list.length === 0){
-            container.innerHTML = '<div class="loading">No books.</div>';
-            return;
+          if (!container) return;
+
+          if (bookElements.length === 0) {
+            container.innerHTML = ''; // Clear loading text
+            books.forEach(b => {
+              const div = document.createElement('div');
+              div.className = 'book';
+              div.dataset.status = b.status || '';
+
+              const img = document.createElement('img');
+              img.className = 'book-cover';
+              img.src = '/static/images/BookCovers/' + (b.cover || '');
+              img.alt = b.title || '';
+              img.loading = 'lazy';
+              div.appendChild(img);
+
+              const info = document.createElement('div');
+              info.className = 'book-info';
+              info.textContent = b.date_started + ' - ' + b.date_finished || '';
+              div.appendChild(info);
+
+              container.appendChild(div);
+
+              // Store the element for later filtering
+              bookElements.push({ element: div, status: b.status });
+            });
+
+            attachTouchHandlers(); // Attach click/hover for touch devices
           }
-          list.forEach(b => {
-            const div = document.createElement('div');
-            div.className = 'book';
-            div.dataset.status = b.status || '';
 
-            const img = document.createElement('img');
-            img.className = 'book-cover';
-            img.src = '/static/images/BookCovers/' + (b.cover || '');
-            img.alt = b.title || '';
-            div.appendChild(img);
-
-            const info = document.createElement('div');
-            info.className = 'book-info';
-            const span = document.createElement('span');
-            span.textContent = b.dates_raw || '';
-            info.appendChild(span);
-            div.appendChild(info);
-
-            container.appendChild(div);
+          // Filter by showing/hiding elements
+          let hasBooks = false;
+          bookElements.forEach(b => {
+            if (filter === 'all' || b.status === filter) {
+              b.element.style.display = 'block';
+              hasBooks = true;
+            } else {
+              b.element.style.display = 'none';
+            }
           });
-          attachTouchHandlers();
+
+          if (!hasBooks) {
+            container.innerHTML = '<div class="loading">No books.</div>';
+          }
         }
 
         function attachTouchHandlers(){

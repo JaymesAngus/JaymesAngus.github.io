@@ -1,35 +1,80 @@
 [
   {
-    "id": "thedominantanimal",
-    "title": "The Dominant Animal",
-    "authors": ["Kathryn Scanlan"],
-    "genre": ["Fiction", "Short Stories", "Horror"],
+    "id": "philosophyandsimulation",
+    "title": "Philosophy and Simulation: The Emergence of Synthetic Reason",
+    "authors": [
+      "Manuel DeLanda"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Philosophy"
+    ],
     "status": "reading",
-    "dates_raw": "17/11/25 - ",
-    "cover": "TheDominantAnimal.jpg",
-    "date_started": "17/11/25",
+    "cover": "PhilosophyAndSimulation.jpg",
+    "date_started": "27/11/25",
     "date_finished": "",
-    "pages": 118
+    "pages": 203
+  },
+  {
+    "id": "theaxemanscarnival",
+    "title": "The Axemans Carnival",
+    "authors": ["Catherine Chidgey"],
+    "genre": ["Fiction", "Xenofiction", "Magical Realism"],
+    "status": "reading",
+    "cover": "TheAxemansCarnival.jpg",
+    "date_started": "27/11/25",
+    "date_finished": "",
+    "pages": 336
   },
   {
     "id": "exocapitalism",
     "title": "Exocapitalism: Economies with absolutely no limits",
-    "authors": ["Marek Poliks", "Roberto Alonso Trillo"],
-    "genre": ["Non-Fiction", "Critical Theory", "Economics"],
-    "status": "reading",
-    "dates_raw": "21/09/25 -",
+    "authors": [
+      "Marek Poliks",
+      "Roberto Alonso Trillo"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Critical Theory",
+      "Economics"
+    ],
+    "status": "finished",
     "cover": "Exocapitalism.jpg",
     "date_started": "21/09/25",
-    "date_finished":  "",
+    "date_finished": "25/11/25",
     "pages": 156
+  },
+  {
+    "id": "thedominantanimal",
+    "title": "The Dominant Animal",
+    "authors": [
+      "Kathryn Scanlan"
+    ],
+    "genre": [
+      "Fiction",
+      "Short Stories",
+      "Horror"
+    ],
+    "status": "finished",
+    "cover": "TheDominantAnimal.jpg",
+    "date_started": "18/11/25",
+    "date_finished": "20/11/25",
+    "pages": 118
   },
   {
     "id": "thekinginyellow",
     "title": "The King In Yellow",
-    "authors": ["Robert W. Chambers"],
-    "genre": ["Fiction", "Horror", "Weird Fiction", "Short Stories"],
+    "authors": [
+      "Robert W. Chambers"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Weird Fiction",
+      "Short Stories"
+    ],
     "status": "finished",
-    "dates_raw": "28/01/25 - 17/11/25",
     "cover": "TheKingInYellow.jpg",
     "date_started": "28/01/25",
     "date_finished": "17/11/25",
@@ -38,22 +83,33 @@
   {
     "id": "walkingpractice",
     "title": "Walking Practice",
-    "authors": ["Dolki Min"],
-    "genre": ["Fiction", "Horror", "Science Fiction", "Korean Literature"],
+    "authors": [
+      "Dolki Min"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Science Fiction",
+      "Korean Literature"
+    ],
     "status": "finished",
-    "dates_raw": "14/11/25 - 16/11/25",
     "cover": "WalkingPractice.jpg",
     "date_started": "14/11/25",
-    "date_finished":  "16/11/25",
+    "date_finished": "16/11/25",
     "pages": 164
   },
   {
     "id": "thelefthandofdarkness",
     "title": "The Left Hand Of Darkness",
-    "authors": ["Ursula K. Le Guin"],
-    "genre": ["Fiction", "Science Fiction", "LGBTQ+"],
+    "authors": [
+      "Ursula K. Le Guin"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "LGBTQ+"
+    ],
     "status": "finished",
-    "dates_raw": "07/10/25 - 13/11/25",
     "cover": "TheLeftHandOfDarkness.jpg",
     "date_started": "07/10/25",
     "date_finished": "13/11/25",
@@ -62,10 +118,15 @@
   {
     "id": "redcloset",
     "title": "Red Closet: The Hidden History of Gay Oppression in the USSR",
-    "authors": ["Rustam Alexander"],
-    "genre": ["Non-Fiction", "History", "LGBTQ+"],
+    "authors": [
+      "Rustam Alexander"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "LGBTQ+"
+    ],
     "status": "finished",
-    "dates_raw": "24/05/25 - 03/11/25",
     "cover": "RedCloset.jpg",
     "date_started": "24/05/25",
     "date_finished": "03/11/25",
@@ -74,10 +135,15 @@
   {
     "id": "brainwyrms",
     "title": "Brainwyrms",
-    "authors": ["Alison Rumfitt"],
-    "genre": ["Fiction", "Horror", "LGBTQ+"],
+    "authors": [
+      "Alison Rumfitt"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "LGBTQ+"
+    ],
     "status": "finished",
-    "dates_raw": "29/09/25 - 03/10/25",
     "cover": "Brainwyrms.jpg",
     "date_started": "29/09/25",
     "date_finished": "03/10/25",
@@ -86,10 +152,16 @@
   {
     "id": "monstrilio",
     "title": "Monstrilio",
-    "authors": ["Gerardo Sámano Córdova"],
-    "genre": ["Fiction", "Horror", "Magical Realism", "LGBTQ+"],
+    "authors": [
+      "Gerardo Sámano Córdova"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Magical Realism",
+      "LGBTQ+"
+    ],
     "status": "finished",
-    "dates_raw": "09/07/25 - 24/08/25",
     "cover": "Monstrilio.jpg",
     "date_started": "09/07/25",
     "date_finished": "24/08/25",
@@ -98,10 +170,16 @@
   {
     "id": "negativespace",
     "title": "Negative Space",
-    "authors": ["B.R. Yeager"],
-    "genre": ["Fiction", "Horror", "Weird Fiction", "Supernatural"],
+    "authors": [
+      "B.R. Yeager"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Weird Fiction",
+      "Supernatural"
+    ],
     "status": "finished",
-    "dates_raw": "04/07/25 - 08/07/25",
     "cover": "NegativeSpace.jpg",
     "date_started": "04/07/25",
     "date_finished": "08/07/25",
@@ -110,10 +188,16 @@
   {
     "id": "ashortstayinhell",
     "title": "A Short Stay In Hell",
-    "authors": ["Stephen L. Peck"],
-    "genre": ["Fiction", "Philosophical Fiction", "Horror", "Science Fiction"],
+    "authors": [
+      "Stephen L. Peck"
+    ],
+    "genre": [
+      "Fiction",
+      "Philosophical Fiction",
+      "Horror",
+      "Science Fiction"
+    ],
     "status": "finished",
-    "dates_raw": "02/07/25 - 02/07/25",
     "cover": "AShortStayInHell.jpg",
     "date_started": "02/07/25",
     "date_finished": "02/07/25",
@@ -122,10 +206,17 @@
   {
     "id": "tainaron",
     "title": "Tainaron: Mail from Another City",
-    "authors": ["Leena Krohn", "Hildi Hawkins"],
-    "genre": ["Fiction", "Short Stories", "Fantasy", "Finnish Literature"],
+    "authors": [
+      "Leena Krohn",
+      "Hildi Hawkins"
+    ],
+    "genre": [
+      "Fiction",
+      "Short Stories",
+      "Fantasy",
+      "Finnish Literature"
+    ],
     "status": "finished",
-    "dates_raw": "02/07/25 - 02/07/25",
     "cover": "Tainaron.jpg",
     "date_started": "02/07/25",
     "date_finished": "02/07/25",
@@ -134,10 +225,17 @@
   {
     "id": "iwhohaveneverknownmen",
     "title": "I Who Have Never Known Men",
-    "authors": ["Jacqueline Harpman", "Ros Schwartz"],
-    "genre": ["Fiction", "Dystopian", "Science Fiction", "French Literature"],
+    "authors": [
+      "Jacqueline Harpman",
+      "Ros Schwartz"
+    ],
+    "genre": [
+      "Fiction",
+      "Dystopian",
+      "Science Fiction",
+      "French Literature"
+    ],
     "status": "finished",
-    "dates_raw": "28/05/25 - 08/06/25",
     "cover": "IWhoHaveNeverKnownMen.jpg",
     "date_started": "28/05/25",
     "date_finished": "08/06/25",
@@ -146,10 +244,15 @@
   {
     "id": "coreyfahdoessocialmobility",
     "title": "Corey Fah Does Social Mobility",
-    "authors": ["Isabel Waidner"],
-    "genre": ["Fiction", "Science Fiction", "LGBTQ+"],
+    "authors": [
+      "Isabel Waidner"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "LGBTQ+"
+    ],
     "status": "finished",
-    "dates_raw": "18/05/25 - 23/05/25",
     "cover": "CoreyFahDoesSocialMobility.jpg",
     "date_started": "18/05/25",
     "date_finished": "23/05/25",
@@ -158,10 +261,15 @@
   {
     "id": "thedoloriad",
     "title": "The Doloriad",
-    "authors": ["Missouri Williams"],
-    "genre": ["Fiction", "Horror", "Post-apocalyptic"],
+    "authors": [
+      "Missouri Williams"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Post-apocalyptic"
+    ],
     "status": "finished",
-    "dates_raw": "26/04/25 - 18/05/25",
     "cover": "TheDoloriad.jpg",
     "date_started": "26/04/25",
     "date_finished": "18/05/25",
@@ -170,10 +278,15 @@
   {
     "id": "thebuddhaofsuburbia",
     "title": "The Buddha Of Suburbia",
-    "authors": ["Hanif Kureishi"],
-    "genre": ["Fiction", "Coming-of-age", "LGBTQ+"],
+    "authors": [
+      "Hanif Kureishi"
+    ],
+    "genre": [
+      "Fiction",
+      "Coming-of-age",
+      "LGBTQ+"
+    ],
     "status": "finished",
-    "dates_raw": "06/03/25 - 22/04/25",
     "cover": "TheBuddhaOfSuburbia.jpg",
     "date_started": "06/03/25",
     "date_finished": "22/04/25",
@@ -182,10 +295,15 @@
   {
     "id": "thenetherholemartyr",
     "title": "The Netherhole Martyr",
-    "authors": ["Good Friends for a Lifetime"],
-    "genre": ["Fiction", "Play Script", "Historical Fantasy"],
+    "authors": [
+      "Good Friends for a Lifetime"
+    ],
+    "genre": [
+      "Fiction",
+      "Play Script",
+      "Historical Fantasy"
+    ],
     "status": "finished",
-    "dates_raw": "04/03/25 - 05/03/25",
     "cover": "TheNetherholeMartyr.jpg",
     "date_started": "04/03/25",
     "date_finished": "05/03/25",
@@ -194,11 +312,17 @@
   {
     "id": "sozaboy",
     "title": "Sozaboy: A Novel in Rotten English",
-    "authors": ["Ken Saro-Wiwa"],
-    "genre": ["Fiction", "Historical Fiction", "War", "Nigerian Literature"],
+    "authors": [
+      "Ken Saro-Wiwa"
+    ],
+    "genre": [
+      "Fiction",
+      "Historical Fiction",
+      "War",
+      "Nigerian Literature"
+    ],
     "country": "Nigeria",
     "status": "finished",
-    "dates_raw": "Mid-February - 02/03/25",
     "cover": "Sozaboy.jpg",
     "date_started": "Mid-February",
     "date_finished": "02/03/25",
@@ -207,10 +331,15 @@
   {
     "id": "openthroat",
     "title": "Open Throat",
-    "authors": ["Henry Hoke"],
-    "genre": ["Fiction", "Xenofiction", "LGBTQ+"],
+    "authors": [
+      "Henry Hoke"
+    ],
+    "genre": [
+      "Fiction",
+      "Xenofiction",
+      "LGBTQ+"
+    ],
     "status": "finished",
-    "dates_raw": "February 2025 - February 2025",
     "cover": "OpenThroat.jpg",
     "date_started": "February 2025",
     "date_finished": "February 2025",
@@ -219,10 +348,15 @@
   {
     "id": "griefisthethingwithfeathers",
     "title": "Grief Is the Thing with Feathers",
-    "authors": ["Max Porter"],
-    "genre": ["Fiction", "Poetry", "Magical Realism"],
+    "authors": [
+      "Max Porter"
+    ],
+    "genre": [
+      "Fiction",
+      "Poetry",
+      "Magical Realism"
+    ],
     "status": "finished",
-    "dates_raw": "26/01/25 - 26/01/25",
     "cover": "GriefIsTheThingWithFeathers.jpg",
     "date_started": "26/01/25",
     "date_finished": "26/01/25",
@@ -231,10 +365,17 @@
   {
     "id": "theempusium",
     "title": "The Empusium: A Health Resort Horror Story",
-    "authors": ["Olga Tokarczuk", "Antonia Lloyd-Jones"],
-    "genre": ["Fiction", "Horror", "Polish Literature", "Historical Fiction"],
+    "authors": [
+      "Olga Tokarczuk",
+      "Antonia Lloyd-Jones"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Polish Literature",
+      "Historical Fiction"
+    ],
     "status": "finished",
-    "dates_raw": "06/11/24 - 25/01/2025",
     "cover": "TheEmpusium.jpg",
     "date_started": "06/11/24",
     "date_finished": "25/01/2025",
@@ -243,10 +384,11 @@
   {
     "id": "venomouslumpsucker",
     "title": "Venomous Lumpsucker",
-    "authors": ["Ned Beauman"],
+    "authors": [
+      "Ned Beauman"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "25/10/24 - 06/11/24",
     "cover": "VenomousLumpsucker.jpg",
     "date_started": "25/10/24",
     "date_finished": "06/11/24",
@@ -255,10 +397,11 @@
   {
     "id": "calypso",
     "title": "Calypso",
-    "authors": ["Oliver K. Langmead"],
+    "authors": [
+      "Oliver K. Langmead"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "21/10/24 - 05/11/24",
     "cover": "Calypso.jpg",
     "date_started": "21/10/24",
     "date_finished": "05/11/24",
@@ -267,10 +410,12 @@
   {
     "id": "onehundredyearsofsolitude",
     "title": "One Hundred Years Of Solitude",
-    "authors": ["Gabriel García Márquez", "Gregory Rabassa"],
+    "authors": [
+      "Gabriel García Márquez",
+      "Gregory Rabassa"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "24/06/24 - 21/10/24",
     "cover": "OneHundredYearsOfSolitude.jpg",
     "date_started": "24/06/24",
     "date_finished": "21/10/24",
@@ -279,10 +424,11 @@
   {
     "id": "gaiaanewlookatlifeonearth",
     "title": "Gaia: A New Look At Life On Earth",
-    "authors": ["James E. Lovelock"],
+    "authors": [
+      "James E. Lovelock"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "10/08/24 - 26/08/24",
     "cover": "GaiaANewLookAtLifeOnEarth.jpg",
     "date_started": "10/08/24",
     "date_finished": "26/08/24",
@@ -291,10 +437,14 @@
   {
     "id": "thinkinglikeamountain",
     "title": "Thinking Like A Mountain",
-    "authors": ["John Seed", "Joanna Macy", "Pat Fleming", "Arne Naess"], 
+    "authors": [
+      "John Seed",
+      "Joanna Macy",
+      "Pat Fleming",
+      "Arne Naess"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "19/07/24 - 24/07/24",
     "cover": "ThinkingLikeAMountain.jpg",
     "date_started": "19/07/24",
     "date_finished": "24/07/24",
@@ -303,10 +453,11 @@
   {
     "id": "tenplanets",
     "title": "Ten Planets",
-    "authors": ["Yuri Herrera"],
+    "authors": [
+      "Yuri Herrera"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "27/05/23 - 01/06/24",
     "cover": "TenPlanets.jpg",
     "date_started": "27/05/23",
     "date_finished": "01/06/24",
@@ -315,10 +466,11 @@
   {
     "id": "hollow",
     "title": "Hollow",
-    "authors": ["Brian Catling"],
+    "authors": [
+      "Brian Catling"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Feb 2024 - May 2024",
     "cover": "Hollow.jpg",
     "date_started": "Feb 2024",
     "date_finished": "May 2024",
@@ -327,10 +479,11 @@
   {
     "id": "expectresistance",
     "title": "Expect Resistance",
-    "authors": ["CrimeThink"],
+    "authors": [
+      "CrimeThink"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2023 - 04/02/24",
     "cover": "ExpectResistance.jpg",
     "date_started": "2023",
     "date_finished": "04/02/24",
@@ -339,10 +492,11 @@
   {
     "id": "topographiahibernica",
     "title": "Topographia Hibernica",
-    "authors": ["Blindboy Boatclub"],
+    "authors": [
+      "Blindboy Boatclub"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "25/12/23 - 19/01/24",
     "cover": "TopographiaHibernica.jpg",
     "date_started": "25/12/23",
     "date_finished": "19/01/24",
@@ -351,10 +505,11 @@
   {
     "id": "oryxandcrake",
     "title": "Oryx And Crake",
-    "authors": ["Margaret Atwood"],
+    "authors": [
+      "Margaret Atwood"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2023 - 18/12/23",
     "cover": "OryxAndCrake.jpg",
     "date_started": "2023",
     "date_finished": "18/12/23",
@@ -363,10 +518,11 @@
   {
     "id": "thevorrh",
     "title": "The Vorrh",
-    "authors": ["Brian Catling"],
+    "authors": [
+      "Brian Catling"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2023 - 20/11/23",
     "cover": "TheVorrh.jpg",
     "date_started": "2023",
     "date_finished": "20/11/23",
@@ -375,10 +531,11 @@
   {
     "id": "wakenhyrst",
     "title": "Wakenhyrst",
-    "authors": ["Michelle Paver"],
+    "authors": [
+      "Michelle Paver"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2023 - 09/02/23",
     "cover": "Wakenhyrst.jpg",
     "date_started": "2023",
     "date_finished": "09/02/23",
@@ -387,10 +544,12 @@
   {
     "id": "nolongerhuman",
     "title": "No Longer Human",
-    "authors": ["Osamu Dazai", "Donald Keene"],
+    "authors": [
+      "Osamu Dazai",
+      "Donald Keene"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2022 - 07/12/22",
     "cover": "NoLongerHuman.jpg",
     "date_started": "2022",
     "date_finished": "07/12/22",
@@ -399,10 +558,11 @@
   {
     "id": "tenderistheflesh",
     "title": "Tender Is The Flesh",
-    "authors": ["Augustina Bazterrica"],
+    "authors": [
+      "Augustina Bazterrica"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2022 - 03/11/22",
     "cover": "TenderIsTheFlesh.jpg",
     "date_started": "2022",
     "date_finished": "03/11/22",
@@ -411,10 +571,11 @@
   {
     "id": "youvelostalotofblood",
     "title": "You've Lost A Lot Of Blood",
-    "authors": ["Eric LaRocca"],
+    "authors": [
+      "Eric LaRocca"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2022 - 5/06/22",
     "cover": "YouveLostALotOfBlood.jpg",
     "date_started": "2022",
     "date_finished": "5/06/22",
@@ -423,10 +584,11 @@
   {
     "id": "thestrangebird",
     "title": "The Strange Bird",
-    "authors": ["Jeff VanderMeer"],
+    "authors": [
+      "Jeff VanderMeer"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2022 - 26/05/22",
     "cover": "TheStrangeBird.jpg",
     "date_started": "2022",
     "date_finished": "26/05/22",
@@ -435,10 +597,11 @@
   {
     "id": "afuriousoyster",
     "title": "A Furious Oyster",
-    "authors": ["Jessica Sequeira"],
+    "authors": [
+      "Jessica Sequeira"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2022 - 24/05/22",
     "cover": "AFuriousOyster.jpg",
     "date_started": "2022",
     "date_finished": "24/05/22",
@@ -447,10 +610,11 @@
   {
     "id": "thedolls",
     "title": "The Dolls",
-    "authors": ["Ursula Scavenius"],
+    "authors": [
+      "Ursula Scavenius"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2022 - 07/02/22",
     "cover": "TheDolls.jpg",
     "date_started": "2022",
     "date_finished": "07/02/22",
@@ -459,10 +623,11 @@
   {
     "id": "zenintheartofarchery",
     "title": "Zen In The Art Of Archery",
-    "authors": ["Eugen Herrigel"],
+    "authors": [
+      "Eugen Herrigel"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2022 - 20/01/22",
     "cover": "ZenInTheArtOfArchery.jpg",
     "date_started": "2022",
     "date_finished": "20/01/22",
@@ -471,10 +636,11 @@
   {
     "id": "thefuturologicalcongress",
     "title": "The Futurological Congress",
-    "authors": ["Stanisław Lem"],
+    "authors": [
+      "Stanisław Lem"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "26/12/21 - 08/01/22",
     "cover": "TheFuturologicalCongress.jpg",
     "date_started": "26/12/21",
     "date_finished": "08/01/22",
@@ -489,7 +655,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2021 - 06/11/21",
     "cover": "PrimevalAndOtherTimes.jpg",
     "date_started": "2021",
     "date_finished": "06/11/21",
@@ -501,7 +666,6 @@
     "authors": [],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2021 - 21/07/21",
     "cover": "ASilentFury.jpg",
     "date_started": "2021",
     "date_finished": "21/07/21",
@@ -510,10 +674,11 @@
   {
     "id": "thesacredbookofthewerewolf",
     "title": "The Sacred Book Of The Werewolf",
-    "authors": ["Victor Pelevin"],
+    "authors": [
+      "Victor Pelevin"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2021 - 14/07/21",
     "cover": "TheSacredBookOfTheWerewolf.jpg",
     "date_started": "2021",
     "date_finished": "14/07/21",
@@ -522,10 +687,11 @@
   {
     "id": "autumn",
     "title": "Autumn",
-    "authors": ["Ali Smith"],
+    "authors": [
+      "Ali Smith"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2021",
     "cover": "Autumn.jpg",
     "date_started": "",
     "date_finished": "2021",
@@ -539,7 +705,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2021",
     "cover": "Piranesi.jpg",
     "date_started": "",
     "date_finished": "2021",
@@ -548,10 +713,11 @@
   {
     "id": "asilaydying",
     "title": "As I Laydying",
-    "authors": ["William Faulkner"],
+    "authors": [
+      "William Faulkner"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2020",
     "cover": "AsILaydying.jpg",
     "date_started": "",
     "date_finished": "2020",
@@ -560,10 +726,12 @@
   {
     "id": "novacene",
     "title": "Novacene: The Coming Age of Hyperintelligence",
-    "authors": ["James E. Lovelock", "Bryan Appleyard"],
+    "authors": [
+      "James E. Lovelock",
+      "Bryan Appleyard"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2020",
     "cover": "Novacene.jpg",
     "date_started": "",
     "date_finished": "2020",
@@ -572,10 +740,11 @@
   {
     "id": "theoldmanandthesea",
     "title": "The Old Man And The Sea",
-    "authors": ["Ernest Hemingway"],
+    "authors": [
+      "Ernest Hemingway"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2020",
     "cover": "TheOldManAndTheSea.jpg",
     "date_started": "",
     "date_finished": "2020",
@@ -584,10 +753,11 @@
   {
     "id": "lanny",
     "title": "Lanny",
-    "authors": ["Max Porter"],
+    "authors": [
+      "Max Porter"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2020",
     "cover": "Lanny.jpg",
     "date_started": "",
     "date_finished": "2020",
@@ -596,10 +766,12 @@
   {
     "id": "driveyourplowoverthebonesofthedead",
     "title": "Drive Your Plow Over The Bones Of The Dead",
-    "authors": ["Olga Tokarczuk", "Antonia Lloyd-Jones"],
+    "authors": [
+      "Olga Tokarczuk",
+      "Antonia Lloyd-Jones"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2020",
     "cover": "DriveYourPlowOverTheBonesOfTheDead.jpg",
     "date_started": "",
     "date_finished": "2020",
@@ -608,10 +780,11 @@
   {
     "id": "annihilation",
     "title": "Annihilation",
-    "authors": ["Jeff VanderMeer"],
+    "authors": [
+      "Jeff VanderMeer"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2020",
     "cover": "Annihilation.jpg",
     "date_started": "",
     "date_finished": "2020",
@@ -620,10 +793,11 @@
   {
     "id": "origins",
     "title": "Origins: How The Earth Made Us",
-    "authors": ["Lewis Dartnell"],
+    "authors": [
+      "Lewis Dartnell"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2020",
     "cover": "Origins.jpg",
     "date_started": "",
     "date_finished": "2020",
@@ -632,10 +806,11 @@
   {
     "id": "atthemountainsofmadness",
     "title": "At The Mountains Of Madness",
-    "authors": ["H.P. Lovecraft"],
+    "authors": [
+      "H.P. Lovecraft"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "AtTheMountainsOfMadness.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -644,10 +819,11 @@
   {
     "id": "thecryingoflot49",
     "title": "The Crying Of Lot49",
-    "authors": ["Thomas Pynchon"],
+    "authors": [
+      "Thomas Pynchon"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "TheCryingOfLot49.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -656,10 +832,12 @@
   {
     "id": "theoutsider",
     "title": "The Outsider",
-    "authors": ["Albert Camus", "Sandra Smith"],
+    "authors": [
+      "Albert Camus",
+      "Sandra Smith"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "TheOutsider.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -668,10 +846,12 @@
   {
     "id": "ifonawintersnightatraveller",
     "title": "If On A Winter's Night A Traveller",
-    "authors": ["Italo Calvino", "William Weaver"],
+    "authors": [
+      "Italo Calvino",
+      "William Weaver"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "IfOnAWintersNightATraveller.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -680,10 +860,16 @@
   {
     "id": "tokyouenostation",
     "title": "Tokyo Ueno Station",
-    "authors": ["Yu Miri", "Morgan Giles"],
-    "genre": ["Fiction", "Japanese Literature", "Magical Realism"],
+    "authors": [
+      "Yu Miri",
+      "Morgan Giles"
+    ],
+    "genre": [
+      "Fiction",
+      "Japanese Literature",
+      "Magical Realism"
+    ],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "TokyoUenoStation.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -692,10 +878,13 @@
   {
     "id": "palefire",
     "title": "Pale Fire",
-    "authors": ["Vladimir Nabokov"],
-    "genre": ["Fiction"],
+    "authors": [
+      "Vladimir Nabokov"
+    ],
+    "genre": [
+      "Fiction"
+    ],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "PaleFire.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -704,10 +893,16 @@
   {
     "id": "thisisnotadrill",
     "title": "This Is Not A Drill",
-    "authors": ["Extinction Rebellion"],
-    "genre": ["Non-Fiction", "Environment", "Activism", "Essays"],
+    "authors": [
+      "Extinction Rebellion"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Environment",
+      "Activism",
+      "Essays"
+    ],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "ThisIsNotADrill.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -716,10 +911,16 @@
   {
     "id": "theriverofconsciousness",
     "title": "The River Of Consciousness",
-    "authors": ["Oliver Sacks"],
-    "genre": ["Non-Fiction", "Science", "Psychology", "Essays"],
+    "authors": [
+      "Oliver Sacks"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Psychology",
+      "Essays"
+    ],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "TheRiverOfConsciousness.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -728,10 +929,16 @@
   {
     "id": "blackleopardredwolf",
     "title": "Black Leopard, Red Wolf",
-    "authors": ["Marlon James"],
-    "genre": ["Fiction", "Fantasy", "LGBTQ+", "Historical Fantasy"],
+    "authors": [
+      "Marlon James"
+    ],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "LGBTQ+",
+      "Historical Fantasy"
+    ],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "BlackLeopardRedWolf.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -740,10 +947,15 @@
   {
     "id": "silentspring",
     "title": "Silent Spring",
-    "authors": ["Rachel Carson"],
-    "genre": ["Non-Fiction", "Environment", "Science"],
+    "authors": [
+      "Rachel Carson"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Environment",
+      "Science"
+    ],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "SilentSpring.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -752,10 +964,13 @@
   {
     "id": "v",
     "title": "V.",
-    "authors": ["Thomas Pynchon"],
-    "genre": ["Fiction"],
+    "authors": [
+      "Thomas Pynchon"
+    ],
+    "genre": [
+      "Fiction"
+    ],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "V.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -764,22 +979,32 @@
   {
     "id": "disgrace",
     "title": "Disgrace",
-    "authors": ["J.M. Coetzee"],
-    "genre": ["Fiction"],
+    "authors": [
+      "J.M. Coetzee"
+    ],
+    "genre": [
+      "Fiction",
+      "South African Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "Disgrace.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": null
+    "pages": 220
   },
   {
     "id": "kafkaontheshore",
     "title": "Kafka On The Shore",
-    "authors": ["Haruki Murakami", "Philip Gabriel"],
-    "genre": ["Fiction", "Magical Realism", "Japanese Literature"],
+    "authors": [
+      "Haruki Murakami",
+      "Philip Gabriel"
+    ],
+    "genre": [
+      "Fiction",
+      "Magical Realism",
+      "Japanese Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2019",
     "cover": "KafkaOnTheShore.jpg",
     "date_started": "",
     "date_finished": "2019",
@@ -788,10 +1013,17 @@
   {
     "id": "heartofadog",
     "title": "Heart Of A Dog",
-    "authors": ["Mikhail Bulgakov", "Mirra Ginsburg"],
-    "genre": ["Fiction", "Russian Literature", "Science Fiction", "Satire"],
+    "authors": [
+      "Mikhail Bulgakov",
+      "Mirra Ginsburg"
+    ],
+    "genre": [
+      "Fiction",
+      "Russian Literature",
+      "Science Fiction",
+      "Satire"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "HeartOfADog.jpg",
     "date_started": "",
     "date_finished": "2018",
@@ -800,346 +1032,492 @@
   {
     "id": "ice",
     "title": "Ice",
-    "authors": ["Anna Kavan"],
-    "genre": [],
+    "authors": [
+      "Anna Kavan"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Dystopian"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "Ice.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 192
   },
   {
     "id": "playback",
     "title": "Playback",
-    "authors": ["Raymond Chandler"],
-    "genre": [],
+    "authors": [
+      "Raymond Chandler"
+    ],
+    "genre": [
+      "Fiction",
+      "Mystery",
+      "Noir"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "Playback.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 158
   },
   {
     "id": "astreetcarenameddesire",
     "title": "A Streetcare Named Desire",
-    "authors": ["Tennessee Williams"],
-    "genre": [],
+    "authors": [
+      "Tennessee Williams"
+    ],
+    "genre": [
+      "Fiction",
+      "Play Script",
+      "Classics",
+      "American Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "AStreetcareNamedDesire.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 128
   },
   {
     "id": "dubliners",
     "title": "Dubliners",
-    "authors": ["James Joyce"],
-    "genre": [],
+    "authors": [
+      "James Joyce"
+    ],
+    "genre": [
+      "Fiction",
+      "Short Stories",
+      "Classics",
+      "Irish Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "Dubliners.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 352
   },
   {
     "id": "thequantitytheoryofinsanity",
     "title": "The Quantity Theory Of Insanity",
-    "authors": ["Will Self"],
-    "genre": [],
+    "authors": [
+      "Will Self"
+    ],
+    "genre": [
+      "Fiction",
+      "Short Stories"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "TheQuantityTheoryOfInsanity.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 224
   },
   {
     "id": "tobeamachine",
-    "title": "To Be A Machine",
-    "authors": ["Mark O'Connell"],
-    "genre": [],
+    "title": "To Be a Machine: Adventures Among Cyborgs, Utopians, Hackers, and the Futurists Solving the Modest Problem of Death",
+    "authors": [
+      "Mark O'Connell"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Technology",
+      "Philosophy"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "ToBeAMachine.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 256
   },
   {
     "id": "norwegianwood",
     "title": "Norwegian Wood",
-    "authors": ["Haruki Murakami"],
-    "genre": [],
+    "authors": [
+      "Haruki Murakami"
+    ],
+    "genre": [
+      "Fiction",
+      "Romance",
+      "Japanese Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "NorwegianWood.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 389
   },
   {
     "id": "abriefhistoryoftime",
     "title": "A Brief History Of Time",
-    "authors": ["Stephen Hawking"],
-    "genre": [],
+    "authors": [
+      "Stephen Hawking"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Physics",
+      "Astronomy"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "ABriefHistoryOfTime.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 255
   },
   {
     "id": "slaughterhousefive",
     "title": "Slaughterhouse Five",
-    "authors": ["Kurt Vonnegut, Jr."],
-    "genre": [],
+    "authors": [
+      "Kurt Vonnegut, Jr."
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Historical Fiction",
+      "World War II"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "SlaughterhouseFive.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 275
   },
   {
     "id": "lolita",
     "title": "Lolita",
-    "authors": ["Vladimir Nabokov"],
-    "genre": [],
+    "authors": [
+      "Vladimir Nabokov"
+    ],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Russian Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "Lolita.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 315
   },
   {
     "id": "amapoftheinvisible",
-    "title": "A Map Of The Invisible",
-    "authors": ["Jon Butterworth"],
-    "genre": [],
+    "title": "A Map of the Invisible: Journeys into Particle Physics",
+    "authors": [
+      "Jon Butterworth"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Physics"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "AMapOfTheInvisible.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 400
   },
   {
     "id": "thetrial",
     "title": "The Trial",
-    "authors": ["Franz Kafka"],
-    "genre": [],
+    "authors": [
+      "Franz Kafka"
+    ],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Dystopian",
+      "Czech Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "TheTrial.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 255
   },
   {
     "id": "saturday",
     "title": "Saturday",
-    "authors": ["Ian McEwan"],
-    "genre": [],
+    "authors": [
+      "Ian McEwan"
+    ],
+    "genre": [
+      "Fiction"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "Saturday.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 280
   },
   {
     "id": "nutshell",
     "title": "Nutshell",
-    "authors": ["Ian McEwan"],
-    "genre": [],
+    "authors": [
+      "Ian McEwan"
+    ],
+    "genre": [
+      "Fiction",
+      "Thriller"
+    ],
     "status": "finished",
-    "dates_raw": "2018",
     "cover": "Nutshell.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": null
+    "pages": 199
   },
   {
     "id": "thefestivalofinsignificance",
     "title": "The Festival Of Insignificance",
-    "authors": ["Milan Kundera"],
-    "genre": [],
+    "authors": [
+      "Milan Kundera"
+    ],
+    "genre": [
+      "Fiction",
+      "Czech Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "TheFestivalOfInsignificance.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 115
   },
   {
     "id": "theconegatherers",
     "title": "The Cone Gatherers",
-    "authors": ["Robin Jenkins"],
-    "genre": [],
+    "authors": [
+      "Robin Jenkins"
+    ],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Historical Fiction"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "TheConeGatherers.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 240
   },
   {
     "id": "labellesauvage",
     "title": "La Belle Sauvage",
-    "authors": ["Philip Pullman"],
-    "genre": [],
+    "authors": [
+      "Philip Pullman"
+    ],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Science Fiction"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "LaBelleSauvage.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 546
   },
   {
     "id": "blitzed",
-    "title": "Blitzed",
-    "authors": ["Norman Ohler"],
-    "genre": [],
+    "title": "Blitzed: Drugs in Nazi Germany",
+    "authors": [
+      "Norman Ohler"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "World War II"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "Blitzed.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 360
   },
   {
     "id": "euphoria",
     "title": "Euphoria",
-    "authors": ["Heinz Helle"],
-    "genre": ["Fiction", "Post-apocalyptic", "German Literature"],
+    "authors": [
+      "Heinz Helle"
+    ],
+    "genre": [
+      "Fiction",
+      "Post-apocalyptic",
+      "German Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "Euphoria.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 213
   },
   {
     "id": "theghostsofheaven",
     "title": "The Ghosts Of Heaven",
-    "authors": ["Marcus Sedgwick"],
-    "genre": [],
+    "authors": [
+      "Marcus Sedgwick"
+    ],
+    "genre": [
+      "Fiction",
+      "Young Adult",
+      "Science Fiction",
+      "Fantasy"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "TheGhostsOfHeaven.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 424
   },
   {
     "id": "palerider",
     "title": "Pale Rider",
-    "authors": ["Laura Spinney"],
-    "genre": [],
+    "authors": [
+      "Laura Spinney"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Science",
+      "Medicine"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "PaleRider.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 332
   },
   {
     "id": "deathofasalesman",
     "title": "Death Of A Salesman",
-    "authors": ["Arthur Miller"],
-    "genre": [],
+    "authors": [
+      "Arthur Miller"
+    ],
+    "genre": [
+      "Fiction",
+      "Play Script",
+      "Classics"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "DeathOfASalesman.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 112
   },
   {
     "id": "themetamorphosis",
-    "title": "The Metamorphosis",
-    "authors": ["Franz Kafka"],
-    "genre": [],
+    "title": "The Metamorphosis and Other Stories",
+    "authors": [
+      "Franz Kafka"
+    ],
+    "genre": [
+      "Fiction",
+      "Short Stories",
+      "Horror",
+      "Czech Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "TheMetamorphosis.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 208
   },
   {
     "id": "solar",
     "title": "Solar",
-    "authors": ["Ian McEwan"],
-    "genre": [],
+    "authors": [
+      "Ian McEwan"
+    ],
+    "genre": [
+      "Fiction"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "Solar.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 287
   },
   {
     "id": "theroad",
     "title": "The Road",
-    "authors": ["Cormac McCarthy"],
-    "genre": [],
+    "authors": [
+      "Cormac McCarthy"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Post-apocalyptic",
+      "Horror"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "TheRoad.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 307
   },
   {
     "id": "howdidwegetintothismess",
     "title": "How Did We Get Into This Mess",
-    "authors": ["George Monbiot"],
-    "genre": [],
+    "authors": [
+      "George Monbiot"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Politics",
+      "Environment",
+      "Essays"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "HowDidWeGetIntoThisMess.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 352
   },
   {
     "id": "hard-boiledwonderlandandtheendoftheworld",
     "title": "Hard boiled Wonderland And The End Of The World",
-    "authors": ["Haruki Murakami"],
-    "genre": [],
+    "authors": [
+      "Haruki Murakami"
+    ],
+    "genre": [
+      "Fiction",
+      "Magical Realism",
+      "Science Fiction",
+      "Japanese Literature"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "Hard-boiledWonderlandAndTheEndOfTheWorld.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 400
   },
   {
     "id": "hystopia",
     "title": "Hystopia",
-    "authors": ["David Means"],
-    "genre": [],
+    "authors": [
+      "David Means"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Alternate History"
+    ],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "Hystopia.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": null
+    "pages": 336
   },
   {
     "id": "thedeadlake",
     "title": "The Dead Lake",
-    "authors": ["Hamid Ismailov"],
+    "authors": [
+      "Hamid Ismailov"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "TheDeadLake.jpg",
     "date_started": "",
     "date_finished": "2017",
@@ -1148,10 +1526,12 @@
   {
     "id": "thewindupbirdchronicle",
     "title": "The Windup Bird Chronicle",
-    "authors": ["Haruki Murakami", "Jay Rubin"],
+    "authors": [
+      "Haruki Murakami",
+      "Jay Rubin"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "TheWindupBirdChronicle.jpg",
     "date_started": "",
     "date_finished": "2017",
@@ -1160,10 +1540,11 @@
   {
     "id": "childofgod",
     "title": "Child Of God",
-    "authors": ["Cormac McCarthy"],
+    "authors": [
+      "Cormac McCarthy"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "ChildOfGod.jpg",
     "date_started": "",
     "date_finished": "2017",
@@ -1172,10 +1553,11 @@
   {
     "id": "alovelywaytoburn",
     "title": "A Lovely Way To Burn",
-    "authors": ["Louise Welsh"],
+    "authors": [
+      "Louise Welsh"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "ALovelyWayToBurn.jpg",
     "date_started": "",
     "date_finished": "2017",
@@ -1184,10 +1566,11 @@
   {
     "id": "cloudatlas",
     "title": "Cloud Atlas",
-    "authors": ["David Mitchell"],
+    "authors": [
+      "David Mitchell"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "CloudAtlas.jpg",
     "date_started": "",
     "date_finished": "2017",
@@ -1196,10 +1579,11 @@
   {
     "id": "lordoftheflies",
     "title": "Lord Of The Flies",
-    "authors": ["William Golding"],
+    "authors": [
+      "William Golding"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "LordOfTheFlies.jpg",
     "date_started": "",
     "date_finished": "2017",
@@ -1208,22 +1592,24 @@
   {
     "id": "notesfromunderground",
     "title": "Notes From Underground",
-    "authors": ["Fyodor Dostoevsky"],
+    "authors": [
+      "Fyodor Dostoevsky"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "NotesFromUnderground.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 136 
+    "pages": 136
   },
   {
     "id": "narconomics",
     "title": "Narconomics: How to Run a Drug Cartel",
-    "authors": ["Tom Wainwright"],
+    "authors": [
+      "Tom Wainwright"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "Narconomics.jpg",
     "date_started": "",
     "date_finished": "2017",
@@ -1232,10 +1618,11 @@
   {
     "id": "forensics",
     "title": "Forensics: The Anatomy of Crime",
-    "authors": ["Val McDermid"],
+    "authors": [
+      "Val McDermid"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "Forensics.jpg",
     "date_started": "",
     "date_finished": "2017",
@@ -1244,10 +1631,11 @@
   {
     "id": "thenewyorktrilogy",
     "title": "The New York Trilogy",
-    "authors": ["Paul Auster"],
+    "authors": [
+      "Paul Auster"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2017",
     "cover": "TheNewYorkTrilogy.jpg",
     "date_started": "",
     "date_finished": "2017",
@@ -1261,7 +1649,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "Dune.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1275,7 +1662,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "SevenBriefLessonsOnPhysics.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1289,7 +1675,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "AmericanPsycho.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1303,7 +1688,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "Solaris.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1317,7 +1701,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "WintersBone.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1331,7 +1714,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "TheMasterAndMargarita.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1345,7 +1727,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "10Billion.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1354,10 +1735,11 @@
   {
     "id": "crow",
     "title": "Crow: From the Life and Songs of the Crow",
-    "authors": ["Ted Hughes"],
+    "authors": [
+      "Ted Hughes"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "Crow.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1366,10 +1748,11 @@
   {
     "id": "onedayinthelifeofivandenisovich",
     "title": "One Day In The Life Of Ivan Denisovich",
-    "authors": ["Aleksandr Solzhenitsyn"],
+    "authors": [
+      "Aleksandr Solzhenitsyn"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "OneDayInTheLifeOfIvanDenisovich.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1378,10 +1761,11 @@
   {
     "id": "aclockworkorange",
     "title": "A Clockwork Orange",
-    "authors": ["Anthony Burgess"],
+    "authors": [
+      "Anthony Burgess"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "AClockworkOrange.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1390,10 +1774,11 @@
   {
     "id": "moriarty",
     "title": "Moriarty",
-    "authors": ["Anthony Horowitz"],
+    "authors": [
+      "Anthony Horowitz"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "Moriarty.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1402,10 +1787,11 @@
   {
     "id": "thecatcherintherye",
     "title": "The Catcher In The Rye",
-    "authors": ["J.D. Salinger"],
+    "authors": [
+      "J.D. Salinger"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "TheCatcherInTheRye.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1414,10 +1800,11 @@
   {
     "id": "thewaroftheworlds",
     "title": "The War Of The Worlds",
-    "authors": ["H.G. Wells"],
+    "authors": [
+      "H.G. Wells"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "TheWarOfTheWorlds.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1426,22 +1813,29 @@
   {
     "id": "catch-22",
     "title": "Catch 22",
-    "authors": ["Joseph Heller"],
-    "genre": [],
+    "authors": [
+      "Joseph Heller"
+    ],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "World War II"
+    ],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "Catch-22.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": null
+    "pages": 570
   },
   {
     "id": "nothing",
     "title": "Nothing: From Absolute Zero to Cosmic Oblivion - Amazing Insights into Nothingness",
-    "authors": ["New Scientist", "Jeremy Webb"],
+    "authors": [
+      "New Scientist",
+      "Jeremy Webb"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "Nothing.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1450,10 +1844,11 @@
   {
     "id": "fahrenheit451",
     "title": "Fahrenheit451",
-    "authors": ["Ray Bradbury"],
+    "authors": [
+      "Ray Bradbury"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "Fahrenheit451.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1462,10 +1857,11 @@
   {
     "id": "tokillamockingbird",
     "title": "To Kill A Mockingbird",
-    "authors": ["Harper Lee"],
+    "authors": [
+      "Harper Lee"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "ToKillAMockingbird.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1474,10 +1870,11 @@
   {
     "id": "themaninthehighcastle",
     "title": "The Man In The High Castle",
-    "authors": ["Philip K. Dick"],
+    "authors": [
+      "Philip K. Dick"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "TheManInTheHighCastle.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1486,10 +1883,11 @@
   {
     "id": "feral",
     "title": "Feral: Rewilding the Land, the Sea and Human Life",
-    "authors": ["George Monbiot"],
+    "authors": [
+      "George Monbiot"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "Feral.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1498,10 +1896,11 @@
   {
     "id": "descent",
     "title": "Descent",
-    "authors": ["Ken MacLeod"],
+    "authors": [
+      "Ken MacLeod"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "Descent.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1510,10 +1909,11 @@
   {
     "id": "animalfarm",
     "title": "Animal Farm",
-    "authors": ["George Orwell"],
+    "authors": [
+      "George Orwell"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "Animalfarm.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1522,10 +1922,11 @@
   {
     "id": "doandroidsdreamofelectricsheep",
     "title": "Do Androids Dream Of Electric Sheep?",
-    "authors": ["Philip K. Dick"],
+    "authors": [
+      "Philip K. Dick"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "DoAndroidsDreamOfElectricSheep.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1534,10 +1935,11 @@
   {
     "id": "aninfinitenumberofparalleluniverses",
     "title": "An Infinite Number Of Parallel Universes",
-    "authors": ["Randy Ribay"],
+    "authors": [
+      "Randy Ribay"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "AnInfiniteNumberOfParallelUniverses.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1551,7 +1953,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "DroneTheory.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1565,7 +1966,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "TheKnowledge.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1579,7 +1979,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "2016",
     "cover": "ThingsToMakeAndDoInTheFourthDimension.jpg",
     "date_started": "",
     "date_finished": "2016",
@@ -1593,7 +1992,6 @@
     ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "1984.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1602,10 +2000,11 @@
   {
     "id": "blackswangreen",
     "title": "Black Swan Green",
-    "authors": ["David Mitchell"],
+    "authors": [
+      "David Mitchell"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "BlackSwanGreen.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1614,10 +2013,11 @@
   {
     "id": "sladehouse",
     "title": "Slade House",
-    "authors": ["David Mitchell"],
+    "authors": [
+      "David Mitchell"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "SladeHouse.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1626,10 +2026,11 @@
   {
     "id": "theboneclocks",
     "title": "The Bone Clocks",
-    "authors": ["David Mitchell"],
+    "authors": [
+      "David Mitchell"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheBoneClocks.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1638,10 +2039,11 @@
   {
     "id": "thehandmaidstale",
     "title": "The Handmaids Tale",
-    "authors": ["Margaret Atwood"],
+    "authors": [
+      "Margaret Atwood"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheHandmaidsTale.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1650,10 +2052,11 @@
   {
     "id": "thehobbit",
     "title": "The Hobbit",
-    "authors": ["JRR Tolkien"],
+    "authors": [
+      "JRR Tolkien"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheHobbit.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1662,10 +2065,11 @@
   {
     "id": "themagicofreality",
     "title": "The Magic Of Reality",
-    "authors": ["Richard Dawkins"],
+    "authors": [
+      "Richard Dawkins"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheMagicOfReality.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1674,34 +2078,49 @@
   {
     "id": "theterminalman",
     "title": "The Terminal Man",
-    "authors": ["Michael Crichton"],
-    "genre": [],
+    "authors": [
+      "Michael Crichton"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Thriller"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheTerminalMan.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": null
+    "pages": 268
   },
   {
     "id": "bravenewworld",
     "title": "Brave New World",
-    "authors": ["Aldous Huxley"],
-    "genre": [],
+    "authors": [
+      "Aldous Huxley"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Dystopian"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "BraveNewWorld.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": null
+    "pages": 229
   },
   {
     "id": "darkmatter",
     "title": "Dark Matter",
-    "authors": ["Michelle Paver"],
-    "genre": ["Fiction", "Historical Fiction", "Horror"],
+    "authors": [
+      "Michelle Paver"
+    ],
+    "genre": [
+      "Fiction",
+      "Historical Fiction",
+      "Horror"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "DarkMatter.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1710,10 +2129,11 @@
   {
     "id": "thecallofthewild",
     "title": "The Call of the Wild",
-    "authors": ["Jack London"],
+    "authors": [
+      "Jack London"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheCallOfTheWild.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1722,10 +2142,11 @@
   {
     "id": "whitefang",
     "title": "White Fang",
-    "authors": ["Jack London"],
+    "authors": [
+      "Jack London"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "WhiteFang.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1734,10 +2155,11 @@
   {
     "id": "amonstercalls",
     "title": "A Monster Calls",
-    "authors": ["Patrick Ness"],
+    "authors": [
+      "Patrick Ness"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "AMonsterCalls.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1746,10 +2168,11 @@
   {
     "id": "morethanthis",
     "title": "More Than This",
-    "authors": ["Patrick Ness"],
+    "authors": [
+      "Patrick Ness"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "MoreThanThis.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1758,10 +2181,11 @@
   {
     "id": "eragon",
     "title": "Eragon",
-    "authors": ["Christopher Paolini"],
+    "authors": [
+      "Christopher Paolini"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "Eragon.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1770,22 +2194,24 @@
   {
     "id": "eldest",
     "title": "Eldest",
-    "authors": ["Christopher Paolini"],
+    "authors": [
+      "Christopher Paolini"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "Eldest.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 704 
+    "pages": 704
   },
   {
     "id": "theaskandtheanswer",
     "title": "The Ask And The Answer",
-    "authors": ["Patrick Ness"],
+    "authors": [
+      "Patrick Ness"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheAskAndTheAnswer.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1794,10 +2220,11 @@
   {
     "id": "theknifeofneverlettinggo",
     "title": "The Knife Of Never Letting Go",
-    "authors": ["Patrick Ness"],
+    "authors": [
+      "Patrick Ness"
+    ],
     "genre": [],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheKnifeOfNeverLettingGo.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1806,10 +2233,13 @@
   {
     "id": "divergent",
     "title": "Divergent",
-    "authors": ["Veronica Roth"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "Veronica Roth"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "Divergent.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1818,10 +2248,13 @@
   {
     "id": "thehungergamesmockingjay",
     "title": "The Hunger Games: Mockingjay",
-    "authors": ["Suzanne Collins"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "Suzanne Collins"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheHungerGamesMockingjay.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1830,10 +2263,13 @@
   {
     "id": "thehungergamescatchingfire",
     "title": "The Hunger Games: Catching Fire",
-    "authors": ["Suzanne Collins"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "Suzanne Collins"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheHungerGamesCatchingFire.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1842,22 +2278,28 @@
   {
     "id": "thehungergames",
     "title": "The Hunger Games",
-    "authors": ["Suzanne Collins"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "Suzanne Collins"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheHungerGames.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 374 
+    "pages": 374
   },
   {
     "id": "readyplayerone",
     "title": "Ready Player One",
-    "authors": ["Ernest Cline"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "Ernest Cline"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "ReadyPlayerOne.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1866,10 +2308,13 @@
   {
     "id": "witchcrag",
     "title": "Witch Crag",
-    "authors": ["Kate Cann"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "Kate Cann"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "WitchCrag.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1878,10 +2323,13 @@
   {
     "id": "thefaultinourstars",
     "title": "The Fault In Our Stars",
-    "authors": ["John Green"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "John Green"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheFaultInOurStars.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1890,10 +2338,13 @@
   {
     "id": "northernlights",
     "title": "Northern Lights",
-    "authors": ["Philip Pullman"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "Philip Pullman"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "NorthernLights.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1902,10 +2353,13 @@
   {
     "id": "onekick",
     "title": "One Kick",
-    "authors": ["Chelsea Cain"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "Chelsea Cain"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "OneKick.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1914,10 +2368,13 @@
   {
     "id": "noughtsandcrosses",
     "title": "Noughts And Crosses",
-    "authors": ["Malorie Blackman"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "Malorie Blackman"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "NoughtsAndCrosses.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1926,10 +2383,13 @@
   {
     "id": "theenemy",
     "title": "The Enemy",
-    "authors": ["Charlie Higson"],
-    "genre": ["Young Adult"],
+    "authors": [
+      "Charlie Higson"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "TheEnemy.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1938,10 +2398,14 @@
   {
     "id": "spiritwalker",
     "title": "Spirit Walker",
-    "authors": ["Michelle Paver"],
-    "genre": ["Young Adult", "Fantasy"],
+    "authors": [
+      "Michelle Paver"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "SpiritWalker.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1950,10 +2414,14 @@
   {
     "id": "wolfbrother",
     "title": "Wolf Brother",
-    "authors": ["Michelle Paver"],
-    "genre": ["Young Adult", "Fantasy"],
+    "authors": [
+      "Michelle Paver"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "WolfBrother.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1962,10 +2430,15 @@
   {
     "id": "thedarkesthour",
     "title": "The Darkest Hour",
-    "authors": ["Erin Hunter"],
-    "genre": ["Young Adult", "Fantasy", "Xenofiction"],
+    "authors": [
+      "Erin Hunter"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy",
+      "Xenofiction"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "WarriorsTheDarkestHour.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1974,10 +2447,15 @@
   {
     "id": "adangerouspath",
     "title": "A Dangerous Path",
-    "authors": ["Erin Hunter"],
-    "genre": ["Young Adult", "Fantasy", "Xenofiction"],
+    "authors": [
+      "Erin Hunter"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy",
+      "Xenofiction"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "WarriorsADangerousPath.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1986,10 +2464,15 @@
   {
     "id": "risingstorm",
     "title": "Rising Storm",
-    "authors": ["Erin Hunter"],
-    "genre": ["Young Adult", "Fantasy", "Xenofiction"],
+    "authors": [
+      "Erin Hunter"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy",
+      "Xenofiction"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "WarriorsRisingStorm.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -1998,10 +2481,15 @@
   {
     "id": "forestofsecrets",
     "title": "Forest of Secrets",
-    "authors": ["Erin Hunter"],
-    "genre": ["Young Adult", "Fantasy", "Xenofiction"],
+    "authors": [
+      "Erin Hunter"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy",
+      "Xenofiction"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "WarriorsForestOfSecrets.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -2010,10 +2498,15 @@
   {
     "id": "fireandice",
     "title": "Fire and Ice",
-    "authors": ["Erin Hunter"],
-    "genre": ["Young Adult", "Fantasy", "Xenofiction"],
+    "authors": [
+      "Erin Hunter"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy",
+      "Xenofiction"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "WarriorsFireAndIce.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -2022,10 +2515,15 @@
   {
     "id": "intothewild",
     "title": "Into the Wild",
-    "authors": ["Erin Hunter"],
-    "genre": ["Young Adult", "Fantasy", "Xenofiction"],
+    "authors": [
+      "Erin Hunter"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy",
+      "Xenofiction"
+    ],
     "status": "finished",
-    "dates_raw": "Long ago...",
     "cover": "WarriorsIntoTheWild.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
@@ -2034,10 +2532,15 @@
   {
     "id": "howlifeworks",
     "title": "How Life Works: A User's Guide to the New Biology",
-    "authors": ["Philip Ball"],
-    "genre": ["Non-Fiction", "Science", "Biology"],
+    "authors": [
+      "Philip Ball"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Biology"
+    ],
     "status": "toread",
-    "dates_raw": "",
     "cover": "HowLifeWorks.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2045,27 +2548,39 @@
   },
   {
     "id": "eightbears",
-    "title": "Eight Bears",
-    "authors": [],
-    "genre": [],
+    "title": "Eight Bears: Mythic Past and Imperiled Future",
+    "authors": [
+      "Gloria Dickie"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Nature",
+      "History",
+      "Zoology"
+    ],
     "status": "toread",
-    "dates_raw": "",
     "cover": "EightBears.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": 219
   },
   {
     "id": "everythingistuberculosis",
-    "title": "Everything Is Tuberculosis",
-    "authors": [],
-    "genre": [],
+    "title": "Everything Is Tuberculosis: The History and Persistence of Our Deadliest Infection",
+    "authors": [
+      "John Green"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "History"
+    ],
     "status": "toread",
-    "dates_raw": "",
     "cover": "EverythingIsTuberculosis.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": 198
   },
   {
     "id": "williamblakeandtheseamonstersoflove",
@@ -2073,7 +2588,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "WilliamBlakeAndTheSeaMonstersOfLove.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2085,7 +2599,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "ThinkingAsAnarchists.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2097,7 +2610,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheVanishingFaceOfGaia.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2109,7 +2621,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TransparentCity.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2121,7 +2632,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "MutantEcologies.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2133,7 +2643,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "OpenVeinsOfLatinAmerica.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2145,7 +2654,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheOriginOfLifeOnEarth.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2157,7 +2665,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "PandorasHope.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2169,7 +2676,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "MoonWitchSpiderKing.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2181,7 +2687,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheYearOfTheFlood.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2193,7 +2698,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheConcubine.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2205,7 +2709,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheWorkOfTheDead.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2217,7 +2720,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheVitalQuestion.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2229,7 +2731,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheHair-CarpetWeavers.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2241,7 +2742,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheDemonInTheMachine.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2253,7 +2753,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheBuriedGiant.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2265,7 +2764,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "ElkOfNorthAmerica.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2277,7 +2775,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "DarkEcology.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2289,7 +2786,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheMelancholyOfResistance.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2301,7 +2797,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "Hyperion.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2313,7 +2808,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "ReadymadeBodhisattva.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2325,7 +2819,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "Persepolis.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2337,7 +2830,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "Demons.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2349,7 +2841,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "DucksNewburyport.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2361,7 +2852,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheEnchantressOfFlorence.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2373,7 +2863,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheMagicMountain.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2385,7 +2874,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheDrownedWorld.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2397,7 +2885,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheFireNextTime.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2409,7 +2896,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "RandomlyMovingParticles.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2421,7 +2907,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheBookOfUniverses.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2433,7 +2918,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "FigmentsOfReality.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2445,7 +2929,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "OurPlace.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2457,7 +2940,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "Ulysses.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2469,7 +2951,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheAeneid.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2481,7 +2962,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheOdyssey.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2493,7 +2973,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheLostBooksOfTheOdyssey.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2505,7 +2984,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheDescentOfMan.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2517,7 +2995,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "Orcadia.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2529,7 +3006,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "GravitysEngines.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2541,7 +3017,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "ThePlaniverse.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2553,7 +3028,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheRat.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2565,7 +3039,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheAleph.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2577,7 +3050,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "Diaboliad.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2589,7 +3061,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "AgainstNature.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2601,7 +3072,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "ToTheLighthouse.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2613,7 +3083,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheConquestOfBread.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2625,7 +3094,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "FullyAutomatedLuxuryCommunism.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2637,7 +3105,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "FutureOfDenial.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2649,7 +3116,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "EntangledLife.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2661,7 +3127,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "Rebirding.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2673,7 +3138,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheUninhabitableEarth.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2685,7 +3149,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheKnowledgeIllusion.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2697,20 +3160,7 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "ParadisesLost.jpg",
-    "date_started": "",
-    "date_finished": "",
-    "pages": null
-  },
-  {
-    "id": "theaxemanscarnival",
-    "title": "The Axemans Carnival",
-    "authors": [],
-    "genre": [],
-    "status": "toread",
-    "dates_raw": "",
-    "cover": "TheAxemansCarnival.jpg",
     "date_started": "",
     "date_finished": "",
     "pages": null
@@ -2721,7 +3171,6 @@
     "authors": [],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheDragon.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2730,10 +3179,11 @@
   {
     "id": "thefamishedroad",
     "title": "The Famished Road",
-    "authors": ["Ben Okri"],
+    "authors": [
+      "Ben Okri"
+    ],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheFamishedRoad.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2742,10 +3192,11 @@
   {
     "id": "conjecturesrefutations",
     "title": "Conjectures Refutations",
-    "authors": ["Karl Popper"],
+    "authors": [
+      "Karl Popper"
+    ],
     "genre": [],
     "status": "toread",
-    "dates_raw": "",
     "cover": "Conjectures_Refutations.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2754,10 +3205,14 @@
   {
     "id": "tripticks",
     "title": "Tripticks",
-    "authors": ["Ann Quin"],
-    "genre": ["Fiction", "Experimental Fiction"],
+    "authors": [
+      "Ann Quin"
+    ],
+    "genre": [
+      "Fiction",
+      "Experimental Fiction"
+    ],
     "status": "toread",
-    "dates_raw": "",
     "cover": "Tripticks.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2766,10 +3221,16 @@
   {
     "id": "deepwheelorcadia",
     "title": "Deep Wheel Orcadia",
-    "authors": ["Harry Josephine Giles"],
-    "genre": ["Fiction", "Poetry", "Science Fiction", "Orcadian Literature"],
+    "authors": [
+      "Harry Josephine Giles"
+    ],
+    "genre": [
+      "Fiction",
+      "Poetry",
+      "Science Fiction",
+      "Orcadian Literature"
+    ],
     "status": "toread",
-    "dates_raw": "",
     "cover": "DeepWheelOrcadia.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2778,22 +3239,136 @@
   {
     "id": "thegardenagainsttime",
     "title": "The Garden Against Time: In Search of a Common Paradise",
-    "authors": ["Olivia Laing"],
-    "genre": ["Non-Fiction", "Nature", "Memoir"],
+    "authors": [
+      "Olivia Laing"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Nature",
+      "Memoir"
+    ],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheGardenAgainstTime.jpg",
     "date_started": "",
     "date_finished": "",
     "pages": 317
   },
   {
+    "id": "veganarchism",
+    "title": "Veganarchism: Against All Oppression, Everywhere, All the Time",
+    "authors": [
+      "Nathan Poirier"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Political Theory"
+    ],
+    "status": "toread",
+    "cover": "Veganarchism.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 114
+  },
+  {
+    "id": "insectsarejustlikeyouandme",
+    "title": "Insects Are Just Like You and Me Except Some of Them Have Wings",
+    "authors": [
+      "Kuzhali Manickavel"
+    ],
+    "genre": [
+      "Fiction",
+      "Short Stories",
+      "Fantasy",
+      "Indian Literature"
+    ],
+    "status": "toread",
+    "cover": "InsectsAreJustLikeYouAndMe.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 141
+  },
+  {
+    "id": "capitalismsendgame",
+    "title": "Capitalism's Endgame: The Catastrophe of Accumulation",
+    "authors": [
+      "Mark Hayes",
+      "Phillip Sutton",
+      "Lars Torvaldsson"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Essays",
+      "Political Theory"
+    ],
+    "status": "toread",
+    "cover": "CapitalismsEndgame.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 248
+  },
+  {
+    "id": "desert",
+    "title": "Desert",
+    "authors": [
+      "Anonymous"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Environment",
+      "Political Theory"
+    ],
+    "status": "toread",
+    "cover": "Desert.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 71
+  },
+  {
+    "id": "gatheredremains",
+    "title": "Gathered Remains: Essays on Wildness, Domestication, Community and Resistance",
+    "authors": [
+      "Kevin Tucker"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Sociology",
+      "Political Theory"
+    ],
+    "status": "toread",
+    "cover": "GatheredRemains.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 333
+  },
+  {
+    "id": "copyripburn",
+    "title": "Copy, Rip, Burn: The Politics of Copyleft and Open Source",
+    "authors": [
+      "David M. Berry"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Politics",
+      "Economics"
+    ],
+    "status": "toread",
+    "cover": "CopyRipBurn.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 205
+  },
+  {
     "id": "huntfortheshadowwolf",
     "title": "Hunt for the Shadow Wolf: The lost history of wolves in Britain and the myths and stories that surround them",
-    "authors": ["Derek Gow"],
-    "genre": ["Non-Fiction", "Nature", "History"],
+    "authors": [
+      "Derek Gow"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Nature",
+      "History"
+    ],
     "status": "toread",
-    "dates_raw": "",
     "cover": "HuntForTheShadowWolf.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2802,10 +3377,15 @@
   {
     "id": "emergent",
     "title": "Emergent: Rewilding Nature, Regenerating Food and Healing the World by Restoring the Connection Between People and the Wild",
-    "authors": ["Miriam Kate McDonald"],
-    "genre": ["Non-Fiction", "Nature", "Environment"],
+    "authors": [
+      "Miriam Kate McDonald"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Nature",
+      "Environment"
+    ],
     "status": "toread",
-    "dates_raw": "",
     "cover": "Emergent.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2814,10 +3394,15 @@
   {
     "id": "theanatomyofdisgust",
     "title": "The Anatomy of Disgust",
-    "authors": ["William Ian Miller"],
-    "genre": ["Non-Fiction", "Philosophy", "Psychology"],
+    "authors": [
+      "William Ian Miller"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy",
+      "Psychology"
+    ],
     "status": "toread",
-    "dates_raw": "",
     "cover": "TheAnatomyOfDisgust.jpg",
     "date_started": "",
     "date_finished": "",
@@ -2826,13 +3411,37 @@
   {
     "id": "onedimensionalman",
     "title": "One-Dimensional Man",
-    "authors": ["Herbert Marcuse"],
-    "genre": ["Non-Fiction", "Philosophy", "Politics", "Sociology"],
+    "authors": [
+      "Herbert Marcuse"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy",
+      "Politics",
+      "Sociology"
+    ],
     "status": "toread",
-    "dates_raw": "",
     "cover": "OneDimensionalMan.jpg",
     "date_started": "",
     "date_finished": "",
     "pages": 275
+  },
+  {
+    "id": "cyclonopedia",
+    "title": "Cyclonopedia: Complicity with Anonymous Materials",
+    "authors": [
+      "Reza Negarestani"
+    ],
+    "genre": [
+      "Fiction",
+      "Theory Fiction",
+      "Horror",
+      "Philosophical Fiction"
+    ],
+    "status": "toread",
+    "cover": "Cyclonopedia.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 268
   }
 ]
