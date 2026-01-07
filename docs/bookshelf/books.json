@@ -17,15 +17,63 @@
     "pages": 203
   },
   {
-    "id": "theaxemanscarnival",
-    "title": "The Axemans Carnival",
-    "authors": ["Catherine Chidgey"],
-    "genre": ["Fiction", "Xenofiction", "Magical Realism"],
+    "id": "theconquestofbread",
+    "title": "The Conquest Of Bread",
+    "authors": [],
+    "genre": [],
     "status": "reading",
-    "cover": "TheAxemansCarnival.jpg",
-    "date_started": "27/11/25",
+    "cover": "TheConquestOfBread.jpg",
+    "date_started": "08/01/26",
     "date_finished": "",
-    "pages": 336
+    "pages": 234
+  },
+  {
+    "id": "kingkongtheory",
+    "title": "King Kong Theory",
+    "authors": [
+      "Virginie Despentes"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Feminism",
+      "Politics",
+      "Philosophy"
+    ],
+    "status": "finished",
+    "cover": "KingKongTheory.jpg",
+    "date_started": "01/01/26",
+    "date_finished": "03/01/26",
+    "pages": 155
+  },
+  {
+    "id": "halfearthsocialism",
+    "title": "Half-Earth Socialism: A Plan to Save the Future from Extinction, Climate Change and Pandemics",
+    "authors": [
+      "Troy Vettese",
+      "Drew Pendergrass"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Environment",
+      "Politics",
+      "Economics"
+    ],
+    "status": "finished",
+    "cover": "HalfEarthSocialism.jpg",
+    "date_started": "04/01/26",
+    "date_finished": "07/01/26",
+    "pages": 272
+  },
+  {
+    "id": "theemployees",
+    "title": "The Employees",
+    "authors": ["Olga Ravn"],
+    "genre": ["Fiction", "Science Fiction"],
+    "status": "finished",
+    "cover": "TheEmployees.jpg",
+    "date_started": "18/12/25",
+    "date_finished": "23/12/25",
+    "pages": 136
   },
   {
     "id": "exocapitalism",
@@ -2547,6 +2595,17 @@
     "pages": 460
   },
   {
+    "id": "theaxemanscarnival",
+    "title": "The Axemans Carnival",
+    "authors": ["Catherine Chidgey"],
+    "genre": ["Fiction", "Xenofiction", "Magical Realism"],
+    "status": "toread",
+    "cover": "TheAxemansCarnival.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 336
+  },
+  {
     "id": "eightbears",
     "title": "Eight Bears: Mythic Past and Imperiled Future",
     "authors": [
@@ -3073,17 +3132,6 @@
     "genre": [],
     "status": "toread",
     "cover": "ToTheLighthouse.jpg",
-    "date_started": "",
-    "date_finished": "",
-    "pages": null
-  },
-  {
-    "id": "theconquestofbread",
-    "title": "The Conquest Of Bread",
-    "authors": [],
-    "genre": [],
-    "status": "toread",
-    "cover": "TheConquestOfBread.jpg",
     "date_started": "",
     "date_finished": "",
     "pages": null

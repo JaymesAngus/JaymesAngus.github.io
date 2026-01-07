@@ -257,14 +257,6 @@ circle {
           <div id="chart-container"></div>
         </div>
 
-        <h2>Longest reads</h2>
-        <table class="stats">
-          <thead><tr><th>Title</th><th>Date finished</th><th>Pages</th></tr></thead>
-          <tbody id="top-rows">
-            <!-- populated by JS -->
-          </tbody>
-        </table>
-
         <h2>Reading challenges</h2>
         <div class="progress-grid">
           <div class="progress-container"
@@ -358,16 +350,16 @@ circle {
         const avgPages = pagesPresent.length ? Math.round(totalPages / pagesPresent.length) : 0;
         const year_finished = books.filter(b => 
           (b.status || '').toLowerCase() === 'finished' &&
-          (b['date_finished'] || '').endsWith('25')
+          (b['date_finished'] || '').endsWith('26')
         );
         const year_pagesPresent = year_finished.filter(b => numberOrNull(b.pages) !== null);
         const year_totalPages = year_pagesPresent.reduce((s,b)=> s + Number(b.pages), 0);
         const year_avgPages = year_pagesPresent.length ? Math.round(year_totalPages / year_pagesPresent.length) : 0;
-        document.getElementById('year-finished').textContent = year_finished.length+" in 2025";
+        document.getElementById('year-finished').textContent = year_finished.length+" in 2026";
         document.getElementById('total-finished').textContent = finished.length+" total";
-        document.getElementById('year-pages').textContent = year_totalPages+" in 2025";
+        document.getElementById('year-pages').textContent = year_totalPages+" in 2026";
         document.getElementById('total-pages').textContent = totalPages+" total";
-        document.getElementById('year-avg-pages').textContent = year_avgPages+" in 2025";
+        document.getElementById('year-avg-pages').textContent = year_avgPages+" in 2026";
         document.getElementById('total-avg-pages').textContent = avgPages+" overall";
 
         // per-year aggregation
@@ -383,7 +375,8 @@ circle {
           2022: "The Dolls",
           2023: "The Vorrh",
           2024: "One Hundred Years of Solitude",
-          2025: "TBD"
+          2025: "The Doloriad",
+          2026: "TBD"
         };
         for(const b of finished){
           const df = b.date_finished || '';
@@ -431,11 +424,6 @@ circle {
         } else {
           chartContainer.textContent = 'No per-year data available for chart.';
         }
-
-        // top 15 longest
-        const top = finished.filter(b=>numberOrNull(b.pages)!==null).sort((a,b)=>Number(b.pages)-Number(a.pages)).slice(0,15);
-        const topBody = document.getElementById('top-rows');
-        topBody.innerHTML = top.map((b,i)=>`<tr><td>${escapeHtml(b.title||'')}</td><td>${escapeHtml(b.date_finished||'')}</td><td>${b.pages||''}</td></tr>`).join('\n');
       }
 
       // small html-escape helper
