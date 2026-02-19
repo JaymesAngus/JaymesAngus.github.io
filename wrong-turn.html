@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrong turn</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+
+      h2 {
+        /* color:#3a6506; */
+        color: white;
+      }
+
+      .title {
+        font-size: calc(1.5vw + 1.5vh);
+        font-weight: 400;
+        color:rgb(161, 177, 218);
+        font-family: Orbitron;
+        text-align: justify;
+        margin-left:20px;
+      }
+
+      footer {
+        color: white;
+      }
+
+      body {
+        background-image: url(/static/images/MiscImages/nobody-there.png);
+        background-size: cover;
+        background-position: center;
+        background-position: left center;
+      }
+
+      .container {
+        width:100vw;
+        height: 100vh;
+        margin: 0;
+      }
+
+      nav a:link,
+      nav a:visited {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: rgb(15, 27, 58);
+      }
+      .exit-button{
+        width: var(--pd);
+        display: inline-block
+      }
+      .exit-button a:link,
+      .exit-button a:visited {
+          font-size: calc(1.5vw + 1.5vh);
+          color: white;
+          font-family: MajorMono;
+          position:fixed;
+          bottom: 0;
+          right: 0;
+          padding: var(--pd);
+          opacity: 0.7;
+      }
+
+      .positionable {
+          font-size: calc(1vw + 1vh);
+          color: rgb(202, 202, 202);
+          font-family: MajorMono;
+          position:fixed;
+          bottom: 0;
+          right: 30%;
+          padding: var(--pd);
+          opacity: 0.6;
+      }
+
+      #mobile {
+          display: none;
+      }
+
+      @media only screen and (max-width: 500px) {
+          #mobile {
+              display: block;
+          }
+          #desktop {
+            display: none;
+          }
+      }
+
+      @media all and (max-width:800px)
+        {
+          body {
+            background-position: center;
+          }
+          .exit-button {
+            width: 50vw;
+            height: 10vh;
+            bottom: 5%;
+            right: 25%;
+            z-index: 999;
+          }
+          .positionable {
+            position: fixed;
+            width: 100%;
+            bottom: 10%;
+            left: 0%;
+            font-size: calc(2vw + 2vh);
+            opacity: 0.8;
+          }
+
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1 style="color:rgb(124, 138, 173); font-family:'Times New Roman', Times, serif; position: fixed; bottom:50%">but there was nobody there</h1>
+      <div class="positionable">this will always be your grave</div>
+    </div>
+    <footer>
+      <p>© 2026 Jay Anderson</p>
+    </footer>
+  </body>
+</html>

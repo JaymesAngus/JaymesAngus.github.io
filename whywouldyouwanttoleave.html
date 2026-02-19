@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>are you sure?</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+
+      h2 {
+        /* color:#3a6506; */
+        color: white;
+      }
+
+      .title {
+        font-size: calc(1.5vw + 1.5vh);
+        font-weight: 400;
+        color:rgb(161, 177, 218);
+        font-family: Orbitron;
+        text-align: justify;
+        margin-left:20px;
+      }
+
+      footer {
+        color: white;
+      }
+
+      body {
+        background-image: url(/static/images/infinite_was_their_company_blackout.png);
+        background-size: cover;
+        background-position: center;
+        background-position: left center;
+      }
+
+      .container {
+        width:100vw;
+        height: 100vh;
+        margin: 0;
+      }
+
+      nav a:link,
+      nav a:visited {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: rgb(15, 27, 58);
+      }
+      .exit-button{
+        width: var(--pd);
+        display: inline-block
+      }
+      .exit-button a:link,
+      .exit-button a:visited {
+          font-size: calc(1.5vw + 1.5vh);
+          color: white;
+          font-family: MajorMono;
+          position:fixed;
+          bottom: 0;
+          right: 0;
+          padding: var(--pd);
+          opacity: 0.5;
+      }
+
+      .exit-button a:hover {
+          opacity: 0.9;
+          color:rgb(31, 3, 3);
+          text-shadow: 2px 2px 5px rgb(31, 3, 3);
+      }
+
+      .exit-button a:hover > span {
+          opacity: 1.0;
+      }
+
+      .exit-link span {
+          opacity: 0.2;
+      
+      }
+
+      .exit-link span:hover {
+          opacity: 0.0;
+      }
+
+      a span.en, a:hover span.mi {
+      display: inline;
+      }
+      a:hover span.en, a span.mi {
+      display: none;
+      }
+
+
+      .positionable {
+          font-size: calc(1vw + 1vh);
+          color: rgb(202, 202, 202);
+          font-family: monospace;
+          position:fixed;
+          bottom: 50%;
+          right: 30%;
+          padding: var(--pd);
+          opacity: 1.0;
+      }
+
+      @media all and (max-width:800px)
+        {
+          body {
+            display: none;
+          }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1 style="color:black; background: black;">they left a long time ago</h1>
+
+      <div class="positionable">do i have to?</div>
+      <div style="
+          font-size: calc(2vw + 2vh);
+          color: rgb(202, 202, 202);
+          font-family: MajorMono;
+          font-weight:500;
+          position:fixed;
+          bottom: 0;
+          right: 40%;
+          padding: var(--pd);
+          opacity: 1.0;"><a style="color: rgb(192, 211, 219);" href="/wrong-turn.html">go back</a></div>
+
+    </div>
+    <div class="exit-button">
+      <span><a class="exit-link" href="/fresh-start.html"><span>please don't </span>leave</a></span>
+    </div>
+    <footer>
+      <p>© 2026 Jay Anderson</p>
+    </footer>
+  </body>
+</html>

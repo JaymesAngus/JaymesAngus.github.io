@@ -7,16 +7,10 @@
 
     <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
     <style>
-        /* .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        } */
-
         .filter-section {
             margin: 2rem 0;
             padding: 1rem;
+            padding-left: 0;
         }
 
         .filter-controls {
@@ -48,6 +42,8 @@
             grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 2rem;
             padding: 1rem;
+            padding-left: 0;
+            /* background-image: url('/static/images/infinite_was_their_company2.png'); */
         }
 
         .book {
@@ -80,7 +76,12 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        /* Handle hover states differently for touch/non-touch devices */
+        /* #header-and-filters {
+          background-image: url('/static/images/asperatus.jpg');
+          background-size: cover;
+          opacity: 0.6;
+        } */
+
         @media (hover: hover) {
             .book:hover {
                 transform: scale(1.05);
@@ -109,14 +110,6 @@
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
-            /* body {
-                padding: 10px;
-            } */
-
-            /* .container {
-                padding: 0 10px;
-            } */
-
             .bookshelf {
                 gap: 1.5rem;
                 padding: 0.5rem;
@@ -148,7 +141,7 @@
             }
 
             .book {
-                margin-bottom: 40px; /* Reduced margin for mobile */
+                margin-bottom: 40px;
             }
 
             .book-info {
@@ -190,18 +183,14 @@
     </header>
 
   <div class="content">
-    <h1 style="font-family: MajorMono;">Bookshelf</h1>
-
-    <p><a href="/docs/bookshelf/plain-bookshelf.html">Plain-text list</a> · <a href="/docs/bookshelf/stats.html">Stats</a>
-    <a href="/docs/bookshelf/test-index.html">test</a></p>
-    <hr>
+    <h1 style="font-family: MajorMono;">bookshelf</h1>
     <div class="filter-section">
         <div class="filter-controls">
             <button class="filter-button active" data-filter="reading">Currently Reading</button>
             <button class="filter-button" data-filter="finished">Finished</button>
             <button class="filter-button" data-filter="toread">Reading List</button>
         </div>
-        <br>
+      <br>
     </div>
 
     <div class="bookshelf">
