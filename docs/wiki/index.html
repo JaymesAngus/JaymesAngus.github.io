@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>astro.scot - wiki</title>
+    <title>Wiki</title>
 
     <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
     <style>
@@ -13,10 +13,10 @@
       .alist {
         margin: 10px;
       }
-      li {
+      content li {
         padding: 4px 10px;
       }
-      ul {
+      content ul {
         list-style-type:none;
       }
 
@@ -39,10 +39,26 @@
     </style>
   </head>
   <body>
+    <header>
+      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree" style="width:100%; margin:0;">
+      <div class="title">
+        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+      </div> 
+      <nav>
+        <ul>
+            <li><a class="navlink" href="/docs/projects/">Projects</a></li>
+            <li><a aria-current="page" class="navlink" href="/docs/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/docs/blog/">Blog</a></li>
+        </ul>
+        <ul>
+            <li><a class="navlink" href="/docs/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/docs/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/docs/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="content">
-    <div class="trace"><a href="/">Home</a> / </div>
       <h1>Wiki</h1>
-      <hr>
       <p>
         My second brain! Notes I've taken for courses, links to interesting essays/explanations, guides I've written, etc.
       </p>
@@ -50,7 +66,6 @@
         The goal is to eventually
         automate the conversion of markdown files from Obsidian into html files and publish my entire <a href="/static/images/MiscImages/ObsidianPKB.png">[ collection of digital notes ]</a>
       </p>
-        <hr>
       <h2 id="physics">Physics wiki</h2>
       <div>
         <details>
@@ -87,7 +102,7 @@
         </details><br>
       </div>
 
-      <h2 id="physics">Meteorology wiki</h2>
+      <h2 id="meteorology">Meteorology wiki</h2>
       <div>
         <details>
           <summary>Bookmarks</summary>
@@ -95,6 +110,7 @@
           <li><a href="https://earth.nullschool.net/">Global meteorological data visualisation</a></li>
           </ul>
         </details><br>
+      </div>
 
       <h2>Creative resources</h2>
       <div>
@@ -102,9 +118,13 @@
           <summary>Tools</summary>
           <ul>
           <li><a href="https://www.imgonline.com.ua/eng/8bit-picture.php">pixelate image</a></li>
+          <li><a href="https://ditherit.com/">dithering</a></li>
           </ul>
         </details><br>
       </div>
     </div>
+    <footer>
+      <p>© 2026 Jay Anderson</p>
+    </footer>
   </body>
 </html>

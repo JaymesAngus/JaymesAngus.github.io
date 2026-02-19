@@ -12,12 +12,6 @@
     />
     <style>
       @media (max-width: 1000px) {
-        .trace {
-          font-size: 20px;
-          padding-bottom: 30px;
-          width: 80vw;
-          height: 20px;
-        }
         table {
           width: 80vw;
         }
@@ -30,8 +24,25 @@
     </style>
   </head>
   <body>
+    <header>
+      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree" style="width:100%; margin:0;">
+      <div class="title">
+        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+      </div> 
+      <nav>
+        <ul>
+            <li><a aria-current="page" class="navlink" href="/docs/projects/">Projects</a></li>
+            <li><a class="navlink" href="/docs/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/docs/blog/">Blog</a></li>
+        </ul>
+        <ul>
+            <li><a class="navlink" href="/docs/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/docs/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/docs/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="content">
-      <div class="trace"><a href="/">Home</a> /</div>
       <h1>Projects</h1>
       <hr />
       A collection of projects in various stages of completion.
@@ -83,5 +94,8 @@
       Early-stage exploration into building a CYOA game for the badger2040
       programmable e-ink display.
     </div>
+    <footer>
+      <p>© 2026 Jay Anderson</p>
+    </footer>
   </body>
 </html>

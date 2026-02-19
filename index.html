@@ -3,94 +3,92 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>astro.scot - intro</title>
+    <title>Intro</title>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
     <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
     <style>
-      body {
-        background-image: url("/static/images/MiscImages/smallvineline.png");
-        background-repeat: repeat-x;
-        background-size: 400px;
-        background-position: -30px -10px;
-      }
-      .navigation {
-        width: 100%;
-        text-align:justify;
-        display: flex; 
-        justify-content: space-between;
-        font-size:24px;
-        color: #6F1A07;
-        align-items: center;
-        font-weight: bold;
-      }
 
       h2 {
-        color:#3a6506;
-        border-radius: 10px;
-        background-color: #b6b6b613;
+        /* color:#3a6506; */
+        color: white;
       }
 
       .title {
-        font-size: calc(0.9vw + 0.9vh)
+        font-size: calc(1.5vw + 1.5vh);
+        font-weight: 400;
+        color: white;
+        font-family: Orbitron;
+        text-align: justify;
+        margin-left:20px;
+      }
+
+      footer {
+        color: white;
+      }
+
+      body {
+        background-image: url(/static/images/MiscImages/index-bg8.png);
+        background-size: cover;
+        background-position: center;
+        background-position: left center;
+      }
+
+      .container {
+        width:100vw;
+        height: 100vh;
+      }
+
+      nav a:link,
+      nav a:visited {
+        color: #ffffff;
+        text-decoration: none;
       }
 
      
       @media all and (max-width:800px)
         {
-          .navlink {
-            color: #6F1A07;
-            text-decoration: none;
-            display: block;
-            text-align:center;
-            margin-bottom: 10px;
-          }
-            .navigation
-            {
-                display: block; 
-                float: none; 
-                width: 100%;
-                font-size: 24px;
-            }
           .title {
-            margin-top: 90px;
-            text-align: center;
-            font-size: 26px;
-            text-shadow: -2px -2px 2px white;
+            margin: 0;
+            text-align: left;
+            font-size: calc(5vw + 5vh);
+          }
+          nav a:link,
+          nav a:visited {
+            text-shadow: 2px 2px 2px black;
+          }
+          .rotate {
+            display: block;
           }
         }
+
     </style>
   </head>
   <body>
-    <div class="content">
+    <header>
+      <div style="display:inline-block; overflow: hidden;">        
+        <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree" style="width:100%; margin:0; -webkit-filter: invert(100%); filter: invert(100%);">
+      </div>
       <div class="title">
-        <h1>astro.scot 🪐</h1>
-      </div>
-      <div class="navigation">
-        <a class="navlink" href="/docs/projects/">[ Projects ]</a>
-        <a class="navlink" href="/docs/wiki/">[ Wiki ]</a>
-        <a class="navlink" href="/docs/blog/">[ Blog ]</a>
-        <a class="navlink" href="/docs/bookshelf/">[ Bookshelf ]</a>
-        <a class="navlink" href="/docs/gallery/">[ Gallery ]</a>
-      </div>
-      <hr>
-      <br>
-      <h2>What is astro.scot?</h2>
-      <p class="answer">
-        A personal website - A place to share cool things I've made/found - A digital garden.
-      </p>
-      <h2>Who are you?</h2>
-      <p>
-        Hi, I'm <a href="/docs/about.html">[ Jay ]</a>.
-      </p>
-      <h2>Where do I go from here?</h2>
-      <p>
-        Well, are you perhaps...<br><br>
-        <a href="/docs/wiki/#physics">[ interested in physics/meteorology ]?</a><br><br>
-        <a href="/docs/projects/mphys-dissertation.html">[ a prospective employer ]?</a><br><br>
-        <a href="/docs/dungeon-crawler/">[ into choose-your-own-adventure games (WIP) ]?</a><br><br>
-      </p>
-    </div>
+        <span>biosferics</span>
+      </div> 
+      <nav>
+        <ul>
+            <li><a class="navlink" href="/docs/projects/">Projects</a></li>
+            <li><a class="navlink" href="/docs/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/docs/blog/">Blog</a></li>
+        </ul>
+        <ul>
+            <li><a class="navlink" href="/docs/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/docs/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/docs/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content"></div>
+    <footer>
+      <p>© 2026 Jay Anderson</p>
+    </footer>
   </body>
 </html>

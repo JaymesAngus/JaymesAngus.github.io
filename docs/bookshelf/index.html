@@ -7,20 +7,12 @@
 
     <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
     <style>
-      @media(max-width:1000px){
-        .trace {
-          font-size: 20px;
-          padding-bottom: 30px;
-          width: 80vw;
-          height: 20px;  
-        }
-      }
-        .container {
+        /* .container {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1rem;
-        }
+        } */
 
         .filter-section {
             margin: 2rem 0;
@@ -116,13 +108,13 @@
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
-            body {
+            /* body {
                 padding: 10px;
-            }
+            } */
 
-            .container {
+            /* .container {
                 padding: 0 10px;
-            }
+            } */
 
             .bookshelf {
                 gap: 1.5rem;
@@ -176,8 +168,26 @@
     </style>
 </head>
 <body>
+    <header>
+      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree" style="width:100%; margin:0;">
+      <div class="title">
+        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+      </div> 
+      <nav>
+        <ul>
+            <li><a class="navlink" href="/docs/projects/">Projects</a></li>
+            <li><a class="navlink" href="/docs/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/docs/blog/">Blog</a></li>
+        </ul>
+        <ul>
+            <li><a aria-current="page" class="navlink" href="/docs/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/docs/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/docs/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
   <div class="content">
-  <div class="trace"><a href="/">Home</a> /</div>
     <h1>Bookshelf</h1>
     <p><a href="/docs/bookshelf/plain-bookshelf.html">Plain-text list</a> · <a href="/docs/bookshelf/stats.html">Stats</a></p>
     <hr>
@@ -191,7 +201,7 @@
     </div>
 
     <div class="bookshelf">
-      <div class="loading">Loading books…</div>
+      <div class="loading">JavaScript disabled or not supported, redirecting to text-based bookshelf...</div>
     </div>
     <script>
       (function(){
@@ -290,5 +300,9 @@
         window._bookshelfRender = renderBooks;
       })();
     </script>
+  </div>
+  <footer>
+    <p>© 2026 Jay Anderson</p>
+  </footer>
 </body>
 </html>
