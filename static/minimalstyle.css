@@ -19,6 +19,16 @@
     src: url(/static/fonts/StalinistOne-Regular.ttf);
   }
 
+  @font-face {
+    font-family: MajorMono;
+    src: url(/static/fonts/MajorMonoDisplay-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Quin;
+    src: url(/static/fonts/Quintessential-Regular.ttf);
+  }
+
 html {
    margin: 0px;
    height: 100%;
@@ -227,10 +237,9 @@ li {
   }
 
   .content {
-    /* width: 90vw; */
     margin: 0;
     position: relative;
-    padding: var(--pd);
+    padding: calc(var(--pd) - 10px);
     text-align: left;
     font-family: monospace;
     font-size: 18px;
