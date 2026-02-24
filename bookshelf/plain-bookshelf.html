@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaintext bookshelf</title>
+
+    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+        /* .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        } */
+
+        .filter-section {
+            margin: 2rem 0;
+            padding: 1rem;
+        }
+
+        .filter-section {
+            margin: 2rem 0;
+            padding: 1rem;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        .filter-controls {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: left;
+        }
+
+        .filter-button {
+            padding: 0.75rem 1.5rem;
+            border: 1px solid #000;
+            background: transparent;
+            transition: all 0.3s ease;
+            min-width: 120px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .filter-button:hover,
+        .filter-button.active {
+            background: #000;
+            color: #fff;
+        }
+
+    table {
+      width: 100%;
+    }
+    td, th {
+      width: 21%;
+      padding-right: 2%;
+    }
+
+    th, td, tr {
+    padding-bottom: 2vh;
+    border-left:2px
+    }
+
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            .filter-section {
+                margin: 1rem 0;
+                padding: 0.5rem;
+            }
+
+            .filter-controls {
+                gap: 0.5rem;
+            }
+
+            .filter-button {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+                min-width: 110px;
+                width: calc(50% - 0.5rem);
+                margin: 0.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .filter-button {
+                width: 100%;
+                margin: 0.25rem 0;
+            }
+        }
+    </style>
+  </head>
+<body>
+    <header>
+      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
+      <div class="title">
+        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+      </div> 
+      <nav>
+        <ul>
+            <li><a class="navlink" href="/projects/">Projects</a></li>
+            <li><a class="navlink" href="/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/notes">Notes</a></li>
+        </ul>
+        <ul>
+            <li><a class="navlink" href="/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+  <div class="content">
+    <h1>plain-text bookshelf</h1>
+
+    <div class="filter-section">
+        <div class="filter-controls">
+            <button class="filter-button active" data-filter="reading">Currently Reading</button>
+            <button class="filter-button" data-filter="finished">Finished</button>
+            <button class="filter-button" data-filter="toread">Reading List</button>
+        </div>
+        <br>
+    </div>
+
+<table data-status="reading">
+</table>
+
+<table data-status="finished">
+</table>
+
+<table data-status="toread">
+</table>
+    <script>
+      (function(){
+        const booksUrl = './books.json';
+
+        function esc(s){
+          if(!s && s!==0) return '';
+          return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        }
+
+        function renderTables(books){
+          const tables = document.querySelectorAll('table[data-status]');
+          tables.forEach(table => {
+            const status = table.dataset.status;
+            // build header
+            const header = '<tr>\n    <th>Title</th>\n    <th>Author</th>\n    <th>Genre</th>\n    <th>Dates</th>\n </tr>';
+            const rows = books.filter(b => b.status === status).map(b => {
+              const authors = (b.authors || []).join(', ');
+              const genre = (b.genre || []).join(', ');
+              const dates = b.date_started + ' - ' + b.date_finished || '';
+              return `<tr><td>${esc(b.title)}</td><td>${esc(authors)}</td><td>${esc(genre)}</td><td>${esc(dates)}</td></tr>`;
+            }).join('\n');
+            table.innerHTML = header + '\n' + rows + '\n';
+          });
+        }
+
+        function setupFilters(){
+          document.querySelectorAll('.filter-button').forEach(button => {
+            button.addEventListener('click', () => {
+              document.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
+              button.classList.add('active');
+              const filter = button.dataset.filter;
+              document.querySelectorAll('table[data-status]').forEach(table => {
+                table.style.display = (table.dataset.status === filter) ? 'table' : 'none';
+              });
+            });
+          });
+        }
+
+        // initial display: hide all except reading
+        function initialDisplay(){
+          document.querySelectorAll('table[data-status]').forEach(table => {
+            table.style.display = (table.dataset.status === 'reading') ? 'table' : 'none';
+          });
+        }
+
+        fetch(booksUrl).then(r => r.json()).then(data => {
+          const books = Array.isArray(data) ? data : [];
+          renderTables(books);
+          setupFilters();
+          initialDisplay();
+        }).catch(err => {
+          console.error('Failed to load books.json', err);
+          // leave existing static content if fetch fails
+          setupFilters();
+          initialDisplay();
+        });
+      })();
+    </script>
+</body>
+</html>

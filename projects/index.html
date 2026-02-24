@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link
+      href="/static/minimalstyle.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <style>
+      @media (max-width: 1000px) {
+        table {
+          width: 80vw;
+        }
+        th,
+        td {
+          width: 40vw;
+          overflow: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
+      <div class="title">
+        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+      </div> 
+      <nav>
+        <ul>
+            <li><a aria-current="page" class="navlink" href="/projects/">Projects</a></li>
+            <li><a class="navlink" href="/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/notes">Notes</a></li>
+        </ul>
+        <ul>
+            <li><a class="navlink" href="/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="text-based-content-frame">
+        <h1>projects</h1>
+        <p>
+          A collection of projects in various stages of completion.
+        </p>
+        <br />
+        <h3>
+          <a href="/projects/mphys-dissertation.html"
+            >MPhys dissertation</a
+          ><br />
+        </h3>
+        My final year dissertation in gravitational microlensing. Currently investigating
+        the balance between photometric precision and imaging cadence for maximum
+        planet detection efficiency.
+        <br />
+        <h3>
+          <a href="/projects/photometry-pipeline.html"
+            >.fits to lightcurve pipeline</a
+          ><br />
+        </h3>
+        An astropy-based Python pipeline for identifying stars within astronomical
+        images and generating lightcurves. Designed for characterisation of camera
+        systems and identification of variable stars.
+        <br />
+        <h3>
+          <a href="/projects/orbitsim.html">Orbital simulation</a><br />
+        </h3>
+        A joint Python-Fortran project to accurately simulate and animate N-body
+        gravitational interactions using Newtonian mechanics.
+        <h3>
+          <a href="/projects/collisionsim.html">Collision simulation</a
+          ><br />
+        </h3>
+        An early-stage experimental project in collision simulation with Fortran.
+        Built around simple Newtonian interactions between a massive particle and
+        a rigid surface.
+        <h3>
+          <a href="/projects/handwriting-decoder.html"
+            >Handwriting decoder</a
+          ><br />
+        </h3>
+        A mini-project to take incomplete words and fill in the blanks. Created to
+        aid in the transcription of handwritten material and developed into a
+        (very) rudimentary predictive text function.
+        <h3>
+          <a href="/projects/badger2040.html"
+            >Badger2040 CYOA</a
+          ><br />
+        </h3>
+        Early-stage exploration into building a CYOA game for the badger2040
+        programmable e-ink display.
+      </div>
+    </div>
+    <footer>
+      <p>© 2026 Jay Anderson</p>
+    </footer>
+  </body>
+</html>

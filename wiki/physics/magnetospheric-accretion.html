@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnetospheric Accretion</title>
+
+    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  </head>
+
+  <body>
+    <header>
+      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
+      <div class="title">
+        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+      </div> 
+      <nav>
+        <ul>
+            <li><a class="navlink" href="/projects/">Projects</a></li>
+            <li><a class="navlink" href="/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/notes">Notes</a></li>
+        </ul>
+        <ul>
+            <li><a class="navlink" href="/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="text-based-content-frame">
+        <h1>Magnetospheric Accretion</h1>
+
+        <div class="contentimage">
+          <img src="/static/images/ImagesForNotes/MagnetosphericAccretion-transparent.png" class="block-image"/>
+          <div class="caption">Interaction of magnetosphere and protostellar disc for a T Tauri star reproduced from Camenzind 1990 </div>
+        </div>
+        
+        <p>
+          The magnetic field of a young protostar plays a pivotal role in how matter is accreted from the surrounding protostellar disc. Here we consider
+          a dipolar stellar magnetic field aligned with the rotation axis of the star, which carves an inner cavity out of the protostellar disc
+          up to the truncation radius. 
+          This is the point at which the gas ram pressure is equal to the magnetic pressure, and at which the magnetic
+          field lines couple to the disc.
+        </p>
+
+        \[\frac{B^2(R_{trunc})}{2\mu} = \rho u^2\]
+        \[\frac{R_{trunc}}{R_*} = 2m_s^{2/7} \left ( \frac{B_*}{140G}\right )^{4/7}\left ( \frac{\dot M}{10^{-8}M_\odot yr^{-1}}\right )^{-\frac{2}{7}} \left ( \frac{M_*}{0.8M_\odot}\right )^{-1/7} \left ( \frac{R_*}{2R_\odot}\right )^{5/7}\]
+        
+        For typical values of \(B_* = 1kG\) and \(\dot M_A = 10^{-8}\; M_\odot \; yr^{-1}\), we find that \[R_{trunc} \approx 3-7R_* \approx 0.03-0.07AU\]
+        <br>
+        <h2>Corotation vs truncation radius</h2>
+          <p>
+              Whether accretion occurs depends on the relation between the truncation and corotation radii.
+          </p>
+        <b>Accretion regime</b>
+        <p style="margin-left: 1em;">Stellar field lines which couple to the disc at a radius less than the corotation radius \(r < r_{cor}\) will act to spin the star up. 
+          The disc material will be locked to the field lines and will move at the same angular velocity as the star. This is how accretion columns are formed.
+        </p>
+              
+        <b>Dippers</b>
+        <p style="margin-left: 1em;">
+        In the case that \(r_{trunc} \sim r_{cor}\), field lines couple to the disc at the corotation radius and result in "disk locking". Accretion columns will form, but there will be no net spin-up or spin-down of the star. 
+        Dippers can be identified in light curves by their relatively flat maxima and quasi-periodic dips in brightness, which are caused by dust being lifted into accretion columns and temporarily eclipsing the star.
+        </p>
+
+        <b>Propeller regime</b>
+        <p style="margin-left: 1em;">
+        Stellar field lines which couple at \(r > r_{cor}\) will act to slow down the star as the stellar angular velocity is greater than the Keplerian velocity. This means that any disc material which becomes linked to the field lines will experience a centrifugal force which attempts to fling it away from the system. No accretion columns appear in this situation.
+        </p>
+        <br>
+        <br>
+        <h2>What causes magnetospheric accretion to stop?</h2>
+        <ul>
+          <li>If the truncation radius shifts beyond the corotation radius, magnetospheric accretion will cease</li>
+          <li>Photoevaporative winds can carry material away before it reaches the star</li>
+          <li>planet formation can remove mass that would otherwise be accreted</li>
+        </ul>
+        <br>
+        <h2>Complications</h2>
+        The rotation axis and stellar magnetic field are often misaligned by a small misalignment angle which we'll call \(Q\).
+        Instability in accretion can occur at small values of \(Q\) and high accretion rates. 
+        Stable accretion is characterised by a mostly-periodic light curve and accretion via two funnel streams. Unstable accretion may result in stochastic light curves and rapidly changing hotspots.
+        
+        <h2>References</h2>
+        Camenzind, M. (1990). Magnetized Disk-Winds and the Origin of Bipolar Outflows. Accretion and Winds. Reviews in Modern Astronomy, vol 3. https://doi.org/10.1007/978-3-642-76238-3_17 
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

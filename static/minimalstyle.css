@@ -71,9 +71,10 @@ body{
 }
 
 .rotate {
-  width: 200px;
+  width: 100%;
   animation: spin 360s linear infinite;
   overflow: hidden;
+  margin: 0;
 }
 
 @keyframes spin {
@@ -94,9 +95,16 @@ body{
   padding-bottom: 20vh;
   text-align: left;
   font-family: inherit;
-  font-size: 20px;
+  font-size: 18px;
   color: #191919;
   flex: 1;
+}
+
+.text-based-content-frame {
+  max-width: 60%;
+  text-align: left;
+  margin: auto;
+  margin-left:0;
 }
 
 header {
@@ -119,19 +127,6 @@ header, footer {
   padding: var(--pd);
 }
 
-.flex-wrapper {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.inline-image {
-  width: 60%;
-  padding: 5px;
-  display: inline-block;
-}
-
 .contentimage {
   width: 100%;
   padding: 5px;
@@ -148,18 +143,6 @@ header, footer {
   font-family: monospace;
   color: #191919;
   width: 100%;
-}
-
-.trace {
-  font-size: 22px;
-  padding-bottom: 20px;
-  width: 40vw;
-  height: 20px;
-  color: black;
-}
-
-.trace a:link, .trace a:visited {
-    color:#6F1A07;
 }
 
  a.textlink:link,  a.textlink:visited {
@@ -207,11 +190,16 @@ li {
   list-style: none;
 }
 
+h1 {
+  font-family: MajorMono;
+}
+
 @media all and (max-width:800px)
   {
     header {
       width: 100%;
       position: relative;
+      padding: calc(var(--pd) - 5px);
     }
     nav {
       display: flex;
@@ -219,6 +207,11 @@ li {
       justify-content: left;
       margin: 0px;
     }
+  .text-based-content-frame {
+    padding: var(--pd);
+    max-width: 100%;
+    margin: auto;
+  }
   .title {
     font-size: calc(2.5vw + 2.5vh);
     text-align: left;
@@ -229,7 +222,10 @@ li {
     position: relative;
   }
   .rotate {
-    display: none;
+    /* display: none; */
+    width: 35%;
+    margin: auto;
+    float: right;
   }
   nav a:link,
   nav a:visited {

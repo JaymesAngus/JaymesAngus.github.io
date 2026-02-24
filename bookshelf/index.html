@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      .filter-section {
+          margin: 2rem 0;
+          padding: 1rem;
+          margin-bottom: 0;
+      }
+
+      .filter-controls {
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+          /* justify-content: center; */
+          justify-content: left;
+      }
+
+      .filter-button {
+          padding: 0.75rem 1.5rem;
+          border: 1px solid #000;
+          background: transparent;
+          transition: all 0.3s ease;
+          min-width: 120px;
+          font-size: 1rem;
+          font-family: inherit;
+      }
+
+      .filter-button:hover,
+      .filter-button.active {
+          background: #000;
+          color: #fff;
+      }
+
+      .bookshelf {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+          gap: 2rem;
+          padding: 1rem;
+      }
+
+      .book {
+          position: relative;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          aspect-ratio: 2/3;
+          width: 100%;
+          margin-bottom: 60px;
+      }
+
+      .book-cover {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 1px solid #000;
+      }
+
+      .book-info {
+          position: absolute;
+          bottom: -30px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          font-size: 0.9rem;
+          background: rgba(255, 255, 255, 0.95);
+          padding: 0.5rem;
+          border-radius: 4px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      /* Handle hover states differently for touch/non-touch devices */
+      @media (hover: hover) {
+          .book:hover {
+              transform: scale(1.05);
+              z-index: 1;
+          }
+
+          .book:hover .progress-container,
+          .book:hover .book-info {
+              opacity: 1;
+          }
+      }
+
+      @media (hover: none) {
+          .book:active {
+              transform: scale(1.02);
+          }
+
+          .book.active .progress-container,
+          .book.active .book-info {
+              opacity: 1;
+              background: rgba(255, 255, 255, 0.98);
+          }
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+          .bookshelf {
+              gap: 1.5rem;
+              padding: 0.5rem;
+          }
+
+          .filter-section {
+              margin: 1rem 0;
+              padding: 0.5rem;
+          }
+
+          .filter-controls {
+              gap: 0.5rem;
+              justify-content: center;
+          }
+
+          .filter-button {
+              padding: 0.75rem 1rem;
+              font-size: 0.9rem;
+              min-width: 110px;
+              width: calc(50% - 0.5rem);
+              margin: 0.25rem;
+          }
+      }
+
+      @media (max-width: 480px) {
+        .bookshelf {
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        .book {
+            margin-bottom: 40px;
+        }
+
+        .book-info {
+            font-size: 0.8rem;
+            bottom: -40px;
+            padding: 0.25rem;
+        }
+
+        .star-rating {
+            font-size: 0.9rem;
+            gap: 1px;
+        }
+
+        .filter-button {
+            width: 100%;
+            margin: 0.25rem 0;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header>
+      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
+      <div class="title">
+        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+      </div>
+      <nav>
+        <ul>
+            <li><a class="navlink" href="/projects/">Projects</a></li>
+            <li><a class="navlink" href="/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/notes">Notes</a></li>
+        </ul>
+        <ul>
+            <li><a aria-current="page" class="navlink" href="/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <div class="content">
+    <h1 style="font-family: MajorMono; padding-left: 1rem;">bookshelf</h1>
+
+    <div class="filter-section">
+        <div class="filter-controls">
+            <button class="filter-button active" data-filter="reading">Record</button>
+            <button class="filter-button" data-filter="toread">Backlog</button>
+        </div>
+        <br>
+    </div>
+
+    <div class="bookshelf">
+      <div class="loading">If you can see this then your browser probably doesn't support JavaScript. Or your internet connection is just slow.</div>
+    </div>
+    <script>
+      (function(){
+        const booksUrl = './books.json';
+        let books = [];
+
+        function shuffleArray(array) {
+          const shuffled = [...array];
+          for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+          }
+          return shuffled;
+        }
+
+        function renderBooks(viewMode = 'reading') {
+          const container = document.querySelector('.bookshelf');
+          if (!container) return;
+
+          container.innerHTML = ''; // Clear loading text
+
+          if (viewMode === 'toread') {
+            // Show toread books only, without section header
+            let toreadBooks = books.filter(b => b.status === 'toread');
+            toreadBooks = shuffleArray(toreadBooks);
+            toreadBooks.forEach(b => {
+              const div = document.createElement('div');
+              div.className = 'book';
+              div.dataset.status = 'toread';
+
+              const img = document.createElement('img');
+              img.className = 'book-cover';
+              img.src = '/static/images/BookCovers/' + (b.cover || '');
+              img.alt = b.title || '';
+              img.loading = 'lazy';
+              div.appendChild(img);
+
+              const info = document.createElement('div');
+              info.className = 'book-info';
+              info.textContent = b.date_started + ' - ' + b.date_finished || '';
+              div.appendChild(info);
+
+              container.appendChild(div);
+            });
+          } else {
+            // Show reading and finished books with section headers
+            const grouped = {};
+            books.forEach(b => {
+              const status = b.status || 'reading';
+              if (!grouped[status]) {
+                grouped[status] = [];
+              }
+              grouped[status].push(b);
+            });
+
+            // Define section titles
+            const sectionTitles = {
+              'reading': 'Currently Reading',
+              'finished': 'Finished',
+              'toread': 'Reading List'
+            };
+
+            // Render sections in order with headers
+            const sectionOrder = ['reading', 'finished'];
+            sectionOrder.forEach(status => {
+              const statusBooks = grouped[status];
+              if (!statusBooks || statusBooks.length === 0) return;
+
+              // Create header
+              const header = document.createElement('h2');
+              header.textContent = sectionTitles[status];
+              header.style.gridColumn = '1 / -1';
+              header.style.margin = '1.5rem 0 1rem 0';
+              header.style.borderBottom = '1px solid #000';
+              header.style.paddingBottom = '0.5rem';
+              container.appendChild(header);
+
+              // Create book elements
+              statusBooks.forEach(b => {
+                const div = document.createElement('div');
+                div.className = 'book';
+                div.dataset.status = status;
+
+                const img = document.createElement('img');
+                img.className = 'book-cover';
+                img.src = '/static/images/BookCovers/' + (b.cover || '');
+                img.alt = b.title || '';
+                img.loading = 'lazy';
+                div.appendChild(img);
+
+                const info = document.createElement('div');
+                info.className = 'book-info';
+                info.textContent = b.date_started + ' - ' + b.date_finished || '';
+                div.appendChild(info);
+
+                container.appendChild(div);
+              });
+            });
+          }
+
+          attachTouchHandlers();
+        }
+
+        function attachTouchHandlers(){
+          if (window.matchMedia && window.matchMedia('(hover: none)').matches) {
+            document.querySelectorAll('.book').forEach(book => {
+              book.addEventListener('click', function(e){
+                document.querySelectorAll('.book').forEach(b => { if (b !== this) b.classList.remove('active'); });
+                this.classList.toggle('active');
+              });
+            });
+            document.addEventListener('click', function(e){
+              if (!e.target.closest || !e.target.closest('.book')) {
+                document.querySelectorAll('.book').forEach(book => book.classList.remove('active'));
+              }
+            });
+          }
+        }
+
+        function setupFilters() {
+          document.querySelectorAll('.filter-button').forEach(button => {
+            button.addEventListener('click', () => {
+              document.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
+              button.classList.add('active');
+              const filter = button.dataset.filter;
+              renderBooks(filter);
+            });
+          });
+        }
+
+        fetch(booksUrl).then(r => r.json()).then(data => {
+          books = data || [];
+          setupFilters();
+          renderBooks('reading');
+        }).catch(err => {
+          console.error('Failed to load books.json', err);
+          const c = document.querySelector('.bookshelf');
+          if(c) c.innerHTML = '<div class="loading">Failed to load books.</div>';
+        });
+
+        // expose for debugging
+        window._bookshelfRender = renderBooks;
+      })();
+    </script>
+  </div>
+  <footer>
+    <p>© 2026 Jay Anderson</p>
+  </footer>
+</body>
+</html>

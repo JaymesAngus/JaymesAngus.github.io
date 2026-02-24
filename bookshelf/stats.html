@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bookshelf statistics</title>
+    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      .stats-container { margin: 0 auto; padding: 1rem; }
+      .quick-stats-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 1rem; padding-bottom: 2%; padding-top: 2%;}
+      .stat-card { border:1px solid #ddd; padding:1rem; background:#fff; }
+      /* Circular stat cards */
+      .stat-card {
+        border-radius:50%;
+        border: 0; /* remove hard line */
+        box-shadow: 0 6px 18px rgba(16,24,40,0.04), inset 0 1px 0 rgba(255,255,255,0.03);
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        aspect-ratio:1/1;
+        width:100%;
+        max-width:220px;
+        margin:0 auto;
+        padding:0.75rem;
+        box-sizing:border-box;
+      }
+      .stat-card h3{ margin:0; font-size:0.95rem; text-align:center; color:#222; font-weight:600; }
+      .stat-card p{ margin:0.35rem 0 0 0; text-align:center; }
+      .stat-card p strong{ font-size:1.4rem; display:block; color:#111; font-weight:700; }
+
+      /* Ensure good contrast on cards with dark backgrounds (targeted by inline style values) */
+      .stat-card[style*="#88726c"] h3,
+      .stat-card[style*="#407527"] h3,
+      .stat-card[style*="#88726c"] p strong,
+      .stat-card[style*="#407527"] p strong {
+        color: #fff;
+      }
+      table.stats { width:100%; border-collapse: collapse; }
+      table.stats th, table.stats td { padding: 0.4rem 0.6rem; border-bottom: 1px solid #eee; text-align:left; }
+.books-chart-wrapper {
+  overflow-x: auto;          /* enable horizontal scroll */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  padding-bottom: 1rem;      /* space for scrollbars if they appear */
+}
+
+.books-chart {
+  display: flex;
+  gap: 0.6rem;
+  padding: 1rem 0;
+  align-items: flex-end;
+  flex-wrap: nowrap;          /* keep bars in one row */
+  min-width: max-content;     /* ensure bars don’t wrap */
+}
+      .books-chart .col { display:flex; flex-direction:column; align-items:center; flex:1 1 2rem; min-width:2rem; }
+      .books-chart .bar-wrap { height:220px; display:flex; align-items:flex-end; width:100%; }
+      .books-chart .bar { width:100%; background:linear-gradient(180deg,#407527, #094400); border-radius:6px 6px 0 0; display:flex; align-items:flex-end; justify-content:center; color:#fff; font-size:0.95rem; box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset; }
+      .books-chart .label { margin-top:0.5rem; font-size:0.85rem; color:#333; }
+      .books-chart .count { padding:0.25rem 0.35rem; font-size:0.95rem; opacity:0.98; font-weight:700; }
+
+      .challenge-counter-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+          gap: 2rem;
+          padding: 1rem;
+      }
+
+      .challenge-counter {
+          position: relative;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          aspect-ratio: 2/3;
+          width: 100%;
+          margin-bottom: 60px;
+      }
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 160px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding:16px;
+}
+
+.progress-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.progress-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+}
+
+.bg {
+  stroke: #eee;
+}
+
+.progress {
+  stroke: #4caf50;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  transition: stroke-dashoffset 0.8s ease;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.progress-title {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.close-btn {
+  align-self: flex-end;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#modal-title {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+#modal-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 8px;
+  padding-right: 8px;
+}
+
+#modal-description {
+  text-align: center;
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 12px;
+  padding: 0 8px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0;
+  font-size: 0.95em;
+}
+
+.check-item input {
+  accent-color: #4caf50;
+  pointer-events: none;
+  cursor: default;
+}
+
+
+
+      @media (max-width:420px) { 
+        .books-chart .col{ min-width:2rem } .books-chart .label{font-size:0.7rem} 
+      }
+      @media (max-width: 600px) {
+        /* hide the 4th column (Favourite Book) on mobile*/
+        #per-year-table th:nth-child(4),
+        #per-year-table td:nth-child(4) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
+      <div class="title">
+        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+      </div> 
+      <nav>
+        <ul>
+            <li><a class="navlink" href="/projects/">Projects</a></li>
+            <li><a class="navlink" href="/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/notes">Notes</a></li>
+        </ul>
+        <ul>
+            <li><a class="navlink" href="/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="stats-container">
+        <h1>bookshelf statistics</h1>
+        <div class="quick-stats-grid">
+          <div class="stat-card" style="background-color: #bea69f;">
+            <h3>Finished books</h3>
+            <p><strong id="year-finished">—</strong></p>
+            <p><strong id="total-finished">—</strong></p>
+          </div>
+          <div class="stat-card" style="background-color: #88726c;">
+            <h3>Pages read</h3>
+            <p><strong id="year-pages">—</strong></p>
+            <p><strong id="total-pages">—</strong></p>
+          </div>
+          <div class="stat-card" style="background-color: #407527;">
+            <h3>Average book length (pages)</h3>
+            <p><strong id="year-avg-pages">—</strong></p>
+            <p><strong id="total-avg-pages">—</strong></p>
+          </div>
+        </div>
+
+        <h2>Yearly stats</h2>
+        <table class="stats" id="per-year-table">
+          <thead><tr><th>Year</th><th>Books finished</th><th>Pages read</th><th>Favourite book</th></tr></thead>
+          <tbody id="per-year-body">
+            <!-- populated by JS -->
+          </tbody>
+        </table>
+
+        <div id="chart-root" style="width: 90%; margin: auto;">
+          <div id="chart-container"></div>
+        </div>
+
+        <h2>Reading challenges</h2>
+        <div class="progress-grid">
+          <div class="progress-container"
+            style="background-color: #fdcd01"
+            data-challenge="SFMasterworks_list"
+            data-description="Read all the books in the SF Masterworks series published by Gollancz"
+            data-colour=""
+            data-text-colour="#111">
+            <div class="progress-wrapper">
+              <svg class="progress-circle" width="120" height="120">
+                <circle class="bg" cx="60" cy="60" r="50" stroke-width="10"/>
+                <circle class="progress" cx="60" cy="60" r="50" stroke-width="10"/>
+              </svg>
+              <div class="progress-text">0%</div>
+            </div>
+            <div class="progress-title">SF Masterworks Challenge</div>
+          </div>
+
+          <div class="progress-container"
+              style="background-color:#0390c8;"
+              data-challenge="JamesLovelock"
+              data-description="Read all books written by the late scientist James E. Lovelock"
+              data-colour="#e99b27"
+              data-text_colour="#ffffff">
+            <div class="progress-wrapper">
+              <svg class="progress-circle" width="120" height="120">
+                <circle class="bg" cx="60" cy="60" r="50" stroke="#eee" stroke-width="10"/>
+                <circle class="progress" cx="60" cy="60" r="50" stroke-width="10">
+              </svg>
+              <div class="progress-text">0%</div>
+            </div>
+            <div class="progress-title">James E. Lovelock Challenge</div>
+          </div>
+
+          <div class="progress-container"
+              style="background-color:#407527;"
+              data-challenge="WorldLiterature"
+              data-description="Read a book from every country in the world"
+              data-colour="#0096c4"
+              data-text_colour="#ffffff">
+            <div class="progress-wrapper">
+              <svg class="progress-circle" width="120" height="120">
+                <circle class="bg" cx="60" cy="60" r="50" stroke="#eee" stroke-width="10"/>
+                <circle class="progress" cx="60" cy="60" r="50" stroke-width="10">
+              </svg>
+              <div class="progress-text">0%</div>
+            </div>
+            <div class="progress-title">World Literature Challenge</div>
+          </div>
+      </div>
+
+        <!-- Popup Modal -->
+        <div id="checklist-modal" class="modal hidden">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Checklist</h2>
+            <p id="modal-description">Description</p>
+            <div id="modal-list"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      function parseYear(s){
+        if(!s) return null;
+        s = String(s).trim();
+          let m = s.match(/\b20\d{2}\b/);
+        if(m) return parseInt(m[0],10);
+          m = s.match(/\b\d{1,2}\/\d{1,2}\/(\d{2,4})\b/);
+        if(m){ let y = m[1]; return y.length===2 ? 2000+parseInt(y,10) : parseInt(y,10); }
+        m = s.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*[\s,-]+(\d{4})\b/i);
+        if(m) return parseInt(m[1],10);
+        return null;
+      }
+
+      function numberOrNull(v){
+        if(v===null || v===undefined || v==='') return null;
+        let n = Number(v);
+        return Number.isFinite(n) ? n : null;
+      }
+
+      async function render(){
+        const resp = await fetch('./books.json');
+        const books = await resp.json();
+
+        const finished = books.filter(b => (b.status||'').toLowerCase()==='finished');
+        const pagesPresent = finished.filter(b => numberOrNull(b.pages) !== null);
+        const totalPages = pagesPresent.reduce((s,b)=> s + Number(b.pages), 0);
+        const avgPages = pagesPresent.length ? Math.round(totalPages / pagesPresent.length) : 0;
+        const year_finished = books.filter(b => 
+          (b.status || '').toLowerCase() === 'finished' &&
+          (b['date_finished'] || '').endsWith('26')
+        );
+        const year_pagesPresent = year_finished.filter(b => numberOrNull(b.pages) !== null);
+        const year_totalPages = year_pagesPresent.reduce((s,b)=> s + Number(b.pages), 0);
+        const year_avgPages = year_pagesPresent.length ? Math.round(year_totalPages / year_pagesPresent.length) : 0;
+        document.getElementById('year-finished').textContent = year_finished.length+" in 2026";
+        document.getElementById('total-finished').textContent = finished.length+" total";
+        document.getElementById('year-pages').textContent = year_totalPages+" in 2026";
+        document.getElementById('total-pages').textContent = totalPages+" total";
+        document.getElementById('year-avg-pages').textContent = year_avgPages+" in 2026";
+        document.getElementById('total-avg-pages').textContent = avgPages+" overall";
+
+        // per-year aggregation
+        const perYearBooks = {};
+        const perYearPages = {};
+        const perYearFav = {
+          2016: "Feral",
+          2017: "Cloud Atlas",
+          2018: "Heart of a Dog",
+          2019: "Black Leopard, Red Wolf",
+          2020: "Drive Your Plow Over the Bones of the Dead",
+          2021: "Piranesi",
+          2022: "The Dolls",
+          2023: "The Vorrh",
+          2024: "One Hundred Years of Solitude",
+          2025: "The Doloriad",
+          2026: "TBD"
+        };
+        for(const b of finished){
+          const df = b.date_finished || '';
+          const y = parseYear(df);
+          if(y){
+            perYearBooks[y] = (perYearBooks[y]||0) + 1;
+            const p = numberOrNull(b.pages);
+            if(p !== null) perYearPages[y] = (perYearPages[y]||0) + p;
+          }
+        }
+
+        // write per-year table sorted by year
+        const years = Object.keys(perYearBooks).map(Number).sort((a,b)=>a-b);
+        const tbody = document.getElementById('per-year-body');
+        tbody.innerHTML = years.map(y => `<tr><td>${y}</td><td>${perYearBooks[y]||0}</td><td>${perYearPages[y]||0}</td><td>${perYearFav[y]}</td></tr>`).join('\n');
+
+        // build chart
+        const chartContainer = document.getElementById('chart-container');
+        chartContainer.innerHTML = ''; // clear previous chart
+
+        if (years.length) {
+          const maxCount = Math.max(...years.map(y => perYearBooks[y] || 0));
+          const chartHeight = 220;
+
+          const cols = years.map(y => {
+            const c = perYearBooks[y] || 0;
+            const h = Math.max(10, Math.round((c / maxCount) * chartHeight));
+            return `<div class="col">
+                      <div class="bar-wrap">
+                        <div class="bar" style="height:${h}px">
+                          <span class="count">${c}</span>
+                        </div>
+                      </div>
+                      <div class="label">${y}</div>
+                    </div>`;
+          }).join('');
+
+          chartContainer.innerHTML = `
+            <div class="books-chart-wrapper">
+              <div class="books-chart" role="img" aria-label="Books finished per year">
+                ${cols}
+              </div>
+            </div>
+          `;
+        } else {
+          chartContainer.textContent = 'No per-year data available for chart.';
+        }
+      }
+
+      // small html-escape helper
+      function escapeHtml(s){ return String(s).replace(/[&<>\"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]); }
+
+      render().catch(err=>{
+        console.error(err); document.getElementById('chart-container').textContent = 'Failed to load data';
+      });
+
+      async function loadProgressForTracker(container, listFile, progressFile) {
+        const challenge = await fetch(listFile).then(res => res.json());
+        const userProgress = await fetch(progressFile).then(res => res.json());
+
+        let progressPercent = 0;
+
+        if (challenge.type === "book_list") {
+          const finishedTitles = userProgress
+            .filter(b => b.status === "finished")
+            .map(b => b.title);
+
+          const itemsWithDone = challenge.items.map(item => ({
+            ...item,
+            done: finishedTitles.includes(item.title)
+          }));
+
+          const completedCount = itemsWithDone.filter(item => item.done).length;
+          progressPercent = Math.round((completedCount / itemsWithDone.length) * 100);
+
+          container._modalData = {
+            type: "book_list",
+            items: itemsWithDone
+          };
+
+        } else if (challenge.type === "generic_list") {
+
+          const updatedItems = challenge.items.map(item => {
+            const match = userProgress.find(up => up.title === item.title);
+            return match ? { ...item, done: !!match.done } : item;
+          });
+
+          const completedCount = updatedItems.filter(item => item.done).length;
+          progressPercent = Math.round((completedCount / updatedItems.length) * 100);
+
+          container._modalData = {
+            type: "generic_list",
+            items: updatedItems
+          };
+        }
+
+        const circle = container.querySelector('.progress');
+        const text = container.querySelector('.progress-text');
+        const title = container.querySelector('.progress-title');
+
+        const radius = circle.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+
+        circle.style.strokeDasharray = circumference;
+        circle.style.strokeDashoffset = circumference * (1 - progressPercent / 100);
+
+        text.textContent = `${progressPercent}%`;
+
+        const circleColor = container.dataset.colour || '#407527';
+        const textColor = container.dataset.text_colour || '#000000';
+        circle.style.stroke = circleColor;
+        text.style.color = textColor;
+        title.style.color = textColor;
+
+        container.addEventListener('click', () => openChecklistModal(container));
+      }
+
+      function openChecklistModal(container) {
+        const modal = document.getElementById('checklist-modal');
+        const title = document.getElementById('modal-title');
+        const description = document.getElementById('modal-description');
+        const listContainer = document.getElementById('modal-list');
+
+        const data = container._modalData;
+
+        title.textContent = container.querySelector('.progress-title').textContent;
+        description.textContent = container.dataset.description || "";
+        listContainer.innerHTML = '';
+
+        data.items.forEach(item => {
+          const checkItem = document.createElement('div');
+          checkItem.classList.add('check-item');
+
+          const checkbox = document.createElement('input');
+          checkbox.type = 'checkbox';
+          checkbox.checked = !!item.done;
+          checkbox.readOnly = true;
+          checkbox.style.accentColor = "#4caf50";
+
+          const label = document.createElement('label');
+          label.textContent = item.title;
+
+          checkItem.appendChild(checkbox);
+          checkItem.appendChild(label);
+          listContainer.appendChild(checkItem);
+        });
+
+        modal.classList.remove('hidden');
+      }
+
+      function setupModalClose() {
+        const modal = document.getElementById('checklist-modal');
+        const closeBtn = modal.querySelector('.close-btn');
+
+        closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) modal.classList.add('hidden');
+        });
+      }
+
+      async function initAllTrackers() {
+        const trackers = document.querySelectorAll('.progress-container');
+
+        for (const tracker of trackers) {
+          const challengeFile = `/static/reading_challenges/${tracker.dataset.challenge}.json`;
+          const progressFile = `/bookshelf/books.json`;
+
+          await loadProgressForTracker(tracker, challengeFile, progressFile);
+        }
+
+        setupModalClose();
+      }
+
+      initAllTrackers();
+
+    </script>
+  <footer>
+    <p>© 2026 Jay Anderson</p>
+  </footer>
+  </body>
+</html>

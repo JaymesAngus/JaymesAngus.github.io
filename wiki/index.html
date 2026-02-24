@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki</title>
+
+    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      summary {
+        font-size: 1.17em;
+      }
+      .alist {
+        margin: 10px;
+      }
+      content li {
+        padding: 4px 10px;
+      }
+      content ul {
+        list-style-type:none;
+      }
+
+      @media(max-width:1000px){
+        table {
+          width: 80vw;
+        }
+        th,
+        td {
+          width: 40vw;
+          overflow: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
+      <div class="title">
+        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+      </div> 
+      <nav>
+        <ul>
+            <li><a class="navlink" href="/projects/">Projects</a></li>
+            <li><a aria-current="page" class="navlink" href="/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/notes">Notes</a></li>
+        </ul>
+        <ul>
+            <li><a class="navlink" href="/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="text-based-content-frame">
+        <h1>Wiki</h1>
+        <p>
+          Notes I've taken for courses, links to interesting essays/explanations, guides I've written, etc.
+        </p>
+        <p>
+          The goal is to eventually
+          automate the conversion of markdown files from Obsidian into html files and publish my entire 
+          <a href="/static/images/MiscImages/ObsidianPKB.png">collection of digital notes</a>.
+        </p>
+        <h2 id="physics">Physics wiki</h2>
+        <div>
+          <details>
+            <summary>Notes and guides</summary>
+            <ul>
+            <li><a href="/wiki/physics/clouds-on-m-dwarf-habitable-zones.html">Cloud physics widen the habitable zone around M-dwarfs</a></li>
+            <li><a href="/wiki/physics/final-parsec-problem.html">The final parsec problem</a></li>
+            <li><a href="/wiki/physics/flux-tube-emergence.html">Flux tube emergence</a></li>
+            <li><a href="/wiki/physics/gravitational-microlensing-primer.html">Gravitational microlensing primer</a></li>
+            <li><a href="/wiki/physics/lightcurve-qpos.html">Identifying quasi-periodic oscillations in light curve data</a></li>
+            <li><a href="/wiki/physics/magnetospheric-accretion.html">Magnetospheric accretion</a></li>
+            <li><a href="/wiki/physics/monte-carlo-playbook.html">Monte Carlo simulation basics</a></li>
+            <li><a href="/wiki/physics/monte-carlo-variance-reduction.html">Monte Carlo variance reduction techniques</a></li>
+            <li><a href="/wiki/physics/sampling-from-pdfs.html">Sampling from probability distribution functions</a></li>
+            <li><a href="/wiki/physics/subsurface-habitability-zones.html">Subsurface habitability zones</a></li>
+            <li><a href="/wiki/physics/urability.html">Urability</a></li>
+            <li><a href="/wiki/physics/viscous-torque-protostellar-discs.html">Viscous torque in protostellar discs</a></li>
+          </ul>
+        </details>
+          <br>
+          <details>
+            <summary>Learning material</summary>
+            <ul>
+            <li><a href="https://web.mit.edu/sahughes/www/8.022/">Scott Hughes MIT Undergrad Electromagnetism Course</a></li>
+            <li><a href="https://ned.ipac.caltech.edu/level5/">Caltech knowledge base for extragalactic astronomy and cosmology</a></li>
+            <li><a href="https://farside.ph.utexas.edu/teaching/336L/Fluidhtml/Fluidhtml.html">Richard Fitzpatrick Fluid Dynamics Course</a></li>
+            <li><a href="https://web.mit.edu/sahughes/www/8.033/">Scott Hughes "The Physics of Spacetime" @ MIT]</a></li>
+            <li><a href="https://web.mit.edu/sahughes/www/8.962/">Scott Hughes "General Relativity" Graduate Course @ MIT]</a></li>
+            <li><a href="https://www.preposterousuniverse.com/grnotes/">Sean Carroll's Notes on General Relativity</a></li>
+            <li><a href="http://www.opinionatedlessons.org/">Bill Press' Opiniated Lessons in Statistics</a></li>
+            <li><a href="https://lweb.cfa.harvard.edu/~namurphy/teaching.html">Nick Murphy "Plasma Astrophysics" Lecture Slides @ Harvard]</a></li>
+            <li><a href="http://www.physics.usyd.edu.au/~cairns/teaching/">Iver Cairn "Solar and Space Physics" Course @ University of Sydney</a></li>
+            <li><a href="http://astronomy.nmsu.edu/mcateer/thesis/online/">James McAteer Thesis - Wave Heating of Corona</a></li>
+            </ul>
+          </details><br>
+        </div>
+
+        <h2 id="meteorology">Meteorology wiki</h2>
+        <div>
+          <details>
+            <summary>Bookmarks</summary>
+            <ul>
+            <li><a href="https://earth.nullschool.net/">Global meteorological data visualisation</a></li>
+            </ul>
+          </details><br>
+        </div>
+
+        <h2>Creative resources</h2>
+        <div>
+          <details>
+            <summary>Tools</summary>
+            <ul>
+            <li><a href="https://www.imgonline.com.ua/eng/8bit-picture.php">pixelate image</a></li>
+            <li><a href="https://ditherit.com/">dithering</a></li>
+            </ul>
+          </details><br>
+        </div>        
+      </div>
+
+    </div>
+    <footer>
+      <p>© 2026 Jay Anderson</p>
+    </footer>
+  </body>
+</html>
