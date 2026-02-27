@@ -100,7 +100,7 @@
       <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
       <div class="title">
         <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
-      </div> 
+      </div>
       <nav>
         <ul>
             <li><a class="navlink" href="/projects/">Projects</a></li>
@@ -136,7 +136,6 @@
 </table>
     <script>
       (function(){
-        const booksUrl = './books.json';
 
         function esc(s){
           if(!s && s!==0) return '';
@@ -179,13 +178,18 @@
           });
         }
 
-        fetch(booksUrl).then(r => r.json()).then(data => {
-          const books = Array.isArray(data) ? data : [];
+        Promise.all([
+          fetch('./books.json').then(r => r.json()),
+          fetch('./reading-list.json').then(r => r.json())
+        ]).then(([booksData, listData]) => {
+          const booksArray = Array.isArray(booksData) ? booksData : [];
+          const listArray = Array.isArray(listData) ? listData : [];
+          const books = [...booksArray, ...listArray];
           renderTables(books);
           setupFilters();
           initialDisplay();
         }).catch(err => {
-          console.error('Failed to load books.json', err);
+          console.error('Failed to load books.json or reading-list.json', err);
           // leave existing static content if fetch fails
           setupFilters();
           initialDisplay();

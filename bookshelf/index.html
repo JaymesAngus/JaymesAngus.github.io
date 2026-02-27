@@ -188,7 +188,6 @@
     </div>
     <script>
       (function(){
-        const booksUrl = './books.json';
         let books = [];
 
         function shuffleArray(array) {
@@ -315,8 +314,11 @@
           });
         }
 
-        fetch(booksUrl).then(r => r.json()).then(data => {
-          books = data || [];
+        Promise.all([
+          fetch('./books.json').then(r => r.json()),
+          fetch('./reading-list.json').then(r => r.json())
+        ]).then(([booksData, listData]) => {
+          books = [...(booksData || []), ...(listData || [])];
           setupFilters();
           renderBooks('reading');
         }).catch(err => {
