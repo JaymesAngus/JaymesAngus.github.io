@@ -1,5 +1,40 @@
 [
   {
+    "id": "cuteaccelerationism",
+    "title": "Cute Accelerationism",
+    "authors": [
+      "Maya B. Kronic",
+      "Amy Ireland"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy",
+      "Art"
+    ],
+    "status": "reading",
+    "cover": "CuteAccelerationism.jpg",
+    "date_started": "09/03/26",
+    "date_finished": "",
+    "pages": 232
+  },
+  {
+    "id": "theerstwhile",
+    "title": "The Erstwhile",
+    "authors": [
+      "Brian Catling"
+    ],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Dark Fantasy"
+    ],
+    "status": "reading",
+    "cover": "TheErstwhile.jpg",
+    "date_started": "27/02/26",
+    "date_finished": "",
+    "pages": 460
+  },
+  {
     "id": "philosophyandsimulation",
     "title": "Philosophy and Simulation: The Emergence of Synthetic Reason",
     "authors": [
@@ -32,17 +67,6 @@
     "date_started": "01/02/26",
     "date_finished": "",
     "pages": 262
-  },
-  {
-    "id": "theyearoftheflood",
-    "title": "The Year Of The Flood",
-    "authors": [],
-    "genre": [],
-    "status": "reading",
-    "cover": "TheYearOfTheFlood.jpg",
-    "date_started": "14/01/26",
-    "date_finished": "",
-    "pages": 430
   },
   {
     "id": "kingkongtheory",

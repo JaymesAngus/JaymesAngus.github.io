@@ -1,5 +1,104 @@
 [
   {
+    "id": "theweirdandtheeerie",
+    "title": "The Weird and the Eerie",
+    "authors": ["Mark Fisher"],
+    "genre": [],
+    "status": "toread",
+    "cover": "TheWeirdAndTheEerie.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null
+  },
+  {
+    "id": "drugcartelsdonotexist",
+    "title": "Drug Cartels Do Not Exist: Narcotrafficking in US and Mexican Culture",
+    "authors": ["Oswaldo Zavala"],
+    "genre": [],
+    "status": "toread",
+    "cover": "DrugCartelsDoNotExist.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null
+  },
+  {
+    "id": "theshadowofthetorturer",
+    "title": "The Shadow of the Torturer",
+    "authors": ["Gene Wolfe"],
+    "genre": [],
+    "status": "toread",
+    "cover": "TheShadowOfTheTorturer.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null
+  },
+  {
+    "id": "theweatherexperiment",
+    "title": "The Weather Experiment",
+    "authors": ["Peter Moore"],
+    "genre": [],
+    "status": "toread",
+    "cover": "TheWeatherExperiment.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null
+  },
+  {
+    "id": "alltomorrows",
+    "title": "All Tomorrows: A Billion Year Chronicle of the Myriad Species and Mixed Fortunes of Man",
+    "authors": ["C.M. Kösemen"],
+    "genre": [],
+    "status": "toread",
+    "cover": "AllTomorrows.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null
+  },
+  {
+    "id": "thebiophiliahypothesis",
+    "title": "The Biophilia Hypothesis",
+    "authors": ["Edward O. Wilson", "Stephen R. Kellert"],
+    "genre": [],
+    "status": "toread",
+    "cover": "TheBiophiliaHypothesis.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null
+  },
+  {
+    "id": "therevengeofgaia",
+    "title": "The Revenge of Gaia",
+    "authors": ["James Lovelock"],
+    "genre": [],
+    "status": "toread",
+    "cover": "TheRevengeOfGaia.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null
+  },
+  {
+    "id": "poorthings",
+    "title": "Poor Things",
+    "authors": ["Alistair Gray"],
+    "genre": [],
+    "status": "toread",
+    "cover": "PoorThings.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null
+  },
+  {
+    "id": "theyearoftheflood",
+    "title": "The Year Of The Flood",
+    "authors": [],
+    "genre": [],
+    "status": "toread",
+    "cover": "TheYearOfTheFlood.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 430
+  },
+  {
     "id": "theslynx",
     "title": "The Slynx",
     "authors": [
@@ -116,7 +215,7 @@
   {
     "id": "thevanishingfaceofgaia",
     "title": "The Vanishing Face Of Gaia",
-    "authors": [],
+    "authors": ["James Lovelock"],
     "genre": [],
     "status": "toread",
     "cover": "TheVanishingFaceOfGaia.jpg",
@@ -335,7 +434,7 @@
   },
   {
     "id": "ducksnewburyport",
-    "title": "Ducks Newburyport",
+    "title": "Ducks, Newburyport",
     "authors": [],
     "genre": [],
     "status": "toread",
