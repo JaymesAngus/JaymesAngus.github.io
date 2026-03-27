@@ -49,7 +49,9 @@
     "cover": "PhilosophyAndSimulation.jpg",
     "date_started": "27/11/25",
     "date_finished": "27/02/26",
-    "pages": 203
+    "pages": 203,
+    "date_purchased": "12/12/20",
+    "purchase_location": "Topping & Company Booksellers, KY16 9HG"
   },
   {
     "id": "theanatomyofdisgust",
@@ -132,7 +134,9 @@
     "cover": "Exocapitalism.jpg",
     "date_started": "21/09/25",
     "date_finished": "25/11/25",
-    "pages": 156
+    "pages": 156,
+    "date_purchased": "26/09/25",
+    "purchase_location": "The Anarchist Bookfair, Waterloo Graffiti tunnel"
   },
   {
     "id": "thedominantanimal",
@@ -576,7 +580,9 @@
     "cover": "ExpectResistance.jpg",
     "date_started": "2023",
     "date_finished": "04/02/24",
-    "pages": 342
+    "pages": 342,
+    "date_purchased": "24/06/23",
+    "purchase_location": "Lighthouse Booksellers, EH8 9DB"
   },
   {
     "id": "topographiahibernica",
@@ -2468,6 +2474,36 @@
     "date_started": "",
     "date_finished": "Long ago...",
     "pages": 479
+  },
+  {
+    "id": "revolver",
+    "title": "Revolver",
+    "authors": [
+      "Marcus Sedgwick"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
+    "status": "finished",
+    "cover": "Revolver.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 224
+  },
+  {
+    "id": "sheisnotinvisible",
+    "title": "She Is Not Invisible",
+    "authors": [
+      "Marcus Sedgwick"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
+    "status": "finished",
+    "cover": "SheIsNotInvisible.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 354
   },
   {
     "id": "theenemy",

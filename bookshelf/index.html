@@ -48,7 +48,7 @@
           transition: transform 0.3s ease, box-shadow 0.3s ease;
           aspect-ratio: 2/3;
           width: 100%;
-          margin-bottom: 60px;
+          margin-bottom: 30px;
       }
 
       .book-cover {
@@ -181,7 +181,7 @@
 
     <div class="filter-section">
         <div class="filter-controls">
-            <button class="filter-button active" data-filter="reading">Record</button>
+            <button class="filter-button active" data-filter="finished">Log</button>
             <button class="filter-button" data-filter="toread">Backlog</button>
         </div>
         <br>
@@ -222,7 +222,7 @@
           if (status === 'toread') {
             info.innerHTML = b.title || '';
           } else {
-            info.innerHTML = b.title + '<br>' + b.date_started + ' - ' + b.date_finished || '';
+            info.innerHTML = b.title + '<br>-<br>' + b.date_finished;
           }
 
           div.appendChild(info);
@@ -230,7 +230,7 @@
           return div;
         }
 
-        function renderBooks(viewMode = 'reading') {
+        function renderBooks(viewMode = 'finished') {
           const container = document.querySelector('.bookshelf');
           if (!container) return;
 
@@ -244,42 +244,10 @@
               container.appendChild(createBookElement(b, 'toread'));
             });
           } else {
-            // Show reading and finished books with section headers
-            const grouped = {};
-            books.forEach(b => {
-              const status = b.status || 'reading';
-              if (!grouped[status]) {
-                grouped[status] = [];
-              }
-              grouped[status].push(b);
-            });
-
-            // Define section titles
-            const sectionTitles = {
-              'reading': 'Currently Reading',
-              'finished': 'Finished',
-              'toread': 'Reading List'
-            };
-
-            // Render sections in order with headers
-            const sectionOrder = ['reading', 'finished'];
-            sectionOrder.forEach(status => {
-              const statusBooks = grouped[status];
-              if (!statusBooks || statusBooks.length === 0) return;
-
-              // Create header
-              const header = document.createElement('h2');
-              header.textContent = sectionTitles[status];
-              header.style.gridColumn = '1 / -1';
-              header.style.margin = '1.5rem 0 1rem 0';
-              header.style.borderBottom = '1px solid #000';
-              header.style.paddingBottom = '0.5rem';
-              container.appendChild(header);
-
-              // Create book elements
-              statusBooks.forEach(b => {
-                container.appendChild(createBookElement(b, status));
-              });
+            // Show finished books
+            const finishedBooks = books.filter(b => b.status === 'finished');
+            finishedBooks.forEach(b => {
+              container.appendChild(createBookElement(b, 'finished'));
             });
           }
 
@@ -337,7 +305,7 @@
         ]).then(([booksData, listData]) => {
           books = [...(booksData || []), ...(listData || [])];
           setupFilters();
-          renderBooks('reading');
+          renderBooks('finished');
         }).catch(err => {
           console.error('Failed to load books.json', err);
           const c = document.querySelector('.bookshelf');
