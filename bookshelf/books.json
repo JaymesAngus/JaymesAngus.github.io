@@ -18,6 +18,24 @@
     "pages": 232
   },
   {
+    "id": "undertheyeofthebigbird",
+    "title": "UnderTheEyeOfTheBigBird",
+    "authors": [
+      "Hiromi Kawakami"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction"
+    ],
+    "status": "finished",
+    "cover": "UnderTheEyeOfTheBigBird.jpg",
+    "date_started": "11/04/26",
+    "date_finished": "02/05/26",
+    "pages": 278,
+    "date_purchased": "N/A",
+    "purchase_location": "Borrowed from Ross Anderson"
+  },
+  {
     "id": "theerstwhile",
     "title": "The Erstwhile",
     "authors": [
@@ -28,11 +46,13 @@
       "Fantasy",
       "Dark Fantasy"
     ],
-    "status": "reading",
+    "status": "finished",
     "cover": "TheErstwhile.jpg",
     "date_started": "27/02/26",
-    "date_finished": "",
-    "pages": 460
+    "date_finished": "10/04/26",
+    "pages": 460,
+    "date_purchased": "27/02/26",
+    "purchase_location": "Exeter Roman Gate Waterstones, EX4 3PZ"
   },
   {
     "id": "philosophyandsimulation",

@@ -1,5 +1,18 @@
 [
   {
+    "id": "thedechronizationofsammagruder",
+    "title": "The Dechronization of Sam Magruder",
+    "authors": ["Mark Fisher"],
+    "genre": [],
+    "status": "toread",
+    "cover": "TheDechronizationofSamMagruder.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null,
+    "date_purchased": "02/05/26",
+    "purchase_location": "Oxford Oxfam, OX1 3LU"
+  },
+  {
     "id": "theweirdandtheeerie",
     "title": "The Weird and the Eerie",
     "authors": ["Mark Fisher"],
@@ -113,7 +126,9 @@
     "cover": "TheSlynx.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 299
+    "pages": 299,
+    "date_purchased": "04/05/2026",
+    "purchase_location": "Oxford Blackwell's Sci-fi, Manga & Games, OX1 3BS"
   },
   {
     "id": "howlifeworks",
@@ -160,7 +175,9 @@
     "cover": "EightBears.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 219
+    "pages": 219,
+    "date_purchased": "N/A",
+    "purchase_location": "24th birthday gift from Jesse Anderson"
   },
     {
     "id": "theconquestofbread",
