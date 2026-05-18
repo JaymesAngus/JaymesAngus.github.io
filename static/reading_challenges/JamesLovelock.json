@@ -2,46 +2,60 @@
   "type": "book_list",
   "items": [
     {
-      "title": "Gaia: A New Look At Life On Earth"
+      "title": "Gaia: A New Look At Life On Earth",
+      "cover": "GaiaANewLookAtLifeOnEarth.jpg"
     },
     {
-      "title": "The Great Extinction"
+      "title": "The Great Extinction",
+      "cover": "TheGreatExtinction.jpeg"
     },
     {
-      "title": "The Greening of Mars"
+      "title": "The Greening of Mars",
+      "cover": "TheGreeningOfMars.jpg"
     },
     {
-      "title": "The Ages of Gaia: A Biography of Our Living Earth"
+      "title": "The Ages of Gaia: A Biography of Our Living Earth",
+      "cover": "TheAgesOfGaia.jpg"
     },
     {
-      "title": "Gaia: The Practical Science of Planetary Medicine"
+      "title": "Gaia: The Practical Science of Planetary Medicine",
+      "cover": "GaiaThePracticalScienceOfPlanetaryMedicine.jpg"
     },
     {
-      "title": "Scientists on Gaia"
+      "title": "Scientists on Gaia",
+      "cover": "ScientistsOnGaia.jpg"
     },
     {
-      "title": "Homage to Gaia: The Life of an Independent Scientist"
+      "title": "Homage to Gaia: The Life of an Independent Scientist",
+      "cover": "HomageToGaia.jpg"
     },
     {
-      "title": "Gaia: Medicine for an Ailing Planet"
+      "title": "Gaia: Medicine for an Ailing Planet",
+      "cover": "GaiaMedicineForAnAilingPlanet.jpg"
     },
     {
-      "title": "The Revenge of Gaia: Why the Earth Is Fighting Back – and How We Can Still Save Humanity"
+      "title": "The Revenge of Gaia: Why the Earth Is Fighting Back – and How We Can Still Save Humanity",
+      "cover": "TheRevengeOfGaia.jpg"
     },
     {
-      "title": "The Vanishing Face of Gaia: A Final Warning: Enjoy It While You Can"
+      "title": "The Vanishing Face of Gaia: A Final Warning: Enjoy It While You Can",
+      "cover": "TheVanishingFaceOfGaia.jpg"
     },
     {
-      "title": "A Rough Ride to the Future"
+      "title": "A Rough Ride to the Future",
+      "cover": "ARoughRideToTheFuture.jpg"
     },
     {
-      "title": "The Earth and I"
+      "title": "The Earth and I",
+      "cover": "TheEarthAndI.jpg"
     },
     {
-      "title": "Novacene: The Coming Age of Hyperintelligence"
+      "title": "Novacene: The Coming Age of Hyperintelligence",
+      "cover": "Novacene.jpg"
     },
     {
-      "title": "Ever Gaia"
+      "title": "Ever Gaia",
+      "cover": "EverGaia.jpg"
     }
   ]
 }

@@ -1,11 +1,95 @@
 [
   {
+    "title": "Train Dreams",
+    "authors": ["Dennis Johnson"],
+    "genre": [
+      "Fiction",
+      "Historial Fiction",
+      "American Literature"
+    ],
+    "status": "toread",
+    "cover": "TrainDreams.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 116
+  },
+  {
+    "title": "This Book Is A Knife",
+    "authors": ["L.E. Fox"],
+    "genre": [
+      "Non-Fiction",
+      "Essays",
+      "Environment",
+      "Politics"
+    ],
+    "status": "toread",
+    "cover": "ThisBookIsAKnife.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 300
+  },
+  {
+    "title": "Famine: A Short History",
+    "authors": ["Cormac Ó Gráda"],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Politics",
+      "Economics"
+    ],
+    "status": "toread",
+    "cover": "Famine.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 282
+  },
+  {
+    "title": "The Course of the Heart",
+    "authors": [
+      "M. John Harrison"
+    ],
+    "genre": [
+      "Fiction",
+      "Weird Fiction",
+      "Fantasy",
+      "Horror",
+      "Magical Realism"
+    ],
+    "status": "toread",
+    "cover": "TheCourseOfTheHeart.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 265
+  },
+  {
+    "id": "cuteaccelerationism",
+    "title": "Cute Accelerationism",
+    "authors": [
+      "Maya B. Kronic",
+      "Amy Ireland"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy",
+      "Art"
+    ],
+    "status": "toread",
+    "cover": "CuteAccelerationism.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 232
+  },
+  {
     "id": "thedechronizationofsammagruder",
     "title": "The Dechronization of Sam Magruder",
-    "authors": ["Mark Fisher"],
-    "genre": [],
+    "authors": ["George Gaylord Simpson"],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Speculative Fiction"
+    ],
     "status": "toread",
-    "cover": "TheDechronizationofSamMagruder.jpg",
+    "cover": "TheDechronizationOfSamMagruder.jpg",
     "date_started": "",
     "date_finished": "",
     "pages": null,
@@ -16,7 +100,12 @@
     "id": "theweirdandtheeerie",
     "title": "The Weird and the Eerie",
     "authors": ["Mark Fisher"],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Essays",
+      "Philosophy",
+      "Literary Criticism"
+    ],
     "status": "toread",
     "cover": "TheWeirdAndTheEerie.jpg",
     "date_started": "",
@@ -27,7 +116,13 @@
     "id": "drugcartelsdonotexist",
     "title": "Drug Cartels Do Not Exist: Narcotrafficking in US and Mexican Culture",
     "authors": ["Oswaldo Zavala"],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Politics",
+      "Economics",
+      "Crime"
+    ],
     "status": "toread",
     "cover": "DrugCartelsDoNotExist.jpg",
     "date_started": "",
@@ -38,7 +133,11 @@
     "id": "theshadowofthetorturer",
     "title": "The Shadow of the Torturer",
     "authors": ["Gene Wolfe"],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Fantasy"
+    ],
     "status": "toread",
     "cover": "TheShadowOfTheTorturer.jpg",
     "date_started": "",
@@ -49,7 +148,12 @@
     "id": "theweatherexperiment",
     "title": "The Weather Experiment",
     "authors": ["Peter Moore"],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Weather",
+      "Science"
+    ],
     "status": "toread",
     "cover": "TheWeatherExperiment.jpg",
     "date_started": "",
@@ -60,7 +164,11 @@
     "id": "alltomorrows",
     "title": "All Tomorrows: A Billion Year Chronicle of the Myriad Species and Mixed Fortunes of Man",
     "authors": ["C.M. Kösemen"],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Speculative Fiction"
+    ],
     "status": "toread",
     "cover": "AllTomorrows.jpg",
     "date_started": "",
@@ -71,7 +179,12 @@
     "id": "thebiophiliahypothesis",
     "title": "The Biophilia Hypothesis",
     "authors": ["Edward O. Wilson", "Stephen R. Kellert"],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Nature",
+      "Environment",
+      "Philosophy"
+    ],
     "status": "toread",
     "cover": "TheBiophiliaHypothesis.jpg",
     "date_started": "",
@@ -82,7 +195,11 @@
     "id": "therevengeofgaia",
     "title": "The Revenge of Gaia",
     "authors": ["James Lovelock"],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Environment"
+    ],
     "status": "toread",
     "cover": "TheRevengeOfGaia.jpg",
     "date_started": "",
@@ -93,7 +210,12 @@
     "id": "poorthings",
     "title": "Poor Things",
     "authors": ["Alistair Gray"],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Historical Fiction",
+      "Gothic"
+    ],
     "status": "toread",
     "cover": "PoorThings.jpg",
     "date_started": "",
@@ -103,8 +225,11 @@
   {
     "id": "theyearoftheflood",
     "title": "The Year Of The Flood",
-    "authors": [],
-    "genre": [],
+    "authors": ["Margaret Atwood"],
+    "genre": [
+      "Fiction",
+      "Science Fiction"
+    ],
     "status": "toread",
     "cover": "TheYearOfTheFlood.jpg",
     "date_started": "",
@@ -151,7 +276,11 @@
     "id": "theaxemanscarnival",
     "title": "The Axemans Carnival",
     "authors": ["Catherine Chidgey"],
-    "genre": ["Fiction", "Xenofiction", "Magical Realism"],
+    "genre": [
+      "Fiction",
+      "Xenofiction",
+      "Magical Realism"
+    ],
     "status": "toread",
     "cover": "TheAxemansCarnival.jpg",
     "date_started": "",
@@ -159,31 +288,15 @@
     "pages": 336
   },
   {
-    "id": "eightbears",
-    "title": "Eight Bears: Mythic Past and Imperiled Future",
-    "authors": [
-      "Gloria Dickie"
-    ],
-    "genre": [
-      "Non-Fiction",
-      "Science",
-      "Nature",
-      "History",
-      "Zoology"
-    ],
-    "status": "toread",
-    "cover": "EightBears.jpg",
-    "date_started": "",
-    "date_finished": "",
-    "pages": 219,
-    "date_purchased": "N/A",
-    "purchase_location": "24th birthday gift from Jesse Anderson"
-  },
-    {
     "id": "theconquestofbread",
     "title": "The Conquest Of Bread",
-    "authors": [],
-    "genre": [],
+    "authors": ["Pyotr Kropotkin"],
+    "genre": [
+      "Non-Fiction",
+      "Political Theory",
+      "Anachism",
+      "Philosophy"
+    ],
     "status": "toread",
     "cover": "TheConquestOfBread.jpg",
     "date_started": "",
@@ -210,8 +323,15 @@
   {
     "id": "williamblakeandtheseamonstersoflove",
     "title": "William Blake And The Sea Monsters Of Love",
-    "authors": [],
-    "genre": [],
+    "authors": [
+      "Phillip Hoare"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Art",
+      "History",
+      "Biography"
+    ],
     "status": "toread",
     "cover": "WilliamBlakeAndTheSeaMonstersOfLove.jpg",
     "date_started": "",
@@ -221,8 +341,16 @@
   {
     "id": "thinkingasanarchists",
     "title": "Thinking As Anarchists",
-    "authors": [],
-    "genre": [],
+    "authors": [
+      "Giovanna Gioli",
+      "Hamish Kallin"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Political Theory",
+      "Essays",
+      "Anachism"
+    ],
     "status": "toread",
     "cover": "ThinkingAsAnarchists.jpg",
     "date_started": "",
@@ -233,7 +361,12 @@
     "id": "thevanishingfaceofgaia",
     "title": "The Vanishing Face Of Gaia",
     "authors": ["James Lovelock"],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Environment",
+      "Science",
+      "Nature"
+    ],
     "status": "toread",
     "cover": "TheVanishingFaceOfGaia.jpg",
     "date_started": "",
@@ -243,8 +376,12 @@
   {
     "id": "transparentcity",
     "title": "Transparent City",
-    "authors": [],
-    "genre": [],
+    "authors": ["Ondjaki"],
+    "genre": [
+      "Fiction",
+      "Angolan Literature",
+      "Magical Realism"
+    ],
     "status": "toread",
     "cover": "TransparentCity.jpg",
     "date_started": "",
@@ -254,8 +391,15 @@
   {
     "id": "mutantecologies",
     "title": "Mutant Ecologies",
-    "authors": [],
-    "genre": [],
+    "authors": [
+      "Erica Borg",
+      "Amedeo Policante"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Environment",
+      "Economics"
+    ],
     "status": "toread",
     "cover": "MutantEcologies.jpg",
     "date_started": "",
@@ -267,8 +411,13 @@
   {
     "id": "openveinsoflatinamerica",
     "title": "Open Veins Of Latin America",
-    "authors": [],
-    "genre": [],
+    "authors": ["Eduardo Galeano"],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Politics",
+      "Economics"
+    ],
     "status": "toread",
     "cover": "OpenVeinsOfLatinAmerica.jpg",
     "date_started": "",
@@ -300,8 +449,12 @@
   {
     "id": "moonwitchspiderking",
     "title": "Moon Witch Spider King",
-    "authors": [],
-    "genre": [],
+    "authors": ["Marlon James"],
+    "genre": [
+      "Fiction",
+      "Historical Fiction",
+      "Fantasy"
+    ],
     "status": "toread",
     "cover": "MoonWitchSpiderKing.jpg",
     "date_started": "",
@@ -328,7 +481,9 @@
     "cover": "TheWorkOfTheDead.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "27/02/26",
+    "purchase_location": "Exeter Roman Gate Waterstones, EX4 3PZ"
   },
   {
     "id": "thevitalquestion",
@@ -345,7 +500,10 @@
     "id": "thehaircarpetweavers",
     "title": "The Hair Carpet Weavers",
     "authors": [],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction"
+    ],
     "status": "toread",
     "cover": "TheHair-CarpetWeavers.jpg",
     "date_started": "",
@@ -388,13 +546,17 @@
   {
     "id": "darkecology",
     "title": "Dark Ecology",
-    "authors": [],
-    "genre": [],
+    "authors": ["Timothy Morton"],
+    "genre": [
+      "Non-Fiction",
+      "Environment",
+      "Philosophy"
+    ],
     "status": "toread",
     "cover": "DarkEcology.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": 162
   },
   {
     "id": "themelancholyofresistance",
@@ -608,13 +770,17 @@
   {
     "id": "orcadia",
     "title": "Orcadia",
-    "authors": [],
-    "genre": [],
+    "authors": ["Mark Edmonds"],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Scottish History"
+    ],
     "status": "toread",
     "cover": "Orcadia.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": 311
   },
   {
     "id": "gravitysengines",
@@ -839,7 +1005,9 @@
     "cover": "DeepWheelOrcadia.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 163
+    "pages": 163,
+    "date_purchased": "15/10/2025",
+    "purchase_location": "Rare Birds Book Shop, Edinburgh, EH4 1HU"
   },
   {
     "id": "thegardenagainsttime",

@@ -1,21 +1,24 @@
 [
   {
-    "id": "cuteaccelerationism",
-    "title": "Cute Accelerationism",
+    "id": "eightbears",
+    "title": "Eight Bears: Mythic Past and Imperiled Future",
     "authors": [
-      "Maya B. Kronic",
-      "Amy Ireland"
+      "Gloria Dickie"
     ],
     "genre": [
       "Non-Fiction",
-      "Philosophy",
-      "Art"
+      "Science",
+      "Nature",
+      "History",
+      "Zoology"
     ],
-    "status": "reading",
-    "cover": "CuteAccelerationism.jpg",
-    "date_started": "09/03/26",
-    "date_finished": "",
-    "pages": 232
+    "status": "finished",
+    "cover": "EightBears.jpg",
+    "date_started": "06/05/2026",
+    "date_finished": "18/05/2026",
+    "pages": 219,
+    "date_purchased": "N/A",
+    "purchase_location": "24th birthday gift from Jesse Anderson"
   },
   {
     "id": "undertheyeofthebigbird",
@@ -25,7 +28,8 @@
     ],
     "genre": [
       "Fiction",
-      "Science Fiction"
+      "Science Fiction",
+      "Japanese Literature"
     ],
     "status": "finished",
     "cover": "UnderTheEyeOfTheBigBird.jpg",
@@ -91,24 +95,6 @@
     "pages": 262
   },
   {
-    "id": "kingkongtheory",
-    "title": "King Kong Theory",
-    "authors": [
-      "Virginie Despentes"
-    ],
-    "genre": [
-      "Non-Fiction",
-      "Feminism",
-      "Politics",
-      "Philosophy"
-    ],
-    "status": "finished",
-    "cover": "KingKongTheory.jpg",
-    "date_started": "01/01/26",
-    "date_finished": "03/01/26",
-    "pages": 155
-  },
-  {
     "id": "halfearthsocialism",
     "title": "Half-Earth Socialism: A Plan to Save the Future from Extinction, Climate Change and Pandemics",
     "authors": [
@@ -128,10 +114,31 @@
     "pages": 272
   },
   {
+    "id": "kingkongtheory",
+    "title": "King Kong Theory",
+    "authors": [
+      "Virginie Despentes"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Feminism",
+      "Politics",
+      "Philosophy"
+    ],
+    "status": "finished",
+    "cover": "KingKongTheory.jpg",
+    "date_started": "01/01/26",
+    "date_finished": "03/01/26",
+    "pages": 155
+  },
+  {
     "id": "theemployees",
     "title": "The Employees",
     "authors": ["Olga Ravn"],
-    "genre": ["Fiction", "Science Fiction"],
+    "genre": [
+      "Fiction",
+      "Science Fiction"
+    ],
     "status": "finished",
     "cover": "TheEmployees.jpg",
     "date_started": "18/12/25",
@@ -203,7 +210,8 @@
       "Fiction",
       "Horror",
       "Science Fiction",
-      "Korean Literature"
+      "Korean Literature",
+      "Xenofiction"
     ],
     "status": "finished",
     "cover": "WalkingPractice.jpg",
@@ -414,6 +422,7 @@
     "genre": [
       "Fiction",
       "Play Script",
+      "Fantasy",
       "Historical Fantasy"
     ],
     "status": "finished",
@@ -540,7 +549,12 @@
     "authors": [
       "James E. Lovelock"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Earth Science",
+      "Environment"
+    ],
     "status": "finished",
     "cover": "GaiaANewLookAtLifeOnEarth.jpg",
     "date_started": "10/08/24",
@@ -556,7 +570,10 @@
       "Pat Fleming",
       "Arne Naess"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Environment"
+    ],
     "status": "finished",
     "cover": "ThinkingLikeAMountain.jpg",
     "date_started": "19/07/24",
@@ -595,7 +612,11 @@
     "authors": [
       "CrimeThink"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Politics",
+      "Anarchism"
+    ],
     "status": "finished",
     "cover": "ExpectResistance.jpg",
     "date_started": "2023",
@@ -741,7 +762,11 @@
     "authors": [
       "Eugen Herrigel"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Memoir",
+      "Philosophy"
+    ],
     "status": "finished",
     "cover": "ZenInTheArtOfArchery.jpg",
     "date_started": "2022",
@@ -778,8 +803,13 @@
   {
     "id": "asilentfury",
     "title": "A Silent Fury",
-    "authors": [],
-    "genre": [],
+    "authors": [
+      "Yuri Herrera"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History"
+    ],
     "status": "finished",
     "cover": "ASilentFury.jpg",
     "date_started": "2021",
@@ -845,7 +875,11 @@
       "James E. Lovelock",
       "Bryan Appleyard"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Artificial Intelligence"
+    ],
     "status": "finished",
     "cover": "Novacene.jpg",
     "date_started": "",
@@ -858,7 +892,10 @@
     "authors": [
       "Ernest Hemingway"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics"
+    ],
     "status": "finished",
     "cover": "TheOldManAndTheSea.jpg",
     "date_started": "",
@@ -871,7 +908,12 @@
     "authors": [
       "Max Porter"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Magical Realism",
+      "Fantasy",
+      "Horror"
+    ],
     "status": "finished",
     "cover": "Lanny.jpg",
     "date_started": "",
@@ -885,7 +927,11 @@
       "Olga Tokarczuk",
       "Antonia Lloyd-Jones"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Mystery",
+      "Polish Literature"
+    ],
     "status": "finished",
     "cover": "DriveYourPlowOverTheBonesOfTheDead.jpg",
     "date_started": "",
@@ -898,7 +944,12 @@
     "authors": [
       "Jeff VanderMeer"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Horror",
+      "Weird Fiction"
+    ],
     "status": "finished",
     "cover": "Annihilation.jpg",
     "date_started": "",
@@ -911,7 +962,13 @@
     "authors": [
       "Lewis Dartnell"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Earth Science",
+      "Geology",
+      "History"
+    ],
     "status": "finished",
     "cover": "Origins.jpg",
     "date_started": "",
@@ -924,7 +981,13 @@
     "authors": [
       "H.P. Lovecraft"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Science Fiction",
+      "Horror",
+      "Fantasy"
+    ],
     "status": "finished",
     "cover": "AtTheMountainsOfMadness.jpg",
     "date_started": "",
@@ -937,7 +1000,11 @@
     "authors": [
       "Thomas Pynchon"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Postmodern"
+    ],
     "status": "finished",
     "cover": "TheCryingOfLot49.jpg",
     "date_started": "",
@@ -951,7 +1018,11 @@
       "Albert Camus",
       "Sandra Smith"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Philosophical Fiction"
+    ],
     "status": "finished",
     "cover": "TheOutsider.jpg",
     "date_started": "",
@@ -965,7 +1036,12 @@
       "Italo Calvino",
       "William Weaver"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Postmodern",
+      "Magical Realism",
+      "Italian Literature"
+    ],
     "status": "finished",
     "cover": "IfOnAWintersNightATraveller.jpg",
     "date_started": "",
@@ -1631,7 +1707,12 @@
     "authors": [
       "Hamid Ismailov"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Historical Fiction",
+      "Uzbek Literature",
+      "Novella"
+    ],
     "status": "finished",
     "cover": "TheDeadLake.jpg",
     "date_started": "",
@@ -1645,7 +1726,11 @@
       "Haruki Murakami",
       "Jay Rubin"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Magical Realism",
+      "Japanese Literature"
+    ],
     "status": "finished",
     "cover": "TheWindupBirdChronicle.jpg",
     "date_started": "",
@@ -1658,7 +1743,12 @@
     "authors": [
       "Cormac McCarthy"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "American Literature",
+      "Southern Gothic",
+      "Horror"
+    ],
     "status": "finished",
     "cover": "ChildOfGod.jpg",
     "date_started": "",
@@ -1671,7 +1761,10 @@
     "authors": [
       "Louise Welsh"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Thriller"
+    ],
     "status": "finished",
     "cover": "ALovelyWayToBurn.jpg",
     "date_started": "",
@@ -1684,7 +1777,13 @@
     "authors": [
       "David Mitchell"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Magical Realism",
+      "Science Fiction",
+      "Fantasy",
+      "Historical Fiction"
+    ],
     "status": "finished",
     "cover": "CloudAtlas.jpg",
     "date_started": "",
@@ -1697,7 +1796,10 @@
     "authors": [
       "William Golding"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics"
+    ],
     "status": "finished",
     "cover": "LordOfTheFlies.jpg",
     "date_started": "",
@@ -1710,7 +1812,12 @@
     "authors": [
       "Fyodor Dostoevsky"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Russian Literature",
+      "Philosophical Fiction"
+    ],
     "status": "finished",
     "cover": "NotesFromUnderground.jpg",
     "date_started": "",
@@ -1723,7 +1830,11 @@
     "authors": [
       "Tom Wainwright"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Economics",
+      "Crime"
+    ],
     "status": "finished",
     "cover": "Narconomics.jpg",
     "date_started": "",
@@ -1736,7 +1847,11 @@
     "authors": [
       "Val McDermid"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Forensic Science",
+      "Crime"
+    ],
     "status": "finished",
     "cover": "Forensics.jpg",
     "date_started": "",
@@ -1775,7 +1890,12 @@
     "authors": [
       "Carlo Rovelli"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Physics",
+      "Essays"
+    ],
     "status": "finished",
     "cover": "SevenBriefLessonsOnPhysics.jpg",
     "date_started": "",
@@ -1840,7 +1960,12 @@
     "authors": [
       "Stephen Emmott"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Environment",
+      "Politics"
+    ],
     "status": "finished",
     "cover": "10Billion.jpg",
     "date_started": "",
@@ -1949,7 +2074,11 @@
       "New Scientist",
       "Jeremy Webb"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Physics"
+    ],
     "status": "finished",
     "cover": "Nothing.jpg",
     "date_started": "",
@@ -2001,7 +2130,12 @@
     "authors": [
       "George Monbiot"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Environment",
+      "Nature",
+      "Rewilding"
+    ],
     "status": "finished",
     "cover": "Feral.jpg",
     "date_started": "",
@@ -2066,7 +2200,11 @@
     "authors": [
       "Grégoire Chamayou"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Politics",
+      "Military"
+    ],
     "status": "finished",
     "cover": "DroneTheory.jpg",
     "date_started": "",
@@ -2079,7 +2217,11 @@
     "authors": [
       "Lewis Dartnell"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Technology",
+      "History"
+    ],
     "status": "finished",
     "cover": "TheKnowledge.jpg",
     "date_started": "",
@@ -2092,7 +2234,10 @@
     "authors": [
       "Matt Parker"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Mathematics"
+    ],
     "status": "finished",
     "cover": "ThingsToMakeAndDoInTheFourthDimension.jpg",
     "date_started": "",
@@ -2183,7 +2328,11 @@
     "authors": [
       "Richard Dawkins"
     ],
-    "genre": [],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Philosophy of Science"
+    ],
     "status": "finished",
     "cover": "TheMagicOfReality.jpg",
     "date_started": "",
@@ -2266,6 +2415,32 @@
     "date_started": "",
     "date_finished": "Long ago...",
     "pages": 252
+  },
+  {
+    "id": "therestaurantattheendoftheuniverse",
+    "title": "The Restaurant at the End of the Universe",
+    "authors": [
+      "Douglas Adams"
+    ],
+    "genre": [],
+    "status": "finished",
+    "cover": "TheRestaurantAtTheEndOfTheUniverse.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 250
+  },
+  {
+    "id": "thehitchhikersguidetothegalaxy",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "authors": [
+      "Douglas Adams"
+    ],
+    "genre": [],
+    "status": "finished",
+    "cover": "TheHitchhikersGuidetotheGalaxy.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 180
   },
   {
     "id": "amonstercalls",
@@ -2496,6 +2671,63 @@
     "pages": 479
   },
   {
+    "title": "Miss Peregrine's Home for Peculiar Children",
+    "authors": [
+      "Ransom Riggs"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
+    "status": "finished",
+    "cover": "MissPeregrinesHomeForPeculiarChildren.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 352
+  },
+  {
+    "title": "Shiver",
+    "authors": [
+      "Maggie Stiefvater"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy"
+    ],
+    "status": "finished",
+    "cover": "Shiver.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages":434
+  },
+  {
+    "title": "The 5th Wave",
+    "authors": [
+      "Rick Yancey"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
+    "status": "finished",
+    "cover": "TheFifthWave.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 460
+  },
+  {
+    "title": "Blood Red, Snow White",
+    "authors": [
+      "Marcus Sedgwick"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
+    "status": "finished",
+    "cover": "BloodRedSnowWhite.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 304
+  },
+  {
     "id": "revolver",
     "title": "Revolver",
     "authors": [
@@ -2526,6 +2758,20 @@
     "pages": 354
   },
   {
+    "title": "My Name Is Mina",
+    "authors": [
+      "David Almond"
+    ],
+    "genre": [
+      "Young Adult"
+    ],
+    "status": "finished",
+    "cover": "MyNameIsMina.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 301
+  },
+  {
     "id": "theenemy",
     "title": "The Enemy",
     "authors": [
@@ -2539,6 +2785,38 @@
     "date_started": "",
     "date_finished": "Long ago...",
     "pages": 407
+  },
+  {
+    "title": "Seekers: Great Bear Lake",
+    "authors": [
+      "Erin Hunter"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy",
+      "Xenofiction"
+    ],
+    "status": "finished",
+    "cover": "SeekersGreatBearLake.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 293
+  },
+  {
+    "title": "Seekers: The Quest Begins",
+    "authors": [
+      "Erin Hunter"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy",
+      "Xenofiction"
+    ],
+    "status": "finished",
+    "cover": "SeekersTheQuestBegins.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 320
   },
   {
     "id": "spiritwalker",
@@ -2673,5 +2951,65 @@
     "date_started": "",
     "date_finished": "Long ago...",
     "pages": 290
+  },
+  {
+    "title": "Cloud Cat",
+    "authors": [
+      "Caroline Pitcher"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy"
+    ],
+    "status": "finished",
+    "cover": "CloudCat.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 154
+  },
+  {
+    "title": "The Mysterious Benedict Society",
+    "authors": [
+      "Trenton Lee Stewart"
+    ],
+    "genre": [
+      "Childrens",
+      "Mystery"
+    ],
+    "status": "finished",
+    "cover": "TheMysteriousBenedictSociety.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 480
+  },
+  {
+    "title": "The London Eye Mystery",
+    "authors": [
+      "Siobhan Dowd"
+    ],
+    "genre": [
+      "Childrens",
+      "Mystery"
+    ],
+    "status": "finished",
+    "cover": "TheLondonEyeMystery.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 322
+  },
+  {
+    "title": "How To Speak Dragonese",
+    "authors": [
+      "Cressida Cowell"
+    ],
+    "genre": [
+      "Childrens",
+      "Fantasy"
+    ],
+    "status": "finished",
+    "cover": "HowToSpeakDragonese.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 256
   }
 ]

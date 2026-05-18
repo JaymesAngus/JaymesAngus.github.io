@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      .bookshelf {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+          gap: 2rem;
+          padding: 1rem;
+      }
+
+      .book {
+          position: relative;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          aspect-ratio: 2/3;
+          width: 100%;
+          margin-bottom: 30px;
+          opacity: 0.2;
+      }
+
+      .book-cover {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 1px solid #000;
+      }
+
+      .book-info {
+          position: absolute;
+          bottom: -30px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          font-size: 0.9rem;
+          background: rgba(255, 255, 255, 0.95);
+          padding: 0.5rem;
+          border-radius: 4px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      #progress-bar-container {
+        margin: 1rem;
+      }
+
+      .book.owned { opacity: 1; }
+      /* Handle hover states differently for touch/non-touch devices */
+      @media (hover: hover) {
+          .book:hover .progress-container,
+          .book:hover .book-info {
+              opacity: 1;
+          }
+      }
+
+      @media (hover: none) {
+          .book:active {
+              transform: scale(1.02);
+          }
+
+          .book.active .progress-container,
+          .book.active .book-info {
+              opacity: 1;
+              background: rgba(255, 255, 255, 0.98);
+          }
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+          .bookshelf {
+              gap: 1.5rem;
+              padding: 0.5rem;
+          }
+          #progress-bar-container {
+            width: 80%;
+            margin: 0.5rem;
+          }
+      }
+
+      @media (max-width: 480px) {
+        .bookshelf {
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+        .book {
+            margin-bottom: 40px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header>
+      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
+      <div class="title">
+        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+      </div>
+      <nav>
+        <ul>
+            <li><a class="navlink" href="/projects/">Projects</a></li>
+            <li><a class="navlink" href="/wiki/">Wiki</a></li>
+            <li><a class="navlink" href="/notes">Notes</a></li>
+        </ul>
+        <ul>
+            <li><a aria-current="page" class="navlink" href="/bookshelf/">Bookshelf</a></li>
+            <li><a class="navlink" href="/gallery/">Gallery</a></li>
+            <li><a class="navlink" href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <div class="content">
+    <h1 style="padding-left: 1rem;">collections: james lovelock</h1>
+    <p style="padding-left: 1rem;">
+      Still a work in progress!!!
+    </p>
+    <br>
+    <div id="progress-bar-container" style="height:50px; border:1px solid black;">
+      <div id="progress-bar" style="height:49px; background-color: black;"></div>
+    </div>
+    <div class="bookshelf">
+      <div class="loading">If you can see this then your browser probably doesn't support JavaScript. Or your internet connection is just slow.</div>
+    </div>
+    <script>
+      (function(){
+        let books = [];
+
+        function createBookElement(b) {
+          const div = document.createElement('div');
+          div.className = 'book';
+
+          const img = document.createElement('img');
+          img.className = 'book-cover';
+          img.src = '/static/images/BookCovers/' + (b.cover || '');
+          img.alt = b.title || '';
+          img.loading = 'lazy';
+          div.appendChild(img);
+
+          const info = document.createElement('div');
+          info.className = 'book-info';
+          info.textContent = b.title || '';
+          div.appendChild(info);
+
+          if (b.inCollection) {
+            div.classList.add('owned');
+          }
+
+          return div;
+        }
+
+        function renderBooks() {
+          const container = document.querySelector('.bookshelf');
+          if (!container) return;
+
+          container.innerHTML = ''; // Clear loading text
+
+          books.forEach(b => {
+            container.appendChild(createBookElement(b));
+          });
+        }
+
+        Promise.all([
+          fetch('/static/reading_challenges/JamesLovelock.json').then(r => r.json()),
+          fetch('/bookshelf/books.json').then(r => r.json())
+        ]).then(([challengeData, booksData]) => {
+          // Create a Set of titles from books.json for fast lookup
+          const ownedTitles = new Set(
+            (booksData || []).map(b => b.title && b.title.toLowerCase())
+          );
+
+          // Mark which challenge books are in your collection
+          const items = (challengeData && challengeData.items) || [];
+          items.forEach(item => {
+            item.inCollection = ownedTitles.has(item.title.toLowerCase());
+          });
+          const ownedCount = items.length
+          books = items;
+          const inCollectionCount = books.filter(b => b.inCollection).length;
+          var elem = document.getElementById("progress-bar");
+          elem.style.width = 100 * inCollectionCount / ownedCount + "%";
+          renderBooks();
+        }).catch(err => {
+          console.error('Failed to load books.json', err);
+          const c = document.querySelector('.bookshelf');
+          if(c) c.innerHTML = '<div class="loading">Failed to load books.</div>';
+        });
+
+        // expose for debugging
+        window._bookshelfRender = renderBooks;
+      })();
+    </script>
+  </div>
+  <footer>
+    <p>© 2026 Jay Anderson</p>
+  </footer>
+</body>
+</html>

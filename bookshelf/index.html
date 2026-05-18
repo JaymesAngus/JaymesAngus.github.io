@@ -16,7 +16,6 @@
           display: flex;
           gap: 1rem;
           flex-wrap: wrap;
-          /* justify-content: center; */
           justify-content: left;
       }
 
@@ -36,11 +35,22 @@
           color: #fff;
       }
 
+      .filter-input {
+          padding: 0.75rem 1rem;
+          border: 1px solid #000;
+          border-radius: 4px;
+          background: transparent;
+          min-width: 220px;
+          font-size: 1rem;
+          font-family: inherit;
+      }
+
       .bookshelf {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-          gap: 2rem;
+          gap: 1rem;
           padding: 1rem;
+          max-width: 100%;
       }
 
       .book {
@@ -48,7 +58,7 @@
           transition: transform 0.3s ease, box-shadow 0.3s ease;
           aspect-ratio: 2/3;
           width: 100%;
-          margin-bottom: 30px;
+          margin-bottom: 10px;
       }
 
       .book-cover {
@@ -73,7 +83,6 @@
           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       }
 
-      /* Handle hover states differently for touch/non-touch devices */
       @media (hover: hover) {
           .book:hover {
               transform: scale(1.05);
@@ -103,7 +112,7 @@
       }
 
       /* Responsive adjustments */
-      @media (max-width: 768px) {
+      @media (max-width: 800px) {
           .bookshelf {
               gap: 1.5rem;
               padding: 0.5rem;
@@ -125,6 +134,13 @@
               min-width: 110px;
               width: calc(50% - 0.5rem);
               margin: 0.25rem;
+          }
+
+          .filter-input {
+              width: 100%;
+              min-width: auto;
+              max-width: 100%;
+              box-sizing: border-box;
           }
       }
 
@@ -183,6 +199,7 @@
         <div class="filter-controls">
             <button class="filter-button active" data-filter="finished">Log</button>
             <button class="filter-button" data-filter="toread">Backlog</button>
+            <input id="genre-search" class="filter-input" type="search" placeholder="Search genre tags" aria-label="Search by genre tags">
         </div>
         <br>
     </div>
@@ -193,6 +210,7 @@
     <script>
       (function(){
         let books = [];
+        let genreFilter = '';
 
         function shuffleArray(array) {
           const shuffled = [...array];
@@ -218,7 +236,6 @@
           const info = document.createElement('div');
           info.className = 'book-info';
 
-          // Set content based on status
           if (status === 'toread') {
             info.innerHTML = b.title || '';
           } else {
@@ -234,20 +251,41 @@
           const container = document.querySelector('.bookshelf');
           if (!container) return;
 
-          container.innerHTML = ''; // Clear loading text
+          container.innerHTML = '';
+
+          let visibleBooks = books.filter(b => {
+            if (viewMode === 'toread') return b.status === 'toread';
+            return b.status === 'finished';
+          });
 
           if (viewMode === 'toread') {
-            // Show toread books only, without section header
-            let toreadBooks = books.filter(b => b.status === 'toread');
-            toreadBooks = shuffleArray(toreadBooks);
-            toreadBooks.forEach(b => {
-              container.appendChild(createBookElement(b, 'toread'));
+            visibleBooks = shuffleArray(visibleBooks);
+          }
+
+          if (genreFilter.trim()) {
+            const normalize = value => String(value)
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, '');
+            const query = normalize(genreFilter.trim());
+
+            visibleBooks = visibleBooks.filter(b => {
+              const genres = Array.isArray(b.genre) ? b.genre : [];
+              return genres.some(tag => {
+                const normalizedTag = normalize(tag);
+                return normalizedTag === query || normalizedTag.startsWith(query);
+              });
             });
+          }
+
+          if (visibleBooks.length === 0) {
+            const empty = document.createElement('div');
+            empty.className = 'loading';
+            empty.textContent = 'No books match that genre.';
+            container.appendChild(empty);
           } else {
-            // Show finished books
-            const finishedBooks = books.filter(b => b.status === 'finished');
-            finishedBooks.forEach(b => {
-              container.appendChild(createBookElement(b, 'finished'));
+            visibleBooks.forEach(b => {
+              const status = viewMode === 'toread' ? 'toread' : 'finished';
+              container.appendChild(createBookElement(b, status));
             });
           }
 
@@ -280,7 +318,8 @@
             });
           });
 
-          // Setup triple-tap on title to toggle info
+          setupGenreSearch();
+
           const title = document.querySelector('h1');
           let tapCount = 0;
           let tapTimer;
@@ -299,6 +338,18 @@
           }
         }
 
+        function setupGenreSearch() {
+          const searchInput = document.getElementById('genre-search');
+          if (!searchInput) return;
+
+          searchInput.addEventListener('input', () => {
+            genreFilter = searchInput.value;
+            const activeButton = document.querySelector('.filter-button.active');
+            const filter = activeButton ? activeButton.dataset.filter : 'finished';
+            renderBooks(filter);
+          });
+        }
+
         Promise.all([
           fetch('./books.json').then(r => r.json()),
           fetch('./reading-list.json').then(r => r.json())
@@ -312,7 +363,6 @@
           if(c) c.innerHTML = '<div class="loading">Failed to load books.</div>';
         });
 
-        // expose for debugging
         window._bookshelfRender = renderBooks;
       })();
     </script>
