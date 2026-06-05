@@ -81,19 +81,34 @@
 
       /* Responsive adjustments */
       @media (max-width: 768px) {
-          .bookshelf {
-              gap: 1.5rem;
-              padding: 0.5rem;
-          }
-          #progress-bar-container {
-            width: 80%;
-            margin: 0.5rem;
-          }
+        .content {
+            max-width: 100%;
+            margin: 0;
+            position: relative;
+            padding: calc(var(--pd) - 10px);
+            text-align: left;
+            font-family: monospace;
+            font-size: 18px;
+        }
+        .individual-challenge {
+          padding-left: 0;
+        }
+      .bookshelf {
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      }
+        .bookshelf {
+            gap: 1.5rem;
+            padding: 0.5rem;
+        }
+        #progress-bar-container {
+          width: 80%;
+          margin: 0.5rem;
+        }
       }
 
       @media (max-width: 480px) {
         .bookshelf {
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
             gap: 1rem;
         }
         .book {
@@ -140,7 +155,7 @@
     <div class="individual-challenge">
       <h1>sf masterworks</h1>
       <p>Brian Aldiss, you are the very last on any list of mine.</p>
-      <div id="progress-bar-container" style="height:20px; border:1px solid black;">
+      <div class="progress-bar-container">
         <div id="sf-masterworks-progress-bar" style="height:19px; background-color: black;"></div>
       </div>
       <div class="bookshelf" id="sf-masterworks">
