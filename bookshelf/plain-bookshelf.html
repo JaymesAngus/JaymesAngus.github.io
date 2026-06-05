@@ -108,7 +108,7 @@
             <li><a class="navlink" href="/notes">Notes</a></li>
         </ul>
         <ul>
-            <li><a class="navlink" href="/bookshelf/">Bookshelf</a></li>
+            <li><a aria-current="page" class="navlink" href="/bookshelf/">Bookshelf</a></li>
             <li><a class="navlink" href="/gallery/">Gallery</a></li>
             <li><a class="navlink" href="/about">About</a></li>
         </ul>
@@ -119,15 +119,11 @@
 
     <div class="filter-section">
         <div class="filter-controls">
-            <button class="filter-button active" data-filter="reading">Currently Reading</button>
-            <button class="filter-button" data-filter="finished">Finished</button>
-            <button class="filter-button" data-filter="toread">Reading List</button>
+            <button class="filter-button active" data-filter="finished">Log</button>
+            <button class="filter-button" data-filter="toread">Backlog</button>
         </div>
         <br>
     </div>
-
-<table data-status="reading">
-</table>
 
 <table data-status="finished">
 </table>
@@ -171,10 +167,9 @@
           });
         }
 
-        // initial display: hide all except reading
         function initialDisplay(){
           document.querySelectorAll('table[data-status]').forEach(table => {
-            table.style.display = (table.dataset.status === 'reading') ? 'table' : 'none';
+            table.style.display = (table.dataset.status === 'finished') ? 'table' : 'none';
           });
         }
 

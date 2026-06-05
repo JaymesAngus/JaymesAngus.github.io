@@ -35,22 +35,11 @@
           color: #fff;
       }
 
-      .filter-input {
-          padding: 0.75rem 1rem;
-          border: 1px solid #000;
-          border-radius: 4px;
-          background: transparent;
-          min-width: 220px;
-          font-size: 1rem;
-          font-family: inherit;
-      }
-
       .bookshelf {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-          gap: 1rem;
+          gap: 2rem;
           padding: 1rem;
-          max-width: 100%;
       }
 
       .book {
@@ -58,7 +47,6 @@
           transition: transform 0.3s ease, box-shadow 0.3s ease;
           aspect-ratio: 2/3;
           width: 100%;
-          margin-bottom: 10px;
       }
 
       .book-cover {
@@ -70,17 +58,19 @@
 
       .book-info {
           position: absolute;
-          bottom: -30px;
-          left: 0;
+          display: flex;
+          bottom: 0px;
+          left: 0px;
           width: 100%;
+          height: 100%;
+          padding: 5%;
+          justify-content: center;
+          align-items: center;
           text-align: center;
           opacity: 0;
           transition: opacity 0.3s ease;
           font-size: 0.9rem;
           background: rgba(255, 255, 255, 0.95);
-          padding: 0.5rem;
-          border-radius: 4px;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       }
 
       @media (hover: hover) {
@@ -111,8 +101,7 @@
           }
       }
 
-      /* Responsive adjustments */
-      @media (max-width: 800px) {
+      @media (max-width: 768px) {
           .bookshelf {
               gap: 1.5rem;
               padding: 0.5rem;
@@ -134,13 +123,6 @@
               min-width: 110px;
               width: calc(50% - 0.5rem);
               margin: 0.25rem;
-          }
-
-          .filter-input {
-              width: 100%;
-              min-width: auto;
-              max-width: 100%;
-              box-sizing: border-box;
           }
       }
 
@@ -199,27 +181,16 @@
         <div class="filter-controls">
             <button class="filter-button active" data-filter="finished">Log</button>
             <button class="filter-button" data-filter="toread">Backlog</button>
-            <input id="genre-search" class="filter-input" type="search" placeholder="Search genre tags" aria-label="Search by genre tags">
         </div>
         <br>
     </div>
 
     <div class="bookshelf">
-      <div class="loading">If you can see this then your browser probably doesn't support JavaScript. Or your internet connection is just slow.</div>
+      <div class="loading">JavaScript not supported (there should be a grid of book covers here).</div>
     </div>
     <script>
       (function(){
         let books = [];
-        let genreFilter = '';
-
-        function shuffleArray(array) {
-          const shuffled = [...array];
-          for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-          }
-          return shuffled;
-        }
 
         function createBookElement(b, status) {
           const div = document.createElement('div');
@@ -236,15 +207,21 @@
           const info = document.createElement('div');
           info.className = 'book-info';
 
+          const authorList = joinNameList(b.authors)
           if (status === 'toread') {
             info.innerHTML = b.title || '';
           } else {
-            info.innerHTML = b.title + '<br>-<br>' + b.date_finished;
+            info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Finished on ' + b.date_finished;
           }
-
           div.appendChild(info);
-
           return div;
+        }
+
+        function joinNameList(items) {
+          if (items.length === 0) return '';
+          if (items.length === 1) return items[0];
+          if (items.length === 2) return `${items[0]} and ${items[1]}`;
+          return `${items.slice(0, -1).join(', ')}, and ${items.at(-1)}`;
         }
 
         function renderBooks(viewMode = 'finished') {
@@ -253,42 +230,17 @@
 
           container.innerHTML = '';
 
-          let visibleBooks = books.filter(b => {
-            if (viewMode === 'toread') return b.status === 'toread';
-            return b.status === 'finished';
-          });
-
           if (viewMode === 'toread') {
-            visibleBooks = shuffleArray(visibleBooks);
-          }
-
-          if (genreFilter.trim()) {
-            const normalize = value => String(value)
-              .toLowerCase()
-              .replace(/[^a-z0-9]+/g, '');
-            const query = normalize(genreFilter.trim());
-
-            visibleBooks = visibleBooks.filter(b => {
-              const genres = Array.isArray(b.genre) ? b.genre : [];
-              return genres.some(tag => {
-                const normalizedTag = normalize(tag);
-                return normalizedTag === query || normalizedTag.startsWith(query);
-              });
+            const toreadBooks = books.filter(b => b.status === 'toread');
+            toreadBooks.forEach(b => {
+              container.appendChild(createBookElement(b, 'toread'));
             });
-          }
-
-          if (visibleBooks.length === 0) {
-            const empty = document.createElement('div');
-            empty.className = 'loading';
-            empty.textContent = 'No books match that genre.';
-            container.appendChild(empty);
           } else {
-            visibleBooks.forEach(b => {
-              const status = viewMode === 'toread' ? 'toread' : 'finished';
-              container.appendChild(createBookElement(b, status));
+            const finishedBooks = books.filter(b => b.status === 'finished');
+            finishedBooks.forEach(b => {
+              container.appendChild(createBookElement(b, 'finished'));
             });
           }
-
           attachTouchHandlers();
         }
 
@@ -317,37 +269,6 @@
               renderBooks(filter);
             });
           });
-
-          setupGenreSearch();
-
-          const title = document.querySelector('h1');
-          let tapCount = 0;
-          let tapTimer;
-          if (title) {
-            title.addEventListener('click', () => {
-              clearTimeout(tapTimer);
-              tapCount++;
-              tapTimer = setTimeout(() => { tapCount = 0; }, 500);
-              if (tapCount === 3) {
-                clearTimeout(tapTimer);
-                tapCount = 0;
-                const container = document.querySelector('.bookshelf');
-                container.classList.toggle('show-info');
-              }
-            });
-          }
-        }
-
-        function setupGenreSearch() {
-          const searchInput = document.getElementById('genre-search');
-          if (!searchInput) return;
-
-          searchInput.addEventListener('input', () => {
-            genreFilter = searchInput.value;
-            const activeButton = document.querySelector('.filter-button.active');
-            const filter = activeButton ? activeButton.dataset.filter : 'finished';
-            renderBooks(filter);
-          });
         }
 
         Promise.all([
@@ -357,13 +278,7 @@
           books = [...(booksData || []), ...(listData || [])];
           setupFilters();
           renderBooks('finished');
-        }).catch(err => {
-          console.error('Failed to load books.json', err);
-          const c = document.querySelector('.bookshelf');
-          if(c) c.innerHTML = '<div class="loading">Failed to load books.</div>';
-        });
-
-        window._bookshelfRender = renderBooks;
+        })
       })();
     </script>
   </div>

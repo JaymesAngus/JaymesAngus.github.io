@@ -18,7 +18,8 @@
     "date_finished": "18/05/2026",
     "pages": 219,
     "date_purchased": "N/A",
-    "purchase_location": "24th birthday gift from Jesse Anderson"
+    "purchase_location": "24th birthday gift from Jesse Anderson",
+    "in_possession": true
   },
   {
     "id": "undertheyeofthebigbird",
@@ -37,7 +38,8 @@
     "date_finished": "02/05/26",
     "pages": 278,
     "date_purchased": "N/A",
-    "purchase_location": "Borrowed from Ross Anderson"
+    "purchase_location": "Borrowed from Ross Anderson",
+    "in_possession": true
   },
   {
     "id": "theerstwhile",
@@ -56,7 +58,8 @@
     "date_finished": "10/04/26",
     "pages": 460,
     "date_purchased": "27/02/26",
-    "purchase_location": "Exeter Roman Gate Waterstones, EX4 3PZ"
+    "purchase_location": "Exeter Roman Gate Waterstones, EX4 3PZ",
+    "in_possession": true
   },
   {
     "id": "philosophyandsimulation",
@@ -75,7 +78,8 @@
     "date_finished": "27/02/26",
     "pages": 203,
     "date_purchased": "12/12/20",
-    "purchase_location": "Topping & Company Booksellers, KY16 9HG"
+    "purchase_location": "Topping & Company Booksellers, KY16 9HG",
+    "in_possession": true
   },
   {
     "id": "theanatomyofdisgust",
@@ -92,7 +96,10 @@
     "cover": "TheAnatomyOfDisgust.jpg",
     "date_started": "01/02/26",
     "date_finished": "",
-    "pages": 262
+    "pages": 262,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "halfearthsocialism",
@@ -111,7 +118,10 @@
     "cover": "HalfEarthSocialism.jpg",
     "date_started": "04/01/26",
     "date_finished": "07/01/26",
-    "pages": 272
+    "pages": 272,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "kingkongtheory",
@@ -129,12 +139,17 @@
     "cover": "KingKongTheory.jpg",
     "date_started": "01/01/26",
     "date_finished": "03/01/26",
-    "pages": 155
+    "pages": 155,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theemployees",
     "title": "The Employees",
-    "authors": ["Olga Ravn"],
+    "authors": [
+      "Olga Ravn"
+    ],
     "genre": [
       "Fiction",
       "Science Fiction"
@@ -143,7 +158,10 @@
     "cover": "TheEmployees.jpg",
     "date_started": "18/12/25",
     "date_finished": "23/12/25",
-    "pages": 136
+    "pages": 136,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "exocapitalism",
@@ -163,7 +181,8 @@
     "date_finished": "25/11/25",
     "pages": 156,
     "date_purchased": "26/09/25",
-    "purchase_location": "The Anarchist Bookfair, Waterloo Graffiti tunnel"
+    "purchase_location": "The Anarchist Bookfair, Waterloo Graffiti tunnel",
+    "in_possession": true
   },
   {
     "id": "thedominantanimal",
@@ -180,7 +199,10 @@
     "cover": "TheDominantAnimal.jpg",
     "date_started": "18/11/25",
     "date_finished": "20/11/25",
-    "pages": 118
+    "pages": 118,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thekinginyellow",
@@ -198,7 +220,10 @@
     "cover": "TheKingInYellow.jpg",
     "date_started": "28/01/25",
     "date_finished": "17/11/25",
-    "pages": 177
+    "pages": 177,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "id": "walkingpractice",
@@ -217,7 +242,10 @@
     "cover": "WalkingPractice.jpg",
     "date_started": "14/11/25",
     "date_finished": "16/11/25",
-    "pages": 164
+    "pages": 164,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thelefthandofdarkness",
@@ -234,7 +262,10 @@
     "cover": "TheLeftHandOfDarkness.jpg",
     "date_started": "07/10/25",
     "date_finished": "13/11/25",
-    "pages": 300
+    "pages": 300,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "redcloset",
@@ -251,7 +282,10 @@
     "cover": "RedCloset.jpg",
     "date_started": "24/05/25",
     "date_finished": "03/11/25",
-    "pages": 244
+    "pages": 244,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "id": "brainwyrms",
@@ -268,13 +302,16 @@
     "cover": "Brainwyrms.jpg",
     "date_started": "29/09/25",
     "date_finished": "03/10/25",
-    "pages": 297
+    "pages": 297,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "monstrilio",
     "title": "Monstrilio",
     "authors": [
-      "Gerardo Sámano Córdova"
+      "Gerardo S\u00c3\u00a1mano C\u00c3\u00b3rdova"
     ],
     "genre": [
       "Fiction",
@@ -286,7 +323,10 @@
     "cover": "Monstrilio.jpg",
     "date_started": "09/07/25",
     "date_finished": "24/08/25",
-    "pages": 332
+    "pages": 332,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "negativespace",
@@ -304,7 +344,10 @@
     "cover": "NegativeSpace.jpg",
     "date_started": "04/07/25",
     "date_finished": "08/07/25",
-    "pages": 364
+    "pages": 364,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "ashortstayinhell",
@@ -322,7 +365,10 @@
     "cover": "AShortStayInHell.jpg",
     "date_started": "02/07/25",
     "date_finished": "02/07/25",
-    "pages": 102
+    "pages": 102,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "tainaron",
@@ -341,7 +387,10 @@
     "cover": "Tainaron.jpg",
     "date_started": "02/07/25",
     "date_finished": "02/07/25",
-    "pages": 128
+    "pages": 128,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "iwhohaveneverknownmen",
@@ -360,7 +409,10 @@
     "cover": "IWhoHaveNeverKnownMen.jpg",
     "date_started": "28/05/25",
     "date_finished": "08/06/25",
-    "pages": 184
+    "pages": 184,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "coreyfahdoessocialmobility",
@@ -377,7 +429,10 @@
     "cover": "CoreyFahDoesSocialMobility.jpg",
     "date_started": "18/05/25",
     "date_finished": "23/05/25",
-    "pages": 145
+    "pages": 145,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "id": "thedoloriad",
@@ -394,7 +449,10 @@
     "cover": "TheDoloriad.jpg",
     "date_started": "26/04/25",
     "date_finished": "18/05/25",
-    "pages": 211
+    "pages": 211,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "id": "thebuddhaofsuburbia",
@@ -411,7 +469,10 @@
     "cover": "TheBuddhaOfSuburbia.jpg",
     "date_started": "06/03/25",
     "date_finished": "22/04/25",
-    "pages": 282
+    "pages": 282,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "id": "thenetherholemartyr",
@@ -429,7 +490,10 @@
     "cover": "TheNetherholeMartyr.jpg",
     "date_started": "04/03/25",
     "date_finished": "05/03/25",
-    "pages": 102
+    "pages": 102,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "id": "sozaboy",
@@ -448,7 +512,10 @@
     "cover": "Sozaboy.jpg",
     "date_started": "Mid-February",
     "date_finished": "02/03/25",
-    "pages": 192
+    "pages": 192,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "openthroat",
@@ -465,7 +532,10 @@
     "cover": "OpenThroat.jpg",
     "date_started": "February 2025",
     "date_finished": "February 2025",
-    "pages": 154
+    "pages": 154,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "griefisthethingwithfeathers",
@@ -482,7 +552,10 @@
     "cover": "GriefIsTheThingWithFeathers.jpg",
     "date_started": "26/01/25",
     "date_finished": "26/01/25",
-    "pages": 112
+    "pages": 112,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theempusium",
@@ -501,7 +574,10 @@
     "cover": "TheEmpusium.jpg",
     "date_started": "06/11/24",
     "date_finished": "25/01/2025",
-    "pages": 305
+    "pages": 305,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "venomouslumpsucker",
@@ -514,7 +590,10 @@
     "cover": "VenomousLumpsucker.jpg",
     "date_started": "25/10/24",
     "date_finished": "06/11/24",
-    "pages": 294
+    "pages": 294,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "calypso",
@@ -527,13 +606,18 @@
     "cover": "Calypso.jpg",
     "date_started": "21/10/24",
     "date_finished": "05/11/24",
-    "pages": 224
+    "pages": 224,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "onehundredyearsofsolitude",
     "title": "One Hundred Years Of Solitude",
     "authors": [
-      "Gabriel García Márquez",
+      "Gabriel García Márquez"
+    ],
+    "translators": [
       "Gregory Rabassa"
     ],
     "genre": [],
@@ -541,7 +625,10 @@
     "cover": "OneHundredYearsOfSolitude.jpg",
     "date_started": "24/06/24",
     "date_finished": "21/10/24",
-    "pages": 417
+    "pages": 417,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "gaiaanewlookatlifeonearth",
@@ -559,7 +646,10 @@
     "cover": "GaiaANewLookAtLifeOnEarth.jpg",
     "date_started": "10/08/24",
     "date_finished": "26/08/24",
-    "pages": 150
+    "pages": 150,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thinkinglikeamountain",
@@ -578,7 +668,10 @@
     "cover": "ThinkingLikeAMountain.jpg",
     "date_started": "19/07/24",
     "date_finished": "24/07/24",
-    "pages": 113
+    "pages": 113,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "tenplanets",
@@ -591,7 +684,10 @@
     "cover": "TenPlanets.jpg",
     "date_started": "27/05/23",
     "date_finished": "01/06/24",
-    "pages": 102
+    "pages": 102,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "hollow",
@@ -604,7 +700,10 @@
     "cover": "Hollow.jpg",
     "date_started": "Feb 2024",
     "date_finished": "May 2024",
-    "pages": 272
+    "pages": 272,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "expectresistance",
@@ -623,7 +722,8 @@
     "date_finished": "04/02/24",
     "pages": 342,
     "date_purchased": "24/06/23",
-    "purchase_location": "Lighthouse Booksellers, EH8 9DB"
+    "purchase_location": "Lighthouse Booksellers, EH8 9DB",
+    "in_possession": false
   },
   {
     "id": "topographiahibernica",
@@ -636,7 +736,10 @@
     "cover": "TopographiaHibernica.jpg",
     "date_started": "25/12/23",
     "date_finished": "19/01/24",
-    "pages": 196
+    "pages": 196,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "oryxandcrake",
@@ -649,7 +752,10 @@
     "cover": "OryxAndCrake.jpg",
     "date_started": "2023",
     "date_finished": "18/12/23",
-    "pages": 389
+    "pages": 389,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thevorrh",
@@ -662,7 +768,10 @@
     "cover": "TheVorrh.jpg",
     "date_started": "2023",
     "date_finished": "20/11/23",
-    "pages": 500
+    "pages": 500,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "wakenhyrst",
@@ -675,7 +784,10 @@
     "cover": "Wakenhyrst.jpg",
     "date_started": "2023",
     "date_finished": "09/02/23",
-    "pages": 401
+    "pages": 401,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "nolongerhuman",
@@ -689,7 +801,10 @@
     "cover": "NoLongerHuman.jpg",
     "date_started": "2022",
     "date_finished": "07/12/22",
-    "pages": 177
+    "pages": 177,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "tenderistheflesh",
@@ -702,7 +817,10 @@
     "cover": "TenderIsTheFlesh.jpg",
     "date_started": "2022",
     "date_finished": "03/11/22",
-    "pages": 221
+    "pages": 221,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "youvelostalotofblood",
@@ -715,7 +833,10 @@
     "cover": "YouveLostALotOfBlood.jpg",
     "date_started": "2022",
     "date_finished": "5/06/22",
-    "pages": 209
+    "pages": 209,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thestrangebird",
@@ -728,7 +849,10 @@
     "cover": "TheStrangeBird.jpg",
     "date_started": "2022",
     "date_finished": "26/05/22",
-    "pages": 128
+    "pages": 128,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "afuriousoyster",
@@ -741,7 +865,10 @@
     "cover": "AFuriousOyster.jpg",
     "date_started": "2022",
     "date_finished": "24/05/22",
-    "pages": 128
+    "pages": 128,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thedolls",
@@ -754,7 +881,10 @@
     "cover": "TheDolls.jpg",
     "date_started": "2022",
     "date_finished": "07/02/22",
-    "pages": 128
+    "pages": 128,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "zenintheartofarchery",
@@ -771,20 +901,26 @@
     "cover": "ZenInTheArtOfArchery.jpg",
     "date_started": "2022",
     "date_finished": "20/01/22",
-    "pages": 81
+    "pages": 81,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thefuturologicalcongress",
     "title": "The Futurological Congress",
     "authors": [
-      "Stanisław Lem"
+      "Stanis\u00c5\u201aaw Lem"
     ],
     "genre": [],
     "status": "finished",
     "cover": "TheFuturologicalCongress.jpg",
     "date_started": "26/12/21",
     "date_finished": "08/01/22",
-    "pages": 149
+    "pages": 149,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "primevalandothertimes",
@@ -798,7 +934,10 @@
     "cover": "PrimevalAndOtherTimes.jpg",
     "date_started": "2021",
     "date_finished": "06/11/21",
-    "pages": 248
+    "pages": 248,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "asilentfury",
@@ -814,7 +953,10 @@
     "cover": "ASilentFury.jpg",
     "date_started": "2021",
     "date_finished": "21/07/21",
-    "pages": 90
+    "pages": 90,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thesacredbookofthewerewolf",
@@ -827,7 +969,10 @@
     "cover": "TheSacredBookOfTheWerewolf.jpg",
     "date_started": "2021",
     "date_finished": "14/07/21",
-    "pages": 333
+    "pages": 333,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "autumn",
@@ -840,7 +985,10 @@
     "cover": "Autumn.jpg",
     "date_started": "",
     "date_finished": "2021",
-    "pages": 264
+    "pages": 264,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "piranesi",
@@ -853,7 +1001,10 @@
     "cover": "Piranesi.jpg",
     "date_started": "",
     "date_finished": "2021",
-    "pages": 272
+    "pages": 272,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "asilaydying",
@@ -866,7 +1017,10 @@
     "cover": "AsILaydying.jpg",
     "date_started": "",
     "date_finished": "2020",
-    "pages": 240
+    "pages": 240,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "novacene",
@@ -884,7 +1038,10 @@
     "cover": "Novacene.jpg",
     "date_started": "",
     "date_finished": "2020",
-    "pages": 160
+    "pages": 160,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theoldmanandthesea",
@@ -900,7 +1057,10 @@
     "cover": "TheOldManAndTheSea.jpg",
     "date_started": "",
     "date_finished": "2020",
-    "pages": 96
+    "pages": 96,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "lanny",
@@ -918,7 +1078,10 @@
     "cover": "Lanny.jpg",
     "date_started": "",
     "date_finished": "2020",
-    "pages": 210
+    "pages": 210,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "driveyourplowoverthebonesofthedead",
@@ -936,7 +1099,10 @@
     "cover": "DriveYourPlowOverTheBonesOfTheDead.jpg",
     "date_started": "",
     "date_finished": "2020",
-    "pages": 270
+    "pages": 270,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "annihilation",
@@ -954,7 +1120,10 @@
     "cover": "Annihilation.jpg",
     "date_started": "",
     "date_finished": "2020",
-    "pages": 208
+    "pages": 208,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "origins",
@@ -973,7 +1142,10 @@
     "cover": "Origins.jpg",
     "date_started": "",
     "date_finished": "2020",
-    "pages": 352
+    "pages": 352,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "atthemountainsofmadness",
@@ -992,7 +1164,10 @@
     "cover": "AtTheMountainsOfMadness.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 123
+    "pages": 123,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thecryingoflot49",
@@ -1009,7 +1184,10 @@
     "cover": "TheCryingOfLot49.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 142
+    "pages": 142,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theoutsider",
@@ -1027,7 +1205,10 @@
     "cover": "TheOutsider.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 111
+    "pages": 111,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "ifonawintersnightatraveller",
@@ -1046,7 +1227,10 @@
     "cover": "IfOnAWintersNightATraveller.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 260
+    "pages": 260,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "tokyouenostation",
@@ -1064,7 +1248,10 @@
     "cover": "TokyoUenoStation.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 168
+    "pages": 168,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "palefire",
@@ -1079,7 +1266,10 @@
     "cover": "PaleFire.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 256
+    "pages": 256,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thisisnotadrill",
@@ -1097,7 +1287,10 @@
     "cover": "ThisIsNotADrill.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 208
+    "pages": 208,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theriverofconsciousness",
@@ -1115,7 +1308,10 @@
     "cover": "TheRiverOfConsciousness.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 256
+    "pages": 256,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "blackleopardredwolf",
@@ -1133,7 +1329,10 @@
     "cover": "BlackLeopardRedWolf.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 620
+    "pages": 620,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "silentspring",
@@ -1150,7 +1349,10 @@
     "cover": "SilentSpring.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 323
+    "pages": 323,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "v",
@@ -1165,7 +1367,10 @@
     "cover": "V.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 496
+    "pages": 496,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "disgrace",
@@ -1181,7 +1386,10 @@
     "cover": "Disgrace.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 220
+    "pages": 220,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "kafkaontheshore",
@@ -1199,7 +1407,10 @@
     "cover": "KafkaOnTheShore.jpg",
     "date_started": "",
     "date_finished": "2019",
-    "pages": 505
+    "pages": 505,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "heartofadog",
@@ -1218,7 +1429,10 @@
     "cover": "HeartOfADog.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 123
+    "pages": 123,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "ice",
@@ -1235,7 +1449,10 @@
     "cover": "Ice.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 192
+    "pages": 192,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "playback",
@@ -1252,7 +1469,10 @@
     "cover": "Playback.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 158
+    "pages": 158,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "astreetcarenameddesire",
@@ -1270,7 +1490,10 @@
     "cover": "AStreetcareNamedDesire.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 128
+    "pages": 128,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "dubliners",
@@ -1288,7 +1511,10 @@
     "cover": "Dubliners.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 352
+    "pages": 352,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thequantitytheoryofinsanity",
@@ -1304,7 +1530,10 @@
     "cover": "TheQuantityTheoryOfInsanity.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 224
+    "pages": 224,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "tobeamachine",
@@ -1322,7 +1551,10 @@
     "cover": "ToBeAMachine.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 256
+    "pages": 256,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "norwegianwood",
@@ -1339,7 +1571,10 @@
     "cover": "NorwegianWood.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 389
+    "pages": 389,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "abriefhistoryoftime",
@@ -1357,7 +1592,10 @@
     "cover": "ABriefHistoryOfTime.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 255
+    "pages": 255,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "slaughterhousefive",
@@ -1375,7 +1613,10 @@
     "cover": "SlaughterhouseFive.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 275
+    "pages": 275,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "lolita",
@@ -1392,7 +1633,10 @@
     "cover": "Lolita.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 315
+    "pages": 315,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "amapoftheinvisible",
@@ -1409,7 +1653,10 @@
     "cover": "AMapOfTheInvisible.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 400
+    "pages": 400,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thetrial",
@@ -1427,7 +1674,10 @@
     "cover": "TheTrial.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 255
+    "pages": 255,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "saturday",
@@ -1442,7 +1692,10 @@
     "cover": "Saturday.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 280
+    "pages": 280,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "nutshell",
@@ -1458,7 +1711,10 @@
     "cover": "Nutshell.jpg",
     "date_started": "",
     "date_finished": "2018",
-    "pages": 199
+    "pages": 199,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thefestivalofinsignificance",
@@ -1474,7 +1730,10 @@
     "cover": "TheFestivalOfInsignificance.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 115
+    "pages": 115,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theconegatherers",
@@ -1491,7 +1750,10 @@
     "cover": "TheConeGatherers.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 240
+    "pages": 240,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "labellesauvage",
@@ -1508,7 +1770,10 @@
     "cover": "LaBelleSauvage.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 546
+    "pages": 546,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "blitzed",
@@ -1525,7 +1790,10 @@
     "cover": "Blitzed.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 360
+    "pages": 360,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "euphoria",
@@ -1542,7 +1810,10 @@
     "cover": "Euphoria.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 213
+    "pages": 213,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theghostsofheaven",
@@ -1560,7 +1831,10 @@
     "cover": "TheGhostsOfHeaven.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 424
+    "pages": 424,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "palerider",
@@ -1578,7 +1852,10 @@
     "cover": "PaleRider.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 332
+    "pages": 332,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "deathofasalesman",
@@ -1595,7 +1872,10 @@
     "cover": "DeathOfASalesman.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 112
+    "pages": 112,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "themetamorphosis",
@@ -1613,7 +1893,10 @@
     "cover": "TheMetamorphosis.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 208
+    "pages": 208,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "solar",
@@ -1628,7 +1911,10 @@
     "cover": "Solar.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 287
+    "pages": 287,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theroad",
@@ -1646,7 +1932,10 @@
     "cover": "TheRoad.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 307
+    "pages": 307,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "howdidwegetintothismess",
@@ -1664,7 +1953,10 @@
     "cover": "HowDidWeGetIntoThisMess.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 352
+    "pages": 352,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "hard-boiledwonderlandandtheendoftheworld",
@@ -1682,7 +1974,10 @@
     "cover": "Hard-boiledWonderlandAndTheEndOfTheWorld.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 400
+    "pages": 400,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "hystopia",
@@ -1699,7 +1994,10 @@
     "cover": "Hystopia.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 336
+    "pages": 336,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thedeadlake",
@@ -1717,7 +2015,10 @@
     "cover": "TheDeadLake.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 128
+    "pages": 128,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thewindupbirdchronicle",
@@ -1735,7 +2036,10 @@
     "cover": "TheWindupBirdChronicle.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 609
+    "pages": 609,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "childofgod",
@@ -1753,7 +2057,10 @@
     "cover": "ChildOfGod.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 186
+    "pages": 186,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "alovelywaytoburn",
@@ -1769,7 +2076,10 @@
     "cover": "ALovelyWayToBurn.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 358
+    "pages": 358,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "cloudatlas",
@@ -1788,7 +2098,10 @@
     "cover": "CloudAtlas.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 544
+    "pages": 544,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "lordoftheflies",
@@ -1804,7 +2117,10 @@
     "cover": "LordOfTheFlies.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 182
+    "pages": 182,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "notesfromunderground",
@@ -1822,7 +2138,10 @@
     "cover": "NotesFromUnderground.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 136
+    "pages": 136,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "narconomics",
@@ -1839,7 +2158,10 @@
     "cover": "Narconomics.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 320
+    "pages": 320,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "forensics",
@@ -1856,7 +2178,10 @@
     "cover": "Forensics.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 310
+    "pages": 310,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thenewyorktrilogy",
@@ -1869,7 +2194,10 @@
     "cover": "TheNewYorkTrilogy.jpg",
     "date_started": "",
     "date_finished": "2017",
-    "pages": 314
+    "pages": 314,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "dune",
@@ -1882,7 +2210,10 @@
     "cover": "Dune.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 577
+    "pages": 577,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "sevenbrieflessonsonphysics",
@@ -1900,7 +2231,10 @@
     "cover": "SevenBriefLessonsOnPhysics.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 83
+    "pages": 83,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "americanpsycho",
@@ -1913,20 +2247,26 @@
     "cover": "AmericanPsycho.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 384
+    "pages": 384,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "solaris",
     "title": "Solaris",
     "authors": [
-      "Stanisław Lem"
+      "Stanis\u00c5\u201aaw Lem"
     ],
     "genre": [],
     "status": "finished",
     "cover": "Solaris.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 214
+    "pages": 214,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "wintersbone",
@@ -1939,7 +2279,10 @@
     "cover": "WintersBone.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 193
+    "pages": 193,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "themasterandmargarita",
@@ -1952,7 +2295,10 @@
     "cover": "TheMasterAndMargarita.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 372
+    "pages": 372,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "10billion",
@@ -1970,7 +2316,10 @@
     "cover": "10Billion.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 198
+    "pages": 198,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "crow",
@@ -1983,7 +2332,10 @@
     "cover": "Crow.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 89
+    "pages": 89,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "onedayinthelifeofivandenisovich",
@@ -1996,7 +2348,10 @@
     "cover": "OneDayInTheLifeOfIvanDenisovich.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 143
+    "pages": 143,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "aclockworkorange",
@@ -2009,7 +2364,10 @@
     "cover": "AClockworkOrange.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 149
+    "pages": 149,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "moriarty",
@@ -2022,7 +2380,10 @@
     "cover": "Moriarty.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 392
+    "pages": 392,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thecatcherintherye",
@@ -2035,7 +2396,10 @@
     "cover": "TheCatcherInTheRye.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 277
+    "pages": 277,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thewaroftheworlds",
@@ -2048,7 +2412,10 @@
     "cover": "TheWarOfTheWorlds.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 199
+    "pages": 199,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "catch-22",
@@ -2065,7 +2432,10 @@
     "cover": "Catch-22.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 570
+    "pages": 570,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "nothing",
@@ -2083,7 +2453,10 @@
     "cover": "Nothing.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 266
+    "pages": 266,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "fahrenheit451",
@@ -2096,7 +2469,10 @@
     "cover": "Fahrenheit451.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 227
+    "pages": 227,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "tokillamockingbird",
@@ -2109,7 +2485,10 @@
     "cover": "ToKillAMockingbird.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 309
+    "pages": 309,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "themaninthehighcastle",
@@ -2122,7 +2501,10 @@
     "cover": "TheManInTheHighCastle.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 229
+    "pages": 229,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "feral",
@@ -2140,7 +2522,10 @@
     "cover": "Feral.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 336
+    "pages": 336,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "descent",
@@ -2153,7 +2538,10 @@
     "cover": "Descent.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 432
+    "pages": 432,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "animalfarm",
@@ -2166,7 +2554,10 @@
     "cover": "Animalfarm.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 141
+    "pages": 141,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "doandroidsdreamofelectricsheep",
@@ -2179,7 +2570,10 @@
     "cover": "DoAndroidsDreamOfElectricSheep.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 193
+    "pages": 193,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "aninfinitenumberofparalleluniverses",
@@ -2192,13 +2586,16 @@
     "cover": "AnInfiniteNumberOfParallelUniverses.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 240
+    "pages": 240,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "dronetheory",
     "title": "Drone Theory",
     "authors": [
-      "Grégoire Chamayou"
+      "Gr\u00c3\u00a9goire Chamayou"
     ],
     "genre": [
       "Non-Fiction",
@@ -2209,7 +2606,10 @@
     "cover": "DroneTheory.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 304
+    "pages": 304,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theknowledge",
@@ -2226,7 +2626,10 @@
     "cover": "TheKnowledge.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 341
+    "pages": 341,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thingstomakeanddointhefourthdimension",
@@ -2242,7 +2645,10 @@
     "cover": "ThingsToMakeAndDoInTheFourthDimension.jpg",
     "date_started": "",
     "date_finished": "2016",
-    "pages": 480
+    "pages": 480,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "nineteeneightyfour",
@@ -2255,7 +2661,10 @@
     "cover": "1984.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "blackswangreen",
@@ -2268,7 +2677,10 @@
     "cover": "BlackSwanGreen.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "sladehouse",
@@ -2281,7 +2693,10 @@
     "cover": "SladeHouse.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theboneclocks",
@@ -2294,7 +2709,10 @@
     "cover": "TheBoneClocks.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thehandmaidstale",
@@ -2307,7 +2725,10 @@
     "cover": "TheHandmaidsTale.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thehobbit",
@@ -2320,7 +2741,25 @@
     "cover": "TheHobbit.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "The Day of the Triffids",
+    "authors": [
+      "John Wyndham"
+    ],
+    "genre": [],
+    "status": "finished",
+    "cover": "TheDayOfTheTriffids.jpg",
+    "date_started": "",
+    "date_finished": "Long ago...",
+    "pages": 272,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "themagicofreality",
@@ -2337,7 +2776,10 @@
     "cover": "TheMagicOfReality.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theterminalman",
@@ -2354,7 +2796,10 @@
     "cover": "TheTerminalMan.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 268
+    "pages": 268,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "bravenewworld",
@@ -2371,7 +2816,10 @@
     "cover": "BraveNewWorld.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 229
+    "pages": 229,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "darkmatter",
@@ -2388,7 +2836,10 @@
     "cover": "DarkMatter.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 280
+    "pages": 280,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thecallofthewild",
@@ -2401,7 +2852,10 @@
     "cover": "TheCallOfTheWild.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 172
+    "pages": 172,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "whitefang",
@@ -2414,7 +2868,10 @@
     "cover": "WhiteFang.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 252
+    "pages": 252,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "therestaurantattheendoftheuniverse",
@@ -2427,7 +2884,10 @@
     "cover": "TheRestaurantAtTheEndOfTheUniverse.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 250
+    "pages": 250,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thehitchhikersguidetothegalaxy",
@@ -2440,7 +2900,10 @@
     "cover": "TheHitchhikersGuidetotheGalaxy.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 180
+    "pages": 180,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "amonstercalls",
@@ -2453,7 +2916,10 @@
     "cover": "AMonsterCalls.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 226
+    "pages": 226,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "morethanthis",
@@ -2466,7 +2932,10 @@
     "cover": "MoreThanThis.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 472
+    "pages": 472,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "eragon",
@@ -2479,7 +2948,10 @@
     "cover": "Eragon.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 503
+    "pages": 503,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "eldest",
@@ -2492,7 +2964,10 @@
     "cover": "Eldest.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 704
+    "pages": 704,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theaskandtheanswer",
@@ -2505,7 +2980,10 @@
     "cover": "TheAskAndTheAnswer.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 553
+    "pages": 553,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theknifeofneverlettinggo",
@@ -2518,7 +2996,10 @@
     "cover": "TheKnifeOfNeverLettingGo.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 528
+    "pages": 528,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "divergent",
@@ -2533,7 +3014,10 @@
     "cover": "Divergent.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 487
+    "pages": 487,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thehungergamesmockingjay",
@@ -2548,7 +3032,10 @@
     "cover": "TheHungerGamesMockingjay.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 390
+    "pages": 390,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thehungergamescatchingfire",
@@ -2563,7 +3050,10 @@
     "cover": "TheHungerGamesCatchingFire.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 400
+    "pages": 400,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thehungergames",
@@ -2578,7 +3068,10 @@
     "cover": "TheHungerGames.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 374
+    "pages": 374,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "readyplayerone",
@@ -2593,7 +3086,10 @@
     "cover": "ReadyPlayerOne.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 374
+    "pages": 374,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "witchcrag",
@@ -2608,7 +3104,10 @@
     "cover": "WitchCrag.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 384
+    "pages": 384,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thefaultinourstars",
@@ -2623,7 +3122,10 @@
     "cover": "TheFaultInOurStars.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 313
+    "pages": 313,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "northernlights",
@@ -2638,7 +3140,10 @@
     "cover": "NorthernLights.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 399
+    "pages": 399,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "onekick",
@@ -2653,7 +3158,10 @@
     "cover": "OneKick.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 400
+    "pages": 400,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "noughtsandcrosses",
@@ -2668,7 +3176,10 @@
     "cover": "NoughtsAndCrosses.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 479
+    "pages": 479,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "Miss Peregrine's Home for Peculiar Children",
@@ -2682,7 +3193,10 @@
     "cover": "MissPeregrinesHomeForPeculiarChildren.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 352
+    "pages": 352,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "Shiver",
@@ -2697,7 +3211,10 @@
     "cover": "Shiver.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages":434
+    "pages": 434,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "The 5th Wave",
@@ -2711,7 +3228,10 @@
     "cover": "TheFifthWave.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 460
+    "pages": 460,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "Blood Red, Snow White",
@@ -2725,7 +3245,10 @@
     "cover": "BloodRedSnowWhite.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 304
+    "pages": 304,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "revolver",
@@ -2740,7 +3263,10 @@
     "cover": "Revolver.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 224
+    "pages": 224,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "sheisnotinvisible",
@@ -2755,7 +3281,10 @@
     "cover": "SheIsNotInvisible.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 354
+    "pages": 354,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "My Name Is Mina",
@@ -2769,7 +3298,10 @@
     "cover": "MyNameIsMina.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 301
+    "pages": 301,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theenemy",
@@ -2784,7 +3316,10 @@
     "cover": "TheEnemy.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 407
+    "pages": 407,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "Seekers: Great Bear Lake",
@@ -2800,7 +3335,10 @@
     "cover": "SeekersGreatBearLake.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 293
+    "pages": 293,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "Seekers: The Quest Begins",
@@ -2816,7 +3354,10 @@
     "cover": "SeekersTheQuestBegins.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 320
+    "pages": 320,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "spiritwalker",
@@ -2832,7 +3373,10 @@
     "cover": "SpiritWalker.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 288
+    "pages": 288,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "wolfbrother",
@@ -2848,7 +3392,10 @@
     "cover": "WolfBrother.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 256
+    "pages": 256,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thedarkesthour",
@@ -2865,7 +3412,10 @@
     "cover": "WarriorsTheDarkestHour.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 368
+    "pages": 368,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "adangerouspath",
@@ -2882,7 +3432,10 @@
     "cover": "WarriorsADangerousPath.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 368
+    "pages": 368,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "risingstorm",
@@ -2899,7 +3452,10 @@
     "cover": "WarriorsRisingStorm.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 315
+    "pages": 315,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "forestofsecrets",
@@ -2916,7 +3472,10 @@
     "cover": "WarriorsForestOfSecrets.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 312
+    "pages": 312,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "fireandice",
@@ -2933,7 +3492,10 @@
     "cover": "WarriorsFireAndIce.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 317
+    "pages": 317,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "intothewild",
@@ -2950,7 +3512,10 @@
     "cover": "WarriorsIntoTheWild.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 290
+    "pages": 290,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "Cloud Cat",
@@ -2965,7 +3530,10 @@
     "cover": "CloudCat.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 154
+    "pages": 154,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "The Mysterious Benedict Society",
@@ -2980,7 +3548,10 @@
     "cover": "TheMysteriousBenedictSociety.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 480
+    "pages": 480,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "The London Eye Mystery",
@@ -2995,7 +3566,10 @@
     "cover": "TheLondonEyeMystery.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 322
+    "pages": 322,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "title": "How To Speak Dragonese",
@@ -3010,6 +3584,9 @@
     "cover": "HowToSpeakDragonese.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
-    "pages": 256
+    "pages": 256,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   }
 ]

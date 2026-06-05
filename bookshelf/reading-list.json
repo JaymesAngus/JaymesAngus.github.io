@@ -1,7 +1,28 @@
 [
   {
+    "title": "Grendel Wept",
+    "authors": [
+      "C.P. Serret"
+    ],
+    "genre": [
+      "Fiction",
+      "Weird Fiction",
+      "Horror"
+    ],
+    "status": "toread",
+    "cover": "GrendelWept.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 222,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
     "title": "Train Dreams",
-    "authors": ["Dennis Johnson"],
+    "authors": [
+      "Dennis Johnson"
+    ],
     "genre": [
       "Fiction",
       "Historial Fiction",
@@ -11,11 +32,16 @@
     "cover": "TrainDreams.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 116
+    "pages": 116,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "title": "This Book Is A Knife",
-    "authors": ["L.E. Fox"],
+    "authors": [
+      "L.E. Fox"
+    ],
     "genre": [
       "Non-Fiction",
       "Essays",
@@ -26,11 +52,16 @@
     "cover": "ThisBookIsAKnife.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 300
+    "pages": 300,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "title": "Famine: A Short History",
-    "authors": ["Cormac Ó Gráda"],
+    "authors": [
+      "Cormac \u00c3\u201c Gr\u00c3\u00a1da"
+    ],
     "genre": [
       "Non-Fiction",
       "History",
@@ -41,7 +72,10 @@
     "cover": "Famine.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 282
+    "pages": 282,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "title": "The Course of the Heart",
@@ -59,7 +93,10 @@
     "cover": "TheCourseOfTheHeart.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 265
+    "pages": 265,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "cuteaccelerationism",
@@ -77,12 +114,17 @@
     "cover": "CuteAccelerationism.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 232
+    "pages": 232,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "id": "thedechronizationofsammagruder",
     "title": "The Dechronization of Sam Magruder",
-    "authors": ["George Gaylord Simpson"],
+    "authors": [
+      "George Gaylord Simpson"
+    ],
     "genre": [
       "Fiction",
       "Science Fiction",
@@ -94,12 +136,15 @@
     "date_finished": "",
     "pages": null,
     "date_purchased": "02/05/26",
-    "purchase_location": "Oxford Oxfam, OX1 3LU"
+    "purchase_location": "Oxford Oxfam, OX1 3LU",
+    "in_possession": true
   },
   {
     "id": "theweirdandtheeerie",
     "title": "The Weird and the Eerie",
-    "authors": ["Mark Fisher"],
+    "authors": [
+      "Mark Fisher"
+    ],
     "genre": [
       "Non-Fiction",
       "Essays",
@@ -110,12 +155,17 @@
     "cover": "TheWeirdAndTheEerie.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "drugcartelsdonotexist",
     "title": "Drug Cartels Do Not Exist: Narcotrafficking in US and Mexican Culture",
-    "authors": ["Oswaldo Zavala"],
+    "authors": [
+      "Oswaldo Zavala"
+    ],
     "genre": [
       "Non-Fiction",
       "History",
@@ -127,12 +177,17 @@
     "cover": "DrugCartelsDoNotExist.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theshadowofthetorturer",
     "title": "The Shadow of the Torturer",
-    "authors": ["Gene Wolfe"],
+    "authors": [
+      "Gene Wolfe"
+    ],
     "genre": [
       "Fiction",
       "Science Fiction",
@@ -142,12 +197,17 @@
     "cover": "TheShadowOfTheTorturer.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theweatherexperiment",
     "title": "The Weather Experiment",
-    "authors": ["Peter Moore"],
+    "authors": [
+      "Peter Moore"
+    ],
     "genre": [
       "Non-Fiction",
       "History",
@@ -158,12 +218,17 @@
     "cover": "TheWeatherExperiment.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "id": "alltomorrows",
     "title": "All Tomorrows: A Billion Year Chronicle of the Myriad Species and Mixed Fortunes of Man",
-    "authors": ["C.M. Kösemen"],
+    "authors": [
+      "C.M. K\u00c3\u00b6semen"
+    ],
     "genre": [
       "Fiction",
       "Science Fiction",
@@ -173,12 +238,18 @@
     "cover": "AllTomorrows.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
   },
   {
     "id": "thebiophiliahypothesis",
     "title": "The Biophilia Hypothesis",
-    "authors": ["Edward O. Wilson", "Stephen R. Kellert"],
+    "authors": [
+      "Edward O. Wilson",
+      "Stephen R. Kellert"
+    ],
     "genre": [
       "Non-Fiction",
       "Nature",
@@ -189,12 +260,17 @@
     "cover": "TheBiophiliaHypothesis.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "therevengeofgaia",
     "title": "The Revenge of Gaia",
-    "authors": ["James Lovelock"],
+    "authors": [
+      "James Lovelock"
+    ],
     "genre": [
       "Non-Fiction",
       "Science",
@@ -204,12 +280,17 @@
     "cover": "TheRevengeOfGaia.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "poorthings",
     "title": "Poor Things",
-    "authors": ["Alistair Gray"],
+    "authors": [
+      "Alistair Gray"
+    ],
     "genre": [
       "Fiction",
       "Science Fiction",
@@ -220,12 +301,17 @@
     "cover": "PoorThings.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theyearoftheflood",
     "title": "The Year Of The Flood",
-    "authors": ["Margaret Atwood"],
+    "authors": [
+      "Margaret Atwood"
+    ],
     "genre": [
       "Fiction",
       "Science Fiction"
@@ -234,7 +320,10 @@
     "cover": "TheYearOfTheFlood.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 430
+    "pages": 430,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theslynx",
@@ -253,7 +342,8 @@
     "date_finished": "",
     "pages": 299,
     "date_purchased": "04/05/2026",
-    "purchase_location": "Oxford Blackwell's Sci-fi, Manga & Games, OX1 3BS"
+    "purchase_location": "Oxford Blackwell's Sci-fi, Manga & Games, OX1 3BS",
+    "in_possession": false
   },
   {
     "id": "howlifeworks",
@@ -270,12 +360,17 @@
     "cover": "HowLifeWorks.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 460
+    "pages": 460,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theaxemanscarnival",
     "title": "The Axemans Carnival",
-    "authors": ["Catherine Chidgey"],
+    "authors": [
+      "Catherine Chidgey"
+    ],
     "genre": [
       "Fiction",
       "Xenofiction",
@@ -285,12 +380,17 @@
     "cover": "TheAxemansCarnival.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 336
+    "pages": 336,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theconquestofbread",
     "title": "The Conquest Of Bread",
-    "authors": ["Pyotr Kropotkin"],
+    "authors": [
+      "Pyotr Kropotkin"
+    ],
     "genre": [
       "Non-Fiction",
       "Political Theory",
@@ -301,7 +401,10 @@
     "cover": "TheConquestOfBread.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 234
+    "pages": 234,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "everythingistuberculosis",
@@ -318,7 +421,10 @@
     "cover": "EverythingIsTuberculosis.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 198
+    "pages": 198,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "williamblakeandtheseamonstersoflove",
@@ -336,7 +442,10 @@
     "cover": "WilliamBlakeAndTheSeaMonstersOfLove.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thinkingasanarchists",
@@ -355,12 +464,17 @@
     "cover": "ThinkingAsAnarchists.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thevanishingfaceofgaia",
     "title": "The Vanishing Face Of Gaia",
-    "authors": ["James Lovelock"],
+    "authors": [
+      "James Lovelock"
+    ],
     "genre": [
       "Non-Fiction",
       "Environment",
@@ -371,12 +485,17 @@
     "cover": "TheVanishingFaceOfGaia.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "transparentcity",
     "title": "Transparent City",
-    "authors": ["Ondjaki"],
+    "authors": [
+      "Ondjaki"
+    ],
     "genre": [
       "Fiction",
       "Angolan Literature",
@@ -386,7 +505,10 @@
     "cover": "TransparentCity.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "mutantecologies",
@@ -406,12 +528,15 @@
     "date_finished": "",
     "pages": null,
     "date_purchased": "15/08/24",
-    "purchase_location": "ICA Bookshop, SW1Y 5AH"
+    "purchase_location": "ICA Bookshop, SW1Y 5AH",
+    "in_possession": false
   },
   {
     "id": "openveinsoflatinamerica",
     "title": "Open Veins Of Latin America",
-    "authors": ["Eduardo Galeano"],
+    "authors": [
+      "Eduardo Galeano"
+    ],
     "genre": [
       "Non-Fiction",
       "History",
@@ -422,7 +547,10 @@
     "cover": "OpenVeinsOfLatinAmerica.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theoriginoflifeonearth",
@@ -433,7 +561,10 @@
     "cover": "TheOriginOfLifeOnEarth.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "pandorashope",
@@ -444,12 +575,17 @@
     "cover": "PandorasHope.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "moonwitchspiderking",
     "title": "Moon Witch Spider King",
-    "authors": ["Marlon James"],
+    "authors": [
+      "Marlon James"
+    ],
     "genre": [
       "Fiction",
       "Historical Fiction",
@@ -459,7 +595,10 @@
     "cover": "MoonWitchSpiderKing.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theconcubine",
@@ -470,7 +609,10 @@
     "cover": "TheConcubine.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theworkofthedead",
@@ -483,7 +625,8 @@
     "date_finished": "",
     "pages": null,
     "date_purchased": "27/02/26",
-    "purchase_location": "Exeter Roman Gate Waterstones, EX4 3PZ"
+    "purchase_location": "Exeter Roman Gate Waterstones, EX4 3PZ",
+    "in_possession": false
   },
   {
     "id": "thevitalquestion",
@@ -494,7 +637,10 @@
     "cover": "TheVitalQuestion.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thehaircarpetweavers",
@@ -508,7 +654,10 @@
     "cover": "TheHair-CarpetWeavers.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thedemoninthemachine",
@@ -519,7 +668,10 @@
     "cover": "TheDemonInTheMachine.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theburiedgiant",
@@ -530,7 +682,10 @@
     "cover": "TheBuriedGiant.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "elkofnorthamerica",
@@ -541,12 +696,17 @@
     "cover": "ElkOfNorthAmerica.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "darkecology",
     "title": "Dark Ecology",
-    "authors": ["Timothy Morton"],
+    "authors": [
+      "Timothy Morton"
+    ],
     "genre": [
       "Non-Fiction",
       "Environment",
@@ -556,7 +716,10 @@
     "cover": "DarkEcology.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 162
+    "pages": 162,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "themelancholyofresistance",
@@ -567,7 +730,10 @@
     "cover": "TheMelancholyOfResistance.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "hyperion",
@@ -578,7 +744,10 @@
     "cover": "Hyperion.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "readymadebodhisattva",
@@ -589,7 +758,10 @@
     "cover": "ReadymadeBodhisattva.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "persepolis",
@@ -600,7 +772,10 @@
     "cover": "Persepolis.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "demons",
@@ -611,7 +786,10 @@
     "cover": "Demons.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "ducksnewburyport",
@@ -622,7 +800,10 @@
     "cover": "DucksNewburyport.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theenchantressofflorence",
@@ -633,7 +814,10 @@
     "cover": "TheEnchantressOfFlorence.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "themagicmountain",
@@ -644,7 +828,10 @@
     "cover": "TheMagicMountain.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thedrownedworld",
@@ -655,7 +842,10 @@
     "cover": "TheDrownedWorld.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thefirenexttime",
@@ -666,7 +856,10 @@
     "cover": "TheFireNextTime.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "randomlymovingparticles",
@@ -677,7 +870,10 @@
     "cover": "RandomlyMovingParticles.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thebookofuniverses",
@@ -688,7 +884,10 @@
     "cover": "TheBookOfUniverses.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "figmentsofreality",
@@ -699,7 +898,10 @@
     "cover": "FigmentsOfReality.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "ourplace",
@@ -710,7 +912,10 @@
     "cover": "OurPlace.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "ulysses",
@@ -721,7 +926,10 @@
     "cover": "Ulysses.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theaeneid",
@@ -732,7 +940,10 @@
     "cover": "TheAeneid.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theodyssey",
@@ -743,7 +954,10 @@
     "cover": "TheOdyssey.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thelostbooksoftheodyssey",
@@ -754,7 +968,10 @@
     "cover": "TheLostBooksOfTheOdyssey.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thedescentofman",
@@ -765,12 +982,17 @@
     "cover": "TheDescentOfMan.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "orcadia",
     "title": "Orcadia",
-    "authors": ["Mark Edmonds"],
+    "authors": [
+      "Mark Edmonds"
+    ],
     "genre": [
       "Non-Fiction",
       "History",
@@ -780,7 +1002,10 @@
     "cover": "Orcadia.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 311
+    "pages": 311,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "gravitysengines",
@@ -791,7 +1016,10 @@
     "cover": "GravitysEngines.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theplaniverse",
@@ -802,7 +1030,10 @@
     "cover": "ThePlaniverse.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "therat",
@@ -813,7 +1044,10 @@
     "cover": "TheRat.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thealeph",
@@ -824,7 +1058,10 @@
     "cover": "TheAleph.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "diaboliad",
@@ -835,7 +1072,10 @@
     "cover": "Diaboliad.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "againstnature",
@@ -846,7 +1086,10 @@
     "cover": "AgainstNature.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "tothelighthouse",
@@ -857,7 +1100,10 @@
     "cover": "ToTheLighthouse.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "fullyautomatedluxurycommunism",
@@ -868,7 +1114,10 @@
     "cover": "FullyAutomatedLuxuryCommunism.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "futureofdenial",
@@ -879,7 +1128,10 @@
     "cover": "FutureOfDenial.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "entangledlife",
@@ -890,7 +1142,10 @@
     "cover": "EntangledLife.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "rebirding",
@@ -901,7 +1156,10 @@
     "cover": "Rebirding.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theuninhabitableearth",
@@ -912,7 +1170,10 @@
     "cover": "TheUninhabitableEarth.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "theknowledgeillusion",
@@ -923,7 +1184,10 @@
     "cover": "TheKnowledgeIllusion.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "paradiseslost",
@@ -934,7 +1198,10 @@
     "cover": "ParadisesLost.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thedragon",
@@ -945,7 +1212,10 @@
     "cover": "TheDragon.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "thefamishedroad",
@@ -958,7 +1228,10 @@
     "cover": "TheFamishedRoad.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "conjecturesrefutations",
@@ -971,7 +1244,10 @@
     "cover": "Conjectures_Refutations.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "tripticks",
@@ -987,7 +1263,10 @@
     "cover": "Tripticks.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 186
+    "pages": 186,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "deepwheelorcadia",
@@ -1007,7 +1286,8 @@
     "date_finished": "",
     "pages": 163,
     "date_purchased": "15/10/2025",
-    "purchase_location": "Rare Birds Book Shop, Edinburgh, EH4 1HU"
+    "purchase_location": "Rare Birds Book Shop, Edinburgh, EH4 1HU",
+    "in_possession": false
   },
   {
     "id": "thegardenagainsttime",
@@ -1024,7 +1304,10 @@
     "cover": "TheGardenAgainstTime.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 317
+    "pages": 317,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "veganarchism",
@@ -1040,7 +1323,10 @@
     "cover": "Veganarchism.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 114
+    "pages": 114,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "insectsarejustlikeyouandme",
@@ -1058,7 +1344,10 @@
     "cover": "InsectsAreJustLikeYouAndMe.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 141
+    "pages": 141,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "capitalismsendgame",
@@ -1077,7 +1366,10 @@
     "cover": "CapitalismsEndgame.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 248
+    "pages": 248,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "desert",
@@ -1094,7 +1386,10 @@
     "cover": "Desert.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 71
+    "pages": 71,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "gatheredremains",
@@ -1111,7 +1406,10 @@
     "cover": "GatheredRemains.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 333
+    "pages": 333,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "copyripburn",
@@ -1128,7 +1426,10 @@
     "cover": "CopyRipBurn.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 205
+    "pages": 205,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "huntfortheshadowwolf",
@@ -1145,7 +1446,10 @@
     "cover": "HuntForTheShadowWolf.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 211
+    "pages": 211,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "emergent",
@@ -1162,7 +1466,10 @@
     "cover": "Emergent.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 189
+    "pages": 189,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "onedimensionalman",
@@ -1180,7 +1487,10 @@
     "cover": "OneDimensionalMan.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 275
+    "pages": 275,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
     "id": "cyclonopedia",
@@ -1198,6 +1508,9 @@
     "cover": "Cyclonopedia.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": 268
+    "pages": 268,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   }
 ]

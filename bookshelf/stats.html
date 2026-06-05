@@ -276,7 +276,7 @@ circle {
         <div class="progress-grid">
           <div class="progress-container"
             style="background-color: #fdcd01"
-            data-challenge="SFMasterworks_list"
+            data-challenge="SFMasterworks"
             data-description="Read all the books in the SF Masterworks series published by Gollancz"
             data-colour=""
             data-text-colour="#111">
@@ -299,7 +299,7 @@ circle {
             <div class="progress-wrapper">
               <svg class="progress-circle" width="120" height="120">
                 <circle class="bg" cx="60" cy="60" r="50" stroke="#eee" stroke-width="10"/>
-                <circle class="progress" cx="60" cy="60" r="50" stroke-width="10">
+                <circle class="progress" cx="60" cy="60" r="50" stroke-width="10"></circle>
               </svg>
               <div class="progress-text">0%</div>
             </div>
@@ -315,7 +315,7 @@ circle {
             <div class="progress-wrapper">
               <svg class="progress-circle" width="120" height="120">
                 <circle class="bg" cx="60" cy="60" r="50" stroke="#eee" stroke-width="10"/>
-                <circle class="progress" cx="60" cy="60" r="50" stroke-width="10">
+                <circle class="progress" cx="60" cy="60" r="50" stroke-width="10"></circle>
               </svg>
               <div class="progress-text">0%</div>
             </div>
@@ -501,7 +501,7 @@ circle {
         text.textContent = `${progressPercent}%`;
 
         const circleColor = container.dataset.colour || '#407527';
-        const textColor = container.dataset.text_colour || '#000000';
+        const textColor = container.dataset.text_colour || container.dataset.textColour || '#000000';
         circle.style.stroke = circleColor;
         text.style.color = textColor;
         title.style.color = textColor;
@@ -554,12 +554,17 @@ circle {
 
       async function initAllTrackers() {
         const trackers = document.querySelectorAll('.progress-container');
+        const progressFile = `/bookshelf/books.json`;
 
         for (const tracker of trackers) {
-          const challengeFile = `/static/reading_challenges/${tracker.dataset.challenge}.json`;
-          const progressFile = `/bookshelf/books.json`;
+          const challengeName = tracker.dataset.challenge.replace(/_list$/, '');
+          const challengeFile = `/static/reading_challenges/${challengeName}.json`;
 
-          await loadProgressForTracker(tracker, challengeFile, progressFile);
+          try {
+            await loadProgressForTracker(tracker, challengeFile, progressFile);
+          } catch (err) {
+            console.error('Failed to initialize tracker', tracker.dataset.challenge, err);
+          }
         }
 
         setupModalClose();
