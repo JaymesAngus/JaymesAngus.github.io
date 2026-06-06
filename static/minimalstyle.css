@@ -87,8 +87,6 @@ body{
 }
 
 .content {
-  /* width: 60%; */
-  /* margin: auto; */
   margin-top: 0px;
   margin-left: var(--sd);
   padding: var(--pd);
@@ -240,10 +238,10 @@ h1 {
     font-family: monospace;
     font-size: 18px;
   }
-  
+
   .contentimage {
     width: 90vw;
   }
-  
+
 }
 
