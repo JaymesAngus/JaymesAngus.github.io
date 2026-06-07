@@ -209,6 +209,7 @@ h1 {
     padding: var(--pd);
     max-width: 100%;
     margin: auto;
+    font-size: 16px;
   }
   .title {
     font-size: calc(2.5vw + 2.5vh);
