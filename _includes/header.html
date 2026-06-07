@@ -1,0 +1,18 @@
+<header>
+<img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
+<div class="title">
+    <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+</div>
+<nav>
+    <ul>
+        <li><a {% if page.url contains '/projects' %}aria-current="page"{% endif %} class="navlink" href="/projects/">Projects</a></li>
+        <li><a {% if page.url contains '/wiki' %}aria-current="page"{% endif %} class="navlink" href="/wiki/">Wiki</a></li>
+        <li><a {% if page.url contains '/notes' %}aria-current="page"{% endif %} class="navlink" href="/notes">Notes</a></li>
+    </ul>
+    <ul>
+        <li><a {% if page.url contains '/bookshelf' %}aria-current="page"{% endif %} class="navlink" href="/bookshelf/">Bookshelf</a></li>
+        <li><a {% if page.url contains '/gallery' %}aria-current="page"{% endif %} class="navlink" href="/gallery/">Gallery</a></li>
+        <li><a {% if page.url contains '/about' %}aria-current="page"{% endif %} class="navlink" href="/about">About</a></li>
+    </ul>
+</nav>
+</header>

@@ -1,0 +1,11 @@
+source: .
+destination: _site
+include:
+  - .htaccess
+
+exclude:
+  - node_modules
+  - .git
+  - .gitignore
+  - dungeon-crawler
+  - infinite

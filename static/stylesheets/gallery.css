@@ -1,0 +1,102 @@
+* {
+box-sizing: border-box;
+}
+
+.thumbs {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: flex-start;
+align-items: stretch;
+width: 100%;
+margin: 10px auto;
+resize: both;
+}
+
+.thumbs:after {
+content: "";
+flex: 100 0 auto;
+}
+
+.thumb {
+position: relative;
+display: inline-block;
+flex: 1 0 auto;
+width: auto;
+height: 300px;
+margin: 10px;
+text-decoration: none;
+background-color: rgba(0,0,0, 0.50);
+z-index: 1;
+}
+
+.thumb-img > img,
+.thumb-txt > div {
+min-width: 60px;
+}
+
+.thumb-img {
+border-radius:10px;
+background-size: cover;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+}
+
+.thumb-img > img {
+display: block;
+height: 100%;
+opacity: 0;
+}
+
+.thumb > div {
+font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+font-size: 14px;
+color: #fff;
+padding: 0px 2px;
+overflow: hidden;
+}
+.thumb > div > span {
+display: block;
+}
+
+.thumb > div > span:first-child {
+font-weight: bold;
+}
+.thumb > div > span:last-child {
+font-size: 0.8em;
+}
+
+.thumb-img > div {
+display: block;
+position: absolute;
+bottom: 0px;
+left: 0px;
+width: 100%;
+white-space: nowrap;
+background-color: rgba(0,0,0, 0.30);
+opacity: 1;
+}
+.thumb-img > div > span {
+font-size: 0.8em;
+}
+
+.thumb-txt > div {
+display: block;
+width: auto;
+height: 100%;
+}
+
+@media all and (max-width:800px) {
+.thumb {
+    height: auto;
+    margin: 10px 0px 10px 0px;
+}
+.thumbs:after {
+    content: none;
+}
+.thumb-img > img {
+    width: 80vw;
+    max-height:100vw;
+    }
+}

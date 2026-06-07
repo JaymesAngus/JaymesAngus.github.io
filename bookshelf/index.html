@@ -1,207 +1,108 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookshelf</title>
-    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/static/bookshelf.css" rel="stylesheet" type="text/css" media="all">
-    <style>
-      .filter-section {
-          margin: 2rem 0;
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          margin-bottom: 0;
-      }
-
-      .filter-controls {
-          display: flex;
-          gap: 1rem;
-          flex-wrap: wrap;
-          justify-content: left;
-      }
-
-      .filter-button {
-          padding: 0.75rem 1.5rem;
-          border: 1px solid #000;
-          background: transparent;
-          transition: all 0.3s ease;
-          min-width: 120px;
-          font-size: 1rem;
-          font-family: inherit;
-      }
-
-      .filter-button:hover,
-      .filter-button.active {
-          background: #000;
-          color: #fff;
-      }
-
-      @media (max-width: 768px) {
-          .bookshelf {
-              gap: 1.5rem;
-          }
-
-          .filter-section {
-              margin: 0 0 1rem;
-              padding-bottom: 0;
-          }
-
-          .filter-controls {
-              gap: 0.5rem;
-              justify-content: center;
-          }
-
-          .filter-button {
-              padding: 0.75rem 1rem;
-              font-size: 0.9rem;
-              min-width: 110px;
-              width: calc(50% - 0.5rem);
-              margin: 0.25rem;
-          }
-      }
-
-      @media (max-width: 480px) {
-        .bookshelf {
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-        }
-        .book-info {
-            padding: 0.25rem;
-        }
-        .filter-button {
-            width: 100%;
-            margin: 0.25rem 0;
-        }
-      }
-    </style>
-</head>
-<body>
-  <header>
-    <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
-    <div class="title">
-      <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
+---
+layout: default
+title: Bookshelf
+extra_css: |
+  <link href="/static/stylesheets/bookshelf.css" rel="stylesheet" type="text/css" media="all">
+---
+<h1>bookshelf</h1>
+<div class="filter-section">
+    <div class="filter-controls">
+        <button class="filter-button active" data-filter="finished">Log</button>
+        <button class="filter-button" data-filter="toread">Backlog</button>
     </div>
-    <nav>
-      <ul>
-          <li><a class="navlink" href="/projects/">Projects</a></li>
-          <li><a class="navlink" href="/wiki/">Wiki</a></li>
-          <li><a class="navlink" href="/notes">Notes</a></li>
-      </ul>
-      <ul>
-          <li><a aria-current="page" class="navlink" href="/bookshelf/">Bookshelf</a></li>
-          <li><a class="navlink" href="/gallery/">Gallery</a></li>
-          <li><a class="navlink" href="/about">About</a></li>
-      </ul>
-    </nav>
-  </header>
+    <br>
+</div>
 
-  <div class="content">
-    <h1 style="font-family: MajorMono;">bookshelf</h1>
+<div class="bookshelf">
+  <div class="loading">JavaScript not supported (there should be a grid of book covers here).</div>
+</div>
+<script>
+  (function(){
+    let books = [];
 
-    <div class="filter-section">
-        <div class="filter-controls">
-            <button class="filter-button active" data-filter="finished">Log</button>
-            <button class="filter-button" data-filter="toread">Backlog</button>
-        </div>
-        <br>
-    </div>
+    function createBookElement(b, status) {
+      const div = document.createElement('div');
+      div.className = 'book';
+      div.dataset.status = status;
 
-    <div class="bookshelf">
-      <div class="loading">JavaScript not supported (there should be a grid of book covers here).</div>
-    </div>
-    <script>
-      (function(){
-        let books = [];
-
-        function createBookElement(b, status) {
-          const div = document.createElement('div');
-          div.className = 'book';
-          div.dataset.status = status;
-
-          div.addEventListener('click', function(e) {
-            e.stopPropagation();
-            document.querySelectorAll('.book').forEach(book => {
-              if (book !== this) book.classList.remove('active');
-            });
-            this.classList.toggle('active');
-          });
-
-          const img = document.createElement('img');
-          img.className = 'book-cover';
-          img.src = '/static/images/BookCovers/' + (b.cover || '');
-          img.alt = b.title || '';
-          img.loading = 'lazy';
-          div.appendChild(img);
-
-          const info = document.createElement('div');
-          info.className = 'book-info';
-
-          const authorList = joinNameList(b.authors)
-          if (status === 'toread') {
-            info.innerHTML = b.title || '';
-          } else {
-            info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Finished on ' + b.date_finished;
-          }
-          div.appendChild(info);
-          return div;
-        }
-
-        function joinNameList(items) {
-          if (items.length === 0) return '';
-          if (items.length === 1) return items[0];
-          if (items.length === 2) return `${items[0]} and ${items[1]}`;
-          return `${items.slice(0, -1).join(', ')}, and ${items.at(-1)}`;
-        }
-
-        function renderBooks(viewMode = 'finished') {
-          const container = document.querySelector('.bookshelf');
-          if (!container) return;
-
-          container.innerHTML = '';
-
-          if (viewMode === 'toread') {
-            const toreadBooks = books.filter(b => b.status === 'toread');
-            toreadBooks.forEach(b => {
-              container.appendChild(createBookElement(b, 'toread'));
-            });
-          } else {
-            const finishedBooks = books.filter(b => b.status === 'finished');
-            finishedBooks.forEach(b => {
-              container.appendChild(createBookElement(b, 'finished'));
-            });
-          }
-        }
-
-        document.addEventListener('click', function(e){
-          if (!e.target.closest || !e.target.closest('.book')) {
-            document.querySelectorAll('.book').forEach(book => book.classList.remove('active'));
-          }
+      div.addEventListener('click', function(e) {
+        e.stopPropagation();
+        document.querySelectorAll('.book').forEach(book => {
+          if (book !== this) book.classList.remove('active');
         });
+        this.classList.toggle('active');
+      });
 
-        function setupFilters() {
-          document.querySelectorAll('.filter-button').forEach(button => {
-            button.addEventListener('click', () => {
-              document.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
-              button.classList.add('active');
-              const filter = button.dataset.filter;
-              renderBooks(filter);
-            });
-          });
-        }
+      const img = document.createElement('img');
+      img.className = 'book-cover';
+      img.src = '/static/images/BookCovers/' + (b.cover || '');
+      img.alt = b.title || '';
+      img.loading = 'lazy';
+      div.appendChild(img);
 
-        Promise.all([
-          fetch('./books.json').then(r => r.json()),
-          fetch('./reading-list.json').then(r => r.json())
-        ]).then(([booksData, listData]) => {
-          books = [...(booksData || []), ...(listData || [])];
-          setupFilters();
-          renderBooks('finished');
-        })
-      })();
-    </script>
-  </div>
-  <footer>
-    <p>© 2026 Jay Anderson</p>
-  </footer>
-</body>
-</html>
+      const info = document.createElement('div');
+      info.className = 'book-info';
+
+      const authorList = joinNameList(b.authors)
+      if (status === 'toread') {
+        info.innerHTML = b.title || '';
+      } else {
+        info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Finished on ' + b.date_finished;
+      }
+      div.appendChild(info);
+      return div;
+    }
+
+    function joinNameList(items) {
+      if (items.length === 0) return '';
+      if (items.length === 1) return items[0];
+      if (items.length === 2) return `${items[0]} and ${items[1]}`;
+      return `${items.slice(0, -1).join(', ')}, and ${items.at(-1)}`;
+    }
+
+    function renderBooks(viewMode = 'finished') {
+      const container = document.querySelector('.bookshelf');
+      if (!container) return;
+
+      container.innerHTML = '';
+
+      if (viewMode === 'toread') {
+        const toreadBooks = books.filter(b => b.status === 'toread');
+        toreadBooks.forEach(b => {
+          container.appendChild(createBookElement(b, 'toread'));
+        });
+      } else {
+        const finishedBooks = books.filter(b => b.status === 'finished');
+        finishedBooks.forEach(b => {
+          container.appendChild(createBookElement(b, 'finished'));
+        });
+      }
+    }
+
+    document.addEventListener('click', function(e){
+      if (!e.target.closest || !e.target.closest('.book')) {
+        document.querySelectorAll('.book').forEach(book => book.classList.remove('active'));
+      }
+    });
+
+    function setupFilters() {
+      document.querySelectorAll('.filter-button').forEach(button => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          const filter = button.dataset.filter;
+          renderBooks(filter);
+        });
+      });
+    }
+
+    Promise.all([
+      fetch('./books.json').then(r => r.json()),
+      fetch('./reading-list.json').then(r => r.json())
+    ]).then(([booksData, listData]) => {
+      books = [...(booksData || []), ...(listData || [])];
+      setupFilters();
+      renderBooks('finished');
+    })
+  })();
+</script>

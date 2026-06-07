@@ -1,197 +1,130 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookshelf</title>
-    <link href="/static/minimalstyle.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/static/bookshelf.css" rel="stylesheet" type="text/css" media="all">
-    <style>
+---
+layout: default
+title: Reading Lists
+extra_css: |
+  <link href="/static/stylesheets/bookshelf.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+    .content {
+      max-width: 60%;
+    }
+    .bookshelf {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    .book-cover {
+        opacity: 0.2;
+    }
+    @media (max-width: 768px) {
       .content {
-        max-width: 60%;
+          max-width: 100%;
       }
-      .bookshelf {
-          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-          gap: 1rem;
-      }
-
-      .book-cover {
-          opacity: 0.2;
-      }
-
-      .progress-bar-container {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        height:20px;
-        border:1px solid black;
-      }
-
-      .individual-challenge {
-        margin-bottom: 50px;
-      }
-
-      .book.owned > .book-cover { opacity: 1; }
-
-      /* Responsive adjustments */
-      @media (max-width: 768px) {
-        .content {
-            max-width: 100%;
-        }
-        .individual-challenge {
-          padding-left: 0;
-        }
-      .bookshelf {
-          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-      }
-        .bookshelf {
-            gap: 1.5rem;
-        }
-        #progress-bar-container {
-          width: 80%;
-          margin: 0.5rem;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .bookshelf {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        }
-      }
-    </style>
-</head>
-<body>
-    <header>
-      <img class="rotate" src="/static/images/MiscImages/tree.png" alt="A tree">
-      <div class="title">
-        <a href="/" style="color:#3a6506;"><span>biosferics</span></a>
-      </div>
-      <nav>
-        <ul>
-            <li><a class="navlink" href="/projects/">Projects</a></li>
-            <li><a class="navlink" href="/wiki/">Wiki</a></li>
-            <li><a class="navlink" href="/notes">Notes</a></li>
-        </ul>
-        <ul>
-            <li><a aria-current="page" class="navlink" href="/bookshelf/">Bookshelf</a></li>
-            <li><a class="navlink" href="/gallery/">Gallery</a></li>
-            <li><a class="navlink" href="/about">About</a></li>
-        </ul>
-      </nav>
-    </header>
-
-  <div class="content">
-    <h1>reading challenges</h1>
-    <br>
-    <p>
-      Still a work in progress!!! Collections of books I'd like to read one day.
-    </p>
-    <br>
-    <div class="individual-challenge">
-      <h2 id="james-lovelock-title">James Lovelock Bibliography</h2>
-      <div class="progress-bar-container">
-        <div id="james-lovelock-progress-bar" style="height:19px; background-color: black;"></div>
-      </div>
-      <div class="bookshelf" id="james-lovelock">
-        <div class="loading">If you can see this then your browser probably doesn't support JavaScript. Or your internet connection is just slow.</div>
-      </div>
-    </div>
-    <div class="individual-challenge">
-      <h2 id="sf-masterworks-title">SF Masterworks</h2>
-      <p>Brian Aldiss, you are the very last on any list of mine.</p>
-      <div class="progress-bar-container">
-        <div id="sf-masterworks-progress-bar" style="height:19px; background-color: black;"></div>
-      </div>
-      <div class="bookshelf" id="sf-masterworks">
-        <div class="loading">If you can see this then your browser probably doesn't support JavaScript. Or your internet connection is just slow.</div>
-      </div>
-    </div>
-
-    <script>
-      (function(){
-        let books = [];
-
-        function createBookElement(b) {
-          const div = document.createElement('div');
-          div.className = 'book';
-
-          div.addEventListener('click', function(e) {
-            e.stopPropagation();
-            document.querySelectorAll('.book').forEach(book => {
-              if (book !== this) book.classList.remove('active');
-            });
-            this.classList.toggle('active');
-          });
-
-          const img = document.createElement('img');
-          img.className = 'book-cover';
-          img.src = '/static/images/BookCovers/' + (b.cover || '');
-          img.alt = b.title || '';
-          img.loading = 'lazy';
-          div.appendChild(img);
-
-          const info = document.createElement('div');
-          info.className = 'book-info';
-          info.textContent = b.title || '';
-          div.appendChild(info);
-
-          if (b.inCollection) {
-            div.classList.add('owned');
-          }
-
-          return div;
-        }
-
-        function renderBooks(bookshelf) {
-          const container = document.querySelector(bookshelf);
-          if (!container) return;
-
-          container.innerHTML = '';
-
-          books.forEach(b => {
-            container.appendChild(createBookElement(b));
-          });
-        }
-
-        document.addEventListener('click', function(e){
-          if (!e.target.closest || !e.target.closest('.book')) {
-            document.querySelectorAll('.book').forEach(book => book.classList.remove('active'));
-          }
-        });
-
-        function fetchBooks(challenge_list, bookshelf_id) {
-          Promise.all([
-                    fetch(challenge_list).then(r => r.json()),
-                    fetch('/bookshelf/books.json').then(r => r.json())
-                  ]).then(([challengeData, booksData]) => {
-                    const ownedTitles = new Set(
-                      (booksData || []).map(b => b.title && b.title.toLowerCase())
-                    );
-
-                    const items = (challengeData && challengeData.items) || [];
-                    items.forEach(item => {
-                      item.inCollection = ownedTitles.has(item.title.toLowerCase());
-                    });
-                    const ownedCount = items.length
-                    books = items;
-                    const inCollectionCount = books.filter(b => b.inCollection).length;
-                    var elem = document.getElementById(bookshelf_id+"-progress-bar");
-                    elem.style.width = 100 * inCollectionCount / ownedCount + "%";
-                    var challengeTitle = document.getElementById(bookshelf_id+"-title");
-                    challengeTitle.innerHTML += " - " + inCollectionCount + "/" + ownedCount;
-                    renderBooks('#'+bookshelf_id);
-                  }).catch(err => {
-                    console.error('Failed to load books.json', err);
-                    const c = document.querySelector('.bookshelf');
-                    if(c) c.innerHTML = '<div class="loading">Failed to load books.</div>';
-                  });
-        }
-        fetchBooks('/static/reading_challenges/JamesLovelock.json', 'james-lovelock')
-        fetchBooks('/static/reading_challenges/SFMasterworks.json', 'sf-masterworks')
-      })();
-    </script>
+    }
+  </style>
+---
+<h1>reading challenges</h1>
+<br>
+<p>
+  Still a work in progress!!! Collections of books I'd like to read one day.
+</p>
+<br>
+<div class="individual-challenge">
+  <h2 id="james-lovelock-title">James Lovelock Bibliography</h2>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="james-lovelock-progress-bar"></div>
   </div>
-  <footer>
-    <p>© 2026 Jay Anderson</p>
-  </footer>
-</body>
-</html>
+  <div class="bookshelf" id="james-lovelock">
+    <div class="loading">If you can see this then your browser probably doesn't support JavaScript. Or your internet connection is just slow.</div>
+  </div>
+</div>
+<div class="individual-challenge">
+  <h2 id="sf-masterworks-title">SF Masterworks</h2>
+  <p>Brian Aldiss, you are the very last on any list of mine.</p>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="sf-masterworks-progress-bar"></div>
+  </div>
+  <div class="bookshelf" id="sf-masterworks">
+  </div>
+</div>
+
+<script>
+  (function(){
+    let books = [];
+
+    function createBookElement(b) {
+      const div = document.createElement('div');
+      div.className = 'book';
+
+      div.addEventListener('click', function(e) {
+        e.stopPropagation();
+        document.querySelectorAll('.book').forEach(book => {
+          if (book !== this) book.classList.remove('active');
+        });
+        this.classList.toggle('active');
+      });
+
+      const img = document.createElement('img');
+      img.className = 'book-cover';
+      img.src = '/static/images/BookCovers/' + (b.cover || '');
+      img.alt = b.title || '';
+      img.loading = 'lazy';
+      div.appendChild(img);
+
+      const info = document.createElement('div');
+      info.className = 'book-info';
+      info.textContent = b.title || '';
+      div.appendChild(info);
+
+      if (b.inCollection) {
+        div.classList.add('owned');
+      }
+
+      return div;
+    }
+
+    function renderBooks(bookshelf) {
+      const container = document.querySelector(bookshelf);
+      if (!container) return;
+
+      container.innerHTML = '';
+
+      books.forEach(b => {
+        container.appendChild(createBookElement(b));
+      });
+    }
+
+    document.addEventListener('click', function(e){
+      if (!e.target.closest || !e.target.closest('.book')) {
+        document.querySelectorAll('.book').forEach(book => book.classList.remove('active'));
+      }
+    });
+
+    function fetchBooks(challenge_list, bookshelf_id) {
+      Promise.all([
+                fetch(challenge_list).then(r => r.json()),
+                fetch('/bookshelf/books.json').then(r => r.json())
+              ]).then(([challengeData, booksData]) => {
+                const ownedTitles = new Set(
+                  (booksData || []).map(b => b.title && b.title.toLowerCase())
+                );
+
+                const items = (challengeData && challengeData.items) || [];
+                items.forEach(item => {
+                  item.inCollection = ownedTitles.has(item.title.toLowerCase());
+                });
+                const ownedCount = items.length
+                books = items;
+                const inCollectionCount = books.filter(b => b.inCollection).length;
+                var elem = document.getElementById(bookshelf_id+"-progress-bar");
+                elem.style.width = 100 * inCollectionCount / ownedCount + "%";
+                var challengeTitle = document.getElementById(bookshelf_id+"-title");
+                challengeTitle.innerHTML += " - " + inCollectionCount + "/" + ownedCount;
+                renderBooks('#'+bookshelf_id);
+              }).catch(err => {
+                console.error('Failed to load books.json', err);
+                const c = document.querySelector('.bookshelf');
+                if(c) c.innerHTML = '<div class="loading">Failed to load books.</div>';
+              });
+    }
+    fetchBooks('/static/reading_challenges/JamesLovelock.json', 'james-lovelock')
+    fetchBooks('/static/reading_challenges/SFMasterworks.json', 'sf-masterworks')
+  })();
+</script>
