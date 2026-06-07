@@ -2,44 +2,34 @@
 layout: text-page
 title: Projects
 ---
-<h1>projects</h1>
-<p>
-  A collection of projects in various stages of completion.
-</p>
-<br />
-<h3>
-  <a href="/projects/mphys-dissertation/">MPhys dissertation</a><br />
-</h3>
+# projects
+
+A collection of projects in various stages of completion.
+
+### [MPhys dissertation](/projects/mphys-dissertation/)
 My final year dissertation in gravitational microlensing. Currently investigating
 the balance between photometric precision and imaging cadence for maximum
 planet detection efficiency.
-<br />
-<h3>
-  <a href="/projects/photometry-pipeline.html">.fits to lightcurve pipeline</a><br />
-</h3>
+
+### [.fits to lightcurve pipeline](/projects/photometry-pipeline.html)
 An astropy-based Python pipeline for identifying stars within astronomical
 images and generating lightcurves. Designed for characterisation of camera
 systems and identification of variable stars.
-<br />
-<h3>
-  <a href="/projects/orbitsim.html">Orbital simulation</a><br />
-</h3>
+
+### [Orbital simulation](/projects/orbitsim.html)
 A joint Python-Fortran project to accurately simulate and animate N-body
 gravitational interactions using Newtonian mechanics.
-<h3>
-  <a href="/projects/collisionsim.html">Collision simulation</a><br />
-</h3>
+
+### [Collision simulation](/projects/collisionsim.html)
 An early-stage experimental project in collision simulation with Fortran.
 Built around simple Newtonian interactions between a massive particle and
 a rigid surface.
-<h3>
-  <a href="/projects/handwriting-decoder.html">Handwriting decoder</a><br />
-</h3>
+
+### [Handwriting decoder](/projects/handwriting-decoder.html)
 A mini-project to take incomplete words and fill in the blanks. Created to
 aid in the transcription of handwritten material and developed into a
 (very) rudimentary predictive text function.
-<h3>
-  <a href="/projects/badger2040.html">Badger2040 CYOA</a><br />
-</h3>
+
+### [Badger2040 CYOA](/projects/badger2040.html)
 Early-stage exploration into building a CYOA game for the badger2040
 programmable e-ink display.

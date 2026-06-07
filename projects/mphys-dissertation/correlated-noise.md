@@ -1,0 +1,24 @@
+---
+layout: text-page
+title: Simulating Correlated Noise
+---
+<script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+# Simulating correlated noise
+
+## What is correlated noise?
+
+Correlated noise refers to any non-random interference in an astronomical observation. The causes can be immensely varied, ranging
+from cloud cover to instrumental temperature variation to stellar rotation. Not taking correlated noise into account can have severely
+detrimental effects on data analysis and results - skewing best fit curves and leading to spurious signal detections. That last effect
+is even more significant for data features with a low signal to noise (S/N) ratio, such as planet detections.
+
+## How do we simulate it?
+
+There are several methods for simulating the effects of correlated noise, and statistical frameworks accounting for it in best-fit
+analysis, but short answer for how I chose to simulate it in my dissertation is: I didn't.<br><br>
+Simulating correlated noise from scratch would have required me to consider dozens of potential sources and hundreds of extra parameters.
+Even then, I would have no guarantee that my simulation would actually be representative of a real observation. Instead, I opted to take
+existing light curve data, isolate the non-microlensing segment, and inject my simulated light curve into it. This way I can be entirely
+confident that the noise present for the detection routine is realistic.

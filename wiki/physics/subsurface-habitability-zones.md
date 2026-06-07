@@ -4,13 +4,15 @@ title: Subsurface-abitability Zones
 ---
 <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<h1>Subsurface-habitability zones</h1>
-<hr />
+
+# Subsurface-habitability zones
+
 Organisms have been found to exist at depth of up to several km under the
 Earth's surface in fissures and porous rocks. McMahon et al. proposed the
 term "subsurface-habitablility zone" to described the
 increased range around a host star at which life on an
 exoplanet may survive at some depth under the planetary
 surface.
-<h3>references</h3>
-McMahon, S., <i>et al</i>, 2013, Planet. Space Sci., 85, 312-318, doi:10.1016/j.pss.2013.07.002
+
+## references
+McMahon, S. et al, 2013, Planet. Space Sci., 85, 312-318, doi:10.1016/j.pss.2013.07.002

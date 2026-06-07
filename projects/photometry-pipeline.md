@@ -20,7 +20,7 @@ This pipeline will be used
 to characterise the OPTICAM imaging system, then produce and analyse
 photometric data from selected cataclysmic binary systems.
 
-### Current status
+## Current status
 
 The pipeline can now load all fits images from a specified directory,
 identify sources within those images, and perform photometry on them
@@ -30,17 +30,19 @@ AstroAlign library and by storing sequences of coordinates corresponding
 to the positions of each star across the different images. As of now
 AstroAlign itself is used to detect sources, but the issue we're currently
 facing is that if it fails to detect the transform between two images then
-we cannot assign the correct ID to stars in subsequent images. <br />It
-seems to be that if the list of coordinates passed into the find_transform
+we cannot assign the correct ID to stars in subsequent images.
+
+It seems to be that if the list of coordinates passed into the find_transform
 function is too short, AA exhausts the possible configurations in which
 those sources could be matched to those in the subsequent image before
-finding the correct transform.<br /><br />
+finding the correct transform.
+
 This is the first successful lightcurve output from a series of one
 thousand images.
 
-![Light curve for GK Persei along with two reference stars at 4770 Angstroms](/static/images/MiscImages/lightcurve.png){: .contentImage}
+![Light curve for GK Persei along with two reference stars at 4770 Angstroms](/static/images/MiscImages/lightcurve.png){: .content-image}
 
-### Next steps
+## Next steps
 
 We now know that errors returned by AstroAlign from the find_transform
 function are not due to issues with the fits images themselves, but with

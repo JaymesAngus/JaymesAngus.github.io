@@ -2,10 +2,9 @@
 layout: text-page
 title: Collision Simulation
 ---
-<h1>Collision simulation with fortran</h1>
-<hr />
-<br />
-<h3>Overview</h3>
+# Collision simulation with fortran
+
+## Overview
 Following the initial success of the orbital simulation project, I wanted
 to see if I could apply what I'd learned to something more complex. The
 collision physics project was initially supposed to be a minor addition to

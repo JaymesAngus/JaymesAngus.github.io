@@ -1,0 +1,49 @@
+---
+layout: text-page
+title: Viscous Torque in Protostellar Discs
+---
+<script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+# Viscous torque in protostellar discs
+
+Protostellar discs are sticky. Each ring exerts a viscous torque on its adjacent rings which acts to:
+- transfer angular momentum along velocity gradients via random particle motion
+- allow mass transfer inwards
+- heat the gas through dissipation, converting gravitational energy into heat and reradiating it
+
+## Derivation
+Consider two adjacent annuli of width $$\lambda$$. The sheer velocity at a point $$r$$ with respect to a point $$R$$ is given by:
+
+$$u(r) = r(\Omega(r) - \Omega(R))$$
+
+Now lets consider the sheer velocities with respect to a point P at two points A and B  represented by $$+$$ and $$-$$ in the following equation.
+
+$$u(R \pm \frac{\lambda}{2}) = (R \pm \frac{\lambda}{2})[\Omega(R \pm \frac{\lambda}{2}) - \Omega(R)]$$
+
+$$= \pm \frac{\lambda}{2}(R\pm \frac{\lambda}{2})\frac{d\Omega}{dr}$$
+
+![](/static/images/ImagesForNotes/DiscAnnuli.png){:.content-image}
+
+Chaotic motions carry particles across adjacent annuli. These motions have a length scale $$\lambda$$, which could either be the mean free path
+or the size of the largest eddies; and a mean velocity $$\tilde u$$, which could either be the sound speed or the turnover speed of the largest eddies.
+
+Mass crosses the boundary at an equal rate in and out, so the mass flow per unit arc length is $$H\rho \tilde u$$ (kg/m/s).
+
+The surface density, $$\Sigma = H \rho$$, is commonly used which gives a mass flow per unit arc length of $$H \tilde u$$
+
+The net angular momentum flux is therefore:
+
+$$\Sigma \tilde u [(ru_\phi)_B - (ru_\phi)_A]$$
+
+Which is also a torque per unit arc length which we can expand out such that torque per unit arc length exerted on the *outer ring by the inner ring* is
+
+$$\frac{\delta Q(R)}{\delta l} = \Sigma \tilde u [(R - \frac{\lambda}{2})(-\frac{\lambda}{2})(R -\frac{\lambda}{2})\Omega' - (R + \frac{\lambda}{2})(+\frac{\lambda}{2})(R +\frac{\lambda}{2})\Omega']$$
+
+$$\approx -\Sigma \tilde u \lambda R^2 \Omega'$$
+
+Therefore the total torque exerted on the *inner ring by the outer ring* is
+
+$$2\pi R \nu \Sigma R^2 \Omega'$$
+
+Where $$\nu = \lambda \tilde u$$

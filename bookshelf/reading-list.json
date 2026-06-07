@@ -1,5 +1,181 @@
 [
   {
+    "title": "House of Leaves",
+    "authors": [
+      "Mark Z. Danielewski"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Weird Fiction",
+      "Fantasy",
+      "Dark Fantasy"
+    ],
+    "status": "toread",
+    "cover": "HouseOfLeaves.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 709,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "The Cloven",
+    "authors": [
+      "Brian Catling"
+    ],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Dark Fantasy"
+    ],
+    "status": "toread",
+    "cover": "TheCloven.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 429,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Eyes Guts Throat Bones",
+    "authors": [
+      "Moïra Fowley-Doyle"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Short Stories"
+    ],
+    "status": "toread",
+    "cover": "EyesGutsThroatBones.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 292,
+    "date_purchased": "03/04/2026",
+    "purchase_location": "Argonaut Books, Edinburgh, EH6 8LN",
+    "in_possession": true
+  },
+  {
+    "title": "Death in Spring",
+    "authors": [
+      "Mercè Rodoreda"
+    ],
+    "translators": [
+      "Martha Tennent"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Spanish Literature"
+    ],
+    "status": "toread",
+    "cover": "DeathInSpring.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 150,
+    "date_purchased": "22/02/2022",
+    "purchase_location": "Re: Reading, Danforth Avenue, Toronto, ON M4K 1P8",
+    "in_possession": true
+  },
+  {
+    "title": "Eroticism",
+    "authors": [
+      "Georges Bataille"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy"
+    ],
+    "status": "toread",
+    "cover": "Eroticism.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 276,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
+    "title": "The Monkey Wrench Gang",
+    "authors": [
+      "Edward Abbey"
+    ],
+    "genre": [
+      "Fiction",
+      "Classics"
+    ],
+    "status": "toread",
+    "cover": "TheMonkeyWrenchGang.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 422,
+    "date_purchased": "07/06/26",
+    "purchase_location": "Exeter Oxfam, EX1 1EN",
+    "in_possession": true
+  },
+  {
+    "title": "Hawkfall",
+    "authors": [
+      "George Mackay Brown"
+    ],
+    "genre": [
+      "Fiction",
+      "Historial Fiction",
+      "Scottish Fiction",
+      "Short Stories"
+    ],
+    "status": "toread",
+    "cover": "Hawkfall.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 212,
+    "date_purchased": "07/06/26",
+    "purchase_location": "Exeter Oxfam, EX1 1EN",
+    "in_possession": true
+  },
+  {
+    "title": "Magnus",
+    "authors": [
+      "George Mackay Brown"
+    ],
+    "genre": [
+      "Fiction",
+      "Historial Fiction",
+      "Scottish Fiction"
+    ],
+    "status": "toread",
+    "cover": "Magnus.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 192,
+    "date_purchased": "07/06/26",
+    "purchase_location": "Exeter Oxfam, EX1 1EN",
+    "in_possession": true
+  },
+  {
+    "title": "The Emperor's New Mind",
+    "authors": [
+      "Roger Penrose"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Artificial Intelligence",
+      "Philosophy"
+    ],
+    "status": "toread",
+    "cover": "TheEmperorsNewMind.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 602,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
     "title": "Grendel Wept",
     "authors": [
       "C.P. Serret"
