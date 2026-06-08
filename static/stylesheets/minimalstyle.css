@@ -4,30 +4,30 @@
   --sd: calc(320px + var(--p2));
 }
 
-  @font-face {
-    font-family: Orbitron;
-    src: url(/static/fonts/Orbitron-VariableFont_wght.ttf);
-  }
+@font-face {
+  font-family: Orbitron;
+  src: url(/static/fonts/Orbitron-VariableFont_wght.ttf);
+}
 
-  @font-face {
-    font-family: Rubik;
-    src: url(/static/fonts/RubikMonoOne-Regular.ttf);
-  }
+@font-face {
+  font-family: Rubik;
+  src: url(/static/fonts/RubikMonoOne-Regular.ttf);
+}
 
-  @font-face {
-    font-family: Stalinist;
-    src: url(/static/fonts/StalinistOne-Regular.ttf);
-  }
+@font-face {
+  font-family: Stalinist;
+  src: url(/static/fonts/StalinistOne-Regular.ttf);
+}
 
-  @font-face {
-    font-family: MajorMono;
-    src: url(/static/fonts/MajorMonoDisplay-Regular.ttf);
-  }
+@font-face {
+  font-family: MajorMono;
+  src: url(/static/fonts/MajorMonoDisplay-Regular.ttf);
+}
 
-  @font-face {
-    font-family: Quin;
-    src: url(/static/fonts/Quintessential-Regular.ttf);
-  }
+@font-face {
+  font-family: Quin;
+  src: url(/static/fonts/Quintessential-Regular.ttf);
+}
 
 html {
    margin: 0px;
@@ -207,10 +207,10 @@ h1:first-of-type {
       margin: 0px;
     }
   .text-based-content-frame {
-    padding: var(--pd);
+    padding: calc(var(--pd) - 10px);
     max-width: 100%;
     margin: auto;
-    font-size: 16px;
+    font-size: 14px;
   }
   .title {
     font-size: calc(2.5vw + 2.5vh);

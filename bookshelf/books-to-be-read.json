@@ -117,6 +117,46 @@
     "in_possession": true
   },
   {
+    "title": "God's Dog: A Celebration of the North American Coyote",
+    "authors": [
+      "Hope Ryden"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Nature",
+      "Zoology"
+    ],
+    "status": "toread",
+    "cover": "GodsDog.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 338,
+    "date_purchased": "",
+    "purchase_location": "Birthday gift from someone",
+    "in_possession": true
+  },
+  {
+    "title": "Book Of The Hopi - The First Revelation Of The Hopi's Historical And Religious World-view Of Life",
+    "authors": [
+      "Frank Waters"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Anthropology",
+      "Native Americans"
+    ],
+    "status": "toread",
+    "cover": "BookOfTheHopi.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 337,
+    "date_purchased": "Oxfam Reform Street, Dundee, DD1 1SL",
+    "purchase_location": "26/06/2023",
+    "in_possession": true
+  },
+  {
     "title": "Hawkfall",
     "authors": [
       "George Mackay Brown"
@@ -400,10 +440,51 @@
     "in_possession": true
   },
   {
+    "title": "Toxic Communities: Environmental Racism, Industrial Pollution, and Residential Mobility",
+    "authors": [
+      "Dorceta Taylor"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Environment",
+      "Politics",
+      "Race"
+    ],
+    "status": "toread",
+    "cover": "ToxicCommunities.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 281,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
+    "id": "theweatherexperiment",
+    "title": "The Weather Experiment",
+    "authors": [
+      "Peter Moore"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Weather",
+      "Science"
+    ],
+    "status": "toread",
+    "cover": "TheWeatherExperiment.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
     "id": "alltomorrows",
     "title": "All Tomorrows: A Billion Year Chronicle of the Myriad Species and Mixed Fortunes of Man",
     "authors": [
-      "C.M. K\u00c3\u00b6semen"
+      "C.M. Kösemen"
     ],
     "genre": [
       "Fiction",
@@ -1164,26 +1245,6 @@
     "in_possession": false
   },
   {
-    "id": "orcadia",
-    "title": "Orcadia",
-    "authors": [
-      "Mark Edmonds"
-    ],
-    "genre": [
-      "Non-Fiction",
-      "History",
-      "Scottish History"
-    ],
-    "status": "toread",
-    "cover": "Orcadia.jpg",
-    "date_started": "",
-    "date_finished": "",
-    "pages": 311,
-    "date_purchased": "",
-    "purchase_location": "",
-    "in_possession": false
-  },
-  {
     "id": "gravitysengines",
     "title": "Gravitys Engines",
     "authors": [],
@@ -1358,20 +1419,6 @@
     "genre": [],
     "status": "toread",
     "cover": "TheKnowledgeIllusion.jpg",
-    "date_started": "",
-    "date_finished": "",
-    "pages": null,
-    "date_purchased": "",
-    "purchase_location": "",
-    "in_possession": false
-  },
-  {
-    "id": "paradiseslost",
-    "title": "Paradises Lost",
-    "authors": [],
-    "genre": [],
-    "status": "toread",
-    "cover": "ParadisesLost.jpg",
     "date_started": "",
     "date_finished": "",
     "pages": null,

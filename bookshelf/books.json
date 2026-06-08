@@ -1,5 +1,39 @@
 [
   {
+    "id": "paradiseslost",
+    "title": "Paradises Lost",
+    "authors": [],
+    "genre": [],
+    "status": "reading",
+    "cover": "ParadisesLost.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": null,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
+    "id": "orcadia",
+    "title": "Orcadia",
+    "authors": [
+      "Mark Edmonds"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Scottish History"
+    ],
+    "status": "reading",
+    "cover": "Orcadia.jpg",
+    "date_started": "19/05/2026",
+    "date_finished": "",
+    "pages": 311,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
     "id": "eightbears",
     "title": "Eight Bears: Mythic Past and Imperiled Future",
     "authors": [
@@ -2897,7 +2931,7 @@
     ],
     "genre": [],
     "status": "finished",
-    "cover": "TheHitchhikersGuidetotheGalaxy.jpg",
+    "cover": "TheHitchhikersGuideToTheGalaxy.jpg",
     "date_started": "",
     "date_finished": "Long ago...",
     "pages": 180,

@@ -7,8 +7,9 @@ extra_css: |
 <h1>bookshelf</h1>
 <div class="filter-section">
     <div class="filter-controls">
-        <button class="filter-button active" data-filter="finished">Log</button>
-        <button class="filter-button" data-filter="toread">Backlog</button>
+    <button class="filter-button active" data-filter="reading">Currently Reading</button>
+      <button class="filter-button" data-filter="finished">Log</button>
+      <button class="filter-button" data-filter="toread">Backlog</button>
     </div>
     <br>
 </div>
@@ -45,8 +46,11 @@ extra_css: |
 
       const authorList = joinNameList(b.authors)
       if (status === 'toread') {
-        info.innerHTML = b.title || '';
-      } else {
+        info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>';
+      } else if (status === 'reading') {
+        info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>'
+      }
+      else {
         info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Finished on ' + b.date_finished;
       }
       div.appendChild(info);
@@ -68,8 +72,14 @@ extra_css: |
 
       if (viewMode === 'toread') {
         const toreadBooks = books.filter(b => b.status === 'toread');
+        toreadBooks.sort(()=>Math.random() - 0.5)
         toreadBooks.forEach(b => {
           container.appendChild(createBookElement(b, 'toread'));
+        });
+      } else if (viewMode === 'reading') {
+        const currentlyReadingBooks = books.filter(b => b.status === 'reading');
+        currentlyReadingBooks.forEach(b => {
+          container.appendChild(createBookElement(b, 'reading'));
         });
       } else {
         const finishedBooks = books.filter(b => b.status === 'finished');
@@ -98,11 +108,11 @@ extra_css: |
 
     Promise.all([
       fetch('./books.json').then(r => r.json()),
-      fetch('./reading-list.json').then(r => r.json())
+      fetch('./books-to-be-read.json').then(r => r.json())
     ]).then(([booksData, listData]) => {
       books = [...(booksData || []), ...(listData || [])];
       setupFilters();
-      renderBooks('finished');
+      renderBooks('reading');
     })
   })();
 </script>

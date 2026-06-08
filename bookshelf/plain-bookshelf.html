@@ -64,7 +64,7 @@ extra_css: |
 
     Promise.all([
       fetch('./books.json').then(r => r.json()),
-      fetch('./reading-list.json').then(r => r.json())
+      fetch('./books-to-be-read.json').then(r => r.json())
     ]).then(([booksData, listData]) => {
       const booksArray = Array.isArray(booksData) ? booksData : [];
       const listArray = Array.isArray(listData) ? listData : [];
@@ -73,7 +73,7 @@ extra_css: |
       setupFilters();
       initialDisplay();
     }).catch(err => {
-      console.error('Failed to load books.json or reading-list.json', err);
+      console.error('Failed to load books.json or books-to-be-read.json', err);
       setupFilters();
       initialDisplay();
     });

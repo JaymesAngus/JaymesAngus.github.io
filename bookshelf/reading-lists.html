@@ -17,15 +17,23 @@ extra_css: |
       .content {
           max-width: 100%;
       }
+      .bookshelf {
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      }
+    }
+    @media (max-width: 480px) {
+        .bookshelf {
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 0.5rem;
+        }
     }
   </style>
 ---
-<h1>reading challenges</h1>
+<h1>reading lists</h1>
 <br>
 <p>
   Still a work in progress!!! Collections of books I'd like to read one day.
 </p>
-<br>
 <div class="individual-challenge">
   <h2 id="james-lovelock-title">James Lovelock Bibliography</h2>
   <div class="progress-bar-container">
