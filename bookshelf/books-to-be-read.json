@@ -1,5 +1,63 @@
 [
   {
+    "title": "Bard Skull",
+    "authors": [
+      "Martin Shaw"
+    ],
+    "genre": [
+      "Fiction",
+      "Mythology",
+      "Poetry"
+    ],
+    "status": "toread",
+    "cover": "BardSkull.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 333,
+    "date_purchased": "12/07/2026",
+    "purchase_location": "Literary Cat Books, Machynlleth, SY20 8EB",
+    "in_possession": true
+  },
+  {
+    "title": "Space Crone",
+    "authors": [
+      "Ursula K. Le Guin"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Feminism",
+      "Essays"
+    ],
+    "status": "toread",
+    "cover": "SpaceCrone.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 230,
+    "date_purchased": "12/07/2026",
+    "purchase_location": "Literary Cat Books, Machynlleth, SY20 8EB",
+    "in_possession": true
+  },
+  {
+    "title": "Man Corn: Cannibalism and Violence in the Prehistoric American Southwest",
+    "authors": [
+      "Christy G. Turner II",
+      "Jacqueline A. Turner"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Anthropology"
+    ],
+    "status": "toread",
+    "cover": "ManCorn.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 552,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
     "title": "House of Leaves",
     "authors": [
       "Mark Z. Danielewski"

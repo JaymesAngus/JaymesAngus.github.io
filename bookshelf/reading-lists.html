@@ -45,7 +45,7 @@ extra_css: |
 </div>
 <div class="individual-challenge">
   <h2 id="sf-masterworks-title">SF Masterworks</h2>
-  <p>Brian Aldiss, you are the very last on any list of mine.</p>
+  <p>Gotta be honest, I probably won't read all of these...</p>
   <div class="progress-bar-container">
     <div class="progress-bar" id="sf-masterworks-progress-bar"></div>
   </div>
@@ -110,13 +110,14 @@ extra_css: |
                 fetch(challenge_list).then(r => r.json()),
                 fetch('/bookshelf/books.json').then(r => r.json())
               ]).then(([challengeData, booksData]) => {
-                const ownedTitles = new Set(
-                  (booksData || []).map(b => b.title && b.title.toLowerCase())
+                const finishedTitles = new Set(
+                  (booksData || [])
+                    .filter(b => b.status === 'finished')
+                    .map(b => (b.title || '').toLowerCase())
                 );
-
                 const items = (challengeData && challengeData.items) || [];
                 items.forEach(item => {
-                  item.inCollection = ownedTitles.has(item.title.toLowerCase());
+                  item.inCollection = finishedTitles.has((item.title || '').toLowerCase());
                 });
                 const ownedCount = items.length
                 books = items;

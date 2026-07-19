@@ -1,14 +1,40 @@
 [
   {
+    "id": "ringworld",
+    "title": "Ringworld",
+    "authors": [
+      "Larry Niven"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Classics"
+    ],
+    "status": "reading",
+    "cover": "Ringworld.jpg",
+    "date_started": "14/07/2026",
+    "date_finished": "",
+    "pages": 288,
+    "date_purchased": "11/07/2026",
+    "purchase_location": "Abergavenny Waterstones, NP7 5RY",
+    "in_possession": true
+  },
+  {
     "id": "paradiseslost",
     "title": "Paradises Lost",
-    "authors": [],
-    "genre": [],
-    "status": "reading",
+    "authors": [
+      "Éric-Emmanuel Schmitt"
+    ],
+    "genre": [
+      "Fiction",
+      "Historical Fiction",
+      "Romance"
+    ],
+    "status": "finished",
     "cover": "ParadisesLost.jpg",
     "date_started": "",
-    "date_finished": "",
-    "pages": null,
+    "date_finished": "13/07/2026",
+    "pages": 474,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": true
@@ -24,10 +50,10 @@
       "History",
       "Scottish History"
     ],
-    "status": "reading",
+    "status": "finished",
     "cover": "Orcadia.jpg",
     "date_started": "19/05/2026",
-    "date_finished": "",
+    "date_finished": "28/06/2026",
     "pages": 311,
     "date_purchased": "",
     "purchase_location": "",
