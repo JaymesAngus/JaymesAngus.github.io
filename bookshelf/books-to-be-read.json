@@ -1,5 +1,161 @@
 [
   {
+    "title": "A Foray Into the Worlds of Animals and Humans: With A Theory of Meaning",
+    "authors": [
+      "Jakob Johann von Uexküll"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy",
+      "Biology",
+      "Nature"
+    ],
+    "status": "toread",
+    "cover": "AForayIntoTheWorldsOfAnimalsAndHumans.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 248,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "The Scar",
+    "authors": [
+      "China Miéville"
+    ],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Science Fiction",
+      "Weird Fiction"
+    ],
+    "status": "toread",
+    "cover": "TheScar.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 816,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Travel Light",
+    "authors": [
+      "Naomi Mitchison"
+    ],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Classics"
+    ],
+    "status": "toread",
+    "cover": "TravelLight.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 168,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "The Atrocity Exhibition",
+    "authors": [
+      "J.G. Ballard"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Horror",
+      "Short Stories"
+    ],
+    "status": "toread",
+    "cover": "TheAtrocityExhibition.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 130,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Mythago Wood",
+    "authors": [
+      "Robert Holdstock"
+    ],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Horror"
+    ],
+    "status": "toread",
+    "cover": "MythagoWood.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 320,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "The Power of Ritual in Prehistory: Secret Societies and Origins of Social Complexity",
+    "authors": [
+      "Brian Hayden"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Anthropology",
+      "Sociology"
+    ],
+    "status": "toread",
+    "cover": "ThePowerOfRitualInPrehistory.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 410,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Nixonland: The Rise of a President and the Fracturing of America",
+    "authors": [
+      "Rick Perlstein"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Politics",
+      "Biography"
+    ],
+    "status": "toread",
+    "cover": "Nixonland.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 881,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Soviet Workers and the Collapse of Perestroika: The Soviet Labour Process and Gorbachev's Reforms, 1985-1991",
+    "authors": [
+      "Donald Filtzer"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History"
+    ],
+    "status": "toread",
+    "cover": "SovietWorkersAndTheCollapseOfPerestroika.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 320,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
     "title": "Bard Skull",
     "authors": [
       "Martin Shaw"
@@ -210,8 +366,8 @@
     "date_started": "",
     "date_finished": "",
     "pages": 337,
-    "date_purchased": "Oxfam Reform Street, Dundee, DD1 1SL",
-    "purchase_location": "26/06/2023",
+    "date_purchased": "26/06/2023",
+    "purchase_location": "Oxfam Reform Street, Dundee, DD1 1SL",
     "in_possession": true
   },
   {
@@ -1193,16 +1349,22 @@
   {
     "id": "thebookofuniverses",
     "title": "The Book Of Universes",
-    "authors": [],
-    "genre": [],
+    "authors": [
+      "John D. Barrow"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Physics",
+      "Cosmology"
+    ],
     "status": "toread",
     "cover": "TheBookOfUniverses.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null,
-    "date_purchased": "",
-    "purchase_location": "",
-    "in_possession": false
+    "pages": 295,
+    "date_purchased": "13/08/2023",
+    "purchase_location": "Oxfam Reform Street, Dundee, DD1 1SL",
+    "in_possession": true
   },
   {
     "id": "figmentsofreality",
@@ -1304,7 +1466,7 @@
   },
   {
     "id": "gravitysengines",
-    "title": "Gravitys Engines",
+    "title": "Gravity's Engines",
     "authors": [],
     "genre": [],
     "status": "toread",
