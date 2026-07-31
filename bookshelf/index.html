@@ -51,7 +51,13 @@ extra_css: |
         info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>'
       }
       else {
-        info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Finished on ' + b.date_finished;
+        if (b.date_finished.match('..\/..\/..')) {
+          info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Finished on ' + b.date_finished;
+        } else if (b.date_finished == 0){
+          info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Read long ago';
+        } else {
+          info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Read during ' + b.date_finished;
+        }
       }
       div.appendChild(info);
       return div;
