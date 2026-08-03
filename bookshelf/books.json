@@ -1,5 +1,26 @@
 [
   {
+    "title": "City of Rats",
+    "authors": [
+      "Copi"
+    ],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Xenofiction",
+      "Magical Realism",
+      "Transgressive"
+    ],
+    "status": "finished",
+    "cover": "CityOfRats.jpg",
+    "date_started": "03/08/26",
+    "date_finished": "03/08/26",
+    "pages": 120,
+    "date_purchased": "01/08/26",
+    "purchase_location": "Exeter Oxfam, EX1 1EN",
+    "in_possession": true
+  },
+  {
     "title": "The Monkey Wrench Gang",
     "authors": [
       "Edward Abbey"
@@ -389,7 +410,7 @@
     "id": "monstrilio",
     "title": "Monstrilio",
     "authors": [
-      "Gerardo S\u00c3\u00a1mano C\u00c3\u00b3rdova"
+      "Gerardo Sámano Córdova"
     ],
     "genre": [
       "Fiction",
@@ -988,7 +1009,7 @@
     "id": "thefuturologicalcongress",
     "title": "The Futurological Congress",
     "authors": [
-      "Stanis\u00c5\u201aaw Lem"
+      "Stanisław Lem"
     ],
     "genre": [],
     "status": "finished",
@@ -1053,7 +1074,6 @@
     "in_possession": false
   },
   {
-    "id": "autumn",
     "title": "Autumn",
     "authors": [
       "Ali Smith"
@@ -1086,13 +1106,13 @@
   },
   {
     "id": "asilaydying",
-    "title": "As I Laydying",
+    "title": "As I Lay Dying",
     "authors": [
       "William Faulkner"
     ],
     "genre": [],
     "status": "finished",
-    "cover": "AsILaydying.jpg",
+    "cover": "AsILayDying.jpg",
     "date_started": "",
     "date_finished": "2020",
     "pages": 240,
@@ -1533,7 +1553,6 @@
     "in_possession": false
   },
   {
-    "id": "playback",
     "title": "Playback",
     "authors": [
       "Raymond Chandler"
@@ -1553,8 +1572,8 @@
     "in_possession": false
   },
   {
-    "id": "astreetcarenameddesire",
-    "title": "A Streetcare Named Desire",
+    "id": "astreetcarnameddesire",
+    "title": "A Streetcar Named Desire",
     "authors": [
       "Tennessee Williams"
     ],
@@ -1565,7 +1584,7 @@
       "American Literature"
     ],
     "status": "finished",
-    "cover": "AStreetcareNamedDesire.jpg",
+    "cover": "AStreetcarNamedDesire.jpg",
     "date_started": "",
     "date_finished": "2018",
     "pages": 128,
@@ -1705,7 +1724,8 @@
     "genre": [
       "Fiction",
       "Classics",
-      "Russian Literature"
+      "Russian Literature",
+      "Transgressive"
     ],
     "status": "finished",
     "cover": "Lolita.jpg",
@@ -2320,7 +2340,13 @@
     "authors": [
       "Bret Easton Ellis"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Transgressive",
+      "Crime",
+      "Classics"
+    ],
     "status": "finished",
     "cover": "AmericanPsycho.jpg",
     "date_started": "",
@@ -2334,7 +2360,7 @@
     "id": "solaris",
     "title": "Solaris",
     "authors": [
-      "Stanis\u00c5\u201aaw Lem"
+      "Stanisław Lem"
     ],
     "genre": [],
     "status": "finished",
@@ -2676,7 +2702,7 @@
     "id": "dronetheory",
     "title": "Drone Theory",
     "authors": [
-      "Gr\u00c3\u00a9goire Chamayou"
+      "Grégoire Chamayou"
     ],
     "genre": [
       "Non-Fiction",
@@ -2732,6 +2758,25 @@
     "in_possession": false
   },
   {
+    "title": "The Wasp Factory",
+    "authors": [
+      "Iain Banks"
+    ],
+    "genre": [
+      "Fiction",
+      "Thriller",
+      "Transgressive"
+    ],
+    "status": "finished",
+    "cover": "TheWaspFactory.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 244,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
     "id": "nineteeneightyfour",
     "title": "Nineteen Eighty-Four",
     "authors": [
@@ -2742,7 +2787,7 @@
     "cover": "1984.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null,
+    "pages": 326,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
@@ -2758,7 +2803,7 @@
     "cover": "BlackSwanGreen.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null,
+    "pages": 384,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
@@ -2774,7 +2819,7 @@
     "cover": "SladeHouse.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null,
+    "pages": 233,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
@@ -2790,7 +2835,7 @@
     "cover": "TheBoneClocks.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null,
+    "pages": 595,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
@@ -2806,7 +2851,7 @@
     "cover": "TheHandmaidsTale.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null,
+    "pages": 324,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
@@ -2817,12 +2862,16 @@
     "authors": [
       "JRR Tolkien"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Fantasy"
+    ],
     "status": "finished",
     "cover": "TheHobbit.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null,
+    "pages": 353,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
@@ -2857,7 +2906,7 @@
     "cover": "TheMagicOfReality.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null,
+    "pages": 257,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
@@ -3019,6 +3068,24 @@
     "in_possession": false
   },
   {
+    "title": "Split Second",
+    "authors": [
+      "Sophie McKenzie"
+    ],
+    "genre": [
+      "Young Adult",
+      "Thriller"
+    ],
+    "status": "finished",
+    "cover": "SplitSecond.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 368,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
     "id": "eragon",
     "title": "Eragon",
     "authors": [
@@ -3046,6 +3113,46 @@
     "date_started": "",
     "date_finished": "",
     "pages": 704,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Outpost",
+    "authors": [
+      "Adam Baker"
+    ],
+    "genre": [
+      "Fiction",
+      "Young Adult",
+      "Horror",
+      "Post-apocalyptic"
+    ],
+    "status": "finished",
+    "cover": "Outpost.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 388,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "The Zombie Survival Guide: Complete Protection from the Living Dead",
+    "authors": [
+      "Max Brooks"
+    ],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Humour",
+      "Post-apocalyptic"
+    ],
+    "status": "finished",
+    "cover": "TheZombieSurvivalGuide.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 388,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
@@ -3474,6 +3581,78 @@
     "date_started": "",
     "date_finished": "",
     "pages": 256,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Maze Running and other Magical Missions",
+    "authors": [
+      "Lari Don"
+    ],
+    "genre": [
+      "Childrens",
+      "Fantasy"
+    ],
+    "status": "finished",
+    "cover": "MazeRunning.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 288,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Storm Singing and Other Tangled Tasks",
+    "authors": [
+      "Lari Don"
+    ],
+    "genre": [
+      "Childrens",
+      "Fantasy"
+    ],
+    "status": "finished",
+    "cover": "StormSinging.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 252,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Wolf Notes and Other Musical Mishaps",
+    "authors": [
+      "Lari Don"
+    ],
+    "genre": [
+      "Childrens",
+      "Fantasy"
+    ],
+    "status": "finished",
+    "cover": "WolfNotes.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 268,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "First Aid for Fairies and Other Fabled Beasts",
+    "authors": [
+      "Lari Don"
+    ],
+    "genre": [
+      "Childrens",
+      "Fantasy"
+    ],
+    "status": "finished",
+    "cover": "FirstAidForFairies.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 218,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
