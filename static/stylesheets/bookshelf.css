@@ -1,3 +1,26 @@
+body {
+    background-color: #19150f;
+}
+
+table {
+    color: white;
+}
+.rotate {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+header a:link, header a:visited {
+  color: #cccccc;
+  &[aria-current="page"] {
+      background: rgba(0, 108, 138, 0.8);
+      padding:1px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+footer {
+    color: #cccccc;
+}
 .bookshelf {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -15,7 +38,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid #000;
+    border: 1px solid #cccccc;
 }
 
 .book-info {
@@ -53,17 +76,18 @@
 
 .filter-button {
     padding: 0.75rem 1.5rem;
-    border: 1px solid #000;
-    background: transparent;
+    border: 1px solid #5e5e5c;
+    background: #221e19;
     transition: all 0.3s ease;
     min-width: 120px;
     font-size: 1rem;
     font-family: inherit;
+    color: white;
 }
 
 .filter-button:hover,
 .filter-button.active {
-    background: #000;
+    background: #404040;
     color: #fff;
 }
 /* -------------------------------------------- */

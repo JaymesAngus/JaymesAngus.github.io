@@ -1,5 +1,80 @@
 [
   {
+    "title": "Dawn",
+    "authors": [
+      "Octavia E. Butler"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction"
+    ],
+    "status": "reading",
+    "cover": "Dawn.jpg",
+    "date_started": "04/09/2026",
+    "date_finished": "",
+    "pages": 248,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
+    "title": "Against Nature",
+    "authors": [
+      "Joris-Karl Huysmans"
+    ],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "French Literature"
+    ],
+    "status": "finished",
+    "cover": "AgainstNature.jpg",
+    "date_started": "26/08/2026",
+    "date_finished": "03/09/2026",
+    "pages": 288,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
+    "title": "The Aleph",
+    "authors": [
+      "Jorge Luis Borges"
+    ],
+    "genre": [
+      "Fiction",
+      "Short Stories",
+      "Classics"
+    ],
+    "status": "finished",
+    "cover": "TheAleph.jpg",
+    "date_started": "10/08/26",
+    "date_finished": "26/08/26",
+    "pages": 216,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
+    "title": "Entangled Life",
+    "authors": [
+      "Merlin Sheldrake"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Biology"
+    ],
+    "status": "reading",
+    "cover": "EntangledLife.jpg",
+    "date_started": "11/08/26",
+    "date_finished": "",
+    "pages": 352,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
     "title": "City of Rats",
     "authors": [
       "Copi"
@@ -21,25 +96,6 @@
     "in_possession": true
   },
   {
-    "title": "The Monkey Wrench Gang",
-    "authors": [
-      "Edward Abbey"
-    ],
-    "genre": [
-      "Fiction",
-      "Classics"
-    ],
-    "status": "reading",
-    "cover": "TheMonkeyWrenchGang.jpg",
-    "date_started": "31/07/26",
-    "date_finished": "",
-    "pages": 422,
-    "date_purchased": "07/06/26",
-    "purchase_location": "Exeter Oxfam, EX1 1EN",
-    "in_possession": true
-  },
-  {
-    "id": "ringworld",
     "title": "Ringworld",
     "authors": [
       "Larry Niven"
@@ -59,7 +115,6 @@
     "in_possession": true
   },
   {
-    "id": "paradiseslost",
     "title": "Paradises Lost",
     "authors": [
       "Éric-Emmanuel Schmitt"
@@ -79,7 +134,6 @@
     "in_possession": true
   },
   {
-    "id": "orcadia",
     "title": "Orcadia",
     "authors": [
       "Mark Edmonds"
@@ -99,7 +153,6 @@
     "in_possession": true
   },
   {
-    "id": "eightbears",
     "title": "Eight Bears: Mythic Past and Imperiled Future",
     "authors": [
       "Gloria Dickie"
@@ -121,7 +174,6 @@
     "in_possession": true
   },
   {
-    "id": "undertheyeofthebigbird",
     "title": "Under the Eye of the Big Bird",
     "authors": [
       "Hiromi Kawakami"
@@ -141,7 +193,6 @@
     "in_possession": true
   },
   {
-    "id": "theerstwhile",
     "title": "The Erstwhile",
     "authors": [
       "Brian Catling"
@@ -161,7 +212,6 @@
     "in_possession": true
   },
   {
-    "id": "philosophyandsimulation",
     "title": "Philosophy and Simulation: The Emergence of Synthetic Reason",
     "authors": [
       "Manuel DeLanda"
@@ -181,27 +231,6 @@
     "in_possession": true
   },
   {
-    "id": "theanatomyofdisgust",
-    "title": "The Anatomy of Disgust",
-    "authors": [
-      "William Ian Miller"
-    ],
-    "genre": [
-      "Non-Fiction",
-      "Philosophy",
-      "Psychology"
-    ],
-    "status": "reading",
-    "cover": "TheAnatomyOfDisgust.jpg",
-    "date_started": "01/02/26",
-    "date_finished": "",
-    "pages": 262,
-    "date_purchased": "",
-    "purchase_location": "",
-    "in_possession": false
-  },
-  {
-    "id": "halfearthsocialism",
     "title": "Half-Earth Socialism: A Plan to Save the Future from Extinction, Climate Change and Pandemics",
     "authors": [
       "Troy Vettese",
@@ -223,7 +252,6 @@
     "in_possession": false
   },
   {
-    "id": "kingkongtheory",
     "title": "King Kong Theory",
     "authors": [
       "Virginie Despentes"
@@ -244,7 +272,6 @@
     "in_possession": false
   },
   {
-    "id": "theemployees",
     "title": "The Employees",
     "authors": [
       "Olga Ravn"
@@ -263,7 +290,6 @@
     "in_possession": false
   },
   {
-    "id": "exocapitalism",
     "title": "Exocapitalism: Economies with absolutely no limits",
     "authors": [
       "Marek Poliks",
@@ -1105,7 +1131,6 @@
     "in_possession": false
   },
   {
-    "id": "asilaydying",
     "title": "As I Lay Dying",
     "authors": [
       "William Faulkner"
@@ -1121,7 +1146,6 @@
     "in_possession": false
   },
   {
-    "id": "novacene",
     "title": "Novacene: The Coming Age of Hyperintelligence",
     "authors": [
       "James E. Lovelock",
@@ -1142,7 +1166,6 @@
     "in_possession": false
   },
   {
-    "id": "theoldmanandthesea",
     "title": "The Old Man And The Sea",
     "authors": [
       "Ernest Hemingway"
@@ -1161,7 +1184,6 @@
     "in_possession": false
   },
   {
-    "id": "lanny",
     "title": "Lanny",
     "authors": [
       "Max Porter"
@@ -1182,7 +1204,6 @@
     "in_possession": false
   },
   {
-    "id": "driveyourplowoverthebonesofthedead",
     "title": "Drive Your Plow Over The Bones Of The Dead",
     "authors": [
       "Olga Tokarczuk",
@@ -3370,6 +3391,24 @@
     "in_possession": false
   },
   {
+    "title": "Blood Red Road",
+    "authors": [
+      "Moira Young"
+    ],
+    "genre": [
+      "Young Adult",
+      "Dystopian"
+    ],
+    "status": "finished",
+    "cover": "BloodRedRoad.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 492,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
     "title": "Miss Peregrine's Home for Peculiar Children",
     "authors": [
       "Ransom Riggs"
@@ -3457,6 +3496,97 @@
     "in_possession": false
   },
   {
+    "title": "The Bunker Diary",
+    "authors": [
+      "Kevin Brooks"
+    ],
+    "genre": [
+      "Classics",
+      "Childrens"
+    ],
+    "status": "finished",
+    "cover": "TheBunkerDiary.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 268,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "The Curious Incident of the Dog in the Night-Time",
+    "authors": [
+      "Mark Haddon"
+    ],
+    "genre": [
+      "Classics",
+      "Young Adult",
+      "Mystery"
+    ],
+    "status": "finished",
+    "cover": "TheCuriousIncidentOfTheDogInTheNighttime.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 272,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Necropolis",
+    "authors": [
+      "Anthony Horowitz"
+    ],
+    "genre": [
+      "Young Adult",
+      "Fantasy"
+    ],
+    "status": "finished",
+    "cover": "Necropolis.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 400,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Maggot Moon",
+    "authors": [
+      "Sally Gardner"
+    ],
+    "genre": [
+      "Young Adult",
+      "Dystopian"
+    ],
+    "status": "finished",
+    "cover": "MaggotMoon.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 280,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "The Boy Who Fell Down Exit 43",
+    "authors": [
+      "Harriet Goodwin"
+    ],
+    "genre": [
+      "Young Adult",
+      "Childrens"
+    ],
+    "status": "finished",
+    "cover": "TheBoyWhoFellDownExit43.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 247,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
     "id": "sheisnotinvisible",
     "title": "She Is Not Invisible",
     "authors": [
@@ -3505,6 +3635,24 @@
     "date_started": "",
     "date_finished": "",
     "pages": 407,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Swallows and Amazons",
+    "authors": [
+      "Arthur Ransome"
+    ],
+    "genre": [
+      "Classics",
+      "Childrens"
+    ],
+    "status": "finished",
+    "cover": "SwallowsAndAmazons.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 315,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false

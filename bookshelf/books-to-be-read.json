@@ -1,5 +1,81 @@
 [
   {
+    "title": "The Sexual Politics of Meat: A Feminist-Vegetarian Critical Theory",
+    "authors": [
+      "Carol J. Adams"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Politics",
+      "Feminism",
+      "Philosophy"
+    ],
+    "status": "toread",
+    "cover": "TheSexualPoliticsOfMeat.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 272,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "The Alphabet Versus the Goddess: The Conflict Between Word and Image",
+    "authors": [
+      "Leonard Shlain"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "History",
+      "Philosophy"
+    ],
+    "status": "toread",
+    "cover": "TheAlphabetVersusTheGoddess.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 496,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Digital Occultism",
+    "authors": [
+      "Sophie Publig",
+      "Mikkel Rørbo"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy"
+    ],
+    "status": "toread",
+    "cover": "DigitalOccultism.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 116,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Doom Painting",
+    "authors": [
+      "A.K. Blakemore"
+    ],
+    "genre": [
+      "Fiction",
+      "Historial Fiction"
+    ],
+    "status": "toread",
+    "cover": "DoomPainting.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 672,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
     "title": "A Foray Into the Worlds of Animals and Humans: With A Theory of Meaning",
     "authors": [
       "Jakob Johann von Uexküll"
@@ -136,6 +212,24 @@
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
+  },
+  {
+    "title": "The Monkey Wrench Gang",
+    "authors": [
+      "Edward Abbey"
+    ],
+    "genre": [
+      "Fiction",
+      "Classics"
+    ],
+    "status": "toread",
+    "cover": "TheMonkeyWrenchGang.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 422,
+    "date_purchased": "07/06/26",
+    "purchase_location": "Exeter Oxfam, EX1 1EN",
+    "in_possession": true
   },
   {
     "title": "Soviet Workers and the Collapse of Perestroika: The Soviet Labour Process and Gorbachev's Reforms, 1985-1991",
@@ -613,27 +707,6 @@
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
-  },
-  {
-    "id": "theweatherexperiment",
-    "title": "The Weather Experiment",
-    "authors": [
-      "Peter Moore"
-    ],
-    "genre": [
-      "Non-Fiction",
-      "History",
-      "Weather",
-      "Science"
-    ],
-    "status": "toread",
-    "cover": "TheWeatherExperiment.jpg",
-    "date_started": "",
-    "date_finished": "",
-    "pages": null,
-    "date_purchased": "",
-    "purchase_location": "",
-    "in_possession": true
   },
   {
     "title": "Toxic Communities: Environmental Racism, Industrial Pollution, and Residential Mobility",
@@ -1489,40 +1562,12 @@
     "in_possession": false
   },
   {
-    "id": "thealeph",
-    "title": "The Aleph",
-    "authors": [],
-    "genre": [],
-    "status": "toread",
-    "cover": "TheAleph.jpg",
-    "date_started": "",
-    "date_finished": "",
-    "pages": null,
-    "date_purchased": "",
-    "purchase_location": "",
-    "in_possession": false
-  },
-  {
     "id": "diaboliad",
     "title": "Diaboliad",
     "authors": [],
     "genre": [],
     "status": "toread",
     "cover": "Diaboliad.jpg",
-    "date_started": "",
-    "date_finished": "",
-    "pages": null,
-    "date_purchased": "",
-    "purchase_location": "",
-    "in_possession": false
-  },
-  {
-    "id": "againstnature",
-    "title": "Against Nature",
-    "authors": [],
-    "genre": [],
-    "status": "toread",
-    "cover": "AgainstNature.jpg",
     "date_started": "",
     "date_finished": "",
     "pages": null,
@@ -1573,15 +1618,20 @@
     "in_possession": false
   },
   {
-    "id": "entangledlife",
-    "title": "Entangled Life",
-    "authors": [],
-    "genre": [],
+    "title": "The Anatomy of Disgust",
+    "authors": [
+      "William Ian Miller"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy",
+      "Psychology"
+    ],
     "status": "toread",
-    "cover": "EntangledLife.jpg",
+    "cover": "TheAnatomyOfDisgust.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null,
+    "pages": 262,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
