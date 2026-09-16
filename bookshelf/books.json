@@ -1,5 +1,24 @@
 [
   {
+    "title": "Michael Kohlhaas",
+    "authors": [
+      "Heinrich von Kleist"
+    ],
+    "genre": [
+      "Fiction",
+      "Historical Fiction",
+      "German Literature"
+    ],
+    "status": "reading",
+    "cover": "MichaelKohlhaas.jpg",
+    "date_started": "16/09/2026",
+    "date_finished": "",
+    "pages": 133,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
     "title": "Dawn",
     "authors": [
       "Octavia E. Butler"
@@ -8,13 +27,13 @@
       "Fiction",
       "Science Fiction"
     ],
-    "status": "reading",
+    "status": "finished",
     "cover": "Dawn.jpg",
     "date_started": "04/09/2026",
-    "date_finished": "",
+    "date_finished": "15/09/2026",
     "pages": 248,
-    "date_purchased": "",
-    "purchase_location": "",
+    "date_purchased": "29/08/2026",
+    "purchase_location": "1b Books, Newcastle, NE6 5PH",
     "in_possession": true
   },
   {
