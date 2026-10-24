@@ -70,6 +70,14 @@ extra_css: |
       return `${items.slice(0, -1).join(', ')}, and ${items.at(-1)}`;
     }
 
+    function finishedYear(dateFinished) {
+      const date = dateFinished == null ? '' : String(dateFinished);
+      if (date === '0') return 'Read long ago';
+
+      const yearMatch = date.match(/\b((?:19|20)\d{2})\b|\/(\d{2})$/);
+      return yearMatch ? yearMatch[1] || `20${yearMatch[2]}` : 'Pre-2016';
+    }
+
     function renderBooks(viewMode = 'finished') {
       const container = document.querySelector('.bookshelf');
       if (!container) return;
@@ -89,9 +97,31 @@ extra_css: |
         });
       } else {
         const finishedBooks = books.filter(b => b.status === 'finished');
+        const booksByYear = new Map();
         finishedBooks.forEach(b => {
-          container.appendChild(createBookElement(b, 'finished'));
+          const year = finishedYear(b.date_finished);
+          if (!booksByYear.has(year)) booksByYear.set(year, []);
+          booksByYear.get(year).push(b);
         });
+
+        [...booksByYear.entries()]
+          .sort(([a], [b]) => {
+            const yearA = Number(a);
+            const yearB = Number(b);
+            if (Number.isFinite(yearA) && Number.isFinite(yearB)) return yearB - yearA;
+            if (Number.isFinite(yearA)) return -1;
+            if (Number.isFinite(yearB)) return 1;
+            return a.localeCompare(b);
+          })
+          .forEach(([year, yearBooks]) => {
+            const heading = document.createElement('h2');
+            heading.className = 'bookshelf-year';
+            heading.textContent = year;
+            container.appendChild(heading);
+            yearBooks.forEach(b => {
+              container.appendChild(createBookElement(b, 'finished'));
+            });
+          });
       }
     }
 

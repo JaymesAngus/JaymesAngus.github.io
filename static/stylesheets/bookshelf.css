@@ -27,6 +27,12 @@ footer {
     gap: 1rem;
 }
 
+.bookshelf-year {
+    grid-column: 1 / -1;
+    margin: 1rem 0 0;
+    color: #cccccc;
+}
+
 .book {
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;

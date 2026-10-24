@@ -1,5 +1,63 @@
 [
   {
+    "title": "BardSkull",
+    "authors": [
+      "Martin Shaw"
+    ],
+    "genre": [
+      "Fiction",
+      "Mythology",
+      "Poetry"
+    ],
+    "status": "reading",
+    "cover": "BardSkull.jpg",
+    "date_started": "24/10/2026",
+    "date_finished": "",
+    "pages": 333,
+    "date_purchased": "12/07/2026",
+    "purchase_location": "Literary Cat Books, Machynlleth, SY20 8EB",
+    "in_possession": true
+  },
+  {
+    "title": "The History of Sexuality, Volume 1: An Introduction",
+    "authors": [
+      "Michel Foucault"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy",
+      "Theory",
+      "History"
+    ],
+    "status": "reading",
+    "cover": "TheHistoryOfSexuality.jpg",
+    "date_started": "23/10/2026",
+    "date_finished": "",
+    "pages": 168,
+    "date_purchased": "23/10/2026",
+    "purchase_location": "Exeter Oxfam, EX1 1EN",
+    "in_possession": false
+  },
+  {
+    "title": "The Oldest Bitch Alive",
+    "authors": [
+      "Morgan Day"
+    ],
+    "genre": [
+      "Fiction",
+      "Xenofiction",
+      "Philosophical Fiction"
+    ],
+    "status": "finished",
+    "cover": "TheOldestBitchAlive.jpg",
+    "date_started": "18/09/2026",
+    "date_finished": "23/10/2026",
+    "pages": 222,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
     "title": "Michael Kohlhaas",
     "authors": [
       "Heinrich von Kleist"
@@ -9,10 +67,10 @@
       "Historical Fiction",
       "German Literature"
     ],
-    "status": "reading",
+    "status": "finished",
     "cover": "MichaelKohlhaas.jpg",
     "date_started": "16/09/2026",
-    "date_finished": "",
+    "date_finished": "18/09/2026",
     "pages": 133,
     "date_purchased": "",
     "purchase_location": "",

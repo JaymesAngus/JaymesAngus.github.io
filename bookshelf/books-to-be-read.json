@@ -1,5 +1,42 @@
 [
   {
+    "title": "Against the Machine: On the Unmaking of Humanity",
+    "authors": [
+      "Paul Kingsnorth"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy",
+      "Politics"
+    ],
+    "status": "toread",
+    "cover": "AgainstTheMachine.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 366,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
+    "title": "Cat's Cradle",
+    "authors": [
+      "Kurt Vonnegut"
+    ],
+    "genre": [
+      "Fiction",
+      "Science Fiction"
+    ],
+    "status": "toread",
+    "cover": "CatsCradle.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 306,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
+  },
+  {
     "title": "A Case of Conscience",
     "authors": [
       "James Blish"
@@ -266,25 +303,6 @@
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": false
-  },
-  {
-    "title": "Bard Skull",
-    "authors": [
-      "Martin Shaw"
-    ],
-    "genre": [
-      "Fiction",
-      "Mythology",
-      "Poetry"
-    ],
-    "status": "toread",
-    "cover": "BardSkull.jpg",
-    "date_started": "",
-    "date_finished": "",
-    "pages": 333,
-    "date_purchased": "12/07/2026",
-    "purchase_location": "Literary Cat Books, Machynlleth, SY20 8EB",
-    "in_possession": true
   },
   {
     "title": "Space Crone",
