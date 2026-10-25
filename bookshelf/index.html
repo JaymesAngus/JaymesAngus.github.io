@@ -7,9 +7,8 @@ extra_css: |
 <h1 style="color: #cccccc">bookshelf</h1>
 <div class="filter-section">
     <div class="filter-controls">
-    <button class="filter-button active" data-filter="reading">Currently Reading</button>
-      <button class="filter-button" data-filter="finished">Finished</button>
-      <button class="filter-button" data-filter="toread">To read</button>
+      <button class="filter-button active" data-filter="read">Reading &amp; Read</button>
+      <button class="filter-button" data-filter="toread">To be read</button>
     </div>
     <br>
 </div>
@@ -78,7 +77,23 @@ extra_css: |
       return yearMatch ? yearMatch[1] || `20${yearMatch[2]}` : 'Pre-2016';
     }
 
-    function renderBooks(viewMode = 'finished') {
+    function createBookshelfSection(container, title) {
+      const section = document.createElement('section');
+      section.className = 'bookshelf-section';
+
+      const heading = document.createElement('h2');
+      heading.className = 'bookshelf-heading';
+      heading.textContent = title;
+      section.appendChild(heading);
+
+      const grid = document.createElement('div');
+      grid.className = 'bookshelf-books';
+      section.appendChild(grid);
+      container.appendChild(section);
+      return grid;
+    }
+
+    function renderBooks(viewMode = 'read') {
       const container = document.querySelector('.bookshelf');
       if (!container) return;
 
@@ -86,43 +101,47 @@ extra_css: |
 
       if (viewMode === 'toread') {
         const toreadBooks = books.filter(b => b.status === 'toread');
+        const grid = document.createElement('div');
+        grid.className = 'bookshelf-books';
         toreadBooks.sort(()=>Math.random() - 0.5)
         toreadBooks.forEach(b => {
-          container.appendChild(createBookElement(b, 'toread'));
+          grid.appendChild(createBookElement(b, 'toread'));
         });
-      } else if (viewMode === 'reading') {
-        const currentlyReadingBooks = books.filter(b => b.status === 'reading');
-        currentlyReadingBooks.forEach(b => {
-          container.appendChild(createBookElement(b, 'reading'));
-        });
-      } else {
-        const finishedBooks = books.filter(b => b.status === 'finished');
-        const booksByYear = new Map();
-        finishedBooks.forEach(b => {
-          const year = finishedYear(b.date_finished);
-          if (!booksByYear.has(year)) booksByYear.set(year, []);
-          booksByYear.get(year).push(b);
-        });
-
-        [...booksByYear.entries()]
-          .sort(([a], [b]) => {
-            const yearA = Number(a);
-            const yearB = Number(b);
-            if (Number.isFinite(yearA) && Number.isFinite(yearB)) return yearB - yearA;
-            if (Number.isFinite(yearA)) return -1;
-            if (Number.isFinite(yearB)) return 1;
-            return a.localeCompare(b);
-          })
-          .forEach(([year, yearBooks]) => {
-            const heading = document.createElement('h2');
-            heading.className = 'bookshelf-year';
-            heading.textContent = year;
-            container.appendChild(heading);
-            yearBooks.forEach(b => {
-              container.appendChild(createBookElement(b, 'finished'));
-            });
-          });
+        container.appendChild(grid);
+        return;
       }
+
+      const currentlyReadingBooks = books.filter(b => b.status === 'reading');
+      if (currentlyReadingBooks.length > 0) {
+        const grid = createBookshelfSection(container, 'Currently Reading');
+        currentlyReadingBooks.forEach(b => {
+          grid.appendChild(createBookElement(b, 'reading'));
+        });
+      }
+
+      const finishedBooks = books.filter(b => b.status === 'finished');
+      const booksByYear = new Map();
+      finishedBooks.forEach(b => {
+        const year = finishedYear(b.date_finished);
+        if (!booksByYear.has(year)) booksByYear.set(year, []);
+        booksByYear.get(year).push(b);
+      });
+
+      [...booksByYear.entries()]
+        .sort(([a], [b]) => {
+          const yearA = Number(a);
+          const yearB = Number(b);
+          if (Number.isFinite(yearA) && Number.isFinite(yearB)) return yearB - yearA;
+          if (Number.isFinite(yearA)) return -1;
+          if (Number.isFinite(yearB)) return 1;
+          return a.localeCompare(b);
+        })
+        .forEach(([year, yearBooks]) => {
+          const grid = createBookshelfSection(container, year);
+          yearBooks.forEach(b => {
+            grid.appendChild(createBookElement(b, 'finished'));
+          });
+        });
     }
 
     document.addEventListener('click', function(e){
@@ -148,7 +167,7 @@ extra_css: |
     ]).then(([booksData, listData]) => {
       books = [...(booksData || []), ...(listData || [])];
       setupFilters();
-      renderBooks('reading');
+      renderBooks('read');
     })
   })();
 </script>
