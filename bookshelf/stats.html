@@ -1,0 +1,334 @@
+---
+layout: default
+title: Bookshelf Stats
+extra_css: |
+  <link href="/static/stylesheets/bookshelf.css" rel="stylesheet" type="text/css" media="all">
+---
+<h1 style="color: #cccccc">reading stats</h1>
+<main class="bookshelf-stats" aria-live="polite">
+  <p class="bookshelf-stats-note">Loading reading stats…</p>
+</main>
+<script>
+  (function(){
+    function recordedFinishedYear(dateFinished) {
+      const date = dateFinished == null ? '' : String(dateFinished);
+      const yearMatch = date.match(/\b((?:19|20)\d{2})\b|\/(\d{2})$/);
+      return yearMatch ? Number(yearMatch[1] || `20${yearMatch[2]}`) : null;
+    }
+
+    function exactDateTimestamp(value) {
+      const match = String(value || '').trim().match(/^(\d{2})\/(\d{2})\/(\d{2}|\d{4})$/);
+      if (!match) return null;
+
+      const day = Number(match[1]);
+      const month = Number(match[2]);
+      const rawYear = Number(match[3]);
+      const year = rawYear < 100 ? 2000 + rawYear : rawYear;
+      const timestamp = Date.UTC(year, month - 1, day);
+      const date = new Date(timestamp);
+
+      if (
+        date.getUTCFullYear() !== year ||
+        date.getUTCMonth() !== month - 1 ||
+        date.getUTCDate() !== day
+      ) return null;
+
+      return timestamp;
+    }
+
+    function joinNameList(items) {
+      if (items.length === 0) return '';
+      if (items.length === 1) return items[0];
+      if (items.length === 2) return `${items[0]} and ${items[1]}`;
+      return `${items.slice(0, -1).join(', ')}, and ${items.at(-1)}`;
+    }
+
+    function addStatCard(container, label, value, detail) {
+      const card = document.createElement('article');
+      card.className = 'bookshelf-stat-card';
+
+      const heading = document.createElement('h3');
+      heading.textContent = label;
+      card.appendChild(heading);
+
+      const number = document.createElement('p');
+      number.className = 'bookshelf-stat-value';
+      number.textContent = value;
+      card.appendChild(number);
+
+      const note = document.createElement('p');
+      note.className = 'bookshelf-stat-detail';
+      note.textContent = detail;
+      card.appendChild(note);
+      container.appendChild(card);
+    }
+
+    function addTopAuthorsCard(container, authorCounts) {
+      const card = document.createElement('article');
+      card.className = 'bookshelf-stat-card bookshelf-top-authors-card';
+
+      const heading = document.createElement('h3');
+      heading.textContent = 'Top read authors';
+      card.appendChild(heading);
+
+      const authors = [...authorCounts.entries()]
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .slice(0, 5);
+      const list = document.createElement('ol');
+      list.className = 'bookshelf-top-authors';
+
+      authors.forEach(([author, count]) => {
+        const item = document.createElement('li');
+        const name = document.createElement('span');
+        name.textContent = author;
+        item.appendChild(name);
+
+        const total = document.createElement('span');
+        total.textContent = `${count} ${count === 1 ? 'book' : 'books'}`;
+        item.appendChild(total);
+        list.appendChild(item);
+      });
+
+      if (!authors.length) {
+        const empty = document.createElement('p');
+        empty.className = 'bookshelf-stat-detail';
+        empty.textContent = 'No author data recorded';
+        card.appendChild(empty);
+      } else {
+        card.appendChild(list);
+      }
+
+      container.appendChild(card);
+    }
+
+    function createStatsChart(title, description, entries) {
+      const section = document.createElement('section');
+      section.className = 'bookshelf-stats-section';
+
+      const heading = document.createElement('h2');
+      heading.textContent = title;
+      section.appendChild(heading);
+
+      if (description) {
+        const note = document.createElement('p');
+        note.className = 'bookshelf-stats-note';
+        note.textContent = description;
+        section.appendChild(note);
+      }
+
+      const chart = document.createElement('ol');
+      chart.className = 'bookshelf-stats-chart';
+      const maximum = Math.max(...entries.map(entry => entry.value), 1);
+
+      entries.forEach(entry => {
+        const row = document.createElement('li');
+        row.className = 'bookshelf-stats-row';
+
+        const label = document.createElement('span');
+        label.className = 'bookshelf-stats-label';
+        label.textContent = entry.label;
+        row.appendChild(label);
+
+        const track = document.createElement('span');
+        track.className = 'bookshelf-stats-track';
+        track.setAttribute('aria-hidden', 'true');
+
+        const bar = document.createElement('span');
+        bar.className = 'bookshelf-stats-bar';
+        bar.style.width = `${(entry.value / maximum) * 100}%`;
+        track.appendChild(bar);
+        row.appendChild(track);
+
+        const value = document.createElement('span');
+        value.className = 'bookshelf-stats-count';
+        value.textContent = String(entry.value);
+        row.appendChild(value);
+        chart.appendChild(row);
+      });
+
+      section.appendChild(chart);
+      return section;
+    }
+
+    function renderThemeChart(container, title, books) {
+      const genreCounts = new Map();
+      books.forEach(book => {
+        (Array.isArray(book.genre) ? book.genre : [])
+          .filter(genre => genre !== 'Fiction' && genre !== 'Non-Fiction')
+          .forEach(genre => genreCounts.set(genre, (genreCounts.get(genre) || 0) + 1));
+      });
+
+      const topGenres = [...genreCounts.entries()]
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .slice(0, 8);
+      if (topGenres.length) {
+        container.appendChild(createStatsChart(
+          title,
+          `Top themes among ${books.length.toLocaleString()} books.`,
+          topGenres.map(([label, value]) => ({ label, value }))
+        ));
+      }
+    }
+
+    function renderStats(allBooks) {
+      const container = document.querySelector('.bookshelf-stats');
+      const finishedBooks = allBooks.filter(book => book.status === 'finished');
+      const datedBooks = finishedBooks
+        .map(book => ({ book, year: recordedFinishedYear(book.date_finished) }))
+        .filter(entry => entry.year !== null);
+      const booksWithYears = datedBooks.map(entry => entry.book);
+      const totalPages = booksWithYears.reduce((total, book) => {
+        return total + (Number.isFinite(book.pages) && book.pages > 0 ? book.pages : 0);
+      }, 0);
+      const pageCounts = booksWithYears
+        .map(book => book.pages)
+        .filter(pages => Number.isFinite(pages) && pages > 0)
+        .sort((a, b) => a - b);
+      const middle = Math.floor(pageCounts.length / 2);
+      const medianPages = pageCounts.length
+        ? pageCounts.length % 2
+          ? pageCounts[middle]
+          : Math.round((pageCounts[middle - 1] + pageCounts[middle]) / 2)
+        : 0;
+
+      const authorCounts = new Map();
+      const yearCounts = new Map();
+      datedBooks.forEach(({ book, year }) => {
+        (Array.isArray(book.authors) ? book.authors : []).forEach(author => {
+          authorCounts.set(author, (authorCounts.get(author) || 0) + 1);
+        });
+        yearCounts.set(year, (yearCounts.get(year) || 0) + 1);
+      });
+
+      container.replaceChildren();
+
+      const cards = document.createElement('div');
+      cards.className = 'bookshelf-stat-cards';
+      addStatCard(cards, 'Books finished', booksWithYears.length.toLocaleString(), 'Since I began tracking them in 2016');
+      addStatCard(cards, 'Pages turned', totalPages.toLocaleString(), 'Roughly');
+      addStatCard(cards, 'Typical length', `${medianPages.toLocaleString()} pages`, 'Median length of a finished book');
+      addTopAuthorsCard(cards, authorCounts);
+      container.appendChild(cards);
+
+      const years = [...yearCounts.keys()].sort((a, b) => a - b);
+      if (years.length) {
+        const yearEntries = [];
+        for (let year = years[0]; year <= years[years.length - 1]; year += 1) {
+          yearEntries.push({ label: String(year), value: yearCounts.get(year) || 0 });
+        }
+        container.appendChild(createStatsChart('Books finished by year', '', yearEntries));
+      }
+
+      const themeCharts = document.createElement('div');
+      themeCharts.className = 'bookshelf-theme-charts';
+      renderThemeChart(
+        themeCharts,
+        'Fiction themes',
+        booksWithYears.filter(book => Array.isArray(book.genre) && book.genre.includes('Fiction'))
+      );
+      renderThemeChart(
+        themeCharts,
+        'Non-fiction themes',
+        booksWithYears.filter(book => Array.isArray(book.genre) && book.genre.includes('Non-Fiction'))
+      );
+      container.appendChild(themeCharts);
+
+      const lengthBuckets = [
+        { label: 'Under 200 pages', min: 0, max: 200 },
+        { label: '200–399 pages', min: 200, max: 400 },
+        { label: '400–599 pages', min: 400, max: 600 },
+        { label: '600+ pages', min: 600, max: Infinity }
+      ];
+      const lengthEntries = lengthBuckets.map(bucket => ({
+        label: bucket.label,
+        value: pageCounts.filter(pages => pages >= bucket.min && pages < bucket.max).length
+      }));
+      container.appendChild(createStatsChart(
+        'How long are your reads?',
+        `${pageCounts.length.toLocaleString()} finished books with a recorded page count.`,
+        lengthEntries
+      ));
+
+      const readingDurations = booksWithYears
+        .map(book => {
+          const start = exactDateTimestamp(book.date_started);
+          const finish = exactDateTimestamp(book.date_finished);
+          return start !== null && finish !== null && finish >= start
+            ? (finish - start) / 86400000
+            : null;
+        })
+        .filter(duration => duration !== null)
+        .sort((a, b) => a - b);
+
+      if (readingDurations.length) {
+        const middle = Math.floor(readingDurations.length / 2);
+        const medianDuration = readingDurations.length % 2
+          ? readingDurations[middle]
+          : Math.round((readingDurations[middle - 1] + readingDurations[middle]) / 2);
+        const durationBuckets = [
+          { label: 'Finished the same day', min: 0, max: 1 },
+          { label: '1–7 days', min: 1, max: 8 },
+          { label: '8–30 days', min: 8, max: 31 },
+          { label: '31–90 days', min: 31, max: 91 },
+          { label: '91+ days', min: 91, max: Infinity }
+        ];
+        const durationEntries = durationBuckets.map(bucket => ({
+          label: bucket.label,
+          value: readingDurations.filter(days => days >= bucket.min && days < bucket.max).length
+        }));
+        container.appendChild(createStatsChart(
+          'Time from first page to last',
+          `Among ${readingDurations.length.toLocaleString()} finished books with exact start and finish dates, the median was ${medianDuration.toLocaleString()} elapsed ${medianDuration === 1 ? 'day' : 'days'}. Same-day reads count as 0 elapsed days.`,
+          durationEntries
+        ));
+      }
+
+      const longestBooks = booksWithYears
+        .filter(book => Number.isFinite(book.pages) && book.pages > 0)
+        .sort((a, b) => b.pages - a.pages || a.title.localeCompare(b.title))
+        .slice(0, 5);
+      if (longestBooks.length) {
+        const section = document.createElement('section');
+        section.className = 'bookshelf-stats-section';
+        const heading = document.createElement('h2');
+        heading.textContent = 'The big reads';
+        section.appendChild(heading);
+        const list = document.createElement('ol');
+        list.className = 'bookshelf-long-reads';
+        longestBooks.forEach(book => {
+          const item = document.createElement('li');
+          const info = document.createElement('div');
+          info.className = 'bookshelf-long-read-info';
+          const bookTitle = document.createElement('span');
+          bookTitle.textContent = book.title;
+          info.appendChild(bookTitle);
+          const author = document.createElement('span');
+          author.className = 'bookshelf-long-read-author';
+          author.textContent = joinNameList(Array.isArray(book.authors) ? book.authors : []);
+          info.appendChild(author);
+          item.appendChild(info);
+          const pages = document.createElement('strong');
+          pages.textContent = `${book.pages.toLocaleString()} pages`;
+          item.appendChild(pages);
+          list.appendChild(item);
+        });
+        section.appendChild(list);
+        container.appendChild(section);
+      }
+    }
+
+    fetch('./books.json')
+      .then(response => {
+        if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
+        return response.json();
+      })
+      .then(books => {
+        if (!Array.isArray(books)) throw new TypeError('Expected books.json to contain an array');
+        renderStats(books);
+      })
+      .catch(error => {
+        console.error('Failed to load bookshelf stats', error);
+        document.querySelector('.bookshelf-stats').textContent = 'Unable to load reading stats right now.';
+      });
+  })();
+</script>

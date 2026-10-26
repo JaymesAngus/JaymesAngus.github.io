@@ -1,6 +1,6 @@
 [
   {
-    "title": "BardSkull",
+    "title": "Bardskull",
     "authors": [
       "Martin Shaw"
     ],
@@ -763,7 +763,9 @@
     "id": "theempusium",
     "title": "The Empusium: A Health Resort Horror Story",
     "authors": [
-      "Olga Tokarczuk",
+      "Olga Tokarczuk"
+    ],
+    "translators":[
       "Antonia Lloyd-Jones"
     ],
     "genre": [
@@ -782,12 +784,15 @@
     "in_possession": false
   },
   {
-    "id": "venomouslumpsucker",
     "title": "Venomous Lumpsucker",
     "authors": [
       "Ned Beauman"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Speculative Fiction"
+    ],
     "status": "finished",
     "cover": "VenomousLumpsucker.jpg",
     "date_started": "25/10/24",
@@ -798,12 +803,15 @@
     "in_possession": false
   },
   {
-    "id": "calypso",
     "title": "Calypso",
     "authors": [
       "Oliver K. Langmead"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Poetry"
+    ],
     "status": "finished",
     "cover": "Calypso.jpg",
     "date_started": "21/10/24",
@@ -814,7 +822,6 @@
     "in_possession": false
   },
   {
-    "id": "onehundredyearsofsolitude",
     "title": "One Hundred Years Of Solitude",
     "authors": [
       "Gabriel García Márquez"
@@ -822,7 +829,11 @@
     "translators": [
       "Gregory Rabassa"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Magical Realism"
+    ],
     "status": "finished",
     "cover": "OneHundredYearsOfSolitude.jpg",
     "date_started": "24/06/24",
@@ -881,7 +892,12 @@
     "authors": [
       "Yuri Herrera"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Short Stories",
+      "Science Fiction",
+      "Speculative Fiction"
+    ],
     "status": "finished",
     "cover": "TenPlanets.jpg",
     "date_started": "27/05/23",
@@ -897,7 +913,13 @@
     "authors": [
       "Brian Catling"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Horror",
+      "Weird Fiction",
+      "Historical Fantasy"
+    ],
     "status": "finished",
     "cover": "Hollow.jpg",
     "date_started": "Feb 2024",
@@ -933,7 +955,11 @@
     "authors": [
       "Blindboy Boatclub"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Irish Literature",
+      "Short Stories"
+    ],
     "status": "finished",
     "cover": "TopographiaHibernica.jpg",
     "date_started": "25/12/23",
@@ -949,7 +975,13 @@
     "authors": [
       "Margaret Atwood"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Dystopian",
+      "Post-apocalyptic",
+      "Biopunk"
+    ],
     "status": "finished",
     "cover": "OryxAndCrake.jpg",
     "date_started": "2023",
@@ -965,7 +997,11 @@
     "authors": [
       "Brian Catling"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Weird Fiction"
+    ],
     "status": "finished",
     "cover": "TheVorrh.jpg",
     "date_started": "2023",
@@ -981,7 +1017,12 @@
     "authors": [
       "Michelle Paver"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Historical Fiction",
+      "Gothic",
+      "Horror"
+    ],
     "status": "finished",
     "cover": "Wakenhyrst.jpg",
     "date_started": "2023",
@@ -998,7 +1039,11 @@
       "Osamu Dazai",
       "Donald Keene"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Japanese Literature"
+    ],
     "status": "finished",
     "cover": "NoLongerHuman.jpg",
     "date_started": "2022",
@@ -1014,7 +1059,11 @@
     "authors": [
       "Augustina Bazterrica"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Dystopian"
+    ],
     "status": "finished",
     "cover": "TenderIsTheFlesh.jpg",
     "date_started": "2022",
@@ -1025,12 +1074,15 @@
     "in_possession": false
   },
   {
-    "id": "youvelostalotofblood",
     "title": "You've Lost A Lot Of Blood",
     "authors": [
       "Eric LaRocca"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Horror",
+      "LGBTQ+"
+    ],
     "status": "finished",
     "cover": "YouveLostALotOfBlood.jpg",
     "date_started": "2022",
@@ -1041,12 +1093,16 @@
     "in_possession": false
   },
   {
-    "id": "thestrangebird",
-    "title": "The Strange Bird",
+    "title": "The Strange Bird: A Borne Story",
     "authors": [
       "Jeff VanderMeer"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Novella",
+      "Science Fiction",
+      "Weird Fiction"
+    ],
     "status": "finished",
     "cover": "TheStrangeBird.jpg",
     "date_started": "2022",
@@ -1057,12 +1113,14 @@
     "in_possession": false
   },
   {
-    "id": "afuriousoyster",
     "title": "A Furious Oyster",
     "authors": [
       "Jessica Sequeira"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Weird Fiction"
+    ],
     "status": "finished",
     "cover": "AFuriousOyster.jpg",
     "date_started": "2022",
@@ -1073,12 +1131,16 @@
     "in_possession": false
   },
   {
-    "id": "thedolls",
     "title": "The Dolls",
     "authors": [
       "Ursula Scavenius"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Short Stories",
+      "Horror",
+      "Weird Fiction"
+    ],
     "status": "finished",
     "cover": "TheDolls.jpg",
     "date_started": "2022",
@@ -1109,12 +1171,17 @@
     "in_possession": false
   },
   {
-    "id": "thefuturologicalcongress",
     "title": "The Futurological Congress",
     "authors": [
       "Stanisław Lem"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Polish Literature",
+      "Humour",
+      "Dystopian"
+    ],
     "status": "finished",
     "cover": "TheFuturologicalCongress.jpg",
     "date_started": "26/12/21",
@@ -1125,13 +1192,19 @@
     "in_possession": false
   },
   {
-    "id": "primevalandothertimes",
     "title": "Primeval And Other Times",
     "authors": [
-      "Olga Tokarczuk",
+      "Olga Tokarczuk"
+    ],
+    "translators":[
       "Antonia Lloyd-Jones"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Polish Literature",
+      "Magical Realism",
+      "Historical Fiction"
+    ],
     "status": "finished",
     "cover": "PrimevalAndOtherTimes.jpg",
     "date_started": "2021",
@@ -1161,12 +1234,15 @@
     "in_possession": false
   },
   {
-    "id": "thesacredbookofthewerewolf",
     "title": "The Sacred Book Of The Werewolf",
     "authors": [
       "Victor Pelevin"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Russian Literature"
+    ],
     "status": "finished",
     "cover": "TheSacredBookOfTheWerewolf.jpg",
     "date_started": "2021",
@@ -1181,7 +1257,10 @@
     "authors": [
       "Ali Smith"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Literary Fiction"
+    ],
     "status": "finished",
     "cover": "Autumn.jpg",
     "date_started": "",
@@ -1192,12 +1271,15 @@
     "in_possession": false
   },
   {
-    "id": "piranesi",
     "title": "Piranesi",
     "authors": [
       "Susanna Clarke"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Magical Realism"
+    ],
     "status": "finished",
     "cover": "Piranesi.jpg",
     "date_started": "",
@@ -1212,7 +1294,12 @@
     "authors": [
       "William Faulkner"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Southern Gothic",
+      "American Literature"
+    ],
     "status": "finished",
     "cover": "AsILayDying.jpg",
     "date_started": "",
@@ -1283,7 +1370,9 @@
   {
     "title": "Drive Your Plow Over The Bones Of The Dead",
     "authors": [
-      "Olga Tokarczuk",
+      "Olga Tokarczuk"
+    ],
+    "translators":[
       "Antonia Lloyd-Jones"
     ],
     "genre": [
@@ -1456,7 +1545,9 @@
       "Vladimir Nabokov"
     ],
     "genre": [
-      "Fiction"
+      "Fiction",
+      "Russian Literature",
+      "Classics"
     ],
     "status": "finished",
     "cover": "PaleFire.jpg",
@@ -1557,7 +1648,9 @@
       "Thomas Pynchon"
     ],
     "genre": [
-      "Fiction"
+      "Fiction",
+      "Classics",
+      "Literary Fiction"
     ],
     "status": "finished",
     "cover": "V.jpg",
@@ -1882,7 +1975,8 @@
       "Ian McEwan"
     ],
     "genre": [
-      "Fiction"
+      "Fiction",
+      "Literary Fiction"
     ],
     "status": "finished",
     "cover": "Saturday.jpg",
@@ -2101,7 +2195,9 @@
       "Ian McEwan"
     ],
     "genre": [
-      "Fiction"
+      "Fiction",
+      "Literary Fiction",
+      "Mystery"
     ],
     "status": "finished",
     "cover": "Solar.jpg",
@@ -2220,7 +2316,9 @@
     "id": "thewindupbirdchronicle",
     "title": "The Windup Bird Chronicle",
     "authors": [
-      "Haruki Murakami",
+      "Haruki Murakami"
+    ],
+    "translators":[
       "Jay Rubin"
     ],
     "genre": [
@@ -2396,12 +2494,15 @@
     "in_possession": false
   },
   {
-    "id": "dune",
     "title": "Dune",
     "authors": [
       "Frank Herbert"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Science Fiction"
+    ],
     "status": "finished",
     "cover": "Dune.jpg",
     "date_started": "",
@@ -2455,12 +2556,15 @@
     "in_possession": false
   },
   {
-    "id": "solaris",
     "title": "Solaris",
     "authors": [
       "Stanisław Lem"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Classics"
+    ],
     "status": "finished",
     "cover": "Solaris.jpg",
     "date_started": "",
@@ -2476,7 +2580,12 @@
     "authors": [
       "Daniel Woodrell"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Mystery",
+      "Crime",
+      "Thriller"
+    ],
     "status": "finished",
     "cover": "WintersBone.jpg",
     "date_started": "",
@@ -2495,7 +2604,13 @@
     "translators": [
       "Michael Glenny"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Fantasy",
+      "Magical Realism",
+      "Russian Literature"
+    ],
     "status": "finished",
     "cover": "TheMasterAndMargarita.jpg",
     "date_started": "",
@@ -2527,12 +2642,15 @@
     "in_possession": false
   },
   {
-    "id": "crow",
     "title": "Crow: From the Life and Songs of the Crow",
     "authors": [
       "Ted Hughes"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Poetry",
+      "Classics"
+    ],
     "status": "finished",
     "cover": "Crow.jpg",
     "date_started": "",
@@ -2543,12 +2661,16 @@
     "in_possession": false
   },
   {
-    "id": "onedayinthelifeofivandenisovich",
     "title": "One Day In The Life Of Ivan Denisovich",
     "authors": [
       "Aleksandr Solzhenitsyn"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Russian Literature",
+      "Historical Fiction"
+    ],
     "status": "finished",
     "cover": "OneDayInTheLifeOfIvanDenisovich.jpg",
     "date_started": "",
@@ -2559,12 +2681,15 @@
     "in_possession": false
   },
   {
-    "id": "aclockworkorange",
     "title": "A Clockwork Orange",
     "authors": [
       "Anthony Burgess"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Dystopian"
+    ],
     "status": "finished",
     "cover": "AClockworkOrange.jpg",
     "date_started": "",
@@ -2575,12 +2700,15 @@
     "in_possession": false
   },
   {
-    "id": "moriarty",
     "title": "Moriarty",
     "authors": [
       "Anthony Horowitz"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Mystery",
+      "Young Adult"
+    ],
     "status": "finished",
     "cover": "Moriarty.jpg",
     "date_started": "",
@@ -2596,7 +2724,12 @@
     "authors": [
       "J.D. Salinger"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Young Adult",
+      "Classics",
+      "Coming-of-age"
+    ],
     "status": "finished",
     "cover": "TheCatcherInTheRye.jpg",
     "date_started": "",
@@ -2607,12 +2740,15 @@
     "in_possession": false
   },
   {
-    "id": "thewaroftheworlds",
     "title": "The War Of The Worlds",
     "authors": [
       "H.G. Wells"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Science Fiction"
+    ],
     "status": "finished",
     "cover": "TheWarOfTheWorlds.jpg",
     "date_started": "",
@@ -2665,11 +2801,15 @@
   },
   {
     "id": "fahrenheit451",
-    "title": "Fahrenheit451",
+    "title": "Fahrenheit 451",
     "authors": [
       "Ray Bradbury"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Dystopian"
+    ],
     "status": "finished",
     "cover": "Fahrenheit451.jpg",
     "date_started": "",
@@ -2685,7 +2825,12 @@
     "authors": [
       "Harper Lee"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Historical Fiction",
+      "Young Adult"
+    ],
     "status": "finished",
     "cover": "ToKillAMockingbird.jpg",
     "date_started": "",
@@ -2696,12 +2841,18 @@
     "in_possession": false
   },
   {
-    "id": "themaninthehighcastle",
     "title": "The Man In The High Castle",
     "authors": [
       "Philip K. Dick"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Dystopian",
+      "Speculative Fiction",
+      "Alternate History",
+      "Classics"
+    ],
     "status": "finished",
     "cover": "TheManInTheHighCastle.jpg",
     "date_started": "",
@@ -2712,7 +2863,6 @@
     "in_possession": false
   },
   {
-    "id": "feral",
     "title": "Feral: Rewilding the Land, the Sea and Human Life",
     "authors": [
       "George Monbiot"
@@ -2733,12 +2883,14 @@
     "in_possession": false
   },
   {
-    "id": "descent",
     "title": "Descent",
     "authors": [
       "Ken MacLeod"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Young Adult"
+    ],
     "status": "finished",
     "cover": "Descent.jpg",
     "date_started": "",
@@ -2749,12 +2901,15 @@
     "in_possession": false
   },
   {
-    "id": "animalfarm",
     "title": "Animal Farm",
     "authors": [
       "George Orwell"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Dystopian"
+    ],
     "status": "finished",
     "cover": "Animalfarm.jpg",
     "date_started": "",
@@ -2770,7 +2925,13 @@
     "authors": [
       "Philip K. Dick"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Science Fiction",
+      "Classics",
+      "Cyberpunk",
+      "Dystopian"
+    ],
     "status": "finished",
     "cover": "DoAndroidsDreamOfElectricSheep.jpg",
     "date_started": "",
@@ -2781,12 +2942,16 @@
     "in_possession": false
   },
   {
-    "id": "aninfinitenumberofparalleluniverses",
     "title": "An Infinite Number Of Parallel Universes",
     "authors": [
       "Randy Ribay"
     ],
-    "genre": [],
+    "genre": [
+      "Fiction",
+      "Young Adult",
+      "Coming-of-age",
+      "LGBTQ+"
+    ],
     "status": "finished",
     "cover": "AnInfiniteNumberOfParallelUniverses.jpg",
     "date_started": "",

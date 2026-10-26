@@ -43,21 +43,44 @@ extra_css: |
       const info = document.createElement('div');
       info.className = 'book-info';
 
-      const authorList = joinNameList(b.authors)
-      if (status === 'toread') {
-        info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>';
-      } else if (status === 'reading') {
-        info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>'
+      const title = document.createElement('h3');
+      title.className = 'book-title';
+      title.textContent = b.title || 'Untitled';
+      info.appendChild(title);
+
+      const author = document.createElement('p');
+      author.className = 'book-author';
+      author.textContent = joinNameList(Array.isArray(b.authors) ? b.authors : []);
+      info.appendChild(author);
+
+      const meta = document.createElement('p');
+      meta.className = 'book-meta';
+      if (status === 'reading') {
+        meta.textContent = b.date_started ? `Started ${b.date_started}` : 'Currently reading';
+      } else if (status === 'toread') {
+        meta.textContent = Number.isFinite(b.pages) && b.pages > 0
+          ? `${b.pages.toLocaleString()} pages · To be read`
+          : 'To be read';
+      } else if (String(b.date_finished || '') === '0') {
+        meta.textContent = 'Read long ago';
+      } else if (b.date_finished) {
+        meta.textContent = `Finished ${b.date_finished}`;
+      } else {
+        meta.textContent = 'Finish date unrecorded';
       }
-      else {
-        if (b.date_finished.match('..\/..\/..')) {
-          info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Finished on ' + b.date_finished;
-        } else if (b.date_finished == 0){
-          info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Read long ago';
-        } else {
-          info.innerHTML = b.title + '<br>-<br>Written by '+authorList+'<br>' + '<br>-<br>Read during ' + b.date_finished;
-        }
+      info.appendChild(meta);
+
+      if (Array.isArray(b.genre) && b.genre.length > 0) {
+        const tags = document.createElement('div');
+        tags.className = 'book-tags';
+        b.genre.slice(0, 2).forEach(genre => {
+          const tag = document.createElement('span');
+          tag.textContent = genre;
+          tags.appendChild(tag);
+        });
+        info.appendChild(tags);
       }
+
       div.appendChild(info);
       return div;
     }
@@ -75,6 +98,15 @@ extra_css: |
 
       const yearMatch = date.match(/\b((?:19|20)\d{2})\b|\/(\d{2})$/);
       return yearMatch ? yearMatch[1] || `20${yearMatch[2]}` : 'Pre-2016';
+    }
+
+    function shuffled(items) {
+      const result = items.slice();
+      for (let i = result.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+      }
+      return result;
     }
 
     function createBookshelfSection(container, title) {
@@ -103,8 +135,7 @@ extra_css: |
         const toreadBooks = books.filter(b => b.status === 'toread');
         const grid = document.createElement('div');
         grid.className = 'bookshelf-books';
-        toreadBooks.sort(()=>Math.random() - 0.5)
-        toreadBooks.forEach(b => {
+        shuffled(toreadBooks).forEach(b => {
           grid.appendChild(createBookElement(b, 'toread'));
         });
         container.appendChild(grid);
@@ -161,13 +192,27 @@ extra_css: |
       });
     }
 
+    function fetchBooks(path) {
+      return fetch(path).then(response => {
+        if (!response.ok) throw new Error(`${path} request failed with status ${response.status}`);
+        return response.json();
+      }).then(data => {
+        if (!Array.isArray(data)) throw new TypeError(`${path} must contain a JSON array`);
+        return data;
+      });
+    }
+
     Promise.all([
-      fetch('./books.json').then(r => r.json()),
-      fetch('./books-to-be-read.json').then(r => r.json())
+      fetchBooks('./books.json'),
+      fetchBooks('./books-to-be-read.json')
     ]).then(([booksData, listData]) => {
-      books = [...(booksData || []), ...(listData || [])];
+      books = [...booksData, ...listData];
       setupFilters();
       renderBooks('read');
+    }).catch(error => {
+      console.error('Failed to load bookshelf data', error);
+      const container = document.querySelector('.bookshelf');
+      if (container) container.textContent = 'The bookshelf could not be loaded. Please try again later.';
     })
   })();
 </script>
