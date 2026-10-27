@@ -68,7 +68,7 @@ extra_css: |
       card.className = 'bookshelf-stat-card bookshelf-top-authors-card';
 
       const heading = document.createElement('h3');
-      heading.textContent = 'Top read authors';
+      heading.textContent = 'Most read authors';
       card.appendChild(heading);
 
       const authors = [...authorCounts.entries()]
@@ -164,7 +164,7 @@ extra_css: |
       if (topGenres.length) {
         container.appendChild(createStatsChart(
           title,
-          `Top themes among ${books.length.toLocaleString()} books.`,
+          `Top genre tags among ${books.length.toLocaleString()} books.`,
           topGenres.map(([label, value]) => ({ label, value }))
         ));
       }
@@ -190,6 +190,26 @@ extra_css: |
           ? pageCounts[middle]
           : Math.round((pageCounts[middle - 1] + pageCounts[middle]) / 2)
         : 0;
+      const readingSessions = booksWithYears
+        .map(book => {
+          const start = exactDateTimestamp(book.date_started);
+          const finish = exactDateTimestamp(book.date_finished);
+          return start !== null && finish !== null && finish >= start
+            ? { duration: (finish - start) / 86400000, pages: book.pages }
+            : null;
+        })
+        .filter(session => session !== null);
+      const sessionsWithPageCounts = readingSessions
+        .filter(session => Number.isFinite(session.pages) && session.pages > 0);
+      const estimated300PageTimes = sessionsWithPageCounts
+        .map(session => session.duration / session.pages * 300)
+        .sort((a, b) => a - b);
+      const estimated300PageMiddle = Math.floor(estimated300PageTimes.length / 2);
+      const estimated300PageDays = estimated300PageTimes.length
+        ? estimated300PageTimes.length % 2
+          ? estimated300PageTimes[estimated300PageMiddle]
+          : (estimated300PageTimes[estimated300PageMiddle - 1] + estimated300PageTimes[estimated300PageMiddle]) / 2
+        : null;
 
       const authorCounts = new Map();
       const yearCounts = new Map();
@@ -207,13 +227,21 @@ extra_css: |
       addStatCard(cards, 'Books finished', booksWithYears.length.toLocaleString(), 'Since I began tracking them in 2016');
       addStatCard(cards, 'Pages turned', totalPages.toLocaleString(), 'Roughly');
       addStatCard(cards, 'Typical length', `${medianPages.toLocaleString()} pages`, 'Median length of a finished book');
+      addStatCard(
+        cards,
+        'Estimated time for 300 pages',
+        estimated300PageDays === null ? 'Not enough data' : `${estimated300PageDays.toLocaleString(undefined, { maximumFractionDigits: 1 })} days`,
+        estimated300PageDays === null
+          ? 'Requires exact start and finish dates and a recorded page count.'
+          : `Median estimate from ${sessionsWithPageCounts.length.toLocaleString()} finished books with exact dates and page counts.`
+      );
       addTopAuthorsCard(cards, authorCounts);
       container.appendChild(cards);
 
       const years = [...yearCounts.keys()].sort((a, b) => a - b);
       if (years.length) {
         const yearEntries = [];
-        for (let year = years[0]; year <= years[years.length - 1]; year += 1) {
+        for (let year = years[years.length - 1]; year >= years[0]; year -= 1) {
           yearEntries.push({ label: String(year), value: yearCounts.get(year) || 0 });
         }
         container.appendChild(createStatsChart('Books finished by year', '', yearEntries));
@@ -244,20 +272,13 @@ extra_css: |
         value: pageCounts.filter(pages => pages >= bucket.min && pages < bucket.max).length
       }));
       container.appendChild(createStatsChart(
-        'How long are your reads?',
+        'Finished book lengths',
         `${pageCounts.length.toLocaleString()} finished books with a recorded page count.`,
         lengthEntries
       ));
 
-      const readingDurations = booksWithYears
-        .map(book => {
-          const start = exactDateTimestamp(book.date_started);
-          const finish = exactDateTimestamp(book.date_finished);
-          return start !== null && finish !== null && finish >= start
-            ? (finish - start) / 86400000
-            : null;
-        })
-        .filter(duration => duration !== null)
+      const readingDurations = readingSessions
+        .map(session => session.duration)
         .sort((a, b) => a - b);
 
       if (readingDurations.length) {
@@ -277,8 +298,8 @@ extra_css: |
           value: readingDurations.filter(days => days >= bucket.min && days < bucket.max).length
         }));
         container.appendChild(createStatsChart(
-          'Time from first page to last',
-          `Among ${readingDurations.length.toLocaleString()} finished books with exact start and finish dates, the median was ${medianDuration.toLocaleString()} elapsed ${medianDuration === 1 ? 'day' : 'days'}. Same-day reads count as 0 elapsed days.`,
+          'Completion times',
+          `Among ${readingDurations.length.toLocaleString()} finished books with exact start and finish dates, the median was ${medianDuration.toLocaleString()} elapsed ${medianDuration === 1 ? 'day' : 'days'}.`,
           durationEntries
         ));
       }
@@ -291,7 +312,7 @@ extra_css: |
         const section = document.createElement('section');
         section.className = 'bookshelf-stats-section';
         const heading = document.createElement('h2');
-        heading.textContent = 'The big reads';
+        heading.textContent = 'Longest reads';
         section.appendChild(heading);
         const list = document.createElement('ol');
         list.className = 'bookshelf-long-reads';
