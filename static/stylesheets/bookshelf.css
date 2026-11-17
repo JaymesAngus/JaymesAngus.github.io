@@ -146,6 +146,11 @@ footer {
     color: #fff;
 }
 
+select.filter-button {
+    cursor: pointer;
+    padding-right: 2rem;
+}
+
 .stats-chart {
     overflow-x: auto;
     padding: 1rem 0.25rem;

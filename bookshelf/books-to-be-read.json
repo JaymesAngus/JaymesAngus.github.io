@@ -641,7 +641,6 @@
     "in_possession": false
   },
   {
-    "id": "cuteaccelerationism",
     "title": "Cute Accelerationism",
     "authors": [
       "Maya B. Kronic",
@@ -662,7 +661,6 @@
     "in_possession": true
   },
   {
-    "id": "thedechronizationofsammagruder",
     "title": "The Dechronization of Sam Magruder",
     "authors": [
       "George Gaylord Simpson"
@@ -682,7 +680,6 @@
     "in_possession": true
   },
   {
-    "id": "theweirdandtheeerie",
     "title": "The Weird and the Eerie",
     "authors": [
       "Mark Fisher"
@@ -703,7 +700,6 @@
     "in_possession": false
   },
   {
-    "id": "drugcartelsdonotexist",
     "title": "Drug Cartels Do Not Exist: Narcotrafficking in US and Mexican Culture",
     "authors": [
       "Oswaldo Zavala"
@@ -725,7 +721,6 @@
     "in_possession": false
   },
   {
-    "id": "theshadowofthetorturer",
     "title": "The Shadow of the Torturer",
     "authors": [
       "Gene Wolfe"
@@ -765,7 +760,6 @@
     "in_possession": true
   },
   {
-    "id": "theweatherexperiment",
     "title": "The Weather Experiment",
     "authors": [
       "Peter Moore"
@@ -786,7 +780,6 @@
     "in_possession": true
   },
   {
-    "id": "alltomorrows",
     "title": "All Tomorrows: A Billion Year Chronicle of the Myriad Species and Mixed Fortunes of Man",
     "authors": [
       "C.M. Kösemen"
@@ -806,7 +799,6 @@
     "in_possession": true
   },
   {
-    "id": "thebiophiliahypothesis",
     "title": "The Biophilia Hypothesis",
     "authors": [
       "Edward O. Wilson",
@@ -828,7 +820,6 @@
     "in_possession": false
   },
   {
-    "id": "therevengeofgaia",
     "title": "The Revenge of Gaia",
     "authors": [
       "James Lovelock"
@@ -848,7 +839,6 @@
     "in_possession": false
   },
   {
-    "id": "poorthings",
     "title": "Poor Things",
     "authors": [
       "Alistair Gray"
@@ -869,7 +859,6 @@
     "in_possession": false
   },
   {
-    "id": "theyearoftheflood",
     "title": "The Year Of The Flood",
     "authors": [
       "Margaret Atwood"
@@ -888,7 +877,6 @@
     "in_possession": false
   },
   {
-    "id": "theslynx",
     "title": "The Slynx",
     "authors": [
       "Tatanya Tolstaya"
@@ -908,7 +896,6 @@
     "in_possession": false
   },
   {
-    "id": "howlifeworks",
     "title": "How Life Works: A User's Guide to the New Biology",
     "authors": [
       "Philip Ball"
@@ -928,7 +915,6 @@
     "in_possession": false
   },
   {
-    "id": "theaxemanscarnival",
     "title": "The Axemans Carnival",
     "authors": [
       "Catherine Chidgey"
@@ -948,7 +934,6 @@
     "in_possession": false
   },
   {
-    "id": "theconquestofbread",
     "title": "The Conquest Of Bread",
     "authors": [
       "Pyotr Kropotkin"
@@ -969,7 +954,6 @@
     "in_possession": false
   },
   {
-    "id": "everythingistuberculosis",
     "title": "Everything Is Tuberculosis: The History and Persistence of Our Deadliest Infection",
     "authors": [
       "John Green"
@@ -989,7 +973,6 @@
     "in_possession": false
   },
   {
-    "id": "williamblakeandtheseamonstersoflove",
     "title": "William Blake And The Sea Monsters Of Love",
     "authors": [
       "Phillip Hoare"
@@ -1010,7 +993,6 @@
     "in_possession": false
   },
   {
-    "id": "thinkingasanarchists",
     "title": "Thinking As Anarchists",
     "authors": [
       "Giovanna Gioli",
@@ -1032,7 +1014,6 @@
     "in_possession": false
   },
   {
-    "id": "thevanishingfaceofgaia",
     "title": "The Vanishing Face Of Gaia",
     "authors": [
       "James Lovelock"
@@ -1053,7 +1034,6 @@
     "in_possession": false
   },
   {
-    "id": "transparentcity",
     "title": "Transparent City",
     "authors": [
       "Ondjaki"
@@ -1073,7 +1053,6 @@
     "in_possession": false
   },
   {
-    "id": "mutantecologies",
     "title": "Mutant Ecologies",
     "authors": [
       "Erica Borg",
@@ -1094,7 +1073,6 @@
     "in_possession": false
   },
   {
-    "id": "openveinsoflatinamerica",
     "title": "Open Veins Of Latin America",
     "authors": [
       "Eduardo Galeano"
@@ -1115,7 +1093,6 @@
     "in_possession": false
   },
   {
-    "id": "theoriginoflifeonearth",
     "title": "The Origin Of Life On Earth",
     "authors": [],
     "genre": [],
@@ -1129,7 +1106,6 @@
     "in_possession": false
   },
   {
-    "id": "pandorashope",
     "title": "Pandoras Hope",
     "authors": [],
     "genre": [],
@@ -1143,7 +1119,6 @@
     "in_possession": false
   },
   {
-    "id": "moonwitchspiderking",
     "title": "Moon Witch Spider King",
     "authors": [
       "Marlon James"
@@ -1163,7 +1138,6 @@
     "in_possession": false
   },
   {
-    "id": "theconcubine",
     "title": "The Concubine",
     "authors": [],
     "genre": [],
@@ -1177,7 +1151,6 @@
     "in_possession": false
   },
   {
-    "id": "theworkofthedead",
     "title": "The Work Of The Dead",
     "authors": [],
     "genre": [],
@@ -1191,7 +1164,6 @@
     "in_possession": false
   },
   {
-    "id": "thevitalquestion",
     "title": "The Vital Question",
     "authors": [],
     "genre": [],
@@ -1205,7 +1177,6 @@
     "in_possession": false
   },
   {
-    "id": "thehaircarpetweavers",
     "title": "The Hair Carpet Weavers",
     "authors": [],
     "genre": [
@@ -1222,7 +1193,6 @@
     "in_possession": false
   },
   {
-    "id": "thedemoninthemachine",
     "title": "The Demon In The Machine",
     "authors": [],
     "genre": [],
@@ -1236,7 +1206,6 @@
     "in_possession": false
   },
   {
-    "id": "theburiedgiant",
     "title": "The Buried Giant",
     "authors": [],
     "genre": [],
@@ -1250,7 +1219,6 @@
     "in_possession": false
   },
   {
-    "id": "elkofnorthamerica",
     "title": "Elk Of North America",
     "authors": [],
     "genre": [],
@@ -1264,7 +1232,6 @@
     "in_possession": false
   },
   {
-    "id": "darkecology",
     "title": "Dark Ecology",
     "authors": [
       "Timothy Morton"
@@ -1284,7 +1251,6 @@
     "in_possession": false
   },
   {
-    "id": "themelancholyofresistance",
     "title": "The Melancholy Of Resistance",
     "authors": [],
     "genre": [],
@@ -1298,7 +1264,6 @@
     "in_possession": false
   },
   {
-    "id": "hyperion",
     "title": "Hyperion",
     "authors": [],
     "genre": [],
@@ -1312,7 +1277,6 @@
     "in_possession": false
   },
   {
-    "id": "readymadebodhisattva",
     "title": "Readymade Bodhisattva",
     "authors": [],
     "genre": [],
@@ -1326,7 +1290,6 @@
     "in_possession": false
   },
   {
-    "id": "persepolis",
     "title": "Persepolis",
     "authors": [],
     "genre": [],
@@ -1340,7 +1303,6 @@
     "in_possession": false
   },
   {
-    "id": "demons",
     "title": "Demons",
     "authors": [],
     "genre": [],
@@ -1354,7 +1316,6 @@
     "in_possession": false
   },
   {
-    "id": "ducksnewburyport",
     "title": "Ducks, Newburyport",
     "authors": [],
     "genre": [],
@@ -1368,10 +1329,15 @@
     "in_possession": false
   },
   {
-    "id": "theenchantressofflorence",
     "title": "The Enchantress Of Florence",
-    "authors": [],
-    "genre": [],
+    "authors": [
+      "Salman Rushdie"
+    ],
+    "genre": [
+      "Fiction",
+      "Historial Fiction",
+      "Magical Realism"
+    ],
     "status": "toread",
     "cover": "TheEnchantressOfFlorence.jpg",
     "date_started": "",
@@ -1382,7 +1348,6 @@
     "in_possession": false
   },
   {
-    "id": "themagicmountain",
     "title": "The Magic Mountain",
     "authors": [],
     "genre": [],
@@ -1396,7 +1361,6 @@
     "in_possession": false
   },
   {
-    "id": "thedrownedworld",
     "title": "The Drowned World",
     "authors": [],
     "genre": [],
@@ -1410,7 +1374,6 @@
     "in_possession": false
   },
   {
-    "id": "thefirenexttime",
     "title": "The Fire Next Time",
     "authors": [],
     "genre": [],
@@ -1424,7 +1387,6 @@
     "in_possession": false
   },
   {
-    "id": "randomlymovingparticles",
     "title": "Randomly Moving Particles",
     "authors": [],
     "genre": [],
@@ -1438,7 +1400,6 @@
     "in_possession": false
   },
   {
-    "id": "thebookofuniverses",
     "title": "The Book Of Universes",
     "authors": [
       "John D. Barrow"
@@ -1458,7 +1419,6 @@
     "in_possession": true
   },
   {
-    "id": "figmentsofreality",
     "title": "Figments Of Reality",
     "authors": [],
     "genre": [],
@@ -1472,7 +1432,6 @@
     "in_possession": false
   },
   {
-    "id": "ourplace",
     "title": "Our Place",
     "authors": [],
     "genre": [],
@@ -1486,7 +1445,6 @@
     "in_possession": false
   },
   {
-    "id": "ulysses",
     "title": "Ulysses",
     "authors": [],
     "genre": [],
@@ -1500,7 +1458,6 @@
     "in_possession": false
   },
   {
-    "id": "theaeneid",
     "title": "The Aeneid",
     "authors": [],
     "genre": [],
@@ -1514,7 +1471,6 @@
     "in_possession": false
   },
   {
-    "id": "theodyssey",
     "title": "The Odyssey",
     "authors": [],
     "genre": [],
@@ -1528,7 +1484,6 @@
     "in_possession": false
   },
   {
-    "id": "thelostbooksoftheodyssey",
     "title": "The Lost Books Of The Odyssey",
     "authors": [],
     "genre": [],
@@ -1542,7 +1497,6 @@
     "in_possession": false
   },
   {
-    "id": "thedescentofman",
     "title": "The Descent Of Man",
     "authors": [],
     "genre": [],
@@ -1556,21 +1510,64 @@
     "in_possession": false
   },
   {
-    "id": "gravitysengines",
-    "title": "Gravity's Engines",
-    "authors": [],
-    "genre": [],
+    "title": "Bardskull",
+    "authors": [
+      "Martin Shaw"
+    ],
+    "genre": [
+      "Fiction",
+      "Mythology",
+      "Poetry"
+    ],
     "status": "toread",
-    "cover": "GravitysEngines.jpg",
+    "cover": "BardSkull.jpg",
     "date_started": "",
     "date_finished": "",
-    "pages": null,
-    "date_purchased": "",
-    "purchase_location": "",
+    "pages": 333,
+    "date_purchased": "12/07/2026",
+    "purchase_location": "Literary Cat Books, Machynlleth, SY20 8EB",
+    "in_possession": true
+  },
+  {
+    "title": "The History of Sexuality, Volume 1: An Introduction",
+    "authors": [
+      "Michel Foucault"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Philosophy",
+      "Theory",
+      "History"
+    ],
+    "status": "toread",
+    "cover": "TheHistoryOfSexuality.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 168,
+    "date_purchased": "23/10/2026",
+    "purchase_location": "Exeter Oxfam, EX1 1EN",
     "in_possession": false
   },
   {
-    "id": "theplaniverse",
+    "title": "Entangled Life",
+    "authors": [
+      "Merlin Sheldrake"
+    ],
+    "genre": [
+      "Non-Fiction",
+      "Science",
+      "Biology"
+    ],
+    "status": "toread",
+    "cover": "EntangledLife.jpg",
+    "date_started": "",
+    "date_finished": "",
+    "pages": 352,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
     "title": "The Planiverse",
     "authors": [],
     "genre": [],
@@ -1584,7 +1581,6 @@
     "in_possession": false
   },
   {
-    "id": "therat",
     "title": "The Rat",
     "authors": [],
     "genre": [],
@@ -1598,7 +1594,6 @@
     "in_possession": false
   },
   {
-    "id": "diaboliad",
     "title": "Diaboliad",
     "authors": [],
     "genre": [],
@@ -1612,7 +1607,6 @@
     "in_possession": false
   },
   {
-    "id": "tothelighthouse",
     "title": "To The Lighthouse",
     "authors": [],
     "genre": [],
@@ -1626,7 +1620,6 @@
     "in_possession": false
   },
   {
-    "id": "fullyautomatedluxurycommunism",
     "title": "Fully Automated Luxury Communism",
     "authors": [],
     "genre": [],
@@ -1640,7 +1633,6 @@
     "in_possession": false
   },
   {
-    "id": "futureofdenial",
     "title": "Future Of Denial",
     "authors": [],
     "genre": [],
@@ -1673,7 +1665,6 @@
     "in_possession": false
   },
   {
-    "id": "rebirding",
     "title": "Rebirding",
     "authors": [],
     "genre": [],
@@ -1687,7 +1678,6 @@
     "in_possession": false
   },
   {
-    "id": "theuninhabitableearth",
     "title": "The Uninhabitable Earth",
     "authors": [],
     "genre": [],
@@ -1701,7 +1691,6 @@
     "in_possession": false
   },
   {
-    "id": "theknowledgeillusion",
     "title": "The Knowledge Illusion",
     "authors": [],
     "genre": [],
@@ -1715,7 +1704,6 @@
     "in_possession": false
   },
   {
-    "id": "thedragon",
     "title": "The Dragon",
     "authors": [],
     "genre": [],
@@ -1729,7 +1717,6 @@
     "in_possession": false
   },
   {
-    "id": "thefamishedroad",
     "title": "The Famished Road",
     "authors": [
       "Ben Okri"
@@ -1745,7 +1732,6 @@
     "in_possession": false
   },
   {
-    "id": "conjecturesrefutations",
     "title": "Conjectures Refutations",
     "authors": [
       "Karl Popper"
@@ -1761,7 +1747,6 @@
     "in_possession": false
   },
   {
-    "id": "tripticks",
     "title": "Tripticks",
     "authors": [
       "Ann Quin"
@@ -1780,7 +1765,6 @@
     "in_possession": false
   },
   {
-    "id": "deepwheelorcadia",
     "title": "Deep Wheel Orcadia",
     "authors": [
       "Harry Josephine Giles"
@@ -1801,7 +1785,6 @@
     "in_possession": false
   },
   {
-    "id": "thegardenagainsttime",
     "title": "The Garden Against Time: In Search of a Common Paradise",
     "authors": [
       "Olivia Laing"
@@ -1821,7 +1804,6 @@
     "in_possession": false
   },
   {
-    "id": "veganarchism",
     "title": "Veganarchism: Against All Oppression, Everywhere, All the Time",
     "authors": [
       "Nathan Poirier"
@@ -1840,7 +1822,6 @@
     "in_possession": false
   },
   {
-    "id": "insectsarejustlikeyouandme",
     "title": "Insects Are Just Like You and Me Except Some of Them Have Wings",
     "authors": [
       "Kuzhali Manickavel"
@@ -1861,7 +1842,6 @@
     "in_possession": false
   },
   {
-    "id": "capitalismsendgame",
     "title": "Capitalism's Endgame: The Catastrophe of Accumulation",
     "authors": [
       "Mark Hayes",
@@ -1883,7 +1863,6 @@
     "in_possession": false
   },
   {
-    "id": "desert",
     "title": "Desert",
     "authors": [
       "Anonymous"
@@ -1903,7 +1882,6 @@
     "in_possession": false
   },
   {
-    "id": "gatheredremains",
     "title": "Gathered Remains: Essays on Wildness, Domestication, Community and Resistance",
     "authors": [
       "Kevin Tucker"
@@ -1923,7 +1901,6 @@
     "in_possession": false
   },
   {
-    "id": "copyripburn",
     "title": "Copy, Rip, Burn: The Politics of Copyleft and Open Source",
     "authors": [
       "David M. Berry"
@@ -1943,7 +1920,6 @@
     "in_possession": false
   },
   {
-    "id": "huntfortheshadowwolf",
     "title": "Hunt for the Shadow Wolf: The lost history of wolves in Britain and the myths and stories that surround them",
     "authors": [
       "Derek Gow"
@@ -1963,7 +1939,6 @@
     "in_possession": false
   },
   {
-    "id": "emergent",
     "title": "Emergent: Rewilding Nature, Regenerating Food and Healing the World by Restoring the Connection Between People and the Wild",
     "authors": [
       "Miriam Kate McDonald"
@@ -1983,7 +1958,6 @@
     "in_possession": false
   },
   {
-    "id": "onedimensionalman",
     "title": "One-Dimensional Man",
     "authors": [
       "Herbert Marcuse"
@@ -2004,7 +1978,6 @@
     "in_possession": false
   },
   {
-    "id": "cyclonopedia",
     "title": "Cyclonopedia: Complicity with Anonymous Materials",
     "authors": [
       "Reza Negarestani"

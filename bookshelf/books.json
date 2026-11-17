@@ -1,41 +1,61 @@
 [
   {
-    "title": "Bardskull",
+    "title": "Blindsight",
     "authors": [
-      "Martin Shaw"
+      "Peter Watts"
     ],
     "genre": [
       "Fiction",
-      "Mythology",
-      "Poetry"
+      "Science Fiction"
+
     ],
     "status": "reading",
-    "cover": "BardSkull.jpg",
-    "date_started": "24/10/2026",
+    "cover": "Blindsight.jpg",
+    "date_started": "12/11/2026",
     "date_finished": "",
-    "pages": 333,
-    "date_purchased": "12/07/2026",
-    "purchase_location": "Literary Cat Books, Machynlleth, SY20 8EB",
-    "in_possession": true
+    "pages": 371,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": false
   },
   {
-    "title": "The History of Sexuality, Volume 1: An Introduction",
+    "title": "Gravity's Engines: The Other Side of Black Holes",
     "authors": [
-      "Michel Foucault"
+      "Caleb Scharf"
     ],
     "genre": [
       "Non-Fiction",
-      "Philosophy",
-      "Theory",
-      "History"
+      "Physics",
+      "Astronomy"
+
     ],
-    "status": "reading",
-    "cover": "TheHistoryOfSexuality.jpg",
-    "date_started": "23/10/2026",
-    "date_finished": "",
-    "pages": 168,
-    "date_purchased": "23/10/2026",
-    "purchase_location": "Exeter Oxfam, EX1 1EN",
+    "status": "finished",
+    "cover": "GravitysEngines.jpg",
+    "date_started": "26/10/2026",
+    "date_finished": "17/11/2026",
+    "pages": 220,
+    "date_purchased": "",
+    "purchase_location": "",
+    "in_possession": true
+  },
+  {
+    "title": "Invisible Cities",
+    "authors": [
+      "Italo Calvino"
+    ],
+    "genre": [
+      "Fiction",
+      "Classics",
+      "Magical Realism"
+
+    ],
+    "status": "finished",
+    "cover": "InvisibleCities.jpg",
+    "date_started": "08/11/2026",
+    "date_finished": "12/11/2026",
+    "pages": 165,
+    "date_purchased": "",
+    "purchase_location": "",
     "in_possession": false
   },
   {
@@ -128,25 +148,6 @@
     "date_started": "10/08/26",
     "date_finished": "26/08/26",
     "pages": 216,
-    "date_purchased": "",
-    "purchase_location": "",
-    "in_possession": true
-  },
-  {
-    "title": "Entangled Life",
-    "authors": [
-      "Merlin Sheldrake"
-    ],
-    "genre": [
-      "Non-Fiction",
-      "Science",
-      "Biology"
-    ],
-    "status": "reading",
-    "cover": "EntangledLife.jpg",
-    "date_started": "11/08/26",
-    "date_finished": "",
-    "pages": 352,
     "date_purchased": "",
     "purchase_location": "",
     "in_possession": true
@@ -387,7 +388,6 @@
     "in_possession": true
   },
   {
-    "id": "thedominantanimal",
     "title": "The Dominant Animal",
     "authors": [
       "Kathryn Scanlan"
@@ -407,7 +407,6 @@
     "in_possession": false
   },
   {
-    "id": "thekinginyellow",
     "title": "The King In Yellow",
     "authors": [
       "Robert W. Chambers"
@@ -428,7 +427,6 @@
     "in_possession": true
   },
   {
-    "id": "walkingpractice",
     "title": "Walking Practice",
     "authors": [
       "Dolki Min"
@@ -450,7 +448,6 @@
     "in_possession": false
   },
   {
-    "id": "thelefthandofdarkness",
     "title": "The Left Hand Of Darkness",
     "authors": [
       "Ursula K. Le Guin"
@@ -470,7 +467,6 @@
     "in_possession": false
   },
   {
-    "id": "redcloset",
     "title": "Red Closet: The Hidden History of Gay Oppression in the USSR",
     "authors": [
       "Rustam Alexander"
@@ -490,7 +486,6 @@
     "in_possession": true
   },
   {
-    "id": "brainwyrms",
     "title": "Brainwyrms",
     "authors": [
       "Alison Rumfitt"
@@ -510,7 +505,6 @@
     "in_possession": false
   },
   {
-    "id": "monstrilio",
     "title": "Monstrilio",
     "authors": [
       "Gerardo Sámano Córdova"
@@ -531,7 +525,6 @@
     "in_possession": false
   },
   {
-    "id": "negativespace",
     "title": "Negative Space",
     "authors": [
       "B.R. Yeager"
@@ -552,7 +545,6 @@
     "in_possession": false
   },
   {
-    "id": "ashortstayinhell",
     "title": "A Short Stay In Hell",
     "authors": [
       "Stephen L. Peck"
@@ -573,7 +565,6 @@
     "in_possession": false
   },
   {
-    "id": "tainaron",
     "title": "Tainaron: Mail from Another City",
     "authors": [
       "Leena Krohn",
@@ -595,7 +586,6 @@
     "in_possession": false
   },
   {
-    "id": "iwhohaveneverknownmen",
     "title": "I Who Have Never Known Men",
     "authors": [
       "Jacqueline Harpman",
@@ -617,7 +607,6 @@
     "in_possession": false
   },
   {
-    "id": "coreyfahdoessocialmobility",
     "title": "Corey Fah Does Social Mobility",
     "authors": [
       "Isabel Waidner"
@@ -637,7 +626,6 @@
     "in_possession": true
   },
   {
-    "id": "thedoloriad",
     "title": "The Doloriad",
     "authors": [
       "Missouri Williams"
@@ -657,7 +645,6 @@
     "in_possession": true
   },
   {
-    "id": "thebuddhaofsuburbia",
     "title": "The Buddha Of Suburbia",
     "authors": [
       "Hanif Kureishi"
@@ -677,7 +664,6 @@
     "in_possession": true
   },
   {
-    "id": "thenetherholemartyr",
     "title": "The Netherhole Martyr",
     "authors": [
       "Good Friends for a Lifetime"
@@ -698,7 +684,6 @@
     "in_possession": true
   },
   {
-    "id": "sozaboy",
     "title": "Sozaboy: A Novel in Rotten English",
     "authors": [
       "Ken Saro-Wiwa"
@@ -720,7 +705,6 @@
     "in_possession": false
   },
   {
-    "id": "openthroat",
     "title": "Open Throat",
     "authors": [
       "Henry Hoke"
@@ -740,7 +724,6 @@
     "in_possession": false
   },
   {
-    "id": "griefisthethingwithfeathers",
     "title": "Grief Is the Thing with Feathers",
     "authors": [
       "Max Porter"
@@ -760,7 +743,6 @@
     "in_possession": false
   },
   {
-    "id": "theempusium",
     "title": "The Empusium: A Health Resort Horror Story",
     "authors": [
       "Olga Tokarczuk"
@@ -844,7 +826,6 @@
     "in_possession": false
   },
   {
-    "id": "gaiaanewlookatlifeonearth",
     "title": "Gaia: A New Look At Life On Earth",
     "authors": [
       "James E. Lovelock"
@@ -865,7 +846,6 @@
     "in_possession": false
   },
   {
-    "id": "thinkinglikeamountain",
     "title": "Thinking Like A Mountain",
     "authors": [
       "John Seed",
@@ -887,7 +867,6 @@
     "in_possession": false
   },
   {
-    "id": "tenplanets",
     "title": "Ten Planets",
     "authors": [
       "Yuri Herrera"
@@ -908,7 +887,6 @@
     "in_possession": false
   },
   {
-    "id": "hollow",
     "title": "Hollow",
     "authors": [
       "Brian Catling"
@@ -930,7 +908,6 @@
     "in_possession": false
   },
   {
-    "id": "expectresistance",
     "title": "Expect Resistance",
     "authors": [
       "CrimeThink"
@@ -950,7 +927,6 @@
     "in_possession": false
   },
   {
-    "id": "topographiahibernica",
     "title": "Topographia Hibernica",
     "authors": [
       "Blindboy Boatclub"
@@ -970,7 +946,6 @@
     "in_possession": false
   },
   {
-    "id": "oryxandcrake",
     "title": "Oryx And Crake",
     "authors": [
       "Margaret Atwood"
@@ -992,7 +967,6 @@
     "in_possession": false
   },
   {
-    "id": "thevorrh",
     "title": "The Vorrh",
     "authors": [
       "Brian Catling"
@@ -1012,7 +986,6 @@
     "in_possession": false
   },
   {
-    "id": "wakenhyrst",
     "title": "Wakenhyrst",
     "authors": [
       "Michelle Paver"
@@ -1033,10 +1006,11 @@
     "in_possession": false
   },
   {
-    "id": "nolongerhuman",
     "title": "No Longer Human",
     "authors": [
-      "Osamu Dazai",
+      "Osamu Dazai"
+    ],
+    "translators":[
       "Donald Keene"
     ],
     "genre": [
@@ -1054,7 +1028,6 @@
     "in_possession": false
   },
   {
-    "id": "tenderistheflesh",
     "title": "Tender Is The Flesh",
     "authors": [
       "Augustina Bazterrica"
@@ -1151,7 +1124,6 @@
     "in_possession": false
   },
   {
-    "id": "zenintheartofarchery",
     "title": "Zen In The Art Of Archery",
     "authors": [
       "Eugen Herrigel"
@@ -1215,7 +1187,6 @@
     "in_possession": false
   },
   {
-    "id": "asilentfury",
     "title": "A Silent Fury",
     "authors": [
       "Yuri Herrera"
@@ -1390,7 +1361,6 @@
     "in_possession": false
   },
   {
-    "id": "annihilation",
     "title": "Annihilation",
     "authors": [
       "Jeff VanderMeer"
@@ -1411,7 +1381,6 @@
     "in_possession": false
   },
   {
-    "id": "origins",
     "title": "Origins: How The Earth Made Us",
     "authors": [
       "Lewis Dartnell"
@@ -1433,7 +1402,6 @@
     "in_possession": false
   },
   {
-    "id": "atthemountainsofmadness",
     "title": "At The Mountains Of Madness",
     "authors": [
       "H.P. Lovecraft"
@@ -1455,7 +1423,6 @@
     "in_possession": false
   },
   {
-    "id": "thecryingoflot49",
     "title": "The Crying Of Lot49",
     "authors": [
       "Thomas Pynchon"
@@ -1475,7 +1442,6 @@
     "in_possession": false
   },
   {
-    "id": "theoutsider",
     "title": "The Outsider",
     "authors": [
       "Albert Camus",
@@ -1496,7 +1462,6 @@
     "in_possession": false
   },
   {
-    "id": "ifonawintersnightatraveller",
     "title": "If On A Winter's Night A Traveller",
     "authors": [
       "Italo Calvino",
@@ -1518,7 +1483,6 @@
     "in_possession": false
   },
   {
-    "id": "tokyouenostation",
     "title": "Tokyo Ueno Station",
     "authors": [
       "Yu Miri",
@@ -1539,7 +1503,6 @@
     "in_possession": false
   },
   {
-    "id": "palefire",
     "title": "Pale Fire",
     "authors": [
       "Vladimir Nabokov"
@@ -1559,7 +1522,6 @@
     "in_possession": false
   },
   {
-    "id": "thisisnotadrill",
     "title": "This Is Not A Drill",
     "authors": [
       "Extinction Rebellion"
@@ -1580,7 +1542,6 @@
     "in_possession": false
   },
   {
-    "id": "theriverofconsciousness",
     "title": "The River Of Consciousness",
     "authors": [
       "Oliver Sacks"
@@ -1601,7 +1562,6 @@
     "in_possession": false
   },
   {
-    "id": "blackleopardredwolf",
     "title": "Black Leopard, Red Wolf",
     "authors": [
       "Marlon James"
@@ -1622,7 +1582,6 @@
     "in_possession": false
   },
   {
-    "id": "silentspring",
     "title": "Silent Spring",
     "authors": [
       "Rachel Carson"
@@ -1642,7 +1601,6 @@
     "in_possession": false
   },
   {
-    "id": "v",
     "title": "V.",
     "authors": [
       "Thomas Pynchon"
@@ -1662,7 +1620,6 @@
     "in_possession": false
   },
   {
-    "id": "disgrace",
     "title": "Disgrace",
     "authors": [
       "J.M. Coetzee"
@@ -1681,7 +1638,6 @@
     "in_possession": false
   },
   {
-    "id": "kafkaontheshore",
     "title": "Kafka On The Shore",
     "authors": [
       "Haruki Murakami",
@@ -1702,7 +1658,6 @@
     "in_possession": false
   },
   {
-    "id": "heartofadog",
     "title": "Heart Of A Dog",
     "authors": [
       "Mikhail Bulgakov",
@@ -1724,7 +1679,6 @@
     "in_possession": false
   },
   {
-    "id": "ice",
     "title": "Ice",
     "authors": [
       "Anna Kavan"
@@ -1763,7 +1717,6 @@
     "in_possession": false
   },
   {
-    "id": "astreetcarnameddesire",
     "title": "A Streetcar Named Desire",
     "authors": [
       "Tennessee Williams"
@@ -1784,7 +1737,6 @@
     "in_possession": false
   },
   {
-    "id": "dubliners",
     "title": "Dubliners",
     "authors": [
       "James Joyce"
@@ -1805,7 +1757,6 @@
     "in_possession": false
   },
   {
-    "id": "thequantitytheoryofinsanity",
     "title": "The Quantity Theory Of Insanity",
     "authors": [
       "Will Self"
@@ -1824,7 +1775,6 @@
     "in_possession": false
   },
   {
-    "id": "tobeamachine",
     "title": "To Be a Machine: Adventures Among Cyborgs, Utopians, Hackers, and the Futurists Solving the Modest Problem of Death",
     "authors": [
       "Mark O'Connell"
@@ -1845,7 +1795,6 @@
     "in_possession": false
   },
   {
-    "id": "norwegianwood",
     "title": "Norwegian Wood",
     "authors": [
       "Haruki Murakami"
@@ -1865,7 +1814,6 @@
     "in_possession": false
   },
   {
-    "id": "abriefhistoryoftime",
     "title": "A Brief History Of Time",
     "authors": [
       "Stephen Hawking"
@@ -1886,7 +1834,6 @@
     "in_possession": false
   },
   {
-    "id": "slaughterhousefive",
     "title": "Slaughterhouse Five",
     "authors": [
       "Kurt Vonnegut, Jr."
@@ -1907,7 +1854,6 @@
     "in_possession": false
   },
   {
-    "id": "lolita",
     "title": "Lolita",
     "authors": [
       "Vladimir Nabokov"
@@ -1928,7 +1874,6 @@
     "in_possession": false
   },
   {
-    "id": "amapoftheinvisible",
     "title": "A Map of the Invisible: Journeys into Particle Physics",
     "authors": [
       "Jon Butterworth"
@@ -1948,7 +1893,6 @@
     "in_possession": false
   },
   {
-    "id": "thetrial",
     "title": "The Trial",
     "authors": [
       "Franz Kafka"
@@ -1969,7 +1913,6 @@
     "in_possession": false
   },
   {
-    "id": "saturday",
     "title": "Saturday",
     "authors": [
       "Ian McEwan"
@@ -1988,7 +1931,6 @@
     "in_possession": false
   },
   {
-    "id": "nutshell",
     "title": "Nutshell",
     "authors": [
       "Ian McEwan"
@@ -2007,7 +1949,6 @@
     "in_possession": false
   },
   {
-    "id": "thefestivalofinsignificance",
     "title": "The Festival Of Insignificance",
     "authors": [
       "Milan Kundera"
@@ -2026,7 +1967,6 @@
     "in_possession": false
   },
   {
-    "id": "theconegatherers",
     "title": "The Cone Gatherers",
     "authors": [
       "Robin Jenkins"
@@ -2046,7 +1986,6 @@
     "in_possession": false
   },
   {
-    "id": "labellesauvage",
     "title": "La Belle Sauvage",
     "authors": [
       "Philip Pullman"
@@ -2066,7 +2005,6 @@
     "in_possession": false
   },
   {
-    "id": "blitzed",
     "title": "Blitzed: Drugs in Nazi Germany",
     "authors": [
       "Norman Ohler"
@@ -2086,7 +2024,6 @@
     "in_possession": false
   },
   {
-    "id": "euphoria",
     "title": "Euphoria",
     "authors": [
       "Heinz Helle"
@@ -2106,7 +2043,6 @@
     "in_possession": false
   },
   {
-    "id": "theghostsofheaven",
     "title": "The Ghosts Of Heaven",
     "authors": [
       "Marcus Sedgwick"
@@ -2127,7 +2063,6 @@
     "in_possession": false
   },
   {
-    "id": "palerider",
     "title": "Pale Rider",
     "authors": [
       "Laura Spinney"
@@ -2148,7 +2083,6 @@
     "in_possession": false
   },
   {
-    "id": "deathofasalesman",
     "title": "Death Of A Salesman",
     "authors": [
       "Arthur Miller"
@@ -2168,7 +2102,6 @@
     "in_possession": false
   },
   {
-    "id": "themetamorphosis",
     "title": "The Metamorphosis and Other Stories",
     "authors": [
       "Franz Kafka"
@@ -2189,7 +2122,6 @@
     "in_possession": false
   },
   {
-    "id": "solar",
     "title": "Solar",
     "authors": [
       "Ian McEwan"
@@ -2209,7 +2141,6 @@
     "in_possession": false
   },
   {
-    "id": "theroad",
     "title": "The Road",
     "authors": [
       "Cormac McCarthy"
@@ -2230,7 +2161,6 @@
     "in_possession": false
   },
   {
-    "id": "howdidwegetintothismess",
     "title": "How Did We Get Into This Mess",
     "authors": [
       "George Monbiot"
@@ -2251,7 +2181,6 @@
     "in_possession": false
   },
   {
-    "id": "hard-boiledwonderlandandtheendoftheworld",
     "title": "Hard boiled Wonderland And The End Of The World",
     "authors": [
       "Haruki Murakami"
@@ -2272,7 +2201,6 @@
     "in_possession": false
   },
   {
-    "id": "hystopia",
     "title": "Hystopia",
     "authors": [
       "David Means"
@@ -2292,7 +2220,6 @@
     "in_possession": false
   },
   {
-    "id": "thedeadlake",
     "title": "The Dead Lake",
     "authors": [
       "Hamid Ismailov"
@@ -2313,7 +2240,6 @@
     "in_possession": false
   },
   {
-    "id": "thewindupbirdchronicle",
     "title": "The Windup Bird Chronicle",
     "authors": [
       "Haruki Murakami"
@@ -2336,7 +2262,6 @@
     "in_possession": false
   },
   {
-    "id": "childofgod",
     "title": "Child Of God",
     "authors": [
       "Cormac McCarthy"
@@ -2357,7 +2282,6 @@
     "in_possession": false
   },
   {
-    "id": "alovelywaytoburn",
     "title": "A Lovely Way To Burn",
     "authors": [
       "Louise Welsh"
@@ -2376,7 +2300,6 @@
     "in_possession": false
   },
   {
-    "id": "cloudatlas",
     "title": "Cloud Atlas",
     "authors": [
       "David Mitchell"
@@ -2398,7 +2321,6 @@
     "in_possession": false
   },
   {
-    "id": "lordoftheflies",
     "title": "Lord Of The Flies",
     "authors": [
       "William Golding"
@@ -2417,7 +2339,6 @@
     "in_possession": false
   },
   {
-    "id": "notesfromunderground",
     "title": "Notes From Underground",
     "authors": [
       "Fyodor Dostoevsky"
@@ -2438,7 +2359,6 @@
     "in_possession": false
   },
   {
-    "id": "narconomics",
     "title": "Narconomics: How to Run a Drug Cartel",
     "authors": [
       "Tom Wainwright"
@@ -2458,7 +2378,6 @@
     "in_possession": false
   },
   {
-    "id": "forensics",
     "title": "Forensics: The Anatomy of Crime",
     "authors": [
       "Val McDermid"
@@ -2478,7 +2397,6 @@
     "in_possession": false
   },
   {
-    "id": "thenewyorktrilogy",
     "title": "The New York Trilogy",
     "authors": [
       "Paul Auster"
@@ -2513,7 +2431,6 @@
     "in_possession": false
   },
   {
-    "id": "sevenbrieflessonsonphysics",
     "title": "Seven Brief Lessons On Physics",
     "authors": [
       "Carlo Rovelli"
@@ -2534,7 +2451,6 @@
     "in_possession": false
   },
   {
-    "id": "americanpsycho",
     "title": "American Psycho",
     "authors": [
       "Bret Easton Ellis"
@@ -2575,7 +2491,6 @@
     "in_possession": false
   },
   {
-    "id": "wintersbone",
     "title": "Winters Bone",
     "authors": [
       "Daniel Woodrell"
@@ -2596,7 +2511,6 @@
     "in_possession": false
   },
   {
-    "id": "themasterandmargarita",
     "title": "The Master And Margarita",
     "authors": [
       "Mikhail Bulgakov"
@@ -2621,7 +2535,6 @@
     "in_possession": false
   },
   {
-    "id": "10billion",
     "title": "10 Billion",
     "authors": [
       "Stephen Emmott"
@@ -2719,7 +2632,6 @@
     "in_possession": false
   },
   {
-    "id": "thecatcherintherye",
     "title": "The Catcher In The Rye",
     "authors": [
       "J.D. Salinger"
@@ -2759,7 +2671,6 @@
     "in_possession": false
   },
   {
-    "id": "catch-22",
     "title": "Catch 22",
     "authors": [
       "Joseph Heller"
@@ -2779,7 +2690,6 @@
     "in_possession": false
   },
   {
-    "id": "nothing",
     "title": "Nothing: From Absolute Zero to Cosmic Oblivion - Amazing Insights into Nothingness",
     "authors": [
       "New Scientist",
@@ -2800,7 +2710,6 @@
     "in_possession": false
   },
   {
-    "id": "fahrenheit451",
     "title": "Fahrenheit 451",
     "authors": [
       "Ray Bradbury"
@@ -2820,7 +2729,6 @@
     "in_possession": false
   },
   {
-    "id": "tokillamockingbird",
     "title": "To Kill A Mockingbird",
     "authors": [
       "Harper Lee"
@@ -2920,7 +2828,6 @@
     "in_possession": false
   },
   {
-    "id": "doandroidsdreamofelectricsheep",
     "title": "Do Androids Dream Of Electric Sheep?",
     "authors": [
       "Philip K. Dick"
@@ -2962,7 +2869,6 @@
     "in_possession": false
   },
   {
-    "id": "dronetheory",
     "title": "Drone Theory",
     "authors": [
       "Grégoire Chamayou"
@@ -2982,7 +2888,6 @@
     "in_possession": false
   },
   {
-    "id": "theknowledge",
     "title": "The Knowledge",
     "authors": [
       "Lewis Dartnell"
@@ -3002,7 +2907,6 @@
     "in_possession": false
   },
   {
-    "id": "thingstomakeanddointhefourthdimension",
     "title": "Things To Make And Do In The Fourth Dimension",
     "authors": [
       "Matt Parker"
@@ -3040,7 +2944,6 @@
     "in_possession": false
   },
   {
-    "id": "nineteeneightyfour",
     "title": "Nineteen Eighty-Four",
     "authors": [
       "George Orwell"
@@ -3056,7 +2959,6 @@
     "in_possession": false
   },
   {
-    "id": "blackswangreen",
     "title": "Black Swan Green",
     "authors": [
       "David Mitchell"
@@ -3072,7 +2974,6 @@
     "in_possession": false
   },
   {
-    "id": "sladehouse",
     "title": "Slade House",
     "authors": [
       "David Mitchell"
@@ -3088,7 +2989,6 @@
     "in_possession": false
   },
   {
-    "id": "theboneclocks",
     "title": "The Bone Clocks",
     "authors": [
       "David Mitchell"
@@ -3104,7 +3004,6 @@
     "in_possession": false
   },
   {
-    "id": "thehandmaidstale",
     "title": "The Handmaids Tale",
     "authors": [
       "Margaret Atwood"
@@ -3120,7 +3019,6 @@
     "in_possession": false
   },
   {
-    "id": "thehobbit",
     "title": "The Hobbit",
     "authors": [
       "JRR Tolkien"
@@ -3155,7 +3053,6 @@
     "in_possession": false
   },
   {
-    "id": "themagicofreality",
     "title": "The Magic Of Reality",
     "authors": [
       "Richard Dawkins"
@@ -3175,7 +3072,6 @@
     "in_possession": false
   },
   {
-    "id": "theterminalman",
     "title": "The Terminal Man",
     "authors": [
       "Michael Crichton"
@@ -3195,7 +3091,6 @@
     "in_possession": false
   },
   {
-    "id": "bravenewworld",
     "title": "Brave New World",
     "authors": [
       "Aldous Huxley"
@@ -3215,7 +3110,6 @@
     "in_possession": false
   },
   {
-    "id": "darkmatter",
     "title": "Dark Matter",
     "authors": [
       "Michelle Paver"
@@ -3235,7 +3129,6 @@
     "in_possession": false
   },
   {
-    "id": "thecallofthewild",
     "title": "The Call of the Wild",
     "authors": [
       "Jack London"
@@ -3251,7 +3144,6 @@
     "in_possession": false
   },
   {
-    "id": "whitefang",
     "title": "White Fang",
     "authors": [
       "Jack London"
@@ -3267,7 +3159,6 @@
     "in_possession": false
   },
   {
-    "id": "therestaurantattheendoftheuniverse",
     "title": "The Restaurant at the End of the Universe",
     "authors": [
       "Douglas Adams"
@@ -3283,7 +3174,6 @@
     "in_possession": false
   },
   {
-    "id": "thehitchhikersguidetothegalaxy",
     "title": "The Hitchhiker's Guide to the Galaxy",
     "authors": [
       "Douglas Adams"
@@ -3299,7 +3189,6 @@
     "in_possession": false
   },
   {
-    "id": "amonstercalls",
     "title": "A Monster Calls",
     "authors": [
       "Patrick Ness"
@@ -3315,7 +3204,6 @@
     "in_possession": false
   },
   {
-    "id": "morethanthis",
     "title": "More Than This",
     "authors": [
       "Patrick Ness"
@@ -3349,7 +3237,6 @@
     "in_possession": false
   },
   {
-    "id": "eragon",
     "title": "Eragon",
     "authors": [
       "Christopher Paolini"
@@ -3365,7 +3252,6 @@
     "in_possession": false
   },
   {
-    "id": "eldest",
     "title": "Eldest",
     "authors": [
       "Christopher Paolini"
@@ -3421,7 +3307,6 @@
     "in_possession": false
   },
   {
-    "id": "theaskandtheanswer",
     "title": "The Ask And The Answer",
     "authors": [
       "Patrick Ness"
@@ -3437,7 +3322,6 @@
     "in_possession": false
   },
   {
-    "id": "theknifeofneverlettinggo",
     "title": "The Knife Of Never Letting Go",
     "authors": [
       "Patrick Ness"
@@ -3453,7 +3337,6 @@
     "in_possession": false
   },
   {
-    "id": "divergent",
     "title": "Divergent",
     "authors": [
       "Veronica Roth"
@@ -3471,7 +3354,6 @@
     "in_possession": false
   },
   {
-    "id": "thehungergamesmockingjay",
     "title": "The Hunger Games: Mockingjay",
     "authors": [
       "Suzanne Collins"
@@ -3489,7 +3371,6 @@
     "in_possession": false
   },
   {
-    "id": "thehungergamescatchingfire",
     "title": "The Hunger Games: Catching Fire",
     "authors": [
       "Suzanne Collins"
@@ -3507,7 +3388,6 @@
     "in_possession": false
   },
   {
-    "id": "thehungergames",
     "title": "The Hunger Games",
     "authors": [
       "Suzanne Collins"
@@ -3525,7 +3405,6 @@
     "in_possession": false
   },
   {
-    "id": "readyplayerone",
     "title": "Ready Player One",
     "authors": [
       "Ernest Cline"
@@ -3543,7 +3422,6 @@
     "in_possession": false
   },
   {
-    "id": "witchcrag",
     "title": "Witch Crag",
     "authors": [
       "Kate Cann"
@@ -3561,7 +3439,6 @@
     "in_possession": false
   },
   {
-    "id": "thefaultinourstars",
     "title": "The Fault In Our Stars",
     "authors": [
       "John Green"
@@ -3579,7 +3456,6 @@
     "in_possession": false
   },
   {
-    "id": "northernlights",
     "title": "Northern Lights",
     "authors": [
       "Philip Pullman"
@@ -3597,7 +3473,6 @@
     "in_possession": false
   },
   {
-    "id": "onekick",
     "title": "One Kick",
     "authors": [
       "Chelsea Cain"
@@ -3615,7 +3490,6 @@
     "in_possession": false
   },
   {
-    "id": "noughtsandcrosses",
     "title": "Noughts And Crosses",
     "authors": [
       "Malorie Blackman"
@@ -3720,7 +3594,6 @@
     "in_possession": false
   },
   {
-    "id": "revolver",
     "title": "Revolver",
     "authors": [
       "Marcus Sedgwick"
@@ -3829,7 +3702,6 @@
     "in_possession": false
   },
   {
-    "id": "sheisnotinvisible",
     "title": "She Is Not Invisible",
     "authors": [
       "Marcus Sedgwick"
@@ -3864,7 +3736,6 @@
     "in_possession": false
   },
   {
-    "id": "theenemy",
     "title": "The Enemy",
     "authors": [
       "Charlie Higson"
@@ -3938,7 +3809,6 @@
     "in_possession": false
   },
   {
-    "id": "spiritwalker",
     "title": "Spirit Walker",
     "authors": [
       "Michelle Paver"
@@ -3957,7 +3827,6 @@
     "in_possession": false
   },
   {
-    "id": "wolfbrother",
     "title": "Wolf Brother",
     "authors": [
       "Michelle Paver"
@@ -4048,7 +3917,6 @@
     "in_possession": false
   },
   {
-    "id": "thedarkesthour",
     "title": "The Darkest Hour",
     "authors": [
       "Erin Hunter"
@@ -4068,7 +3936,6 @@
     "in_possession": false
   },
   {
-    "id": "adangerouspath",
     "title": "A Dangerous Path",
     "authors": [
       "Erin Hunter"
@@ -4088,7 +3955,6 @@
     "in_possession": false
   },
   {
-    "id": "risingstorm",
     "title": "Rising Storm",
     "authors": [
       "Erin Hunter"
@@ -4108,7 +3974,6 @@
     "in_possession": false
   },
   {
-    "id": "forestofsecrets",
     "title": "Forest of Secrets",
     "authors": [
       "Erin Hunter"
@@ -4128,7 +3993,6 @@
     "in_possession": false
   },
   {
-    "id": "fireandice",
     "title": "Fire and Ice",
     "authors": [
       "Erin Hunter"
@@ -4148,7 +4012,6 @@
     "in_possession": false
   },
   {
-    "id": "intothewild",
     "title": "Into the Wild",
     "authors": [
       "Erin Hunter"

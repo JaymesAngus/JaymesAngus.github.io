@@ -5,6 +5,14 @@ extra_css: |
   <link href="/static/stylesheets/bookshelf.css" rel="stylesheet" type="text/css" media="all">
 ---
 <h1 style="color: #cccccc">reading stats</h1>
+<div class="filter-section">
+  <div class="filter-controls" role="group" aria-label="Filter reading stats">
+    <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All time</button>
+    <select id="stats-year-filter" class="filter-button" aria-label="Filter stats by year">
+      <option value="">Previous years</option>
+    </select>
+  </div>
+</div>
 <main class="bookshelf-stats" aria-live="polite">
   <p class="bookshelf-stats-note">Loading reading stats…</p>
 </main>
@@ -14,6 +22,15 @@ extra_css: |
       const date = dateFinished == null ? '' : String(dateFinished);
       const yearMatch = date.match(/\b((?:19|20)\d{2})\b|\/(\d{2})$/);
       return yearMatch ? Number(yearMatch[1] || `20${yearMatch[2]}`) : null;
+    }
+
+    function recordedFinishedMonth(dateFinished) {
+      const date = String(dateFinished || '').trim();
+      const exactDate = date.match(/^(\d{2})\/(\d{2})\/(\d{2}|\d{4})$/);
+      if (exactDate && exactDateTimestamp(date) !== null) return Number(exactDate[2]) - 1;
+
+      const monthDate = date.match(/^(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}$/i);
+      return monthDate ? new Date(`${monthDate[1]} 1, 2000`).getMonth() : null;
     }
 
     function exactDateTimestamp(value) {
@@ -116,6 +133,8 @@ extra_css: |
         section.appendChild(note);
       }
 
+      if (!entries.length) return section;
+
       const chart = document.createElement('ol');
       chart.className = 'bookshelf-stats-chart';
       const maximum = Math.max(...entries.map(entry => entry.value), 1);
@@ -170,13 +189,17 @@ extra_css: |
       }
     }
 
-    function renderStats(allBooks) {
+    function renderStats(allBooks, selectedYear = null) {
       const container = document.querySelector('.bookshelf-stats');
+      const currentYear = new Date().getFullYear();
       const finishedBooks = allBooks.filter(book => book.status === 'finished');
       const datedBooks = finishedBooks
         .map(book => ({ book, year: recordedFinishedYear(book.date_finished) }))
         .filter(entry => entry.year !== null);
-      const booksWithYears = datedBooks.map(entry => entry.book);
+      const filteredBooks = selectedYear === null
+        ? datedBooks
+        : datedBooks.filter(entry => entry.year === selectedYear);
+      const booksWithYears = filteredBooks.map(entry => entry.book);
       const totalPages = booksWithYears.reduce((total, book) => {
         return total + (Number.isFinite(book.pages) && book.pages > 0 ? book.pages : 0);
       }, 0);
@@ -213,18 +236,30 @@ extra_css: |
 
       const authorCounts = new Map();
       const yearCounts = new Map();
-      datedBooks.forEach(({ book, year }) => {
+      const monthCounts = new Map();
+      let booksWithRecordedMonth = 0;
+      filteredBooks.forEach(({ book, year }) => {
         (Array.isArray(book.authors) ? book.authors : []).forEach(author => {
           authorCounts.set(author, (authorCounts.get(author) || 0) + 1);
         });
         yearCounts.set(year, (yearCounts.get(year) || 0) + 1);
+        const month = recordedFinishedMonth(book.date_finished);
+        if (month !== null) {
+          booksWithRecordedMonth += 1;
+          monthCounts.set(month, (monthCounts.get(month) || 0) + 1);
+        }
       });
 
       container.replaceChildren();
 
       const cards = document.createElement('div');
       cards.className = 'bookshelf-stat-cards';
-      addStatCard(cards, 'Books finished', booksWithYears.length.toLocaleString(), 'Since I began tracking them in 2016');
+      addStatCard(
+        cards,
+        'Books finished',
+        booksWithYears.length.toLocaleString(),
+        selectedYear === null ? 'Since I began tracking them in 2016' : `Finished in ${selectedYear}`
+      );
       addStatCard(cards, 'Pages turned', totalPages.toLocaleString(), 'Roughly');
       addStatCard(cards, 'Typical length', `${medianPages.toLocaleString()} pages`, 'Median length of a finished book');
       addStatCard(
@@ -232,19 +267,37 @@ extra_css: |
         'Estimated time for 300 pages',
         estimated300PageDays === null ? 'Not enough data' : `${estimated300PageDays.toLocaleString(undefined, { maximumFractionDigits: 1 })} days`,
         estimated300PageDays === null
-          ? 'Requires exact start and finish dates and a recorded page count.'
+          ? ''
           : `Median estimate from ${sessionsWithPageCounts.length.toLocaleString()} finished books with exact dates and page counts.`
       );
       addTopAuthorsCard(cards, authorCounts);
       container.appendChild(cards);
 
-      const years = [...yearCounts.keys()].sort((a, b) => a - b);
-      if (years.length) {
-        const yearEntries = [];
-        for (let year = years[years.length - 1]; year >= years[0]; year -= 1) {
-          yearEntries.push({ label: String(year), value: yearCounts.get(year) || 0 });
+      if (selectedYear !== null) {
+        const monthNames = [
+          'January', 'February', 'March', 'April', 'May', 'June',
+          'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+        const monthEntries = monthNames
+          .slice(0, selectedYear === currentYear ? new Date().getMonth() + 1 : monthNames.length)
+          .map((label, month) => ({ label, value: monthCounts.get(month) || 0 }));
+        const hasCompleteMonthData = booksWithRecordedMonth === filteredBooks.length;
+        container.appendChild(createStatsChart(
+          'Books finished by month',
+          hasCompleteMonthData
+            ? `Monthly completions in ${selectedYear}, based on recorded finish dates.`
+            : 'Not enough data.',
+          hasCompleteMonthData ? monthEntries : []
+        ));
+      } else {
+        const years = [...yearCounts.keys()].sort((a, b) => a - b);
+        if (years.length) {
+          const yearEntries = [];
+          for (let year = years[years.length - 1]; year >= years[0]; year -= 1) {
+            yearEntries.push({ label: String(year), value: yearCounts.get(year) || 0 });
+          }
+          container.appendChild(createStatsChart('Books finished by year', '', yearEntries));
         }
-        container.appendChild(createStatsChart('Books finished by year', '', yearEntries));
       }
 
       const themeCharts = document.createElement('div');
@@ -262,10 +315,14 @@ extra_css: |
       container.appendChild(themeCharts);
 
       const lengthBuckets = [
-        { label: 'Under 200 pages', min: 0, max: 200 },
-        { label: '200–399 pages', min: 200, max: 400 },
-        { label: '400–599 pages', min: 400, max: 600 },
-        { label: '600+ pages', min: 600, max: Infinity }
+        { label: 'Under 100 pages', min: 0, max: 100 },
+        { label: '100–199 pages', min: 100, max: 200 },
+        { label: '200–299 pages', min: 200, max: 300 },
+        { label: '300–399 pages', min: 300, max: 400 },
+        { label: '400–499 pages', min: 400, max: 500 },
+        { label: '500–699 pages', min: 500, max: 700 },
+        { label: '700–999 pages', min: 700, max: 1000 },
+        { label: '1,000+ pages', min: 1000, max: Infinity }
       ];
       const lengthEntries = lengthBuckets.map(bucket => ({
         label: bucket.label,
@@ -345,7 +402,49 @@ extra_css: |
       })
       .then(books => {
         if (!Array.isArray(books)) throw new TypeError('Expected books.json to contain an array');
-        renderStats(books);
+        const allTimeButton = document.querySelector('[data-filter="all"]');
+        const yearFilter = document.querySelector('#stats-year-filter');
+        const previousYearsOption = yearFilter.querySelector('option[value=""]');
+        const currentYear = new Date().getFullYear();
+        const years = [...new Set([currentYear, ...books
+          .filter(book => book.status === 'finished')
+          .map(book => recordedFinishedYear(book.date_finished))
+          .filter(year => year !== null)])]
+          .sort((a, b) => b - a);
+
+        years.forEach(year => {
+          const option = document.createElement('option');
+          option.value = String(year);
+          option.textContent = String(year);
+          yearFilter.appendChild(option);
+        });
+
+        yearFilter.value = String(currentYear);
+        previousYearsOption.remove();
+        allTimeButton.classList.remove('active');
+        allTimeButton.setAttribute('aria-pressed', 'false');
+        yearFilter.classList.add('active');
+
+        allTimeButton.addEventListener('click', () => {
+          allTimeButton.classList.add('active');
+          allTimeButton.setAttribute('aria-pressed', 'true');
+          if (previousYearsOption.parentElement !== yearFilter) {
+            yearFilter.insertBefore(previousYearsOption, yearFilter.firstChild);
+          }
+          yearFilter.value = '';
+          yearFilter.classList.remove('active');
+          renderStats(books);
+        });
+        yearFilter.addEventListener('change', () => {
+          const selectedYear = yearFilter.value === '' ? null : Number(yearFilter.value);
+          const isAllTime = selectedYear === null;
+          if (!isAllTime) previousYearsOption.remove();
+          allTimeButton.classList.toggle('active', isAllTime);
+          allTimeButton.setAttribute('aria-pressed', String(isAllTime));
+          yearFilter.classList.toggle('active', !isAllTime);
+          renderStats(books, selectedYear);
+        });
+        renderStats(books, currentYear);
       })
       .catch(error => {
         console.error('Failed to load bookshelf stats', error);

@@ -29,6 +29,11 @@
   src: url(/static/fonts/Quintessential-Regular.ttf);
 }
 
+@font-face {
+  font-family: NewRomantics;
+  src: url(/static/fonts/ROMANTIC.TTF);
+}
+
 html {
    margin: 0px;
    height: 100%;
@@ -154,8 +159,10 @@ header a:link, header a:visited {
 }
 
 a {
-  color: #6F1A07;
-  text-decoration: none;
+  /* color: #6F1A07; */
+  color: #3a6506;
+  text-decoration:none;
+
 }
 
 a:hover {
